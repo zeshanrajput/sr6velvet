@@ -1,0 +1,36 @@
+project:
+  type: book
+  output-dir: _book
+  pre-render: uv run python scripts/main.py "input/Velvet.xml" --output "output/character_sheet.txt"
+
+book:
+  title: "VELVET // Jin-Young Character Dossier"
+  author: "Velvet"
+  date: "2026-06-17"
+  chapters:
+    - index.qmd
+    - part: "Core Character"
+      chapters:
+        - chapters/identity_core.md
+        - chapters/character_sheet.qmd
+        - chapters/rules_and_downtime.qmd
+        - chapters/character_log.qmd
+    - part: "Narrative Log"
+      chapters:
+        - chapters/01_transaction.md
+        - chapters/02_faceless_mirror.md
+        - chapters/03_dark_wings.md
+        - chapters/04_resonance.md
+        - chapters/05_sabotage.md
+        - chapters/06_first_negotiation.md
+        - chapters/07_seattle_web.md
+
+
+format:
+  html:
+    theme:
+      - cosmo
+      - theme.scss
+    toc: true
+    number-sections: false
+    code-copy: true

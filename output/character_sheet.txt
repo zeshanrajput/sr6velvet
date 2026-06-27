@@ -1,0 +1,130 @@
+___________________________________________________________________________
+// ACCESSING: KIM_JIN-YOUNG.bin // SOURCE: ASTRAL_PLANE //
+// STATUS: ONLINE // LIFETIME KARMA: 6 // KARMA: 4 // NUYEN: ¥5,000 //
+___________________________________________________________________________
+
+[ IDENTITY ]
+  > NAME: Kim Jin-Young          > ALIAS: Velvet
+  > METATYPE: Dalakitnon         > GENDER: DIVERSE
+  > TRADITION: Buddhism          > SIN: [LOCAL_FILE_ENCRYPTED]
+
+[ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
+  PHY | BOD [02] AGI [04] REA [04] STR [02]  |   INIT (PHYS)  : 8 +1D6
+  MNT | WIL [05] LOG [04] INT [04] CHA [10]  |   INIT (ASTRAL): 8 +2D6
+  SPP | EDG [03] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 15
+                                             |   JUDGE INT    : 9
+                                             |   DEF RATING   : 13 (BOD+ARM)
+                                             |   DEF POOL     : 08 (REA+INT)
+
+[ PHYSICAL_CONDITION_MONITOR ]         | [ STUN_CONDITION_MONITOR ]
+  [0] [0] [-1] | [-1] [-1] [-2]        |   [0] [0] [-1] | [-1] [-1] [-2]
+  [-2] [-2] [-3]                       |   [-2] [-2] [-3] | [-3] [-3]
+
+[ SKILL_MATRICES ]
+  SORCERY               : 06 (Spellcasting +2) -> Pool: 15[#1] / 17[#1]
+  INFLUENCE             : 05 (Leadership +2)   -> Pool: 15 / 17
+  CON                   : 02                   -> Pool: 12
+  ASTRAL                : 01                   -> Pool: 08[#2]
+  NATIVE LANGUAGE       : 04                   -> Pool: 08
+
+[ SPELLS ]
+  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 17[#3]  [Drain Resist: 15]
+  - INCREASE REFLEXES (Drain 5)         -> Pool: 17[#3]  [Drain Resist: 15]
+  - POWERBOLT (Drain 6)                 -> Pool: 17[#3]  [Drain Resist: 15]
+  - STUNBOLT (Drain 3)                  -> Pool: 17[#3]  [Drain Resist: 15]
+  - CHARM (Drain 5)                     -> Pool: 17[#3]  [Drain Resist: 15]
+
+[ METAMAGICS & INITIATION ]            |
+  - QUICKENING                         |
+
+
+
+
+___________________________________________________________________________
+// KIM_JIN-YOUNG.bin // PAGE 2: DOSSIER DATABASE //
+___________________________________________________________________________
+
+[ DRONE_COMMAND_ARRAY (COL 1) ]        | [ DRONE_COMMAND_ARRAY (COL 2) ]
+
+[ MATRIX_DEVICES ]                     |
+- TRANSYS AVALON (COMMLINK)            |
+  ATK 03 SLZ 01 DPR 03 FWL 03          |
+                                       |
+
+[ SOFTWARE_LIBRARY ]
+
+[ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
+  > EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - CONTACTS [+3]
+  ! INCOMPETENT (OUTDOORS)             |   - FLOAT SWITCH [+4]
+  > METAGENETIC ATTRIBUTE IMPROVEMENT (CHARISMA) |   - SECURETECH SKINSHIELD [+1]
+  ! HONORBOUND (PIRATE CODE)           |   - SECURETECH INVISISHIELD [+10]
+  > HOODER                             |   - TRES CHIC [+12]
+  > INSPIRE COMPETENCE                 |   - REAGENTS PER DRAM x20
+  ! ALLERGY (COMMON, MODERATE, SPICES) |   - MAGICAL LODGE MATERIALS
+  > LOW-LIGHT VISION                   |   - MAGE-SIGHT-GOGGLES
+                                       |   - SAVIOR MEDKIT
+                                       |   - SAVIOR MEDKIT REFILL x5
+                                       |   - EARBUDS [+3]
+                                       |   - NANOCOSMETICS KIT
+                                       |   - NANOPASTE DISGUISE [+2]
+                                       |   - NANOCOSMETICS REFILL x5 [+0]
+                                       |   - NANOPASTE DISGUISE REFILL x5
+
+[ LIFESTYLE_DATA ]
+  - HIGH (1 Months Pre-paid)
+
+[ MAGIC_PROTOCOLS_CHEAT_SHEET ]
+  - Active Foci: Power Focus (R3) (adds rating as bonus to all Magic tests)
+  - Spellcasting Pool: Sorcery (6) + Magic (6) + Focus (3) + Specialization (2) = 16
+  - Drain Resistance Pool: Willpower (5) + Charisma (8) = 13 (Buddhism tradition)
+  - Quickening: Permits casting sustained spells that remain permanently active
+  - Astral Projection: Shift consciousness to the Astral Plane. Speed: 100km/hour
+  - Astral Combat Pool: Astral (1) + Charisma (8) + Focus = 9
+
+
+[ CONSOLIDATED_RULES_FOOTNOTES ]
+  [#1] Sorcery adjustments:
+       - Includes Power Focus +3
+  [#2] Astral adjustments:
+       - Includes Power Focus +3
+  [#3] Spells Casting Pool:
+       - Includes Power Focus +3
+       - Includes Spellcasting specialization +2
+
+
+
+___________________________________________________________________________
+// KIM_JIN-YOUNG.bin // PAGE 3: SOCIAL & CREDENTIALS //
+___________________________________________________________________________
+
+[ SOCIAL_NETWORK_CONTACTS ]
+  - BRYNNE TAGGART       SEA Fixer                        L:5 I:4 F:0
+  - NI NI XIAOLU         SEA Triad Johnson                L:4 I:3 F:0
+  - WHISKEY              SEA Street Doc                   L:3 I:2 F:0
+  - VINCENT GRISOME      SEA University Professor         L:8 I:5 F:0
+  - CLAUDETTE LAURIER    NOLA Order of the Golden Dawn... L:5 I:3 F:0
+  - LE TIGRE             NOLA Epoch Model                 L:5 I:5 F:0
+  - JP CHAKRABORTY       NOLA Aurelian Design Model       L:4 I:4 F:0
+
+[ REGISTERED_IDENTITIES ]
+  - SIN: Lee Ji-yoo                     [Rating 6]
+  - SIN: Tanaka Ryo                     [Rating 6]
+  - LIC: Spellcasting                   [Rating 6]
+  - LIC: Quickening                     [Rating 6]
+
+
+
+
+___________________________________________________________________________
+// KIM_JIN-YOUNG.bin // PAGE 4: CHRONICLE LOG //
+___________________________________________________________________________
+
+[ CAREER_LOG ]
+  DATE         | KARMA |    NUYEN | EVENT
+  ---------------------------------------------------------------------------
+  2026-06-27   |    +1 |    +1000 | Build-A-Runner: GM Credit (GM: WarDoctor)
+  ---------------------------------------------------------------------------
+  LIFETIME KARMA: 6 (1 earned + 5 from Chargen)
+
+___________________________________________________________________________
+// END_OF_FILE // VELVET@ASTRAL:~$ _

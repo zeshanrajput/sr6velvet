@@ -1,0 +1,39 @@
+# VELVET // Kim Jin-Young
+
+Welcome to the consolidated magic portfolio for **Kim Jin-Young**, operating in physical nodes under the runner alias **Velvet**.
+
+::: {.grid}
+
+::: {.g-col-6 .cyber-card}
+### [CHARACTER_DOSSIER]
+* **Designation:** Kim Jin-Young
+* **VTT Alias:** Velvet
+* **Metatype:** Dalakitnon (Elf Variant)
+* **Tradition:** Buddhism
+* **System Status:** ONLINE // AWAKENED
+:::
+
+::: {.g-col-6 .cyber-card}
+### [MAGIC_PROGRESSION]
+* **Lifetime Karma:** 16 (11 earned/spent)
+* **Current Karma:** 5
+* **Liquid Capital:** ¥4,025
+* **Initiation Grade:** 1 (Quickening)
+:::
+
+:::
+
+::: {.cyber-card}
+### [CORE_SUMMARY]
+Born a Dalakitnon to a destitute family in the Philippines, his rare genetic and spiritual architecture and extreme charisma made him a corporate asset for Mitsuhama. Reconstructed into a pan-Asian idol group, TXM (The Death Messengers), he was used as a gateway for massive collective geomantic rituals. Sabotaging a mega-ritual to save the woman he loved, he vanished into the shadows, now running dirty jobs to build a network to protect her from afar.
+:::
+
+## [ SYSTEM_NAVIGATION ]
+
+Use the sidebar or the indexes below to traverse the sub-grids of this portfolio:
+
+### 1. Core Profile
+* **[Identity Core](chapters/identity_core.md)**: Detailed background history and lore.
+* **[Character Sheet](chapters/character_sheet.qmd)**: The dynamically compiled Shadowrun character sheet.
+* **[Rules & Downtime Protocols](chapters/rules_and_downtime.qmd)**: Spellcasting and summoning formulas, cheat sheets, and active magical configurations.
+* **[Career Log](chapters/character_log.qmd)**: Full database of past runs, GMs, nuyen payouts, and Karma adjustments.

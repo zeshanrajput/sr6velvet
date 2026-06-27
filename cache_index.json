@@ -1,0 +1,470 @@
+{
+  "is_weapon:securetechaas": false,
+  "is_armor:securetechaas": true,
+  "armor_stats:securetechaas": {
+    "armor_rating": "+12"
+  },
+  "is_weapon:treschic": false,
+  "is_armor:treschic": true,
+  "armor_stats:treschic": {
+    "armor_rating": "10"
+  },
+  "is_weapon:contacts": false,
+  "is_armor:contacts": true,
+  "armor_stats:contacts": {
+    "armor_rating": 0
+  },
+  "is_weapon:nanopastedisguise": false,
+  "is_armor:nanopastedisguise": true,
+  "armor_stats:nanopastedisguise": {
+    "armor_rating": "+2"
+  },
+  "is_weapon:nanopastedisguiserefill": false,
+  "is_armor:nanopastedisguiserefill": true,
+  "armor_stats:nanopastedisguiserefill": {
+    "armor_rating": 0
+  },
+  "is_weapon:saviormedkit": false,
+  "is_armor:saviormedkit": false,
+  "is_weapon:saviormedkitrefill": false,
+  "is_armor:saviormedkitrefill": false,
+  "is_weapon:magesightgoggles": false,
+  "is_armor:magesightgoggles": true,
+  "armor_stats:magesightgoggles": {
+    "armor_rating": 0
+  },
+  "is_weapon:magicallodgematerials": false,
+  "is_armor:magicallodgematerials": false,
+  "is_weapon:floatswitch": false,
+  "is_armor:floatswitch": true,
+  "armor_stats:floatswitch": {
+    "armor_rating": 0
+  },
+  "is_weapon:coldshowerinabottle": false,
+  "is_armor:coldshowerinabottle": false,
+  "is_weapon:translationlenses": false,
+  "is_armor:translationlenses": true,
+  "armor_stats:translationlenses": {
+    "armor_rating": 0
+  },
+  "quality_stats:charismaticdefense": {
+    "positive": true,
+    "page": "86",
+    "rating": 0,
+    "description": "This quality allows your Defense Rating to be based on Charisma instead of Body."
+  },
+  "quality_stats:allbusiness": {
+    "positive": false,
+    "page": "136",
+    "rating": 0,
+    "description": "This negative quality represents a professional detachment that makes it difficult to form close relationships, but provides a situational Edge on Influence tests with professional clients and limits contacts' Loyalty ratings."
+  },
+  "quality_stats:attributemastery": {
+    "positive": true,
+    "page": "168",
+    "rating": 0,
+    "description": "Grants a bonus Edge on tests based on a chosen attribute, unless Edge is already gained from Attack Rating. This quality cannot be taken with Analytical Mind."
+  },
+  "quality_stats:sinner": {
+    "positive": false,
+    "page": "79",
+    "rating": 0,
+    "description": "The SINner quality means you have a legitimate SIN linked to biometric data, which you cannot easily discard. This results in a 10% increase in lifestyle costs and gives opponents a point of Edge when attempting a Trace Icon action against you."
+  },
+  "quality_stats:incompetent": {
+    "positive": false,
+    "page": "75",
+    "rating": 0,
+    "description": "A negative quality where a character is unable to gain ranks in a selected skill, regardless of practice or effort."
+  },
+  "quality_stats:finesse": {
+    "positive": false,
+    "page": "138",
+    "rating": 0,
+    "description": "This quality makes a character prefer subtlety over brute force and find direct action unnerving. It prevents the use of Edge for actions that generate Heat and reduces the team's Heat modifier if the character doesn't personally generate Heat."
+  },
+  "quality_stats:allergy": {
+    "positive": false,
+    "page": "74, 75, 227, 139",
+    "rating": 0,
+    "description": "Allergy is a negative quality that can cause discomfort or severe reactions to specific substances or conditions, potentially imposing dice pool penalties or other negative game effects. The severity and commonality of the allergy determine the karma bonus awarded and the likelihood of its effects manifesting during gameplay."
+  },
+  "quality_stats:lowlightvision": {
+    "positive": true,
+    "page": "73",
+    "rating": 0,
+    "description": "Low-Light Vision allows the user to see in low light conditions, granting a bonus Edge if the opposition doesn't have a similar vision enhancement."
+  },
+  "spell_stats:charm": {
+    "category": "Illusion",
+    "type": "Mana",
+    "duration": "Sustained",
+    "range": "Touch",
+    "drain": 5,
+    "page": 106
+  },
+  "spell_stats:increasereflexes": {
+    "category": "Combat",
+    "type": "Physical",
+    "duration": "5",
+    "range": "Touch",
+    "drain": 5,
+    "page": 138
+  },
+  "spell_stats:heal": {
+    "category": "Sorcery",
+    "type": "Physical",
+    "duration": "P",
+    "range": "Touch",
+    "drain": 3,
+    "page": 136
+  },
+  "spell_stats:stunbolt": {
+    "category": "Direct Combat",
+    "type": "Mana",
+    "duration": "Instantaneous",
+    "range": "Line of Sight",
+    "drain": 3,
+    "page": 135
+  },
+  "spell_stats:clout": {
+    "category": "Combat",
+    "type": "Indirect",
+    "duration": "Instantaneous",
+    "range": "Line of Sight",
+    "drain": 3,
+    "page": 30
+  },
+  "drone_stats:securetechskinshield": {
+    "handlOn": 2,
+    "handlOff": 3,
+    "accelOn": 15,
+    "accelOff": 15,
+    "speedIntOn": 45,
+    "speed": 6,
+    "body": 8,
+    "armor": 6,
+    "pilot": 5,
+    "sensor": 5,
+    "page": "50"
+  },
+  "matrix_stats:securetechskinshield": {
+    "subType": "COMMLINK",
+    "attack": 1,
+    "sleaze": 4,
+    "dataProcessing": 3,
+    "firewall": 3,
+    "page": "50"
+  },
+  "drone_stats:securetechaas": {
+    "handlOn": 3,
+    "handlOff": 3,
+    "accelOn": 15,
+    "accelOff": 15,
+    "speedIntOn": 12,
+    "speed": 40,
+    "body": 5,
+    "armor": 4,
+    "pilot": 4,
+    "sensor": 1,
+    "page": "134"
+  },
+  "matrix_stats:securetechaas": {
+    "subType": "COMMLINK",
+    "attack": 0,
+    "sleaze": 0,
+    "dataProcessing": 3,
+    "firewall": 3,
+    "page": "141"
+  },
+  "drone_stats:securetechinvisishield": {
+    "handlOn": 4,
+    "handlOff": 4,
+    "accelOn": 6,
+    "accelOff": 6,
+    "speedIntOn": 8,
+    "speed": 45,
+    "body": 10,
+    "armor": 8,
+    "pilot": 6,
+    "sensor": 5,
+    "page": "51"
+  },
+  "drone_stats:treschic": {
+    "handlOn": 3,
+    "handlOff": 3,
+    "accelOn": 15,
+    "accelOff": 15,
+    "speedIntOn": 40,
+    "speed": 45,
+    "body": 6,
+    "armor": 8,
+    "pilot": 6,
+    "sensor": 5,
+    "page": "144"
+  },
+  "matrix_stats:treschic": {
+    "subType": "COMMLINK",
+    "attack": 2,
+    "sleaze": 1,
+    "dataProcessing": 4,
+    "firewall": 3,
+    "page": "143"
+  },
+  "drone_stats:transysavalon": {
+    "handlOn": 0,
+    "handlOff": 0,
+    "accelOn": 0,
+    "accelOff": 0,
+    "speedIntOn": 0,
+    "speed": 0,
+    "body": 0,
+    "armor": 0,
+    "pilot": 0,
+    "sensor": 0,
+    "page": "N/A"
+  },
+  "drone_stats:contacts": {
+    "handlOn": 3,
+    "handlOff": 3,
+    "accelOn": 15,
+    "accelOff": 15,
+    "speedIntOn": 12,
+    "speed": 40,
+    "body": 5,
+    "armor": 4,
+    "pilot": 4,
+    "sensor": 1,
+    "page": "134"
+  },
+  "matrix_stats:contacts": {
+    "subType": "CYBERDECK",
+    "attack": 2,
+    "sleaze": 2,
+    "dataProcessing": 3,
+    "firewall": 5,
+    "page": "165"
+  },
+  "drone_stats:nanopastedisguise": {
+    "handlOn": 0,
+    "handlOff": 0,
+    "accelOn": 0,
+    "accelOff": 0,
+    "speedIntOn": 0,
+    "speed": 0,
+    "body": 0,
+    "armor": 0,
+    "pilot": 0,
+    "sensor": 0,
+    "page": "123"
+  },
+  "matrix_stats:nanopastedisguise": {
+    "subType": "COMMLINK",
+    "attack": 0,
+    "sleaze": 0,
+    "dataProcessing": 0,
+    "firewall": 0,
+    "page": "124"
+  },
+  "matrix_stats:nanopastedisguiserefill": {
+    "subType": "COMMLINK",
+    "attack": 0,
+    "sleaze": 0,
+    "dataProcessing": 0,
+    "firewall": 0,
+    "page": "124"
+  },
+  "drone_stats:saviormedkit": {
+    "handlOn": 15,
+    "handlOff": 15,
+    "accelOn": 6,
+    "accelOff": 8,
+    "speedIntOn": 45,
+    "speed": 6,
+    "body": 8,
+    "armor": 5,
+    "pilot": 6,
+    "sensor": 5,
+    "page": "WN-0496"
+  },
+  "matrix_stats:saviormedkit": {
+    "subType": "COMMLINK",
+    "attack": 0,
+    "sleaze": 0,
+    "dataProcessing": 4,
+    "firewall": 0,
+    "page": "282"
+  },
+  "drone_stats:saviormedkitrefill": {
+    "handlOn": 0,
+    "handlOff": 0,
+    "accelOn": 0,
+    "accelOff": 0,
+    "speedIntOn": 0,
+    "speed": 0,
+    "body": 0,
+    "armor": 0,
+    "pilot": 0,
+    "sensor": 0,
+    "page": "282"
+  },
+  "matrix_stats:horizonflyingeye": {
+    "subType": "COMMLINK",
+    "attack": 0,
+    "sleaze": 0,
+    "dataProcessing": 0,
+    "firewall": 4,
+    "page": "144"
+  },
+  "drone_stats:horizonflyingeye": {
+    "handlOn": 3,
+    "handlOff": 3,
+    "accelOn": 15,
+    "accelOff": 15,
+    "speedIntOn": 15,
+    "speed": 40,
+    "body": 1,
+    "armor": 0,
+    "pilot": 2,
+    "sensor": 2,
+    "page": "144, 145, 300, 162"
+  },
+  "matrix_stats:magesightgoggles": {
+    "subType": "COMMLINK",
+    "attack": 0,
+    "sleaze": 0,
+    "dataProcessing": 0,
+    "firewall": 0,
+    "page": "275"
+  },
+  "6WB-1556:summary": "Magical lodge materials require time equal to the lodge's rating to break down for reuse, which halves the cost of replacement components.",
+  "drone_stats:floatswitch": {
+    "handlOn": 4,
+    "handlOff": 0,
+    "accelOn": 20,
+    "accelOff": 0,
+    "speedIntOn": 30,
+    "speed": 100,
+    "body": 8,
+    "armor": 10,
+    "pilot": 2,
+    "sensor": 3,
+    "page": "293"
+  },
+  "drone_stats:coldshowerinabottle": {
+    "handlOn": 0,
+    "handlOff": 0,
+    "accelOn": 0,
+    "accelOff": 0,
+    "speedIntOn": 0,
+    "speed": 0,
+    "body": 0,
+    "armor": 0,
+    "pilot": 0,
+    "sensor": 0,
+    "page": "114"
+  },
+  "matrix_stats:coldshowerinabottle": {
+    "subType": "COMMLINK",
+    "attack": 0,
+    "sleaze": 0,
+    "dataProcessing": 0,
+    "firewall": 0,
+    "page": "114"
+  },
+  "drone_stats:translationlenses": {
+    "handlOn": 3,
+    "handlOff": 3,
+    "accelOn": 15,
+    "accelOff": 15,
+    "speedIntOn": 12,
+    "speed": 40,
+    "body": 1,
+    "armor": 0,
+    "pilot": 2,
+    "sensor": 2,
+    "page": "144"
+  },
+  "spell_stats:increaseattribute": {
+    "category": "Spell",
+    "type": "Mana",
+    "duration": "S",
+    "range": "Touch",
+    "drain": 3,
+    "page": 138
+  },
+  "is_weapon:securetechskinshield": false,
+  "is_armor:securetechskinshield": true,
+  "armor_stats:securetechskinshield": {
+    "armor_rating": "+1"
+  },
+  "is_weapon:securetechinvisishield": false,
+  "is_armor:securetechinvisishield": true,
+  "armor_stats:securetechinvisishield": {
+    "armor_rating": 10
+  },
+  "SO-0266:summary": "Edge Boosts cost 1 less for Influence tests. Magicians also gain this benefit for Illusion and Manipulation spells.",
+  "matrix_stats:transysavalon": {
+    "subType": "COMMLINK",
+    "attack": 3,
+    "sleaze": 1,
+    "dataProcessing": 3,
+    "firewall": 3,
+    "page": "268"
+  },
+  "quality_stats:exceptionalattribute": {
+    "positive": true,
+    "page": "72",
+    "rating": 0,
+    "description": "Increases the maximum rank of a selected Physical or Mental attribute by 1. Can only be purchased once per attribute."
+  },
+  "quality_stats:metageneticattributeimprovement": {
+    "positive": true,
+    "page": "121",
+    "rating": 1,
+    "description": "This quality enhances the genes associated with a specific mental or physical attribute, increasing its maximum value by 1. It can be taken once per attribute and stacks with Exceptional Attribute."
+  },
+  "quality_stats:honorbound": {
+    "positive": false,
+    "page": "75",
+    "rating": 0,
+    "description": "Honorbound is a quality where a character follows a strict code with specific tenets, and breaking these tenets results in a penalty of not being able to spend or earn Edge for a period of time."
+  },
+  "quality_stats:hooder": {
+    "positive": true,
+    "page": "138",
+    "rating": 3,
+    "description": "A quality where the character is driven to help others, granting bonus Karma per level and requiring monthly monetary donations."
+  },
+  "quality_stats:inspirecompetence": {
+    "positive": true,
+    "page": "133",
+    "rating": 0,
+    "description": "This quality allows a character to motivate others, granting a point of Edge to either themselves or an assisted character on a Teamwork test as a Major Action using an Influence (Leadership) + Charisma test."
+  },
+  "is_weapon:reagentsperdram": false,
+  "is_armor:reagentsperdram": false,
+  "is_weapon:earbuds": false,
+  "is_armor:earbuds": true,
+  "armor_stats:earbuds": {
+    "armor_rating": "0"
+  },
+  "spell_stats:powerbolt": {
+    "category": "Direct Combat",
+    "type": "Physical",
+    "duration": "Instantaneous",
+    "range": "Line of Sight",
+    "drain": 6,
+    "page": 98
+  },
+  "is_weapon:nanocosmeticskit": false,
+  "is_armor:nanocosmeticskit": true,
+  "armor_stats:nanocosmeticskit": {
+    "armor_rating": 0
+  },
+  "is_weapon:nanocosmeticsrefill": false,
+  "is_armor:nanocosmeticsrefill": true,
+  "armor_stats:nanocosmeticsrefill": {
+    "armor_rating": "0"
+  }
+}
