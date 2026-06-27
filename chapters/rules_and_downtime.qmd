@@ -36,4 +36,4 @@ The calculations above assume both CHA & WIL are already quickened. When quicken
 
 * **Pool:** Influence (5) + Charisma (10 + 4) + Charm (4) = **23 dice** 
   * Nanopaste Disguise / Nanocosmetics: +1 Situational Edge
-  * Social Rating: CHA (14) + Tres Chic (12) + Charm (Net Hits)= 26 (+1 Situational Edge if Opp. SR is < 22)
+  * Social Rating: CHA (14) + Tres Chic (12) + Charm (4)= 30 (+1 Situational Edge if Opp. SR is < 22)
