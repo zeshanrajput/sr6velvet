@@ -123,7 +123,7 @@
     "href": "chapters/rules_and_downtime.html#influence-tests",
     "title": "Downtime Protocols & Common Rules",
     "section": "Influence Tests",
-    "text": "Influence Tests\n\nPool: Influence (5) + Charisma (10 + 4) + Charm (4) = 23 dice\n\nNanopaste Disguise / Nanocosmetics: +1 Situational Edge\nSocial Rating: CHA (14) + Tres Chic (12) + Charm (Net Hits)= 26 (+1 Situational Edge if Opp. SR is &lt; 22)",
+    "text": "Influence Tests\n\nPool: Influence (5) + Charisma (10 + 4) + Charm (4) = 23 dice\n\nNanopaste Disguise / Nanocosmetics: +1 Situational Edge\nSocial Rating: CHA (14) + Tres Chic (12) + Charm (4)= 30 (+1 Situational Edge if Opp. SR is &lt; 22)",
     "crumbs": [
       "Core Character",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Downtime Protocols & Common Rules</span>"
