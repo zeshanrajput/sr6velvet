@@ -20,7 +20,7 @@ Jin-Young’s father had sat on the edge of the wood-frame cot, his hands wedged
 
 "He's quiet," his mother said. She did not look at Jin-Young, who sat in the corner by the water jar, watching the light catch the silver thread on the scout's cuffs. "He doesn't cry."
 
-The pad in the man’s hand cast a blue, sterile light across the raw wood walls, washing out the little remaining color from his mother’s shirt. The suit did not read the text aloud; he spoke of patents and lineages with the dry, flat rhythm Jin-Young had heard vendors use at the corner palengke when bartering over a rusted iron spade or a used hammer—the casual, small-money appraisal of an object that didn't have a voice to refuse the box it was placed in. The child sat perfectly still by the water jar, understanding, without the vocabulary to name it, that he was no longer a boy in a room. He was the iron being weighed.
+The pad in the man’s hand cast a blue, sterile light across the raw wood walls, washing out the little remaining color from his mother’s shirt. The suit did not read the text aloud; he spoke of patents and lineages with the dry, flat rhythm Jin-Young had heard vendors use at the corner palengke when bartering over a rusted iron spade or a used hammer—the casual, small-money appraisal of an object. The child sat perfectly still by the water jar. He was the iron being weighed.
 
 "Ten thousand nuyen. Certified." The suit laid a clean, silver credstick on the table. It was the only clean thing in the room. "The remainder will be held in a trust, payable upon the successful completion of the first cosmetic reconstruction cycle."
 
@@ -34,4 +34,4 @@ The suit reached into his pocket and handed him a small, pink sphere. "For the r
 
 Jin-Young bit into it. The candy was bright, smooth, and tasted of nothing at all—just a cold, chemical sweet that sat on his tongue like plastic.
 
-Ji-yoo stood beneath the shivering eave, the artificial strawberry solvent coating the back of her teeth. She spat the drop into the black sludge. It lay there—a precise prick of pink of mass-market pink against the Redmond grime—before the rain began to strip its coloring, bleeding a faint, chemical dye into the puddle. She adjusted the heavy coat to protect the fragile, multi-million nuyen lungs that had been carved into her chest, and stepped back out into the dirt.
+Ji-yoo stood beneath the shivering eave, the artificial strawberry solvent coating the back of her teeth. She spat the drop into the black sludge. It lay there—a precise prick of mass-market pink against the Redmond grime—before the rain began to strip its coloring, bleeding a faint, chemical dye into the puddle. She adjusted the heavy coat to protect the fragile, multi-million nuyen lungs that had been carved into her chest, and stepped back out into the dirt.

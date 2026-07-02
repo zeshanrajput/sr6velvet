@@ -6,9 +6,7 @@ He sat under the vanity lights, his fingers tracing the immaculate line of his j
 
 On the slate-gray terminal screen beside his mirror, the technical logistics for the evening's joint broadcast were already locked. The data lines for Hana’s group were highlighted in red, flagged for a maximum-intensity astral draw during the final arrangement. The managers called it a 'synergistic consolidation.' Ryo called it a liquidation.
 
-He didn't feel a surge of righteous anger. He felt a cold, narrowing panic.
-
-Hana would be left a hollowed-out shell, her remaining humanity incinerated to boost a corporate balance sheet.
+He felt a cold, narrowing panic. Hana would be left a hollowed-out shell, her remaining humanity incinerated to boost a corporate balance sheet.
 
 "Thirty seconds," the floor manager’s voice rattled through the earpiece. "Position nodes. The grid is active."
 
@@ -30,4 +28,4 @@ He did not wait for the security teams. He rolled off the edge of the stage into
 
 The Singapore sewers were cold, dark, and smelled of grease and brackish seawater.
 
-Ryo had waded through the waist-deep sludge for hours, his corporate jacket discarded, his makeup smeared into a grey mud across his cheeks. The silence of the waste-lines was absolute—a raw, terrifying void where the bound spirit no longer whispered against his skin, its compliance collar melted down by the feedback loop. He waded in the dark, his fingers trembling against his thighs, completely empty of the corporate signals. Beneath the grease and smeared cosmetics, his features felt tight, foreign, and heavy—a permanent mask of spell-cartilage that was already beginning to stiffen into the cold.
+Ryo waded through the waist-deep sludge for hours, his corporate jacket discarded, his makeup smeared into a grey mud across his cheeks. The silence of the waste-lines was a raw, terrifying void where the bound spirit no longer whispered against his skin, its compliance collar melted down by the feedback loop. He waded in the dark, his fingers trembling against his thighs, completely empty of the corporate signals. Beneath the grease and smeared cosmetics, his features felt tight, foreign, and heavy—a permanent mask of spell-cartilage beginning to stiffen into the cold.

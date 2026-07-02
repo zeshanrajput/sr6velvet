@@ -6,19 +6,19 @@ He did not think about the choreography. Fifteen years of repetition ensured his
 
 Ryo hit the center mark. The copper plates beneath his boots hummed, their surface temperature rising as the automated stage doors slid back and the collective psychic weight of the stadium hit them.
 
-It wasn't an ovation; it was a harvest. The crowd was not a collection of individuals, but an over-saturated circuit—a volatile ocean of raw, unrefined emotional energy waiting for a gateway. He dropped the protective thresholds of his consciousness, turning his mind into a hollow conduit—but the vacuum did not stop at the ambient excitement of the arena. The matrix was too precise; it dove deeper, its lines hooking directly into the illegal, silent pocket beneath his ribs where he hid the syllables of her name.
+It wasn't an ovation; it was a harvest. The crowd was an over-saturated circuit—a volatile ocean of emotional energy waiting for a gateway. He dropped the protective thresholds of his consciousness, turning his mind into a hollow conduit—but the vacuum did not stop at the ambient excitement of the arena. The matrix was too precise; it dove deeper, its lines hooking directly into the illegal, silent pocket beneath his ribs where he hid the syllables of her name.
 
 The drag was physical, a sharp claw tearing at the center of his throat. Ryo felt his internal thresholds begin to buckle.
 
 He refused to let go. Instead of unclenching his core, Ryo threw the internal valves wide, driving his larynx down into a predatory, unworldly overdrive his managers had never rehearsed. He didn't just sing the bridge; he weaponized the anatomy, tilting his chin to maximize the infernal symmetry of his jaw. The gentle siphon turned into a raging flood.
 
-The stadium’s roar changed. The collective high didn't just drift into him; it was ripped out of eighty-two thousand chests in a sudden, synchronized gasp. In the front rows, faces grew pale, the frantic ecstasy turning into a cold, hollowed-out exhaustion as Ryo fed their raw life force into his own heels, using their mass to choke the ritual off from his secret self. He bled them past the red line, draining the crowd beyond any safe parameter corporate hermetics had ever charted.
+The stadium’s roar changed. The collective high didn't just drift into him; it was ripped out of eighty-two thousand chests in a sudden, synchronized gasp. In the front rows, faces grew pale, the frantic ecstasy turning into a cold, hollowed-out exhaustion as Ryo fed their raw life force into his own heels, using their mass to choke the ritual off from his secret self. He bled them past the limit, draining the crowd beyond any safe parameter corporate hermetics had ever charted.
 
 As the song ended and the pyrotechnics flared, he locked into the practiced frame of polite, calibrated radiance.
 
 The stadium lights snapped shut, leaving the backstage corridor in the gray, flat twilight of the cooling arrays.
 
-In the recovery suite, there were no congratulatory executives, no flowers, no noise. There were only two Mitsuhama telemetry assistants standing over a monitor, their faces illuminated by the shifting green bar graphs of the astral flow rates.
+In the recovery suite, there were no congratulatory executives, no flowers, no noise. There were only two Mitsuhama assistants standing over a monitor, their faces illuminated by the shifting green bar graphs of the astral flow rates.
 
 Ryo sat on the edge of the examination table, his hands flat against his thighs. His throat did not feel empty; it felt choked, heavy with the thick, stolen vitality of eighty-two thousand strangers.
 
