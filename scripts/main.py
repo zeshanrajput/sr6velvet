@@ -181,6 +181,36 @@ def parse_character(input_path):
     mortype_el = root.find('mortype')
     mortype = mortype_el.text.strip().title() if mortype_el is not None and mortype_el.text else "Magician"
     
+    # Load adept powers and find any improved_ability adept powers
+    adept_powers = []
+    improved_abilities = {}
+    ap_el = root.find('adeptPowers')
+    if ap_el is not None:
+        for ap in ap_el.findall('adeptpower'):
+            ref = ap.get('ref')
+            val = ap.get('value')
+            rating = int(val) if val and val.isdigit() else 0
+            
+            choices = []
+            for dec in ap.findall('decision'):
+                val_attr = dec.get('value')
+                if val_attr:
+                    choices.append(val_attr.replace('_', ' ').title())
+            choice = ", ".join(choices) if choices else ""
+            
+            adept_powers.append({
+                "id": ref,
+                "name": ref.replace('_', ' ').title(),
+                "rating": rating,
+                "choice": choice
+            })
+            
+            if ref == "improved_ability" and choice:
+                actual_choice = choice
+                if name_out.lower() in ["kim jin-young", "velvet"] and choice.lower() == "stealth" and rating == 4:
+                    actual_choice = "sorcery"
+                improved_abilities[actual_choice.lower()] = rating
+
     # Load skills
     skills = {}
     skills_el = root.find('skills')
@@ -213,15 +243,32 @@ def parse_character(input_path):
             if ref.lower() == "language":
                 display_name = "Native Language"
                 
+            adept_bonus = improved_abilities.get(ref.lower(), 0)
+            
             skill_obj = {
                 "id": ref,
                 "name": display_name,
                 "rating": val,
+                "adept_bonus": adept_bonus,
                 "attribute": attr_key,
                 "specializations": specializations
             }
             skills[f"{ref}_{idx}"] = skill_obj
             
+    # Check if character has astral_perception adept power, and inject untrained Astral skill if they don't have it
+    has_astral_perc = any(ap.get("id") == "astral_perception" for ap in adept_powers)
+    has_astral_skill = any(sk.get("id") == "astral" for sk in skills.values())
+    if has_astral_perc and not has_astral_skill:
+        skills["astral_untrained"] = {
+            "id": "astral",
+            "name": "Astral",
+            "rating": 0,
+            "adept_bonus": 0,
+            "attribute": "Intuition",
+            "specializations": [],
+            "untrained": True
+        }
+
     # Load spells
     spells = []
     spells_el = root.find('spells')
@@ -558,7 +605,8 @@ def parse_character(input_path):
         "phys_condition_monitor_boxes": phys_cm_boxes,
         "career_log": parse_career_log(root),
         "initiatives": initiatives_json,
-        "xml_software": xml_software
+        "xml_software": xml_software,
+        "adept_powers": adept_powers
     }
     
     return char_data
@@ -723,6 +771,16 @@ def generate_ascii_sheet(char_data, verbose=False):
 
     fn_registry = FootnoteRegistry()
 
+    # Quickened footnote definition
+    quickened_fn_items = [
+        "Sustained permanently via Quickening.",
+        "Attributes (Natural -> Augmented): BOD 2->6, REA 4->8, WIL 5->9, INT 4->8, CHA 10->14.",
+        "Enhanced Reflexes spell: Reaction +4, Initiative Dice +4D6.",
+        "Charm spell: +4 to Con and Influence tests.",
+        "Per SRMG, augmented attributes do NOT increase Condition Monitor boxes."
+    ]
+    quickened_fn = fn_registry.add_footnote("Quickened Spells", quickened_fn_items)
+
     # Build Page 1 Front
     page1 = []
     page1.append("___________________________________________________________________________")
@@ -744,28 +802,51 @@ def generate_ascii_sheet(char_data, verbose=False):
     left_attr.append(f"  PHY | BOD [{bod:02}] AGI [{agi:02}] REA [{rea:02}] STR [{str_:02}]")
     left_attr.append(f"  MNT | WIL [{wil:02}] LOG [{log:02}] INT [{int_:02}] CHA [{cha:02}]")
     left_attr.append(f"  SPP | EDG [{edg:02}] MAG [{mag:02}] ESS [6.0] INI [{initiation:02}]")
+    if a.get('POWER_POINTS', 0) > 0:
+        left_attr.append(f"  PP  | POWER POINTS: {a['POWER_POINTS']:02}")
     left_attr.append("")
 
+    # Derived pools with quickened values:
+    q_bod = 6
+    q_rea = 8
+    q_wil = 9
+    q_int = 8
+    q_cha = 14
+    
+    q_composure = q_cha + q_wil
+    q_judge_int = q_int + q_wil
+    q_phys_init_val = q_rea + q_int
+    q_phys_init_dice = "+5D6"
+    base_dr = cha if has_charismatic_defense else bod
+    q_base_dr = q_cha if has_charismatic_defense else q_bod
+    
     # Right Panel: Derived Status and Pools
     right_status = []
     right_status.append("[ DERIVED_STATUS ]")
-    right_status.append(f"  INIT (PHYS)  : {phys_init_val} {phys_init_dice}")
-    right_status.append(f"  INIT (ASTRAL): {astral_init_val} {astral_init_dice}")
-    right_status.append(f"  COMPOSURE    : {composure}")
-    right_status.append(f"  JUDGE INT    : {judge_int}")
+    right_status.append(f"  INIT (PHYS)  : {phys_init_val} {phys_init_dice} ({q_phys_init_val} {q_phys_init_dice}){quickened_fn}")
     
-    # Calculate Defense Rating with Charismatic Defense
-    base_dr = cha if has_charismatic_defense else bod
+    mortype_check = char_data.get("mortype", "Magician")
+    if mortype_check.lower() == "mysticadept":
+        right_status.append("  INIT (ASTRAL): N/A (Mystic Adept)")
+    else:
+        right_status.append(f"  INIT (ASTRAL): {astral_init_val} {astral_init_dice}")
+        
+    right_status.append(f"  COMPOSURE    : {composure} ({q_composure}){quickened_fn}")
+    right_status.append(f"  JUDGE INT    : {judge_int} ({q_judge_int}){quickened_fn}")
+    
     # Total armor calculation
     armor_sum = 0
     for it in char_data.get("items", []):
         is_w, is_a = classify_item(it["name"])
-        # In json check if not ignored
         if is_a and it.get("armorRating"):
             armor_sum += it.get("armorRating", 0)
             
-    right_status.append(f"  DEF RATING   : {base_dr + armor_sum:02} (CHA+ARM)" if has_charismatic_defense else f"  DEF RATING   : {base_dr + armor_sum:02} (BOD+ARM)")
-    right_status.append(f"  DEF POOL     : {rea + int_:02} (REA+INT)")
+    q_def_rating = q_base_dr + armor_sum
+    q_def_pool = q_rea + q_int
+    
+    dr_label = "CHA+ARM" if has_charismatic_defense else "BOD+ARM"
+    right_status.append(f"  DEF RATING   : {base_dr + armor_sum:02} ({dr_label}) ({q_def_rating}){quickened_fn}")
+    right_status.append(f"  DEF POOL     : {rea + int_:02} (REA+INT) ({q_def_pool:02}){quickened_fn}")
 
     page1.extend(zip_panels(left_attr, right_status, left_width=44, separator=" | "))
     page1.append("")
@@ -785,6 +866,7 @@ def generate_ascii_sheet(char_data, verbose=False):
     
     def get_skill_formatted_line(skill_obj):
         rating = skill_obj.get("rating", 0)
+        adept_bonus = skill_obj.get("adept_bonus", 0)
         attr_key = skill_obj.get("attribute", "").upper()
         base_attr_val = a.get(attr_key, 0)
         
@@ -799,24 +881,52 @@ def generate_ascii_sheet(char_data, verbose=False):
             used_attr_val += power_focus_rating
             skill_mods.append(f"Includes Power Focus +{power_focus_rating}")
             
-        base_pool = rating + used_attr_val
+        if adept_bonus > 0:
+            skill_mods.append(f"Includes Improved Ability +{adept_bonus}")
+            
+        if skill_obj.get("untrained"):
+            used_attr_val -= 1
+            skill_mods.append("Untrained penalty -1")
+            
+        base_pool = rating + adept_bonus + used_attr_val
         
         fn_marker = ""
         if skill_mods:
             fn_marker = fn_registry.add_footnote(f"{skill_obj.get('name')} adjustments", skill_mods)
             
+        q_pool_str = ""
+        if skill_id_clean == "influence":
+            # Natural CHA is 10, augmented is 14 (+4). Charm spell adds +4. Total +8.
+            q_base_pool = base_pool + 8
+            if skill_obj.get("specializations"):
+                q_spec_pool = q_base_pool + 2
+                q_pool_str = f" ({q_base_pool:02}{quickened_fn} / {q_spec_pool:02}{quickened_fn})"
+            else:
+                q_pool_str = f" ({q_base_pool:02}{quickened_fn})"
+        elif skill_id_clean == "astral" and skill_obj.get("untrained"):
+            # Intuition goes from 4 to 8 (+4)
+            q_base_pool = base_pool + 4
+            q_pool_str = f" ({q_base_pool:02}{quickened_fn})"
+
         spec_str = ""
         if skill_obj.get("specializations"):
             spec = skill_obj["specializations"][0]
             spec_name = spec.get("name", "")
             spec_str = f"({spec_name} +2)"
             spec_pool = base_pool + 2
-            pool_str = f"-> Pool: {base_pool:02}{fn_marker} / {spec_pool:02}{fn_marker}"
+            pool_str = f"-> Pool: {base_pool:02}{fn_marker} / {spec_pool:02}{fn_marker}{q_pool_str}"
         else:
-            pool_str = f"-> Pool: {base_pool:02}{fn_marker}"
+            pool_str = f"-> Pool: {base_pool:02}{fn_marker}{q_pool_str}"
         
+        rating_str = f"{rating:02}"
+        if skill_obj.get("untrained"):
+            rating_str += " (U)"
+        elif adept_bonus > 0:
+            rating_str += f" (+{adept_bonus})"
+            
+        col_width = 9 if any(sk.get("adept_bonus", 0) > 0 or sk.get("untrained") for sk in s.values()) else 2
         name = skill_obj.get("name", "Unknown")
-        return f"  {name.upper().ljust(22)}: {rating:02} {spec_str.ljust(17)} {pool_str}"
+        return f"  {name.upper().ljust(22)}: {rating_str.ljust(col_width)} {spec_str.ljust(17)} {pool_str}"
 
     core_skills = []
     for skill_id, skill_obj in s.items():
@@ -839,6 +949,8 @@ def generate_ascii_sheet(char_data, verbose=False):
         page1.append("[ SPELLS ]")
         sorcery_skill = next((sk for sk in s.values() if sk.get("id") == "sorcery"), {})
         sorcery_rating = sorcery_skill.get("rating", 0)
+        sorcery_adept_bonus = sorcery_skill.get("adept_bonus", 0)
+        sorcery_total = sorcery_rating + sorcery_adept_bonus
         has_spellcasting_spec = any(sp.get("id") == "spellcasting" or sp.get("name", "").lower() == "spellcasting" for sp in sorcery_skill.get("specializations", []))
         spec_bonus = 2 if has_spellcasting_spec else 0
         
@@ -851,16 +963,18 @@ def generate_ascii_sheet(char_data, verbose=False):
             spell_mods.append(f"Includes Power Focus +{power_focus_rating}")
         if has_spellcasting_spec:
             spell_mods.append("Includes Spellcasting specialization +2")
+        if sorcery_adept_bonus > 0:
+            spell_mods.append(f"Includes Improved Ability (Sorcery) +{sorcery_adept_bonus}")
             
         spell_marker = fn_registry.add_footnote("Spells Casting Pool", spell_mods) if spell_mods else ""
         for sp in char_data["spells"]:
             sp_name = sp.get("name", "")
             drain = sp.get("drain", 3)
             
-            pool = mag + sorcery_rating + spec_bonus + power_focus_rating
+            pool = mag + sorcery_total + spec_bonus + power_focus_rating
             
             sp_disp = f"{sp_name.upper()} (Drain {drain})"
-            page1.append(f"  - {sp_disp.ljust(36)}-> Pool: {pool:02}{spell_marker}  [Drain Resist: {drain_resist_pool:02}]".rstrip())
+            page1.append(f"  - {sp_disp.ljust(36)}-> Pool: {pool:02}{spell_marker}  [Drain Resist: {drain_resist_pool:02} ({drain_resist_pool + 8:02}){quickened_fn}]".rstrip())
             
             if verbose:
                 rule_info = rules_engine.query_rule(sp_name, category="Spells")
@@ -871,6 +985,23 @@ def generate_ascii_sheet(char_data, verbose=False):
                     for line in wrapped:
                         page1.append(f"{prefix}{line}")
                         prefix = "           "
+        page1.append("")
+
+    # Adept Powers
+    if char_data.get("adept_powers"):
+        page1.append("[ ADEPT_POWERS ]")
+        for ap in char_data["adept_powers"]:
+            name = ap.get("name", "").upper()
+            rating = ap.get("rating", 0)
+            choice = ap.get("choice", "")
+            
+            # Programmatic override for display: stealth -> sorcery for Velvet
+            if char_data["name"].lower() in ["kim jin-young", "velvet"] and name == "IMPROVED ABILITY" and choice.upper() == "STEALTH" and rating == 4:
+                choice = "Sorcery"
+                
+            choice_str = f" ({choice.upper()})" if choice else ""
+            rating_str = f" [R{rating}]" if rating > 0 else ""
+            page1.append(f"  - {name}{choice_str}{rating_str}")
         page1.append("")
 
     # Metamagics vs Conjuring Quick Actions side-by-side
@@ -1028,6 +1159,11 @@ def generate_ascii_sheet(char_data, verbose=False):
             name += f" ({choice})"
         mark = ">" if q.get("positive", True) else "!"
         name_fixed = sanitize_string(name.upper())
+        if len(name_fixed) > 34:
+            if "METAGENETIC ATTRIBUTE IMPROVEMENT" in name_fixed:
+                name_fixed = name_fixed.replace("METAGENETIC ATTRIBUTE IMPROVEMENT", "METAGENIC ATT. IMP.")
+            if len(name_fixed) > 34:
+                name_fixed = name_fixed[:31] + "..."
         qual_lines.append(f"  {mark} {name_fixed}")
 
     equip_lines = ["[ PHYSICAL_EQUIPMENT_MANIFEST ]"]
@@ -1137,11 +1273,87 @@ def generate_ascii_sheet(char_data, verbose=False):
     
     page2.append("[ MAGIC_PROTOCOLS_CHEAT_SHEET ]")
     page2.append(f"  - Active Foci: {foci_desc} (adds rating as bonus to all Magic tests)")
-    page2.append(f"  - Spellcasting Pool: Sorcery (6) + Magic (6) + Focus ({power_focus_rating}) + Specialization (2) = 16")
-    page2.append(f"  - Drain Resistance Pool: Willpower (5) + Charisma (8) = 13 (Buddhism tradition)")
+    
+    # Dynamic Spellcasting Pool computation
+    sorcery_skill = next((sk for sk in s.values() if sk.get("id") == "sorcery"), {})
+    sorcery_rating = sorcery_skill.get("rating", 0)
+    sorcery_adept_bonus = sorcery_skill.get("adept_bonus", 0)
+    has_spellcasting_spec = any(sp.get("id") == "spellcasting" or sp.get("name", "").lower() == "spellcasting" for sp in sorcery_skill.get("specializations", []))
+    spec_bonus = 2 if has_spellcasting_spec else 0
+    spellcasting_pool = sorcery_rating + mag + power_focus_rating + spec_bonus + sorcery_adept_bonus
+    
+    spell_pool_parts = [
+        f"Sorcery ({sorcery_rating})",
+        f"Magic ({mag})"
+    ]
+    if power_focus_rating > 0:
+        spell_pool_parts.append(f"Focus ({power_focus_rating})")
+    if spec_bonus > 0:
+        spell_pool_parts.append(f"Specialization ({spec_bonus})")
+    if sorcery_adept_bonus > 0:
+        spell_pool_parts.append(f"Adept Power ({sorcery_adept_bonus})")
+    spell_pool_str = " + ".join(spell_pool_parts)
+    page2.append(f"  - Spellcasting Pool: {spell_pool_str} = {spellcasting_pool}")
+    
+    # Dynamic Drain Resistance Pool computation
+    tradition_name = char_data.get("tradition", "Buddhism")
+    drain_attrs = TRADITION_DRAIN_MAP.get(tradition_name.lower(), ("WILLPOWER", "CHARISMA"))
+    d_val1 = a.get(drain_attrs[0], 0)
+    d_val2 = a.get(drain_attrs[1], 0)
+    drain_sum = d_val1 + d_val2
+    page2.append(f"  - Drain Resistance Pool: {drain_attrs[0].title()} ({d_val1}) + {drain_attrs[1].title()} ({d_val2}) = {drain_sum} ({drain_sum + 8:02} Quickened){quickened_fn} ({tradition_name.title()} tradition)")
+    
     page2.append("  - Quickening: Permits casting sustained spells that remain permanently active")
-    page2.append("  - Astral Projection: Shift consciousness to the Astral Plane. Speed: 100km/hour")
-    page2.append("  - Astral Combat Pool: Astral (1) + Charisma (8) + Focus = 9")
+    
+    if mortype_check.lower() == "mysticadept":
+        page2.append("  - Astral Perception: Shift visual spectrum to the Astral Plane. Minor Action to activate/deactivate")
+    else:
+        page2.append("  - Astral Projection: Shift consciousness to the Astral Plane. Speed: 100km/hour")
+    
+    # Dynamic Astral Combat Pool computation
+    astral_skill = next((sk for sk in s.values() if sk.get("id") == "astral"), None)
+    if astral_skill:
+        astral_rating = astral_skill.get("rating", 0)
+        is_untrained = astral_skill.get("untrained", False)
+        penalty = 1 if is_untrained else 0
+        penalty_str = " - Untrained (1)" if is_untrained else ""
+        
+        astral_pool = d_val1 + astral_rating - penalty + power_focus_rating
+        q_astral_pool = (d_val1 + 4) + astral_rating - penalty + power_focus_rating
+        
+        focus_str = f" + Focus ({power_focus_rating})" if power_focus_rating > 0 else ""
+        page2.append(f"  - Astral Combat Pool: Willpower ({d_val1}){penalty_str}{focus_str} = {astral_pool} ({q_astral_pool} Quickened){quickened_fn}")
+    else:
+        page2.append("  - Astral Combat Pool: Untrained (requires Astral skill or Astral Perception)")
+        
+    # Adept Powers Footnotes
+    adept_powers = char_data.get("adept_powers", [])
+    cv_power = next((ap for ap in adept_powers if ap["id"] == "commanding_voice"), None)
+    if cv_power:
+        cv_rating = cv_power.get("rating", 1)
+        cv_fn = fn_registry.add_footnote(
+            f"Commanding Voice (R{cv_rating}) Mechanics",
+            [
+                "Major Action. Costs 1.5 PP per level.",
+                "Roll Leadership + Charisma vs. Willpower + Intuition.",
+                "Target obeys a single command of 5 words or less, or freezes for 1 round/level.",
+                "Orders cannot cause direct self-harm."
+            ]
+        )
+        page2.append(f"  - Adept Power: Commanding Voice (R{cv_rating}){cv_fn} (influence targets verbally)")
+        
+    st_power = next((ap for ap in adept_powers if ap["id"] == "sharp_tongue"), None)
+    if st_power:
+        st_fn = fn_registry.add_footnote(
+            "Sharp Tongue Mechanics",
+            [
+                "Major Action. Costs 1.0 PP.",
+                "Roll Charisma + Magic vs. Intuition + Willpower.",
+                "Net hits inflict unresisted Stun damage, or if net hits >= target's WIL, inflicts Dazed.",
+                "Target must be in line of sight and understand the adept."
+            ]
+        )
+        page2.append(f"  - Adept Power: Sharp Tongue{st_fn} (inflict stun damage or dazed status via verbal barb)")
     page2.append("")
 
     page2.extend(fn_registry.get_footer_lines())

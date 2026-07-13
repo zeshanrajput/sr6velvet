@@ -8,7 +8,7 @@
    <realName>Kim Jin-Young</realName>
    <type>METAHUMAN</type>
    <mortype>mysticadept</mortype>
-   <tradition>buddhism</tradition>
+   <tradition>shinto</tradition>
    <qualities>
       <quality lang="en" ref="exceptional_attribute" uuid="fc02a309-530b-4738-b87f-a161b93e1287">
          <decision choice="4096584c-eb76-49b2-be6b-1a6c0ca9e50a" value="CHARISMA"/>

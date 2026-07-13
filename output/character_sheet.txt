@@ -6,29 +6,38 @@ ___________________________________________________________________________
 [ IDENTITY ]
   > NAME: Kim Jin-Young          > ALIAS: Velvet
   > METATYPE: Dalakitnon         > GENDER: DIVERSE
-  > TRADITION: Buddhism          > SIN: [LOCAL_FILE_ENCRYPTED]
+  > TRADITION: Shinto            > SIN: [LOCAL_FILE_ENCRYPTED]
 
 [ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
-  PHY | BOD [02] AGI [04] REA [04] STR [02]  |   INIT (PHYS)  : 8 +1D6
-  MNT | WIL [05] LOG [04] INT [04] CHA [10]  |   INIT (ASTRAL): 8 +2D6
-  SPP | EDG [04] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 15
-                                             |   JUDGE INT    : 9
-                                             |   DEF RATING   : 13 (BOD+ARM)
-                                             |   DEF POOL     : 08 (REA+INT)
+  PHY | BOD [02] AGI [04] REA [04] STR [02]  |   INIT (PHYS)  : 8 +1D6 (16 +5D6)[#1]
+  MNT | WIL [05] LOG [04] INT [04] CHA [10]  |   INIT (ASTRAL): N/A (Mystic Adept)
+  SPP | EDG [04] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 15 (23)[#1]
+  PP  | POWER POINTS: 06                     |   JUDGE INT    : 9 (17)[#1]
+                                             |   DEF RATING   : 13 (BOD+ARM) (17)[#1]
+                                             |   DEF POOL     : 08 (REA+INT) (16)[#1]
 
 [ PHYSICAL_CONDITION_MONITOR ]         | [ STUN_CONDITION_MONITOR ]
   [0] [0] [-1] | [-1] [-1] [-2]        |   [0] [0] [-1] | [-1] [-1] [-2]
   [-2] [-2] [-3]                       |   [-2] [-2] [-3] | [-3] [-3]
 
 [ SKILL_MATRICES ]
-  SORCERY               : 06 (Spellcasting +2) -> Pool: 14[#1] / 16[#1]
-  INFLUENCE             : 05 (Leadership +2)   -> Pool: 15 / 17
-  NATIVE LANGUAGE       : 04                   -> Pool: 08
+  SORCERY               : 06 (+4)   (Spellcasting +2) -> Pool: 18[#2] / 20[#2]
+  INFLUENCE             : 05        (Leadership +2)   -> Pool: 15 / 17 (23[#1] / 25[#1])
+  NATIVE LANGUAGE       : 04                          -> Pool: 08
+  ASTRAL                : 00 (U)                      -> Pool: 05[#3] (09[#1])
 
 [ SPELLS ]
-  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 16[#2]  [Drain Resist: 15]
-  - INCREASE REFLEXES (Drain 5)         -> Pool: 16[#2]  [Drain Resist: 15]
-  - CHARM (Drain 5)                     -> Pool: 16[#2]  [Drain Resist: 15]
+  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 20[#4]  [Drain Resist: 09 (17)[#1]]
+  - INCREASE REFLEXES (Drain 5)         -> Pool: 20[#4]  [Drain Resist: 09 (17)[#1]]
+  - CHARM (Drain 5)                     -> Pool: 20[#4]  [Drain Resist: 09 (17)[#1]]
+
+[ ADEPT_POWERS ]
+  - SHARP TONGUE
+  - ASTRAL PERCEPTION
+  - IMPROVED ABILITY (SORCERY) [R4]
+  - COMMANDING VOICE [R1]
+  - LINGUISTICS
+  - KINESICS
 
 [ METAMAGICS & INITIATION ]            |
   - QUICKENING                         |
@@ -56,7 +65,7 @@ ___________________________________________________________________________
   > EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - CONTACTS [+3]
   > INSPIRE COMPETENCE                 |   - FLOAT SWITCH [+4]
   > HOODER                             |   - SECURETECH SKINSHIELD [+1]
-  > METAGENETIC ATTRIBUTE IMPROVEMENT (CHARISMA) |   - SECURETECH INVISISHIELD [+10]
+  > METAGENIC ATT. IMP. (CHARISMA)     |   - SECURETECH INVISISHIELD [+10]
   ! SPIRIT BANE (SPIRIT BEASTS)        |   - TRES CHIC [+12]
   ! INCOMPETENT (OUTDOORS)             |   - MAGICAL LODGE MATERIALS x6
   ! ALLERGY (COMMON, MODERATE, SPICES) |   - REAGENTS PER DRAM x10
@@ -75,19 +84,46 @@ ___________________________________________________________________________
 
 [ MAGIC_PROTOCOLS_CHEAT_SHEET ]
   - Active Foci: Power Focus (R2) (adds rating as bonus to all Magic tests)
-  - Spellcasting Pool: Sorcery (6) + Magic (6) + Focus (2) + Specialization (2) = 16
-  - Drain Resistance Pool: Willpower (5) + Charisma (8) = 13 (Buddhism tradition)
+  - Spellcasting Pool: Sorcery (6) + Magic (6) + Focus (2) + Specialization (2) + Adept Power (4) = 20
+  - Drain Resistance Pool: Willpower (5) + Intuition (4) = 9 (17 Quickened)[#1] (Shinto tradition)
   - Quickening: Permits casting sustained spells that remain permanently active
-  - Astral Projection: Shift consciousness to the Astral Plane. Speed: 100km/hour
-  - Astral Combat Pool: Astral (1) + Charisma (8) + Focus = 9
+  - Astral Perception: Shift visual spectrum to the Astral Plane. Minor Action to activate/deactivate
+  - Astral Combat Pool: Willpower (5) - Untrained (1) + Focus (2) = 6 (10 Quickened)[#1]
+  - Adept Power: Commanding Voice (R1)[#5] (influence targets verbally)
+  - Adept Power: Sharp Tongue[#6] (inflict stun damage or dazed status via verbal barb)
 
 
 [ CONSOLIDATED_RULES_FOOTNOTES ]
-  [#1] Sorcery adjustments:
+  [#1] Quickened Spells:
+       - Sustained permanently via Quickening.
+       - Attributes (Natural -> Augmented): BOD 2->6, REA 4->8, WIL 5->9,
+         INT 4->8, CHA 10->14.
+       - Enhanced Reflexes spell: Reaction +4, Initiative Dice +4D6.
+       - Charm spell: +4 to Con and Influence tests.
+       - Per SRMG, augmented attributes do NOT increase Condition Monitor
+         boxes.
+  [#2] Sorcery adjustments:
        - Includes Power Focus +2
-  [#2] Spells Casting Pool:
+       - Includes Improved Ability +4
+  [#3] Astral adjustments:
+       - Includes Power Focus +2
+       - Untrained penalty -1
+  [#4] Spells Casting Pool:
        - Includes Power Focus +2
        - Includes Spellcasting specialization +2
+       - Includes Improved Ability (Sorcery) +4
+  [#5] Commanding Voice (R1) Mechanics:
+       - Major Action. Costs 1.5 PP per level.
+       - Roll Leadership + Charisma vs. Willpower + Intuition.
+       - Target obeys a single command of 5 words or less, or freezes for
+         1 round/level.
+       - Orders cannot cause direct self-harm.
+  [#6] Sharp Tongue Mechanics:
+       - Major Action. Costs 1.0 PP.
+       - Roll Charisma + Magic vs. Intuition + Willpower.
+       - Net hits inflict unresisted Stun damage, or if net hits >=
+         target's WIL, inflicts Dazed.
+       - Target must be in line of sight and understand the adept.
 
 
 
