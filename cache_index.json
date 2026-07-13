@@ -466,5 +466,21 @@
   "is_armor:nanocosmeticsrefill": true,
   "armor_stats:nanocosmeticsrefill": {
     "armor_rating": "0"
+  },
+  "quality_stats:spiritbane": {
+    "positive": false,
+    "page": "79",
+    "rating": 0,
+    "description": "Spirits or sprites of a chosen type have an inherent dislike for you, potentially attacking you first and relentlessly."
+  },
+  "is_weapon:nanopastedisguisekit": false,
+  "is_armor:nanopastedisguisekit": true,
+  "armor_stats:nanopastedisguisekit": {
+    "armor_rating": "+0"
+  },
+  "is_weapon:suzukitransit": false,
+  "is_armor:suzukitransit": true,
+  "armor_stats:suzukitransit": {
+    "armor_rating": 10
   }
 }

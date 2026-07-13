@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char aspskill="sorcery" career="true" gender="DIVERSE" karmaF="4" karmaI="20" meta="dalakitnon" nuyen="5000">
+<sr6char gender="DIVERSE" karmaF="1" meta="dalakitnon" nuyen="4975">
    <lifestyles>
       <lifestyle comfort="high" entert="high" lang="en" necess="high" neigh="high" ref="high" security="high" space="high" value="1"/>
    </lifestyles>
    <asdfMap/>
-   <chargenSettings>{&#x0022;characterPoints&#x0022;:100,&#x0022;cpBoughtSpecial&#x0022;:32,&#x0022;cpBoughtAttrib&#x0022;:40,&#x0022;cpToSkills&#x0022;:4,&#x0022;cpToResources&#x0022;:10,&#x0022;boughtPP&#x0022;:0,&#x0022;boughtSpells&#x0022;:0,&#x0022;boughtComplex&#x0022;:0,&#x0022;perAttrib&#x0022;:{&#x0022;BODY&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:1,&#x0022;points3&#x0022;:0},&#x0022;AGILITY&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:3,&#x0022;points3&#x0022;:0},&#x0022;REACTION&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:3,&#x0022;points3&#x0022;:0},&#x0022;STRENGTH&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:1,&#x0022;points3&#x0022;:0},&#x0022;WILLPOWER&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:4,&#x0022;points3&#x0022;:0},&#x0022;LOGIC&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:3,&#x0022;points3&#x0022;:0},&#x0022;INTUITION&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:3,&#x0022;points3&#x0022;:0},&#x0022;CHARISMA&#x0022;:{&#x0022;points1&#x0022;:3,&#x0022;points2&#x0022;:6,&#x0022;points3&#x0022;:0},&#x0022;EDGE&#x0022;:{&#x0022;points1&#x0022;:2,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;MAGIC&#x0022;:{&#x0022;points1&#x0022;:4,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;RESONANCE&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0}},&#x0022;perSkill&#x0022;:{&#x0022;language/1ab9b4c2-b6d2-4d84-8c82-91920cbefe8b&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:0,&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;sorcery&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:1,&#x0022;points1&#x0022;:6,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;influence&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:1,&#x0022;points1&#x0022;:5,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;con&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:0,&#x0022;points1&#x0022;:2,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;astral&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:0,&#x0022;points1&#x0022;:1,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0}},&#x0022;perSpellPayedWithCP&#x0022;:{&#x0022;increase_attribute&#x0022;:true,&#x0022;increase_reflexes&#x0022;:true,&#x0022;stunbolt&#x0022;:true,&#x0022;powerbolt&#x0022;:true,&#x0022;charm&#x0022;:true},&#x0022;perRitualPayedWithCP&#x0022;:{},&#x0022;perCFormPayedWithCP&#x0022;:{},&#x0022;ppCP&#x0022;:1,&#x0022;ppKarma&#x0022;:1,&#x0022;spellsCP&#x0022;:0,&#x0022;spellsKarma&#x0022;:1,&#x0022;cformsCP&#x0022;:0,&#x0022;cformsKarma&#x0022;:0,&#x0022;variant&#x0022;:&#x0022;STANDARD&#x0022;,&#x0022;mysticAdeptPowerPoints&#x0022;:0,&#x0022;toContacts&#x0022;:0,&#x0022;negQualities&#x0022;:30,&#x0022;initiation&#x0022;:11,&#x0022;toNuyen&#x0022;:0}</chargenSettings>
+   <chargenSettings>{&#x0022;characterPoints&#x0022;:100,&#x0022;cpBoughtSpecial&#x0022;:44,&#x0022;cpBoughtAttrib&#x0022;:38,&#x0022;cpToSkills&#x0022;:1,&#x0022;cpToResources&#x0022;:6,&#x0022;boughtPP&#x0022;:6,&#x0022;boughtSpells&#x0022;:0,&#x0022;boughtComplex&#x0022;:0,&#x0022;perAttrib&#x0022;:{&#x0022;BODY&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:1,&#x0022;points3&#x0022;:0},&#x0022;AGILITY&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:3,&#x0022;points3&#x0022;:0},&#x0022;REACTION&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:3,&#x0022;points3&#x0022;:0},&#x0022;STRENGTH&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:1,&#x0022;points3&#x0022;:0},&#x0022;WILLPOWER&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:4,&#x0022;points3&#x0022;:0},&#x0022;LOGIC&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:3,&#x0022;points3&#x0022;:0},&#x0022;INTUITION&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:3,&#x0022;points3&#x0022;:0},&#x0022;CHARISMA&#x0022;:{&#x0022;points1&#x0022;:4,&#x0022;points2&#x0022;:5,&#x0022;points3&#x0022;:0},&#x0022;EDGE&#x0022;:{&#x0022;points1&#x0022;:3,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;MAGIC&#x0022;:{&#x0022;points1&#x0022;:5,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;RESONANCE&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0}},&#x0022;perSkill&#x0022;:{&#x0022;language/1ab9b4c2-b6d2-4d84-8c82-91920cbefe8b&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:0,&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;sorcery&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:1,&#x0022;points1&#x0022;:6,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;influence&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:1,&#x0022;points1&#x0022;:5,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0}},&#x0022;perSpellPayedWithCP&#x0022;:{&#x0022;increase_attribute&#x0022;:true,&#x0022;increase_reflexes&#x0022;:true,&#x0022;charm&#x0022;:true},&#x0022;perRitualPayedWithCP&#x0022;:{},&#x0022;perCFormPayedWithCP&#x0022;:{},&#x0022;ppCP&#x0022;:1,&#x0022;ppKarma&#x0022;:1,&#x0022;spellsCP&#x0022;:0,&#x0022;spellsKarma&#x0022;:3,&#x0022;cformsCP&#x0022;:0,&#x0022;cformsKarma&#x0022;:0,&#x0022;variant&#x0022;:&#x0022;STANDARD&#x0022;,&#x0022;mysticAdeptPowerPoints&#x0022;:0,&#x0022;toContacts&#x0022;:0,&#x0022;negQualities&#x0022;:32,&#x0022;initiation&#x0022;:11,&#x0022;toNuyen&#x0022;:0}</chargenSettings>
    <realName>Kim Jin-Young</realName>
    <type>METAHUMAN</type>
-   <mortype>aspectedmagician</mortype>
+   <mortype>mysticadept</mortype>
    <tradition>buddhism</tradition>
    <qualities>
-      <quality lang="en" ref="exceptional_attribute" uuid="7d85aa15-9017-4784-8223-4520d21f1395">
+      <quality lang="en" ref="exceptional_attribute" uuid="fc02a309-530b-4738-b87f-a161b93e1287">
          <decision choice="4096584c-eb76-49b2-be6b-1a6c0ca9e50a" value="CHARISMA"/>
       </quality>
-      <quality lang="en" ref="incompetent" uuid="21b92ce7-cc31-4ae8-aa18-911f45a1377e">
-         <decision choice="d0b872d0-0783-4b7a-b38a-35db1cef3685" value="outdoors"/>
-      </quality>
-      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="98c9dcbe-5b5e-4d2f-b4f6-3cd96f790aaa">
+      <quality lang="en" ref="inspire_competence" uuid="97456513-54b6-4f75-8ea3-6e0e0797c416"/>
+      <quality lang="en" ref="hooder" uuid="55c37368-241f-43ac-a4fb-8f930c73d628" value="2"/>
+      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="f50529ac-1bd5-446d-badf-9869047ada25">
          <decision choice="dbb18bb4-89a4-4435-bede-3077ee600bc5" value="CHARISMA"/>
       </quality>
-      <quality lang="en" ref="honorbound" uuid="08e760cd-d756-4fe1-8c84-104f762d0b01">
-         <decision choice="428282c1-c1d2-4d42-94e1-6f5cb5febf2b" value="Pirate Code"/>
+      <quality lang="en" ref="spirit_bane" uuid="946b8883-97fd-49a9-91af-5069d8eaa6e0">
+         <decision choice="281aba04-1bd9-4d84-b6f4-f7bb97d217f0" value="spirit_beasts"/>
       </quality>
-      <quality lang="en" ref="hooder" uuid="66a1bd03-f26f-4d04-afdf-3f578bb97d25" value="2"/>
-      <quality lang="en" ref="inspire_competence" uuid="8229e000-ebea-4b08-8e79-0149d5d264b1"/>
+      <quality lang="en" ref="incompetent" uuid="0d65953d-9115-45c1-adde-12a956809817">
+         <decision choice="d0b872d0-0783-4b7a-b38a-35db1cef3685" value="outdoors"/>
+      </quality>
       <quality lang="en" ref="allergy" uuid="fe2953dc-b337-4a44-bdf1-d010508e301b">
          <decision choice="55a6dda7-7565-4108-9a04-65b7607081df" value="common"/>
          <decision choice="b3cd035c-f2c3-4c56-abcd-9a218954d92a" value="moderate"/>
@@ -34,33 +34,42 @@
    <spells>
       <spell lang="en" ref="increase_attribute"/>
       <spell lang="en" ref="increase_reflexes"/>
-      <spell lang="en" ref="powerbolt"/>
-      <spell lang="en" ref="stunbolt"/>
       <spell lang="en" ref="charm"/>
    </spells>
+   <adeptPowers>
+      <adeptpower lang="en" ref="sharp_tongue"/>
+      <adeptpower lang="en" ref="astral_perception"/>
+      <adeptpower lang="en" ref="improved_ability" value="4">
+         <decision choice="05054102-0183-482a-9e2b-84bc8d5f153f" value="stealth"/>
+      </adeptpower>
+      <adeptpower lang="en" ref="commanding_voice" value="1"/>
+      <adeptpower lang="en" ref="linguistics"/>
+      <adeptpower lang="en" ref="kinesics"/>
+   </adeptPowers>
    <metaEchoes>
       <metaEcho lang="en" ref="quickening"/>
    </metaEchoes>
    <sins>
-      <sin name="Lee Ji-yoo" quality="SECOND_LIFE" uniqueid="89cea529-2e5e-41ca-93f9-76bab280197b"/>
-      <sin name="Tanaka Ryo" quality="SECOND_LIFE" uniqueid="f6c7ccfd-961c-49c1-bc2e-4fa8fefbbf7d"/>
+      <sin name="Lee Ji-yoo" quality="SECOND_LIFE" uniqueid="a2dbfdd6-e31f-4c86-8001-8eae1e658084"/>
+      <sin name="Tanaka Ryo" quality="SECOND_LIFE" uniqueid="315a9513-3ff5-4300-8edc-28d530a975d8"/>
    </sins>
    <licenses>
-      <licenses name="Spellcasting" rating="SECOND_LIFE" sin="89cea529-2e5e-41ca-93f9-76bab280197b" uniqueid="d73e61b8-aa3d-4ade-a5ee-a12134d2482b"/>
-      <licenses name="Quickening" rating="SECOND_LIFE" sin="89cea529-2e5e-41ca-93f9-76bab280197b" uniqueid="0476e1a1-49be-4304-92e4-a0973940d953"/>
+      <licenses name="Quickening" rating="SECOND_LIFE" sin="315a9513-3ff5-4300-8edc-28d530a975d8" uniqueid="2aadeae1-c011-4273-b745-a8d69e1d9a09"/>
+      <licenses name="Spellcasting" rating="SECOND_LIFE" sin="315a9513-3ff5-4300-8edc-28d530a975d8" uniqueid="9a14cd31-8622-4b62-9fe0-9310130cacb4"/>
    </licenses>
    <contacts>
-      <contact id="51910a56-2144-4837-8e29-605e11e1eb5d" loy="5" name="Brynne Taggart" rat="4" type="STREET" typename="SEA Fixer"/>
-      <contact id="7d09452e-2b74-4d7b-a062-0849496edcfc" loy="4" name="Ni Ni Xiaolu" rat="3" type="STREET" typename="SEA Triad Johnson"/>
-      <contact id="8764fa3d-9b58-463d-9883-8f138eeb86db" loy="3" name="Whiskey" rat="2" type="STREET" typename="SEA Street Doc"/>
-      <contact id="930a0ceb-61f7-48fa-9602-553f66a2beb2" loy="8" name="Vincent Grisome" rat="5" type="STREET" typename="SEA University Professor"/>
-      <contact id="6f016fb2-be92-4ecb-850b-4678135ef940" loy="5" name="Claudette Laurier" rat="3" type="STREET" typename="NOLA Order of the Golden Dawn Librarian"/>
-      <contact id="69572f98-8d30-4e1e-ae69-04dbaf18fe15" loy="5" name="Le Tigre" rat="5" type="STREET" typename="NOLA Epoch Model"/>
-      <contact id="ffed0116-4d3e-4aa7-ac88-1d5dc36cc0e1" loy="4" name="JP Chakraborty" rat="4" type="STREET" typename="NOLA Aurelian Design Model"/>
+      <contact id="fb7df914-255d-4c4b-a7e0-0038e04e0553" loy="4" name="Brynne Taggart" rat="5" type="STREET" typename="SEA Fixer"/>
+      <contact id="25362395-1ca4-43b3-924c-f53ec506239a" loy="4" name="Ni Ni Xiaolu" rat="3" type="CRIMINAL" typename="SEA Triad Johnson"/>
+      <contact id="a115fcfc-dad5-4184-a974-3aa9eebd906e" loy="3" name="Whiskey" rat="2" type="STREET" typename="SEA Street Doc"/>
+      <contact id="95302276-2d55-4ae0-8d38-0cd97c2bb339" loy="4" name="Vincent Grisome" rat="5" type="MAGIC" typename="SEA University Prof."/>
+      <contact id="d22b1be0-0f80-44ea-b930-d274ced81f95" loy="4" name="Claudette Laurier" rat="5" type="MAGIC" typename="NOLA Order of the Golden Dawn Librarian"/>
+      <contact id="e8f70dd2-96d5-4f85-bc70-ec8950ded5ab" loy="4" name="Le Tigre" rat="5" type="MEDIA" typename="NOLA Epoch Model"/>
+      <contact id="081acb54-8491-48d1-a3b0-7696a4a99c47" loy="4" name="JP Chakraborty" rat="4" type="MEDIA" typename="NOLA Aurelian Designs Model"/>
+      <contact id="ccfbfacc-ec07-4467-962b-233f27a169a6" loy="1" name="Roanoke" rat="3" type="MAGIC" typename="NOLA Ecological Activist"/>
    </contacts>
    <foci>
-      <focus lang="en" ref="power_focus" value="3">
-         <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3"/>
+      <focus lang="en" ref="power_focus" value="2">
+         <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="2"/>
       </focus>
    </foci>
    <name>Velvet</name>
@@ -69,31 +78,33 @@
       <set rule="CAREER_UNDO_FROM_CAREER" to="true"/>
       <set rule="CAREER_PAY_GEAR" to="true"/>
    </rules>
-   <size>190</size>
-   <weight>86</weight>
+   <hairColor>White</hairColor>
+   <eyeColor>Obsidian</eyeColor>
+   <skinColor>White</skinColor>
+   <age>20</age>
+   <size>179</size>
+   <weight>83</weight>
    <attributes>
-      <attributes id="BODY" start="2" value="2"/>
-      <attributes id="AGILITY" start="4" value="4"/>
-      <attributes id="REACTION" start="4" value="4"/>
-      <attributes id="STRENGTH" start="2" value="2"/>
-      <attributes id="WILLPOWER" start="5" value="5"/>
-      <attributes id="LOGIC" start="4" value="4"/>
-      <attributes id="INTUITION" start="4" value="4"/>
-      <attributes id="CHARISMA" start="10" value="10"/>
-      <attributes id="EDGE" start="3" value="3"/>
-      <attributes id="MAGIC" start="6" value="6"/>
+      <attributes id="BODY" value="2"/>
+      <attributes id="AGILITY" value="4"/>
+      <attributes id="REACTION" value="4"/>
+      <attributes id="STRENGTH" value="2"/>
+      <attributes id="WILLPOWER" value="5"/>
+      <attributes id="LOGIC" value="4"/>
+      <attributes id="INTUITION" value="4"/>
+      <attributes id="CHARISMA" value="10"/>
+      <attributes id="EDGE" value="4"/>
+      <attributes id="MAGIC" value="6"/>
       <attributes id="RESONANCE" value="0"/>
-      <attributes id="POWER_POINTS" value="0"/>
+      <attributes id="POWER_POINTS" value="6"/>
    </attributes>
    <skills>
-      <skill lang="en" ref="sorcery" uuid="4f9dd5a1-9954-489e-a656-882dd2b5ea36" value="6">
+      <skill lang="en" ref="sorcery" uuid="5fd2a54a-3a97-48ff-929a-1bdda23052f1" value="6">
          <skillspec lang="en" ref="spellcasting"/>
       </skill>
-      <skill lang="en" ref="influence" uuid="858cef13-b846-411e-90d6-756d8839ec8a" value="5">
+      <skill lang="en" ref="influence" uuid="ac6e0cb0-330b-4d06-9be7-ab67b1621e02" value="5">
          <skillspec lang="en" ref="leadership"/>
       </skill>
-      <skill lang="en" ref="con" uuid="dac76c2f-7df1-4610-8c27-bf10759c0c16" value="2"/>
-      <skill lang="en" ref="astral" uuid="2cee759b-8c10-4ce1-825f-a927e97cc008" value="1"/>
       <skill lang="en" ref="language" uuid="1ab9b4c2-b6d2-4d84-8c82-91920cbefe8b" value="4">
          <decision choice="a7103ee4-31fa-435d-ac42-08f7d4d1e80c" value="Native Language"/>
       </skill>
@@ -101,63 +112,75 @@
    <charGenUsed>pointbuy</charGenUsed>
    <strictness>srm</strictness>
    <items>
-      <item lang="en" mode="CARRIED" ref="transys_avalon" uuid="c4a9d4e2-0696-4e5e-b43f-7fbe5fa87d48">
+      <item lang="en" mode="CARRIED" ref="transys_avalon" uuid="a1f7cdcc-6eb1-4279-9988-e26b26c3a01b">
+         <accessories>
+            <item lang="en" mode="EMBEDDED" ref="personal_assistant" slot="SOFTWARE" uuid="e8897483-7b08-43f8-81e8-6a7ab7d94d32">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="6"/>
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="social_hud" slot="SOFTWARE" uuid="9773df40-fcbf-46dc-88b7-1b5a1bbeee21"/>
+            <item lang="en" mode="EMBEDDED" ref="thermal_mood_reading" slot="SOFTWARE" uuid="9dc0b759-9c83-455f-9915-37728794f584"/>
+         </accessories>
          <flag>PRIMARY</flag>
       </item>
-      <item lang="en" mode="CARRIED" ref="contacts" uuid="d0ffeff8-dddc-4f8d-927c-2ca4879d446d">
+      <item lang="en" mode="CARRIED" ref="contacts" uuid="0426c43d-d3ee-4d1b-a43a-f244126753e1">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="image_link" slot="OPTICAL" uuid="5d5e7fd0-a0d6-4694-ba5a-bbe380667cd0"/>
-            <item lang="en" mode="EMBEDDED" ref="flare_compensation" slot="OPTICAL" uuid="d282b85f-6cbe-4b7f-834d-60c137e62236"/>
-            <item lang="en" mode="EMBEDDED" ref="vision_enhancement" slot="OPTICAL" uuid="24145453-3020-460f-8dbd-195dfb862f51"/>
+            <item lang="en" mode="EMBEDDED" ref="flare_compensation" slot="OPTICAL" uuid="c44fe7de-280b-4500-a51d-6dd7b35ffcfb"/>
+            <item lang="en" mode="EMBEDDED" ref="image_link" slot="OPTICAL" uuid="45ff630c-06c5-4469-9bdc-bb8fae668c4f"/>
+            <item lang="en" mode="EMBEDDED" ref="thermographic_vision" slot="OPTICAL" uuid="e2fa793d-9834-4fdc-a840-02b981b57528"/>
          </accessories>
          <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3"/>
       </item>
-      <item count="1" lang="en" mode="CARRIED" ref="float_switch" uuid="9ca80740-55c9-4fe1-9b79-f19c71b08464">
+      <item count="1" lang="en" mode="CARRIED" ref="float_switch" uuid="8447df2e-c33b-4c1f-9163-1531994687b9">
          <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="4"/>
          <decision choice="96afe3d6-adf9-4e78-829c-b25f2c7f6b76" value="4"/>
          <decision choice="96afe3d6-adf9-4e78-829c-b25f2c7f6b77" value="1"/>
       </item>
-      <item lang="en" mode="CARRIED" ref="securetech_skinshield" uuid="5054a6be-545f-4fe8-9246-3c3d4b454b6b">
+      <item lang="en" mode="CARRIED" ref="securetech_skinshield" uuid="f20836a3-f97d-4b70-bfb9-60234f3b15fa">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="ballistic_hood" slot="ARMOR" uuid="a9e32227-0e9f-4c30-892a-9092312031ea"/>
+            <item lang="en" mode="EMBEDDED" ref="ballistic_hood" slot="ARMOR" uuid="d341bdea-5a6e-440d-bf7d-b3a90010730b"/>
          </accessories>
-         <flag>PRIMARY</flag>
       </item>
-      <item lang="en" mode="CARRIED" ref="securetech_invisishield" uuid="9b12452c-01bf-478e-997c-9fe087f2f1b1"/>
-      <item lang="en" mode="CARRIED" ref="tres_chic" uuid="cf0188d3-5a64-4bdc-9241-0d29e934a452">
+      <item lang="en" mode="CARRIED" ref="securetech_invisishield" uuid="37c5c19d-e45d-4d68-afe2-e05a6e587bab"/>
+      <item lang="en" mode="CARRIED" ref="tres_chic" uuid="e37c2f20-76ab-4bee-bf86-fd9c0c71716c">
          <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="12"/>
       </item>
-      <item count="20" lang="en" mode="CARRIED" ref="reagents_per_dram" uuid="991df5c8-31e2-47bd-b45c-734a8a39f5d9"/>
-      <item count="1" lang="en" mode="CARRIED" ref="magical_lodge_materials" uuid="1db29cbd-49b5-4604-9d25-6a8341e6b7f7">
-         <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="6"/>
+      <item count="6" lang="en" mode="CARRIED" ref="magical_lodge_materials" uuid="5efa385f-5b05-422f-9501-5d6fb4778e49">
+         <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="1"/>
       </item>
-      <item lang="en" mode="CARRIED" ref="mage-sight-goggles" uuid="0ca53c12-6cb3-42b9-9ea8-1ec350a684f4"/>
-      <item lang="en" mode="CARRIED" ref="savior_medkit" uuid="275eda68-73c5-43d0-83e7-e371d7e4f88d"/>
-      <item count="5" lang="en" mode="CARRIED" ref="savior_medkit_refill" uuid="3ac6951a-03e5-45be-935c-e5eeb59236d9"/>
-      <item lang="en" mode="CARRIED" ref="earbuds" uuid="cea5b6d0-1a79-481a-8fcd-d3a56ae96bf3">
+      <item count="10" lang="en" mode="CARRIED" ref="reagents_per_dram" uuid="b32d3aed-23d2-43bf-8fbb-590da0d63371"/>
+      <item lang="en" mode="CARRIED" ref="nanocosmetics_kit" uuid="253a6f37-bc08-467d-90ec-f6a36f6568f2"/>
+      <item count="5" lang="en" mode="CARRIED" ref="nanocosmetics_refill" uuid="722a700a-0017-4303-98dc-7777f901075e"/>
+      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_kit" uuid="ad3e7bf4-1a0b-4fa7-9beb-a6178289a953"/>
+      <item count="5" lang="en" mode="CARRIED" ref="nanopaste_disguise_refill" uuid="ad70bd76-9c34-4f51-b8e1-4ec71adbfb3a"/>
+      <item lang="en" mode="CARRIED" ref="savior_medkit" uuid="d04d5944-a02d-4b79-ad71-e1ed83eb4eb5"/>
+      <item count="5" lang="en" mode="CARRIED" ref="savior_medkit_refill" uuid="cf5e8464-da98-4ea8-94f6-669a870443bd"/>
+      <item lang="en" mode="CARRIED" ref="earbuds" uuid="59a3df7c-2de2-4270-b8d8-8d132be45b2f">
+         <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="1"/>
+      </item>
+      <item lang="en" mode="CARRIED" ref="mage-sight-goggles" uuid="2badd81c-7739-4f49-b935-17e2a881f039"/>
+      <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="suzuki_transit" uuid="ceb46da6-9117-479d-9c68-1c65b8565372">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="audio_enhancement" slot="AUDIO" uuid="d4797893-4ad8-493c-b4ac-9a33e321d107"/>
-            <item lang="en" mode="EMBEDDED" ref="spatial_recognizer" slot="AUDIO" uuid="ba4e4121-bcc7-4420-8453-d3d2982172ef"/>
+            <item lang="en" mode="EMBEDDED" ref="anti_theft" slot="VEHICLE_ELECTRONICS" uuid="57654383-188d-4a41-9a9f-6cd84fb8f28f" variant="rating1">
+               <flag>AUTO_ADDED</flag>
+            </item>
          </accessories>
-         <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3"/>
       </item>
-      <item lang="en" mode="CARRIED" ref="nanocosmetics_kit" uuid="9d27db6e-3470-48cd-8e25-9db6ec378cf8"/>
-      <item lang="en" mode="CARRIED" ref="nanopaste_disguise" uuid="7a8d8482-de70-451a-9440-01104172126a"/>
-      <item count="5" lang="en" mode="CARRIED" ref="nanocosmetics_refill" uuid="bd5173b0-b36f-4646-bc70-76be3048246d"/>
-      <item count="5" lang="en" mode="CARRIED" ref="nanopaste_disguise_refill" uuid="7a66910c-b020-46df-b706-4acef82b2831"/>
       <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979"/>
    </items>
    <history>
-      <itemmod date="2026-06-26T17:53:20.980-04:00" expCost="11" ref="quickening" type="METAECHO"/>
-      <itemmod date="2026-06-27T00:12:37.413-04:00" expCost="5" ref="increase_reflexes" type="SPELL"/>
-      <itemmod date="2026-06-27T00:12:57.393-04:00" expCost="5" ref="powerbolt" type="SPELL"/>
-      <itemmod date="2026-06-27T00:13:11.358-04:00" expCost="5" ref="stunbolt" type="SPELL"/>
-      <itemmod date="2026-06-27T00:16:23.922-04:00" expCost="5" ref="charm" type="SPELL"/>
+      <itemmod date="2026-07-12T21:38:13.850-04:00" ref="improved_mental_attribute" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-12T21:47:21.881-04:00" ref="sharp_tongue" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-12T21:48:01.608-04:00" ref="authorative_tone" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-12T21:50:05.126-04:00" ref="vocal_control" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-12T21:50:40.256-04:00" expCost="11" ref="quickening" type="METAECHO"/>
+      <itemmod date="2026-07-12T23:47:05.497-04:00" ref="linguistics" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-12T23:57:40.962-04:00" ref="kinesics" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-12T23:57:47.023-04:00" ref="kinesics_mastery" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-13T00:04:46.549-04:00" ref="astral_perception" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-13T00:16:02.643-04:00" ref="astral_perception" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-13T15:28:09.282-04:00" ref="improved_ability" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-13T15:31:23.195-04:00" ref="commanding_voice" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-13T15:31:31.595-04:00" ref="linguistics" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-13T15:35:35.314-04:00" ref="kinesics" type="ADEPT_POWER"/>
    </history>
-   <rewards>
-      <reward date="2026-06-27T00:16:01.001-04:00" exp="1" money="1000">
-         <title>Build-A-Runner: GM Credit</title>
-         <gamemaster>WarDoctor</gamemaster>
-      </reward>
-   </rewards>
 </sr6char>
