@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -204,9 +233,14 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#spellcasting-foci-integration" id="toc-spellcasting-foci-integration" class="nav-link active" data-scroll-target="#spellcasting-foci-integration">Spellcasting &amp; Foci Integration</a>
   <ul class="collapse">
-  <li><a href="#commonly-quickened-spells" id="toc-commonly-quickened-spells" class="nav-link" data-scroll-target="#commonly-quickened-spells">Commonly Quickened Spells</a></li>
+  <li><a href="#tradition-shintomusok-willpower-charisma" id="toc-tradition-shintomusok-willpower-charisma" class="nav-link" data-scroll-target="#tradition-shintomusok-willpower-charisma"><strong>Tradition: (Shinto/Musok — Willpower + Charisma)</strong></a></li>
   </ul></li>
-  <li><a href="#influence-tests" id="toc-influence-tests" class="nav-link" data-scroll-target="#influence-tests">Influence Tests</a></li>
+  <li><a href="#influence-tests" id="toc-influence-tests" class="nav-link" data-scroll-target="#influence-tests">Influence Tests</a>
+  <ul class="collapse">
+  <li><a href="#commanding-voice" id="toc-commanding-voice" class="nav-link" data-scroll-target="#commanding-voice">Commanding Voice</a></li>
+  <li><a href="#sharp-tongue" id="toc-sharp-tongue" class="nav-link" data-scroll-target="#sharp-tongue">Sharp Tongue</a></li>
+  <li><a href="#inspire-confidence" id="toc-inspire-confidence" class="nav-link" data-scroll-target="#inspire-confidence">Inspire Confidence</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -235,56 +269,67 @@ ul.task-list li input[type="checkbox"] {
 <p>This section aggregates core cheat sheets and templates for downtime registration, magic spellcasting, conjuring, and foci benefits.</p>
 <section id="spellcasting-foci-integration" class="level2">
 <h2 class="anchored" data-anchor-id="spellcasting-foci-integration">Spellcasting &amp; Foci Integration</h2>
-<p>To cast a spell, you roll a Spellcasting (Sorcery) test. Your power focus and specialization directly augment your casting pools.</p>
+<section id="tradition-shintomusok-willpower-charisma" class="level3">
+<h3 class="anchored" data-anchor-id="tradition-shintomusok-willpower-charisma"><strong>Tradition: (Shinto/Musok — Willpower + Charisma)</strong></h3>
 <ul>
-<li><strong>Base Sorcery Skill:</strong> 6
-<ul>
-<li><strong>Specialization (Spellcasting):</strong> +2 dice when casting spells.<br>
-</li>
-</ul></li>
-<li><strong>Magic Attribute:</strong> 6
-<ul>
-<li><strong>Power Focus (Rating 3):</strong> +3 dice to all Magic-linked tests.<br>
-</li>
-</ul></li>
-<li><strong>Total Casting Pool:</strong> 6 + 6 + 2 + 3 = <strong>17 dice / 4 bought hits</strong><br>
-</li>
-<li><strong>Drain Resistance Pool:</strong> WIL (5 + 4) + CHA (10 + 4) = <strong>23 dice / 5 bought hits</strong></li>
+<li><strong>Starting Attributes</strong>: Willpower 5, Charisma 10, Intuition 4, Body 2.</li>
+<li><strong>Starting Spellcasting Pool</strong>: Sorcery (6) + Spellcasting spec. (2) + Impr. Ability (Sorc, 4) + Magic (6) + Power Focus (2) = 20</li>
+<li><strong>Spellcasting Pool</strong>: 20 dice <span class="math inline">\(\rightarrow\)</span> <strong>Buys 5 Hits</strong> (guarantees +4 on all attribute spells).</li>
+<li><strong>Drain Resistance Pool</strong>: 15 dice (5 WIL + 10 CHA) <span class="math inline">\(\rightarrow\)</span> <strong>Buys 3 Hits</strong> <code>[SR6, Page 36]</code>.</li>
 </ul>
-<section id="commonly-quickened-spells" class="level3">
-<h3 class="anchored" data-anchor-id="commonly-quickened-spells">Commonly Quickened Spells</h3>
+<section id="step-1-cast-increase-attribute-willpower" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-cast-increase-attribute-willpower"><strong>Step 1: Cast “Increase Attribute (Willpower)”</strong></h4>
 <ul>
-<li><strong>Increased Attribute</strong>
-<ul>
-<li><strong>Accepts:</strong> 3 hits.<br>
-</li>
-<li><strong>Effect:</strong> +4 Bonus</li>
-<li><strong>DV:</strong> Base 3 + 3 hits = 6</li>
-<li><strong>Drain Resistance</strong>: DV 6 - 5 bought hits = 1 reagent spent.</li>
-</ul></li>
-<li><strong>Increased Reflexes</strong>
-<ul>
-<li><strong>Accepts:</strong> 3 hits.<br>
-</li>
-<li><strong>Effect:</strong> +4 REA / +4D6 Bonus</li>
-<li><strong>DV:</strong> Base 5 + 3 hits = 8</li>
-<li><strong>Drain Resistance</strong>: DV 8 - 5 bought hits = 2S + 1 reagent spent.</li>
-</ul></li>
+<li><strong>Casting</strong>: 20 dice <span class="math inline">\(\rightarrow\)</span> Buys 5 hits. Willpower is boosted by its maximum of +4 (from 5 to 9).</li>
+<li><strong>Drain (3)</strong>: Resisted with 15 starting drain dice (Buys 3 hits).</li>
+<li><strong>Drain Taken</strong>: <span class="math inline">\(3 - 3 = \mathbf{0 \text{ Drain}}\)</span>.</li>
+<li><em>Stat Update</em>: Willpower is now 9. Drain Pool increases to <strong>19 dice</strong> (9 WIL + 10 CHA).</li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The calculations above assume both CHA &amp; WIL are already quickened. When quickening CHA, Velvet will take 2S + 1 reagent. When quickening WIL, Velvet will take 1S + 1 reagent.</p>
-</div>
-</div>
+</section>
+<section id="step-2-cast-increase-attribute-charisma" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-cast-increase-attribute-charisma"><strong>Step 2: Cast “Increase Attribute (Charisma)”</strong></h4>
+<ul>
+<li><strong>Casting</strong>: 20 dice <span class="math inline">\(\rightarrow\)</span> Buys 5 hits. Charisma is boosted by its maximum of +4 (from 10 to 14).</li>
+<li><strong>Drain (3)</strong>: Resisted with 19 drain dice (Buys 4 hits).</li>
+<li><strong>Drain Taken</strong>: <span class="math inline">\(3 - 4 = \mathbf{0 \text{ Drain}}\)</span>.</li>
+<li><em>Stat Update</em>: Charisma is now 14. Drain Pool increases to <strong>23 dice</strong> (9 WIL + 14 CHA).</li>
+</ul>
+</section>
+<section id="step-3-cast-increase-attribute-intuition" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-cast-increase-attribute-intuition"><strong>Step 3: Cast “Increase Attribute (Intuition)”</strong></h4>
+<ul>
+<li><strong>Casting</strong>: 20 dice <span class="math inline">\(\rightarrow\)</span> Buys 5 hits. Intuition is boosted by its maximum of +4 (from 4 to 8).</li>
+<li><strong>Drain (3)</strong>: Resisted with 23 drain dice (Buys 5 hits).</li>
+<li><strong>Drain Taken</strong>: <span class="math inline">\(3 - 5 = \mathbf{0 \text{ Drain}}\)</span>.</li>
+<li><em>Stat Update</em>: Intuition is now 8. (Drain Pool remains 23 dice).</li>
+</ul>
+</section>
+<section id="step-4-cast-increase-attribute-body" class="level4">
+<h4 class="anchored" data-anchor-id="step-4-cast-increase-attribute-body"><strong>Step 4: Cast “Increase Attribute (Body)”</strong></h4>
+<ul>
+<li><strong>Casting</strong>: 20 dice <span class="math inline">\(\rightarrow\)</span> Buys 5 hits. Body is boosted by its maximum of +4 (from 2 to 6).</li>
+<li><strong>Drain (3)</strong>: Resisted with 23 drain dice (Buys 5 hits).</li>
+<li><strong>Drain Taken</strong>: <span class="math inline">\(3 - 5 = \mathbf{0 \text{ Drain}}\)</span>.</li>
+<li><em>Stat Update</em>: Body is now 6.</li>
+</ul>
+</section>
+<section id="step-5-cast-increase-reflexes" class="level4">
+<h4 class="anchored" data-anchor-id="step-5-cast-increase-reflexes"><strong>Step 5: Cast “Increase Reflexes”</strong></h4>
+<ul>
+<li><strong>Casting</strong>: 20 dice <span class="math inline">\(\rightarrow\)</span> Buys 5 hits. Reaction is boosted by +4 (from 4 to 8), and you gain +4D6 Initiative.</li>
+<li><strong>Drain (5)</strong>: Resisted with 23 drain dice (Buys 5 hits).</li>
+<li><strong>Drain Taken</strong>: <span class="math inline">\(5 - 5 = \mathbf{0 \text{ Drain}}\)</span>.</li>
+</ul>
+</section>
+<section id="step-6-cast-charm" class="level4">
+<h4 class="anchored" data-anchor-id="step-6-cast-charm"><strong>Step 6: Cast “Charm”</strong></h4>
+<ul>
+<li><strong>Casting</strong>: 20 dice <span class="math inline">\(\rightarrow\)</span> Buys 5 hits.</li>
+<li><strong>Drain (5)</strong>: Resisted with 23 drain dice (Buys 5 hits).</li>
+<li><strong>Drain Taken</strong>: <span class="math inline">\(5 - 5 = \mathbf{0 \text{ Drain}}\)</span>.</li>
+</ul>
 <hr>
+</section>
 </section>
 </section>
 <section id="influence-tests" class="level2">
@@ -293,11 +338,43 @@ Note
 <li><strong>Pool:</strong> Influence (5) + Charisma (10 + 4) + Charm (4) = <strong>23 dice</strong>
 <ul>
 <li>Nanopaste Disguise / Nanocosmetics: +1 Situational Edge</li>
-<li>Social Rating: CHA (14) + Tres Chic (12) + Charm (4)= 30 (+1 Situational Edge if Opp. SR is &lt; 22)</li>
+<li>Social Rating: CHA (14) + Tres Chic (12) + Charm (4)= 30 (+1 Situational Edge if Opp. SR is &lt; 26)</li>
+</ul></li>
+</ul>
+<hr>
+<section id="commanding-voice" class="level3">
+<h3 class="anchored" data-anchor-id="commanding-voice">Commanding Voice</h3>
+<p>SW p.&nbsp;78</p>
+<ul>
+<li><strong>Pool:</strong> Influence (5) + Charisma (10 + 4) + Charm (4) + Commanding Voice (1) = <strong>24 dice</strong></li>
+<li><strong>Opposed By:</strong> Willpower + Intuition</li>
+<li><strong>Effect:</strong> Target must follow command (or at least freeze) for 1 round.</li>
+</ul>
+</section>
+<section id="sharp-tongue" class="level3">
+<h3 class="anchored" data-anchor-id="sharp-tongue">Sharp Tongue</h3>
+<p>SO p.&nbsp;111</p>
+<ul>
+<li><strong>Pool:</strong> Charisma (10 + 4) + Magic (6) + Power Focus (2) = <strong>22 dice</strong></li>
+<li><strong>Opposed By:</strong> Willpower + Intuition</li>
+<li><strong>Effect:</strong> Inflict net hits as unresisted Stun damage.</li>
+<li><strong>Alternate Effect:</strong> Choose to daze before rolling. Succeed if net hits &gt;= WIL.</li>
+</ul>
+</section>
+<section id="inspire-confidence" class="level3">
+<h3 class="anchored" data-anchor-id="inspire-confidence">Inspire Confidence</h3>
+<p>6WC p.&nbsp;133</p>
+<ul>
+<li><strong>Pool:</strong> Charisma (10 + 4) + Influence (6) + Leadership (2) + Charm (4) = <strong>26 dice</strong></li>
+<li><strong>Effect</strong>
+<ul>
+<li>Hits function as a teamwork test for any skill.</li>
+<li>One character may gain one (1) Edge.</li>
 </ul></li>
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
