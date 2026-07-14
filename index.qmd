@@ -35,5 +35,5 @@ Use the sidebar or the indexes below to traverse the sub-grids of this portfolio
 ### 1. Core Profile
 * **[Identity Core](chapters/identity_core.md)**: Detailed background history and lore.
 * **[Character Sheet](chapters/character_sheet.qmd)**: The dynamically compiled Shadowrun character sheet.
-* **[Rules & Downtime Protocols](chapters/rules_and_downtime.qmd)**: Spellcasting and summoning formulas, cheat sheets, and active magical configurations.
-* **[Career Log](chapters/character_log.qmd)**: Full database of past runs, GMs, nuyen payouts, and Karma adjustments.
+* **[Rules & Downtime Protocols](chapters/rules_and_downtime.md)**: Spellcasting and summoning formulas, cheat sheets, and active magical configurations.
+* **[Career Log](chapters/character_log.md)**: Full database of past runs, GMs, nuyen payouts, and Karma adjustments.

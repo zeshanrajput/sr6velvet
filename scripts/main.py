@@ -25,7 +25,7 @@ TRADITION_DRAIN_MAP = {
     "wuxing": ("WILLPOWER", "CHARISMA"),
     "islam": ("WILLPOWER", "LOGIC"),
     "norse": ("WILLPOWER", "INTUITION"),
-    "shinto": ("WILLPOWER", "INTUITION"),
+    "shinto": ("WILLPOWER", "CHARISMA"),
     "chaos": ("WILLPOWER", "INTUITION"),
     "voodoo": ("WILLPOWER", "CHARISMA"),
     "black magic": ("WILLPOWER", "CHARISMA"),
@@ -488,6 +488,7 @@ def parse_character(input_path):
                     "subType": m_type,
                     "page": mat_stats.get("page", "") or (REF_MAP.get(ref, ref.replace('_', ' ').title())),
                     "accessories": accessories,
+                    "rating": mat_stats.get("rating", 6 if "avalon" in ref.lower() else (4 if "elite" in ref.lower() else 0)),
                     "attack": mat_stats.get("attack", 0),
                     "sleaze": mat_stats.get("sleaze", 0),
                     "dataProcessing": mat_stats.get("dataProcessing", 2 if ref in ["erika_elite", "transys_avalon"] else 0),
@@ -1035,142 +1036,154 @@ def generate_ascii_sheet(char_data, verbose=False):
         quick_lines.append(f"  - BINDING     -> Pool: {bind_pool:02}{conj_marker}  [Drain: {drain_resist_pool:02}]")
         quick_lines.append(f"  - BANISHING   -> Pool: {banish_pool:02}{conj_marker}  [Drain: {drain_resist_pool:02}]")
 
-    page1.extend(zip_panels(mm_lines, quick_lines, left_width=38, separator=" | "))
-    page1.append("")
+    if mm_lines or quick_lines:
+        page1.extend(zip_panels(mm_lines, quick_lines, left_width=38, separator=" | "))
+        page1.append("")
 
     # Page 2 (Back)
     page2 = make_page_break(2, "dossier database", char_data['name'])
 
     # Split drones across columns (for Velvet's flying eye drone)
     drones = char_data["drones"]
-    half = (len(drones) + 1) // 2
-    left_drn_list = drones[:half]
-    right_drn_list = drones[half:]
+    if drones:
+        half = (len(drones) + 1) // 2
+        left_drn_list = drones[:half]
+        right_drn_list = drones[half:]
 
-    def get_drone_panel_lines(drn_list, title):
-        lines = [title]
-        for drn in drn_list:
-            drn_han = f"{drn.get('handlOn', '0')}/{drn.get('handlOff', '0')}"
-            drn_acc = f"{drn.get('accelOn', '0')}/{drn.get('accelOff', '0')}"
-            drn_interval = drn.get('speedIntOn', '0')
-            drn_max_spd = drn.get('speed', '0')
-            drn_bod = drn.get('body', '0')
-            drn_arm = drn.get('armor', '0')
-            drn_pil = drn.get('pilot', '0')
-            drn_sen = drn.get('sensor', '0')
-            
-            d_name = drn.get('name', '').upper()
-            bod_display = str(drn_bod)
-            arm_display = str(drn_arm)
-            
-            lines.append(f"- {d_name[:22]}")
-            lines.append(f"  HAN {drn_han} ACC {drn_acc}")
-            lines.append(f"  INT {drn_interval} SPD {drn_max_spd} BOD {bod_display}")
-            lines.append(f"  ARM {str(arm_display).ljust(2)} PIL {str(drn_pil).ljust(2)} SEN {drn_sen}")
-            
-            drn_accs = drn.get("accessories", "")
-            if isinstance(drn_accs, str) and drn_accs:
-                drn_acc_list = [a.strip() for a in drn_accs.split(",")]
-                for acc in drn_acc_list:
-                    lines.extend(wrap_panel_text(f"  > {acc}", width=36, indent="    "))
-            lines.append("")
-        return lines
+        def get_drone_panel_lines(drn_list, title):
+            lines = [title]
+            for drn in drn_list:
+                drn_han = f"{drn.get('handlOn', '0')}/{drn.get('handlOff', '0')}"
+                drn_acc = f"{drn.get('accelOn', '0')}/{drn.get('accelOff', '0')}"
+                drn_interval = drn.get('speedIntOn', '0')
+                drn_max_spd = drn.get('speed', '0')
+                drn_bod = drn.get('body', '0')
+                drn_arm = drn.get('armor', '0')
+                drn_pil = drn.get('pilot', '0')
+                drn_sen = drn.get('sensor', '0')
+                
+                d_name = drn.get('name', '').upper()
+                bod_display = str(drn_bod)
+                arm_display = str(drn_arm)
+                
+                lines.append(f"- {d_name[:22]}")
+                lines.append(f"  HAN {drn_han} ACC {drn_acc}")
+                lines.append(f"  INT {drn_interval} SPD {drn_max_spd} BOD {bod_display}")
+                lines.append(f"  ARM {str(arm_display).ljust(2)} PIL {str(drn_pil).ljust(2)} SEN {drn_sen}")
+                
+                drn_accs = drn.get("accessories", "")
+                if isinstance(drn_accs, str) and drn_accs:
+                    drn_acc_list = [a.strip() for a in drn_accs.split(",")]
+                    for acc in drn_acc_list:
+                        lines.extend(wrap_panel_text(f"  > {acc}", width=36, indent="    "))
+                lines.append("")
+            return lines
 
-    left_drones = get_drone_panel_lines(left_drn_list, "[ DRONE_COMMAND_ARRAY (COL 1) ]")
-    right_drones = get_drone_panel_lines(right_drn_list, "[ DRONE_COMMAND_ARRAY (COL 2) ]")
-    page2.extend(zip_panels(left_drones, right_drones, left_width=38, separator=" | "))
-    page2.append("")
+        left_drones = get_drone_panel_lines(left_drn_list, "[ DRONE_COMMAND_ARRAY (COL 1) ]")
+        right_drones = get_drone_panel_lines(right_drn_list, "[ DRONE_COMMAND_ARRAY (COL 2) ]")
+        page2.extend(zip_panels(left_drones, right_drones, left_width=38, separator=" | "))
+        page2.append("")
 
     # Matrix devices standalone, no condition monitors
-    left_devs = []
-    left_devs.append(f"[ MATRIX_DEVICES ]")
-    right_devs = [""]
+    if char_data["matrix_items"]:
+        left_devs = []
+        left_devs.append(f"[ MATRIX_DEVICES ]")
+        right_devs = [""]
 
-    for m in char_data["matrix_items"]:
-        m_name = m.get("name", "").upper()
-        m_type = m.get("subType", "DEVICE")
-        m_atk = m.get("attack", 0)
-        m_slz = m.get("sleaze", 0)
-        m_dpr = m.get("dataProcessing", 0)
-        m_fwl = m.get("firewall", 0)
-        
-        dev_block = []
-        dev_block.append(f"- {m_name[:25]} ({m_type})")
-        dev_block.append(f"  ATK {m_atk:02} SLZ {m_slz:02} DPR {m_dpr:02} FWL {m_fwl:02}")
+        for m in char_data["matrix_items"]:
+            m_name = m.get("name", "").upper()
+            m_type = m.get("subType", "DEVICE")
+            m_atk = m.get("attack", 0)
+            m_slz = m.get("sleaze", 0)
+            m_dpr = m.get("dataProcessing", 0)
+            m_fwl = m.get("firewall", 0)
+            rating = m.get("rating", 0)
             
-        accs = m.get("accessories", [])
-        for acc in accs:
-            dev_block.append(f"  > {acc.get('name')}")
-        dev_block.append("")
-        left_devs.extend(dev_block)
+            dev_block = []
+            dev_block.append(f"- {m_name[:25]} ({m_type})")
+            if m_type.upper() == "COMMLINK":
+                dev_block.append(f"  RAT {rating:02}            DPR {m_dpr:02} FWL {m_fwl:02}")
+            else:
+                dev_block.append(f"  ATK {m_atk:02} SLZ {m_slz:02} DPR {m_dpr:02} FWL {m_fwl:02}")
+                
+            accs = m.get("accessories", [])
+            for acc in accs:
+                dev_block.append(f"  > {acc.get('name')}")
+            dev_block.append("")
+            left_devs.extend(dev_block)
 
-    page2.extend(zip_panels(left_devs, right_devs, left_width=38, separator=" | "))
-    page2.append("")
+        page2.extend(zip_panels(left_devs, right_devs, left_width=38, separator=" | "))
+        page2.append("")
 
     # Software library
-    sw_details = {
-        "p-ice spines": ("(Comm)", "", "// Atkr takes net hits dmg (min 1)"),
-        "personal assistant": ("(Comm)", "[R6]", "// Full Def: + Rtg"),
-        "social hud": ("(Comm)", "", "// Organize all known info on target."),
-    }
-    
-    sw_lines = ["[ SOFTWARE_LIBRARY ]"]
-    seen_software = set()
-    for sw in char_data["xml_software"]:
-        sw_name = sw["name"]
-        rating = sw["rating"]
-        target = sw["target"]
-        sw_ref = sw["ref"]
-        lookup_name = sw_name.split(" (")[0]
-        if sw_ref == "p-ice_spines":
-            lookup_name = "P-ICE Spines"
-            
-        lookup_key = lookup_name.lower().replace("-", " ")
-        if lookup_key in seen_software:
-            continue
-        seen_software.add(lookup_key)
+    if char_data.get("xml_software"):
+        sw_details = {
+            "p-ice spines": ("(Comm)", "", "// Atkr takes net hits dmg (min 1)"),
+            "personal assistant": ("(Comm)", "[R6]", "// Full Def: + Rtg"),
+            "social hud": ("(Comm)", "", "// Organize all known info on target."),
+            "thermal mood reading": ("(Comm)", "", "// Determine emotional state via skin temp (req. thermographic)"),
+        }
         
-        clean_cat = sw.get("cat", "Basic programs")
-        norm_name = lookup_name.lower().replace("-", " ")
-        if norm_name in sw_details:
-            cat_tag, rtg_tag, desc = sw_details[norm_name]
-            name_str = f"  - {lookup_name.upper()}".ljust(29)
-            cat_str = cat_tag.ljust(8)
-            rtg_str = rtg_tag.ljust(5) if rtg_tag else "".ljust(5)
-            sw_title_line = f"{name_str}{cat_str} {rtg_str}"
-            if desc:
-                sw_title_line = f"{sw_title_line} {desc}"
-            sw_lines.append(sw_title_line)
-        else:
-            cat_str = f"({clean_cat[:4]})"
-            rating_str = f" [R{rating}]" if rating and int(rating) > 0 else ""
-            sw_title_line = f"  - {lookup_name.upper()}{rating_str} {cat_str}"
-            sw_lines.append(sw_title_line)
+        sw_lines = ["[ SOFTWARE_LIBRARY ]"]
+        seen_software = set()
+        for sw in char_data["xml_software"]:
+            sw_name = sw["name"]
+            rating = sw["rating"]
+            target = sw["target"]
+            sw_ref = sw["ref"]
+            lookup_name = sw_name.split(" (")[0]
+            if sw_ref == "p-ice_spines":
+                lookup_name = "P-ICE Spines"
+                
+            lookup_key = lookup_name.lower().replace("-", " ")
+            if lookup_key in seen_software:
+                continue
+            seen_software.add(lookup_key)
+            
+            clean_cat = sw.get("cat", "Basic programs")
+            norm_name = lookup_name.lower().replace("-", " ")
+            if norm_name in sw_details:
+                cat_tag, rtg_tag, desc = sw_details[norm_name]
+                name_str = f"  - {lookup_name.upper()}".ljust(29)
+                cat_str = cat_tag.ljust(8)
+                rtg_str = rtg_tag.ljust(5) if rtg_tag else "".ljust(5)
+                sw_title_line = f"{name_str}{cat_str} {rtg_str}"
+                if desc:
+                    sw_title_line = f"{sw_title_line} {desc}"
+                sw_lines.append(sw_title_line)
+            else:
+                cat_str = f"({clean_cat[:4]})"
+                rating_str = f" [R{rating}]" if rating and int(rating) > 0 else ""
+                sw_title_line = f"  - {lookup_name.upper()}{rating_str} {cat_str}"
+                sw_lines.append(sw_title_line)
 
-    page2.extend(sw_lines)
-    page2.append("")
+        if len(sw_lines) > 1:
+            page2.extend(sw_lines)
+            page2.append("")
 
     # Qualities vs Equipment side-by-side
-    qual_lines = ["[ QUALITIES ]"]
-    for q in char_data["qualities"]:
-        name = q.get('name', '')
-        choice = q.get('choice', '')
-        if choice:
-            name += f" ({choice})"
-        mark = ">" if q.get("positive", True) else "!"
-        name_fixed = sanitize_string(name.upper())
-        if len(name_fixed) > 34:
-            if "METAGENETIC ATTRIBUTE IMPROVEMENT" in name_fixed:
-                name_fixed = name_fixed.replace("METAGENETIC ATTRIBUTE IMPROVEMENT", "METAGENIC ATT. IMP.")
+    qual_lines = []
+    if char_data.get("qualities"):
+        qual_lines.append("[ QUALITIES ]")
+        for q in char_data["qualities"]:
+            name = q.get('name', '')
+            choice = q.get('choice', '')
+            if choice:
+                name += f" ({choice})"
+            mark = ">" if q.get("positive", True) else "!"
+            name_fixed = sanitize_string(name.upper())
             if len(name_fixed) > 34:
-                name_fixed = name_fixed[:31] + "..."
-        qual_lines.append(f"  {mark} {name_fixed}")
+                if "METAGENETIC ATTRIBUTE IMPROVEMENT" in name_fixed:
+                    name_fixed = name_fixed.replace("METAGENETIC ATTRIBUTE IMPROVEMENT", "METAGENIC ATT. IMP.")
+                if len(name_fixed) > 34:
+                    name_fixed = name_fixed[:31] + "..."
+            qual_lines.append(f"  {mark} {name_fixed}")
 
-    equip_lines = ["[ PHYSICAL_EQUIPMENT_MANIFEST ]"]
+    equip_lines = []
     seen_equip = set()
     equip_items = []
-    for it in char_data["items"]:
-        if any(sw["name"] == it["name"] for sw in char_data["xml_software"]):
+    for it in char_data.get("items", []):
+        if any(sw["name"] == it["name"] for sw in char_data.get("xml_software", [])):
             continue
         if it["name"] == "Software Library":
             continue
@@ -1188,77 +1201,80 @@ def generate_ascii_sheet(char_data, verbose=False):
         seen_equip.add(norm_it)
         equip_items.append(it_name)
         
-    for it_name in equip_items:
-        query_name = re.sub(r'\s+(?:Gel\s+x\d+|Std\s+x\d+|x\d+)\s*$', '', it_name, flags=re.IGNORECASE).strip()
-        
-        it_type = ""
-        for it in char_data.get("items", []):
-            clean_name_it = re.sub(r'\s+(?:Gel\s+x\d+|Std\s+x\d+|x\d+)\s*$', '', it.get("name", ""), flags=re.IGNORECASE).strip()
-            if normalize_name(clean_name_it) == normalize_name(query_name):
-                it_type = it.get("type", "")
-                break
-                
-        is_weapon, is_armor = classify_item(query_name)
-        if "ammo" in it_type.lower() or "explosive" in it_type.lower() or "grenade" in query_name.lower():
-            is_weapon = False
-            is_armor = False
-
-        if is_weapon is None or is_armor is None:
-            is_weapon_llm = rules_engine.check_if_weapon(query_name)
-            is_armor_llm = rules_engine.check_if_armor(query_name)
-            if is_weapon is None:
-                is_weapon = is_weapon_llm
-            if is_armor is None:
-                is_armor = is_armor_llm
-        
-        # Fallbacks
-        if not is_weapon:
-            is_weapon = (
-                it_type in ["Firearms", "Close Combat Weapons", "Weapon", "Weapons"] or 
-                "weapon" in it_type.lower() or 
-                "firearm" in it_type.lower() or 
-                "close combat" in it_type.lower() or
-                query_name.lower() in ["unarmed", "clout", "stunbolt"]
-            )
-        if not is_armor:
-            is_armor = "armor" in it_type.lower() or "shield" in it_type.lower()
+    if equip_items:
+        equip_lines.append("[ PHYSICAL_EQUIPMENT_MANIFEST ]")
+        for it_name in equip_items:
+            query_name = re.sub(r'\s+(?:Gel\s+x\d+|Std\s+x\d+|x\d+)\s*$', '', it_name, flags=re.IGNORECASE).strip()
             
-        armor_rating_str = ""
-        if is_weapon:
-            stats = rules_engine.query_weapon_stats(query_name)
-            if stats and stats.get('damage') and stats.get('attack_rating'):
-                ar_clean = stats['attack_rating'].replace('\\', '').replace('\uFFFD', '—').strip()
-                ar_clean = "/".join(part.strip() for part in ar_clean.split("/"))
-                equip_lines.append(f"  - {it_name} [{stats['damage']} | {ar_clean}]")
-            else:
-                equip_lines.append(f"  - {it_name}")
-        elif is_armor:
-            armor_rating = None
-            for itm in char_data.get("items", []):
-                clean_itm_name = re.sub(r'\s+(?:Gel\s+x\d+|Std\s+x\d+|x\d+)\s*$', '', itm.get("name", ""), flags=re.IGNORECASE).strip()
-                if normalize_name(clean_itm_name) == normalize_name(query_name):
-                    if itm.get("rating") and int(itm.get("rating")) > 0:
-                        armor_rating = itm.get("rating")
-                        break
-                    elif itm.get("armorRating"):
-                        armor_rating = itm.get("armorRating")
-                        break
-            if not armor_rating:
-                armor_stats = rules_engine.query_armor_stats(query_name)
-                if armor_stats and armor_stats.get("armor_rating"):
-                    armor_rating = str(armor_stats["armor_rating"]).strip()
-            if armor_rating:
-                armor_rating_str = str(armor_rating)
-                if not armor_rating_str.startswith("+") and not armor_rating_str.startswith("-"):
-                    armor_rating_str = f"+{armor_rating_str}"
-                equip_lines.append(f"  - {it_name} [{armor_rating_str}]")
-            else:
-                equip_lines.append(f"  - {it_name}")
-        else:
-            equip_lines.append(f"  - {it_name}")
+            it_type = ""
+            for it in char_data.get("items", []):
+                clean_name_it = re.sub(r'\s+(?:Gel\s+x\d+|Std\s+x\d+|x\d+)\s*$', '', it.get("name", ""), flags=re.IGNORECASE).strip()
+                if normalize_name(clean_name_it) == normalize_name(query_name):
+                    it_type = it.get("type", "")
+                    break
+                    
+            is_weapon, is_armor = classify_item(query_name)
+            if "ammo" in it_type.lower() or "explosive" in it_type.lower() or "grenade" in query_name.lower():
+                is_weapon = False
+                is_armor = False
 
-    page2.extend(zip_panels(qual_lines, equip_lines, left_width=38, separator=" | "))
-    page2.append("")
+            if is_weapon is None or is_armor is None:
+                is_weapon_llm = rules_engine.check_if_weapon(query_name)
+                is_armor_llm = rules_engine.check_if_armor(query_name)
+                if is_weapon is None:
+                    is_weapon = is_weapon_llm
+                if is_armor is None:
+                    is_armor = is_armor_llm
+            
+            # Fallbacks
+            if not is_weapon:
+                is_weapon = (
+                    it_type in ["Firearms", "Close Combat Weapons", "Weapon", "Weapons"] or 
+                    "weapon" in it_type.lower() or 
+                    "firearm" in it_type.lower() or 
+                    "close combat" in it_type.lower() or
+                    query_name.lower() in ["unarmed", "clout", "stunbolt"]
+                )
+            if not is_armor:
+                is_armor = "armor" in it_type.lower() or "shield" in it_type.lower()
+                
+            armor_rating_str = ""
+            if is_weapon:
+                stats = rules_engine.query_weapon_stats(query_name)
+                if stats and stats.get('damage') and stats.get('attack_rating'):
+                    ar_clean = stats['attack_rating'].replace('\\', '').replace('\uFFFD', '—').strip()
+                    ar_clean = "/".join(part.strip() for part in ar_clean.split("/"))
+                    equip_lines.append(f"  - {it_name} [{stats['damage']} | {ar_clean}]")
+                else:
+                    equip_lines.append(f"  - {it_name}")
+            elif is_armor:
+                armor_rating = None
+                for itm in char_data.get("items", []):
+                    clean_itm_name = re.sub(r'\s+(?:Gel\s+x\d+|Std\s+x\d+|x\d+)\s*$', '', itm.get("name", ""), flags=re.IGNORECASE).strip()
+                    if normalize_name(clean_itm_name) == normalize_name(query_name):
+                        if itm.get("rating") and int(itm.get("rating")) > 0:
+                            armor_rating = itm.get("rating")
+                            break
+                        elif itm.get("armorRating"):
+                            armor_rating = itm.get("armorRating")
+                            break
+                if not armor_rating:
+                    armor_stats = rules_engine.query_armor_stats(query_name)
+                    if armor_stats and armor_stats.get("armor_rating"):
+                        armor_rating = str(armor_stats["armor_rating"]).strip()
+                if armor_rating:
+                    armor_rating_str = str(armor_rating)
+                    if not armor_rating_str.startswith("+") and not armor_rating_str.startswith("-"):
+                        armor_rating_str = f"+{armor_rating_str}"
+                    equip_lines.append(f"  - {it_name} [{armor_rating_str}]")
+                else:
+                    equip_lines.append(f"  - {it_name}")
+            else:
+                equip_lines.append(f"  - {it_name}")
+
+    if qual_lines or equip_lines:
+        page2.extend(zip_panels(qual_lines, equip_lines, left_width=38, separator=" | "))
+        page2.append("")
 
     if char_data.get("lifestyles"):
         page2.append("[ LIFESTYLE_DATA ]")
@@ -1268,93 +1284,94 @@ def generate_ascii_sheet(char_data, verbose=False):
         page2.append("")
 
     # Magic Cheat Sheet
-    page1_foci = foci[0] if foci else None
-    foci_desc = f"Power Focus (R{page1_foci['rating']})" if page1_foci else "None"
-    
-    page2.append("[ MAGIC_PROTOCOLS_CHEAT_SHEET ]")
-    page2.append(f"  - Active Foci: {foci_desc} (adds rating as bonus to all Magic tests)")
-    
-    # Dynamic Spellcasting Pool computation
-    sorcery_skill = next((sk for sk in s.values() if sk.get("id") == "sorcery"), {})
-    sorcery_rating = sorcery_skill.get("rating", 0)
-    sorcery_adept_bonus = sorcery_skill.get("adept_bonus", 0)
-    has_spellcasting_spec = any(sp.get("id") == "spellcasting" or sp.get("name", "").lower() == "spellcasting" for sp in sorcery_skill.get("specializations", []))
-    spec_bonus = 2 if has_spellcasting_spec else 0
-    spellcasting_pool = sorcery_rating + mag + power_focus_rating + spec_bonus + sorcery_adept_bonus
-    
-    spell_pool_parts = [
-        f"Sorcery ({sorcery_rating})",
-        f"Magic ({mag})"
-    ]
-    if power_focus_rating > 0:
-        spell_pool_parts.append(f"Focus ({power_focus_rating})")
-    if spec_bonus > 0:
-        spell_pool_parts.append(f"Specialization ({spec_bonus})")
-    if sorcery_adept_bonus > 0:
-        spell_pool_parts.append(f"Adept Power ({sorcery_adept_bonus})")
-    spell_pool_str = " + ".join(spell_pool_parts)
-    page2.append(f"  - Spellcasting Pool: {spell_pool_str} = {spellcasting_pool}")
-    
-    # Dynamic Drain Resistance Pool computation
-    tradition_name = char_data.get("tradition", "Buddhism")
-    drain_attrs = TRADITION_DRAIN_MAP.get(tradition_name.lower(), ("WILLPOWER", "CHARISMA"))
-    d_val1 = a.get(drain_attrs[0], 0)
-    d_val2 = a.get(drain_attrs[1], 0)
-    drain_sum = d_val1 + d_val2
-    page2.append(f"  - Drain Resistance Pool: {drain_attrs[0].title()} ({d_val1}) + {drain_attrs[1].title()} ({d_val2}) = {drain_sum} ({drain_sum + 8:02} Quickened){quickened_fn} ({tradition_name.title()} tradition)")
-    
-    page2.append("  - Quickening: Permits casting sustained spells that remain permanently active")
-    
-    if mortype_check.lower() == "mysticadept":
-        page2.append("  - Astral Perception: Shift visual spectrum to the Astral Plane. Minor Action to activate/deactivate")
-    else:
-        page2.append("  - Astral Projection: Shift consciousness to the Astral Plane. Speed: 100km/hour")
-    
-    # Dynamic Astral Combat Pool computation
-    astral_skill = next((sk for sk in s.values() if sk.get("id") == "astral"), None)
-    if astral_skill:
-        astral_rating = astral_skill.get("rating", 0)
-        is_untrained = astral_skill.get("untrained", False)
-        penalty = 1 if is_untrained else 0
-        penalty_str = " - Untrained (1)" if is_untrained else ""
+    if mag > 0:
+        page1_foci = foci[0] if foci else None
+        foci_desc = f"Power Focus (R{page1_foci['rating']})" if page1_foci else "None"
         
-        astral_pool = d_val1 + astral_rating - penalty + power_focus_rating
-        q_astral_pool = (d_val1 + 4) + astral_rating - penalty + power_focus_rating
+        page2.append("[ MAGIC_PROTOCOLS_CHEAT_SHEET ]")
+        page2.append(f"  - Active Foci: {foci_desc} (adds rating as bonus to all Magic tests)")
         
-        focus_str = f" + Focus ({power_focus_rating})" if power_focus_rating > 0 else ""
-        page2.append(f"  - Astral Combat Pool: Willpower ({d_val1}){penalty_str}{focus_str} = {astral_pool} ({q_astral_pool} Quickened){quickened_fn}")
-    else:
-        page2.append("  - Astral Combat Pool: Untrained (requires Astral skill or Astral Perception)")
+        # Dynamic Spellcasting Pool computation
+        sorcery_skill = next((sk for sk in s.values() if sk.get("id") == "sorcery"), {})
+        sorcery_rating = sorcery_skill.get("rating", 0)
+        sorcery_adept_bonus = sorcery_skill.get("adept_bonus", 0)
+        has_spellcasting_spec = any(sp.get("id") == "spellcasting" or sp.get("name", "").lower() == "spellcasting" for sp in sorcery_skill.get("specializations", []))
+        spec_bonus = 2 if has_spellcasting_spec else 0
+        spellcasting_pool = sorcery_rating + mag + power_focus_rating + spec_bonus + sorcery_adept_bonus
         
-    # Adept Powers Footnotes
-    adept_powers = char_data.get("adept_powers", [])
-    cv_power = next((ap for ap in adept_powers if ap["id"] == "commanding_voice"), None)
-    if cv_power:
-        cv_rating = cv_power.get("rating", 1)
-        cv_fn = fn_registry.add_footnote(
-            f"Commanding Voice (R{cv_rating}) Mechanics",
-            [
-                "Major Action. Costs 1.5 PP per level.",
-                "Roll Leadership + Charisma vs. Willpower + Intuition.",
-                "Target obeys a single command of 5 words or less, or freezes for 1 round/level.",
-                "Orders cannot cause direct self-harm."
-            ]
-        )
-        page2.append(f"  - Adept Power: Commanding Voice (R{cv_rating}){cv_fn} (influence targets verbally)")
+        spell_pool_parts = [
+            f"Sorcery ({sorcery_rating})",
+            f"Magic ({mag})"
+        ]
+        if power_focus_rating > 0:
+            spell_pool_parts.append(f"Focus ({power_focus_rating})")
+        if spec_bonus > 0:
+            spell_pool_parts.append(f"Specialization ({spec_bonus})")
+        if sorcery_adept_bonus > 0:
+            spell_pool_parts.append(f"Adept Power ({sorcery_adept_bonus})")
+        spell_pool_str = " + ".join(spell_pool_parts)
+        page2.append(f"  - Spellcasting Pool: {spell_pool_str} = {spellcasting_pool}")
         
-    st_power = next((ap for ap in adept_powers if ap["id"] == "sharp_tongue"), None)
-    if st_power:
-        st_fn = fn_registry.add_footnote(
-            "Sharp Tongue Mechanics",
-            [
-                "Major Action. Costs 1.0 PP.",
-                "Roll Charisma + Magic vs. Intuition + Willpower.",
-                "Net hits inflict unresisted Stun damage, or if net hits >= target's WIL, inflicts Dazed.",
-                "Target must be in line of sight and understand the adept."
-            ]
-        )
-        page2.append(f"  - Adept Power: Sharp Tongue{st_fn} (inflict stun damage or dazed status via verbal barb)")
-    page2.append("")
+        # Dynamic Drain Resistance Pool computation
+        tradition_name = char_data.get("tradition", "Buddhism")
+        drain_attrs = TRADITION_DRAIN_MAP.get(tradition_name.lower(), ("WILLPOWER", "CHARISMA"))
+        d_val1 = a.get(drain_attrs[0], 0)
+        d_val2 = a.get(drain_attrs[1], 0)
+        drain_sum = d_val1 + d_val2
+        page2.append(f"  - Drain Resistance Pool: {drain_attrs[0].title()} ({d_val1}) + {drain_attrs[1].title()} ({d_val2}) = {drain_sum} ({drain_sum + 8:02} Quickened){quickened_fn} ({tradition_name.title()} tradition)")
+        
+        page2.append("  - Quickening: Permits casting sustained spells that remain permanently active")
+        
+        if mortype_check.lower() == "mysticadept":
+            page2.append("  - Astral Perception: Shift visual spectrum to the Astral Plane. Minor Action to activate/deactivate")
+        else:
+            page2.append("  - Astral Projection: Shift consciousness to the Astral Plane. Speed: 100km/hour")
+        
+        # Dynamic Astral Combat Pool computation
+        astral_skill = next((sk for sk in s.values() if sk.get("id") == "astral"), None)
+        if astral_skill:
+            astral_rating = astral_skill.get("rating", 0)
+            is_untrained = astral_skill.get("untrained", False)
+            penalty = 1 if is_untrained else 0
+            penalty_str = " - Untrained (1)" if is_untrained else ""
+            
+            astral_pool = d_val1 + astral_rating - penalty + power_focus_rating
+            q_astral_pool = (d_val1 + 4) + astral_rating - penalty + power_focus_rating
+            
+            focus_str = f" + Focus ({power_focus_rating})" if power_focus_rating > 0 else ""
+            page2.append(f"  - Astral Combat Pool: Willpower ({d_val1}){penalty_str}{focus_str} = {astral_pool} ({q_astral_pool} Quickened){quickened_fn}")
+        else:
+            page2.append("  - Astral Combat Pool: Untrained (requires Astral skill or Astral Perception)")
+            
+        # Adept Powers Footnotes
+        adept_powers = char_data.get("adept_powers", [])
+        cv_power = next((ap for ap in adept_powers if ap["id"] == "commanding_voice"), None)
+        if cv_power:
+            cv_rating = cv_power.get("rating", 1)
+            cv_fn = fn_registry.add_footnote(
+                f"Commanding Voice (R{cv_rating}) Mechanics",
+                [
+                    "Major Action. Costs 1.5 PP per level.",
+                    "Roll Leadership + Charisma vs. Willpower + Intuition.",
+                    "Target obeys a single command of 5 words or less, or freezes for 1 round/level.",
+                    "Orders cannot cause direct self-harm."
+                ]
+            )
+            page2.append(f"  - Adept Power: Commanding Voice (R{cv_rating}){cv_fn} (influence targets verbally)")
+            
+        st_power = next((ap for ap in adept_powers if ap["id"] == "sharp_tongue"), None)
+        if st_power:
+            st_fn = fn_registry.add_footnote(
+                "Sharp Tongue Mechanics",
+                [
+                    "Major Action. Costs 1.0 PP.",
+                    "Roll Charisma + Magic vs. Intuition + Willpower.",
+                    "Net hits inflict unresisted Stun damage, or if net hits >= target's WIL, inflicts Dazed.",
+                    "Target must be in line of sight and understand the adept."
+                ]
+            )
+            page2.append(f"  - Adept Power: Sharp Tongue{st_fn} (inflict stun damage or dazed status via verbal barb)")
+        page2.append("")
 
     page2.extend(fn_registry.get_footer_lines())
 

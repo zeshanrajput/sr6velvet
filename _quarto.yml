@@ -13,8 +13,8 @@ book:
       chapters:
         - chapters/identity_core.md
         - chapters/character_sheet.qmd
-        - chapters/rules_and_downtime.qmd
-        - chapters/character_log.qmd
+        - chapters/rules_and_downtime.md
+        - chapters/character_log.md
     - part: "Narrative Log"
       chapters:
         - chapters/01_transaction.md

@@ -59,6 +59,7 @@ SW_CAT_MAP = {
     "PERSONAL ASSISTANT": "Commlink Apps",
     "SOCIAL HUD": "Commlink Apps", 
     "VOCAL TENSION DETECTION": "Commlink Apps",
+    "THERMAL MOOD READING": "Commlink Apps",
     "AUTOSOFT HOST": "Basic", 
     "BROWSE": "Basic", 
     "EDIT": "Basic", 

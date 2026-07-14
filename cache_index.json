@@ -406,10 +406,11 @@
   "SO-0266:summary": "Edge Boosts cost 1 less for Influence tests. Magicians also gain this benefit for Illusion and Manipulation spells.",
   "matrix_stats:transysavalon": {
     "subType": "COMMLINK",
-    "attack": 3,
-    "sleaze": 1,
+    "rating": 6,
+    "attack": 0,
+    "sleaze": 0,
     "dataProcessing": 3,
-    "firewall": 3,
+    "firewall": 1,
     "page": "268"
   },
   "quality_stats:exceptionalattribute": {

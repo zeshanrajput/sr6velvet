@@ -27,9 +27,9 @@ ___________________________________________________________________________
   ASTRAL                : 00 (U)                      -> Pool: 05[#3] (09[#1])
 
 [ SPELLS ]
-  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 20[#4]  [Drain Resist: 09 (17)[#1]]
-  - INCREASE REFLEXES (Drain 5)         -> Pool: 20[#4]  [Drain Resist: 09 (17)[#1]]
-  - CHARM (Drain 5)                     -> Pool: 20[#4]  [Drain Resist: 09 (17)[#1]]
+  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 20[#4]  [Drain Resist: 15 (23)[#1]]
+  - INCREASE REFLEXES (Drain 5)         -> Pool: 20[#4]  [Drain Resist: 15 (23)[#1]]
+  - CHARM (Drain 5)                     -> Pool: 20[#4]  [Drain Resist: 15 (23)[#1]]
 
 [ ADEPT_POWERS ]
   - SHARP TONGUE
@@ -49,17 +49,15 @@ ___________________________________________________________________________
 // KIM_JIN-YOUNG.bin // PAGE 2: DOSSIER DATABASE //
 ___________________________________________________________________________
 
-[ DRONE_COMMAND_ARRAY (COL 1) ]        | [ DRONE_COMMAND_ARRAY (COL 2) ]
-
 [ MATRIX_DEVICES ]                     |
 - TRANSYS AVALON (COMMLINK)            |
-  ATK 03 SLZ 01 DPR 03 FWL 03          |
-  > Thermal Mood Reading               |
+  RAT 06            DPR 03 FWL 01      |
                                        |
 
 [ SOFTWARE_LIBRARY ]
   - PERSONAL ASSISTANT       (Comm)   [R6]  // Full Def: + Rtg
   - SOCIAL HUD               (Comm)         // Organize all known info on target.
+  - THERMAL MOOD READING     (Comm)         // Determine emotional state via skin temp (req. thermographic)
 
 [ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
   > EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - CONTACTS [+3]
@@ -85,7 +83,7 @@ ___________________________________________________________________________
 [ MAGIC_PROTOCOLS_CHEAT_SHEET ]
   - Active Foci: Power Focus (R2) (adds rating as bonus to all Magic tests)
   - Spellcasting Pool: Sorcery (6) + Magic (6) + Focus (2) + Specialization (2) + Adept Power (4) = 20
-  - Drain Resistance Pool: Willpower (5) + Intuition (4) = 9 (17 Quickened)[#1] (Shinto tradition)
+  - Drain Resistance Pool: Willpower (5) + Charisma (10) = 15 (23 Quickened)[#1] (Shinto tradition)
   - Quickening: Permits casting sustained spells that remain permanently active
   - Astral Perception: Shift visual spectrum to the Astral Plane. Minor Action to activate/deactivate
   - Astral Combat Pool: Willpower (5) - Untrained (1) + Focus (2) = 6 (10 Quickened)[#1]
