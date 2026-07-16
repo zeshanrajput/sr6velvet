@@ -1007,7 +1007,7 @@ def generate_ascii_sheet(char_data, verbose=False):
         page1.append("")
 
     # Page 2 (Back)
-    page2 = make_page_break(2, "dossier database", char_data['name'])
+    page2 = []
 
     # Split drones across columns (for Velvet's flying eye drone)
     drones = char_data["drones"]
@@ -1254,7 +1254,7 @@ def generate_ascii_sheet(char_data, verbose=False):
     page2.extend(fn_registry.get_footer_lines())
 
     # Page 3 (Appendices)
-    page3 = make_page_break(3, "social & credentials", char_data['name'])
+    page3 = []
 
     if char_data["contacts"]:
         page3.append("[ SOCIAL_NETWORK_CONTACTS ]")
@@ -1295,7 +1295,7 @@ def generate_ascii_sheet(char_data, verbose=False):
         page3.append("")
 
     # Page 4 (Campaign History)
-    page4 = make_page_break(4, "chronicle log", char_data['name'])
+    page4 = []
 
     if char_data.get("career_log"):
         page4.append("[ CAREER_LOG ]")
