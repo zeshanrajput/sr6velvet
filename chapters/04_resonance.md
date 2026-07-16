@@ -30,4 +30,4 @@ Ryo did not look up at them. He focused on his hands. Slowly, deliberately, he r
 
 The name was still there. *Hana. Her name is Hana.*
 
-He had protected it. He had kept it safe from the machine. But as he whispered the syllable to himself in the fluorescent silence, it no longer tasted like a clean, stolen coin. It tasted like copper pennies, chemical sweat, and the quiet, collective sigh of a stadium full of children who had just been emptied into the dark.
+He had protected it. He had kept it safe from the ravenous void of the ritual. But as he whispered the syllable to himself in the fluorescent silence, it no longer tasted like a clean, stolen coin. It tasted like copper pennies, chemical sweat, and the quiet, collective sigh of a stadium full of children who had just been emptied into the dark.

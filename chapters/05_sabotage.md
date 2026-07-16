@@ -16,7 +16,7 @@ He saw Hana in the wings, her perfect, glassy Wuxing-optics reflecting the stage
 
 At the climax of the arrangement, as the ritual peaked and the raw emotional current of eighty-five thousand fans surged into the gateway, Ryo did not pass the energy along. He didn't complete the circuit. Instead, he locked his jaw, tilted his chin a fraction of a degree, and deliberately skewed the internal geometry of his aura. He turned the incoming harvest directly inward, dropping the grid straight into his own nervous system.
 
-The feedback loop was immediate and violent. It did not feel like a spell; it felt like his veins were being filled with liquid lead, a white-hot hammer blow that struck his brain and tore through his spiritual architecture. The geomantic circuit shattered. The copper plates beneath his boots buckled with a sharp, electrical crack, throwing a shower of blue sparks twenty feet into the air.
+The feedback loop was immediate and violent. It felt like his veins were being filled with liquid lead, a white-hot hammer blow that struck his brain and tore through his spiritual architecture. The geomantic circuit shattered. The copper plates beneath his boots buckled with a sharp, electrical crack, throwing a shower of blue sparks twenty feet into the air.
 
 The local grid collapsed.
 

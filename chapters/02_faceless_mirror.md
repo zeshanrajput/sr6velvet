@@ -2,7 +2,7 @@
 
 The cauterizer in Whiskey's basement clinic had a bad coil. Every time she pressed the foot pedal, it emitted a high, thin whine that smelled of singed hair and burning flesh, a clinical stink that hung in the corners of the concrete room despite the intake fan rattling in the high window.
 
-Ryo sat on the edge of the steel table, his shirt draped over his shoulders. Whiskey was clean-searing a minor shrapnel crease in his shoulder—a stray flechette from a Redmond alley run. She didn't use a local anesthetic spell. The nuyen was best spent on the security nodes shielding Hana.
+Ryo sat on the edge of the steel table, his shirt draped over his shoulders. Whiskey was clean-searing a minor shrapnel crease in his shoulder—a stray flechette from a Redmond alley run. She didn't use a local anesthetic spell. The nuyen was better spent on the security shielding Hana.
 
 "Hold still," Whiskey muttered. "I'm no plastic surgeon, and I know this body is worth more nuyen than I'll ever imagine."
 

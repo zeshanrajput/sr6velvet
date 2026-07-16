@@ -6,15 +6,15 @@ Lee Ji-yoo sat on a rusted ventilation housing, her Transys Avalon commlink cast
 
 To secure the connection against the active corporate scans, she had to push a high-force warding spell through the transmission signal. She let her astral mask drop, channeling the raw mana through her marrow.
 
-The magic surged, and with it came the shift back to a neutral profile. Without the active discipline of sustaining the Lee Ji-yoo configuration, its true, un-sculpted form leaked through. The cartilage in its face snapped and widened, its planed jawbone expanding back to its sharp, native angularity. The warm brown of its calibrated irises bled away, returning to the bottomless, solid obsidian of its heritage. It gasped as its lungs expanded, its ribcage widening to its natural volume with a dull, bone-deep ache that made it shudder. Yet, as its skin darkened and the corporate symmetry fell away, a profound sense of self returned—it was breathing his own air, even if it smelled of sulfur.
+The magic surged, and with it came the shift back to a neutral profile. Without the active discipline of sustaining the Lee Ji-yoo configuration, its true, un-sculpted form leaked through. The cartilage in its face snapped and widened, its planed jawbone expanding back to its sharp, native angularity. The warm brown of its calibrated irises bled away, returning to the bottomless, solid obsidian of its heritage. It gasped as its lungs expanded, its ribcage widening to its natural volume with a dull, bone-deep ache that made it shudder. Yet, as its skin darkened and the corporate symmetry fell away, a profound sense of self returned—it was breathing its own air, even if it smelled of sulfur.
 
 It tapped the commlink, Tanaka Ryo's masculine profile stabilizing on the interface as his vocal cords dropped back to their resonant, low baseline.
 
-The network was expensive. Thousands of nuyen already gone, distributed through secure, nested accounts to secure supplies, reagents, and network connections. The deckers he employed spent their nights scrubbing Velvet's digital footprint, maintaining the counter-espionage shields around Hana’s personal commlink in Neo-Seoul, and monitoring the Wuxing security feeds.
+The network was expensive. Thousands of nuyen already gone, distributed through secure, nested accounts to obtain supplies, reagents, and network connections. The deckers he employed spent their nights scrubbing Velvet's digital footprint, maintaining the counter-espionage shields around Hana’s personal commlink in Neo-Seoul, and monitoring the Wuxing security feeds.
 
 Two days ago, they had flagged an active, high-priority sweep on the local grid—a systematic, cross-border audit executed by the surviving members of his old performance unit. It wasn’t a personal hunt; it was a desperate collection order. The Singapore sabotage had left the remaining assets compromised, their files marked for physical disposal if they failed to retrieve the missing gateway node. To them, he was no longer a brother who had escaped; he was a balance-sheet error they had to correct to protect their own survival.
 
-Ryo initiated the secure, encrypted link the deckers had established. The terminal hummed, the signal routing through three dead-letter boxes in Denver and Hong Kong before the connection clicked.
+Ryo initiated the encrypted link the deckers had established. The terminal hummed, the signal routing through three dead-letter boxes in Denver and Hong Kong before the connection clicked.
 
 The screen stabilized.
 
@@ -24,7 +24,7 @@ Hana sat in a dressing room in Neo-Seoul. The room was not the clinical, sterile
 
 Her voice did not shake. Her eyes—perfect, glassy spheres—autofocused with a faint, mechanical click that Ryo heard through the receiver.
 
-"The shields are active," Ryo said, his voice low and flat. "The deckers have scrubbed this connection. You're clean for now."
+"The proxies are active," Ryo said, his voice low and flat. "The deckers have scrubbed this connection. You're clean for now."
 
 "You shouldn't have called," she said. "And you shouldn't have paid them."
 
