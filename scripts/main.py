@@ -666,44 +666,10 @@ class FootnoteRegistry:
         self.key_to_id = {}
     
     def add_footnote(self, title, items):
-        title = title.strip()
-        hashable_items = []
-        for it in items:
-            if isinstance(it, list):
-                hashable_items.append(tuple(it))
-            else:
-                hashable_items.append(it)
-        key = (title, tuple(hashable_items))
-        
-        if key in self.key_to_id:
-            return self.key_to_id[key]
-        fid = f"[#{len(self.footnotes) + 1}]"
-        self.footnotes.append((fid, title, items))
-        self.key_to_id[key] = fid
-        return fid
+        return ""
         
     def get_footer_lines(self):
-        lines = []
-        if self.footnotes:
-            lines.append("")
-            lines.append("[ CONSOLIDATED_RULES_FOOTNOTES ]")
-            for fid, title, items in self.footnotes:
-                lines.append(f"  {fid} {title}:")
-                for item in items:
-                    if isinstance(item, (list, tuple)):
-                        for subitem in item:
-                            wrapped = textwrap.wrap(subitem, width=63)
-                            if wrapped:
-                                lines.append(f"         - {wrapped[0]}")
-                                for w in wrapped[1:]:
-                                    lines.append(f"           {w}")
-                    else:
-                        wrapped = textwrap.wrap(item, width=65)
-                        if wrapped:
-                            lines.append(f"       - {wrapped[0]}")
-                            for w in wrapped[1:]:
-                                lines.append(f"         {w}")
-        return lines
+        return []
 
 def format_compact_condition_monitor(boxes):
     boxes_list = [f"[{'-' + str(i // 3) if i // 3 > 0 else '0'}]" for i in range(1, boxes + 1)]
@@ -1283,95 +1249,7 @@ def generate_ascii_sheet(char_data, verbose=False):
             page2.append(f"  - {l_name.upper()} ({life.get('paidMonths', 0)} Months Pre-paid)")
         page2.append("")
 
-    # Magic Cheat Sheet
-    if mag > 0:
-        page1_foci = foci[0] if foci else None
-        foci_desc = f"Power Focus (R{page1_foci['rating']})" if page1_foci else "None"
-        
-        page2.append("[ MAGIC_PROTOCOLS_CHEAT_SHEET ]")
-        page2.append(f"  - Active Foci: {foci_desc} (adds rating as bonus to all Magic tests)")
-        
-        # Dynamic Spellcasting Pool computation
-        sorcery_skill = next((sk for sk in s.values() if sk.get("id") == "sorcery"), {})
-        sorcery_rating = sorcery_skill.get("rating", 0)
-        sorcery_adept_bonus = sorcery_skill.get("adept_bonus", 0)
-        has_spellcasting_spec = any(sp.get("id") == "spellcasting" or sp.get("name", "").lower() == "spellcasting" for sp in sorcery_skill.get("specializations", []))
-        spec_bonus = 2 if has_spellcasting_spec else 0
-        spellcasting_pool = sorcery_rating + mag + power_focus_rating + spec_bonus + sorcery_adept_bonus
-        
-        spell_pool_parts = [
-            f"Sorcery ({sorcery_rating})",
-            f"Magic ({mag})"
-        ]
-        if power_focus_rating > 0:
-            spell_pool_parts.append(f"Focus ({power_focus_rating})")
-        if spec_bonus > 0:
-            spell_pool_parts.append(f"Specialization ({spec_bonus})")
-        if sorcery_adept_bonus > 0:
-            spell_pool_parts.append(f"Adept Power ({sorcery_adept_bonus})")
-        spell_pool_str = " + ".join(spell_pool_parts)
-        page2.append(f"  - Spellcasting Pool: {spell_pool_str} = {spellcasting_pool}")
-        
-        # Dynamic Drain Resistance Pool computation
-        tradition_name = char_data.get("tradition", "Buddhism")
-        drain_attrs = TRADITION_DRAIN_MAP.get(tradition_name.lower(), ("WILLPOWER", "CHARISMA"))
-        d_val1 = a.get(drain_attrs[0], 0)
-        d_val2 = a.get(drain_attrs[1], 0)
-        drain_sum = d_val1 + d_val2
-        page2.append(f"  - Drain Resistance Pool: {drain_attrs[0].title()} ({d_val1}) + {drain_attrs[1].title()} ({d_val2}) = {drain_sum} ({drain_sum + 8:02} Quickened){quickened_fn} ({tradition_name.title()} tradition)")
-        
-        page2.append("  - Quickening: Permits casting sustained spells that remain permanently active")
-        
-        if mortype_check.lower() == "mysticadept":
-            page2.append("  - Astral Perception: Shift visual spectrum to the Astral Plane. Minor Action to activate/deactivate")
-        else:
-            page2.append("  - Astral Projection: Shift consciousness to the Astral Plane. Speed: 100km/hour")
-        
-        # Dynamic Astral Combat Pool computation
-        astral_skill = next((sk for sk in s.values() if sk.get("id") == "astral"), None)
-        if astral_skill:
-            astral_rating = astral_skill.get("rating", 0)
-            is_untrained = astral_skill.get("untrained", False)
-            penalty = 1 if is_untrained else 0
-            penalty_str = " - Untrained (1)" if is_untrained else ""
-            
-            astral_pool = d_val1 + astral_rating - penalty + power_focus_rating
-            q_astral_pool = (d_val1 + 4) + astral_rating - penalty + power_focus_rating
-            
-            focus_str = f" + Focus ({power_focus_rating})" if power_focus_rating > 0 else ""
-            page2.append(f"  - Astral Combat Pool: Willpower ({d_val1}){penalty_str}{focus_str} = {astral_pool} ({q_astral_pool} Quickened){quickened_fn}")
-        else:
-            page2.append("  - Astral Combat Pool: Untrained (requires Astral skill or Astral Perception)")
-            
-        # Adept Powers Footnotes
-        adept_powers = char_data.get("adept_powers", [])
-        cv_power = next((ap for ap in adept_powers if ap["id"] == "commanding_voice"), None)
-        if cv_power:
-            cv_rating = cv_power.get("rating", 1)
-            cv_fn = fn_registry.add_footnote(
-                f"Commanding Voice (R{cv_rating}) Mechanics",
-                [
-                    "Major Action. Costs 1.5 PP per level.",
-                    "Roll Leadership + Charisma vs. Willpower + Intuition.",
-                    "Target obeys a single command of 5 words or less, or freezes for 1 round/level.",
-                    "Orders cannot cause direct self-harm."
-                ]
-            )
-            page2.append(f"  - Adept Power: Commanding Voice (R{cv_rating}){cv_fn} (influence targets verbally)")
-            
-        st_power = next((ap for ap in adept_powers if ap["id"] == "sharp_tongue"), None)
-        if st_power:
-            st_fn = fn_registry.add_footnote(
-                "Sharp Tongue Mechanics",
-                [
-                    "Major Action. Costs 1.0 PP.",
-                    "Roll Charisma + Magic vs. Intuition + Willpower.",
-                    "Net hits inflict unresisted Stun damage, or if net hits >= target's WIL, inflicts Dazed.",
-                    "Target must be in line of sight and understand the adept."
-                ]
-            )
-            page2.append(f"  - Adept Power: Sharp Tongue{st_fn} (inflict stun damage or dazed status via verbal barb)")
-        page2.append("")
+
 
     page2.extend(fn_registry.get_footer_lines())
 
