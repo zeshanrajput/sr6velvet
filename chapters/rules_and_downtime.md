@@ -75,7 +75,7 @@ This represents the **maximum** that Velvet *might* be interested in quickening.
 #### **Step 8: Recovery from Drain**
 
 * **Drain Taken**: 8 Stun
-* **Recovery**: BOD (7) + WIL (9) = 16 dice = 4 bought hits + 1 (Rapid Healing) per hour of rest
+* **Recovery**: BOD (7) + WIL (9) = 16 dice = 4 bought hits per hour of rest
 
 ---
 

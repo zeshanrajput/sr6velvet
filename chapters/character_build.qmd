@@ -55,9 +55,10 @@ def inc_many(*pairs):
 * Metatype: Elf
 * Metavariant: Dalekitnon `{python} inc('Karma', -5)`
 * Starting Attributes
-    * Any attributes for which your metatype has an increased maximum (higher than six) start at 2. 
-    * All other attributes start at 1. 
-    * Dalekitnon have increased maximums for Agility, Logic, Intuition, and Charisma:
+  * Any attributes for which your metatype has an increased maximum (higher than six) start at 2. 
+  * All other attributes start at 1. 
+  * Dalekitnon have increased maximums for Agility, Logic, Intuition, and Charisma
+* Attribute Values
   * `{python} assign('Agility', 2)`
   * `{python} assign('Charisma', 2)`
   * `{python} assign('Body', 1)`
@@ -201,10 +202,9 @@ Mystic adepts must choose whether to gain a power point or spell for each point 
 * Initial Power Points: 3
   * Sharp Tongue: 1.0
   * Commanding Voice: 1.5
-  * Rapid Healing (R1): 0.5
+  * Command Presence: 0.5
 * Three PP bought: `{python} inc('Karma', -15)`
   * Improved Ability (Sorcery, R3): 3.0
-  * Command Presence
 * Initiation - Quickening: `{python} inc('Karma', -11)`
 * Two spells bought: `{python} inc('Karma', -10)`
   * Increase Attribute
