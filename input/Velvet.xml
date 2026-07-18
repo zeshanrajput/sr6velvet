@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char gender="DIVERSE" karmaF="25" meta="dalakitnon" nuyen="625">
+<sr6char gender="DIVERSE" karmaF="25" meta="dalakitnon" nuyen="4325">
    <lifestyles>
       <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1"/>
    </lifestyles>
@@ -10,19 +10,19 @@
    <mortype>mysticadept</mortype>
    <tradition>shinto</tradition>
    <qualities>
-      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="0d6c56a4-9750-40bc-a4b3-9ef5abff4499">
-         <decision choice="dbb18bb4-89a4-4435-bede-3077ee600bc5" value="CHARISMA"/>
-      </quality>
       <quality lang="en" ref="exceptional_attribute" uuid="06d98b51-c77b-4ecc-9865-8de750f9995a">
          <decision choice="4096584c-eb76-49b2-be6b-1a6c0ca9e50a" value="CHARISMA"/>
       </quality>
       <quality lang="en" ref="spirit_bane" uuid="fe1ee17b-1bf3-4e61-b609-86bc8e61149a">
          <decision choice="281aba04-1bd9-4d84-b6f4-f7bb97d217f0" value="spirit_beasts"/>
       </quality>
-      <quality lang="en" ref="hooder" uuid="371247b7-e82a-4762-a6b0-6c4eaeb64bd7" value="2"/>
+      <quality lang="en" ref="hooder" uuid="371247b7-e82a-4762-a6b0-6c4eaeb64bd7" value="3"/>
       <quality lang="en" ref="inspire_competence" uuid="ab099e59-f11c-41ce-8a71-3b6e6d161830"/>
       <quality lang="en" ref="incompetent" uuid="18fabc5e-c051-4478-8e0c-6bd44a1488bd">
          <decision choice="d0b872d0-0783-4b7a-b38a-35db1cef3685" value="outdoors"/>
+      </quality>
+      <quality lang="en" ref="attribute_mastery" uuid="a2aeaf16-4444-4d41-85fa-573b34e24c44">
+         <decision choice="58b2700b-918d-4746-83a2-ccc189f1cb1c" value="CHARISMA"/>
       </quality>
       <quality lang="en" ref="allergy" uuid="fe2953dc-b337-4a44-bdf1-d010508e301b">
          <decision choice="55a6dda7-7565-4108-9a04-65b7607081df" value="common"/>
@@ -80,9 +80,9 @@
       <attributes id="REACTION" value="3"/>
       <attributes id="STRENGTH" value="2"/>
       <attributes id="WILLPOWER" value="5"/>
-      <attributes id="LOGIC" value="4"/>
+      <attributes id="LOGIC" value="5"/>
       <attributes id="INTUITION" value="5"/>
-      <attributes id="CHARISMA" value="10"/>
+      <attributes id="CHARISMA" value="9"/>
       <attributes id="EDGE" value="3"/>
       <attributes id="MAGIC" value="6"/>
       <attributes id="RESONANCE" value="0"/>
@@ -139,13 +139,12 @@
          </accessories>
          <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3"/>
       </item>
-      <item lang="en" mode="CARRIED" ref="tres_chic" uuid="984f52b0-3cdc-4c38-9d2b-2a221d1ac7a8">
-         <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="12"/>
-      </item>
       <item lang="en" mode="CARRIED" ref="nanopaste_disguise_kit" uuid="4714dcc8-b85f-4f38-b3f5-7e2090877a93"/>
       <item lang="en" mode="CARRIED" ref="nanocosmetics_kit" uuid="31da47c5-cf39-4e60-9955-48757855e846"/>
       <item count="1" lang="en" mode="CARRIED" ref="nanocosmetics_refill" uuid="5898de5b-d14c-4a3e-a96f-c191b58c22e9"/>
       <item count="1" lang="en" mode="CARRIED" ref="nanopaste_disguise_refill" uuid="c280fee6-ba83-4de8-8c5a-a457aed694dd"/>
+      <item lang="en" mode="CARRIED" ref="savior_medkit" uuid="d68e498c-5806-4c8a-b0cc-c1d085d5d6b6"/>
+      <item count="1" lang="en" mode="CARRIED" ref="savior_medkit_refill" uuid="f247d2d4-0dcf-49ee-963c-37029f9bdf93"/>
       <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979"/>
    </items>
    <history>
