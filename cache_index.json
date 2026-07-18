@@ -484,5 +484,13 @@
   "armor_stats:suzukitransit": {
     "armor_rating": 10
   },
-  "SW-0310:summary": "Commanding Voice costs 1.5 PP per level. It allows you to influence targets through vocal commands, with the supernatural manipulation potentially drawing at..."
+  "SW-0310:summary": "Commanding Voice costs 1.5 PP per level. It allows you to influence targets through vocal commands, with the supernatural manipulation potentially drawing at...",
+  "matrix_stats:erikaelite": {
+    "subType": "COMMLINK",
+    "attack": 2,
+    "sleaze": 1,
+    "dataProcessing": 2,
+    "firewall": 2,
+    "page": "268"
+  }
 }

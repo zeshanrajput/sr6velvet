@@ -1,6 +1,6 @@
 ___________________________________________________________________________
 // ACCESSING: KIM_JIN-YOUNG.bin // SOURCE: ASTRAL_PLANE //
-// STATUS: ONLINE // LIFETIME KARMA: 5 // KARMA: 1 // NUYEN: ¥4,975 //
+// STATUS: ONLINE // LIFETIME KARMA: 5 // KARMA: 25 // NUYEN: ¥625 //
 ___________________________________________________________________________
 
 [ IDENTITY ]
@@ -9,85 +9,79 @@ ___________________________________________________________________________
   > TRADITION: Shinto            > SIN: [LOCAL_FILE_ENCRYPTED]
 
 [ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
-  PHY | BOD [02] AGI [04] REA [04] STR [02]  |   INIT (PHYS)  : 8 +1D6 (16 +5D6)
-  MNT | WIL [05] LOG [04] INT [04] CHA [10]  |   INIT (ASTRAL): N/A (Mystic Adept)
-  SPP | EDG [04] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 15 (23)
-  PP  | POWER POINTS: 06                     |   JUDGE INT    : 9 (17)
-                                             |   DEF RATING   : 13 (BOD+ARM) (17)
-                                             |   DEF POOL     : 08 (REA+INT) (16)
+  PHY | BOD [03] AGI [04] REA [03] STR [02]  |   INIT (PHYS)  : 8 +1D6
+  MNT | WIL [05] LOG [04] INT [05] CHA [10]  |   INIT (ASTRAL): N/A (Mystic Adept)
+  SPP | EDG [03] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 15
+  PP  | POWER POINTS: 06                     |   JUDGE INT    : 10
+                                             |   DEF RATING   : 04 (BOD+ARM)
+                                             |   DEF POOL     : 08 (REA+INT)
 
 [ PHYSICAL_CONDITION_MONITOR ]         | [ STUN_CONDITION_MONITOR ]
   [0] [0] [-1] | [-1] [-1] [-2]        |   [0] [0] [-1] | [-1] [-1] [-2]
-  [-2] [-2] [-3]                       |   [-2] [-2] [-3] | [-3] [-3]
+  [-2] [-2] [-3] | [-3]                |   [-2] [-2] [-3] | [-3] [-3]
 
 [ SKILL_MATRICES ]
-  SORCERY               : 06 (+4)   (Spellcasting +2) -> Pool: 18 / 20
-  INFLUENCE             : 05        (Leadership +2)   -> Pool: 15 / 17 (23 / 25)
   NATIVE LANGUAGE       : 04                          -> Pool: 08
-  ASTRAL                : 00 (U)                      -> Pool: 05 (09)
+  ATHLETICS             : 02                          -> Pool: 06
+  CON                   : 02                          -> Pool: 12
+  INFLUENCE             : 05                          -> Pool: 15
+  PERCEPTION            : 02                          -> Pool: 07
+  SORCERY               : 06 (+3)                     -> Pool: 15
+
+[ KNOWLEDGE ]
+  MCT                   : 01                          -> Pool: 05
+  SMALL UNIT TACTICS    : 01                          -> Pool: 05
+  WUXING                : 01                          -> Pool: 05
+  EAST ASIAN POP CULTURE: 01                          -> Pool: 05
 
 [ SPELLS ]
-  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 20  [Drain Resist: 15 (23)]
-  - INCREASE REFLEXES (Drain 5)         -> Pool: 20  [Drain Resist: 15 (23)]
-  - CHARM (Drain 5)                     -> Pool: 20  [Drain Resist: 15 (23)]
+  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 15  [Drain Resist: 15]
+  - INCREASE REFLEXES (Drain 5)         -> Pool: 15  [Drain Resist: 15]
 
 [ ADEPT_POWERS ]
   - SHARP TONGUE
-  - ASTRAL PERCEPTION
-  - IMPROVED ABILITY (SORCERY) [R4]
   - COMMANDING VOICE [R1]
-  - LINGUISTICS
-  - KINESICS
+  - IMPROVED ABILITY (SORCERY) [R3]
+  - COMMAND PRESENCE
 
 [ METAMAGICS & INITIATION ]            |
   - QUICKENING                         |
 
 [ MATRIX_DEVICES ]                     |
-- TRANSYS AVALON (COMMLINK)            |
-  RAT 06            DPR 03 FWL 01      |
+- ERIKA ELITE (COMMLINK)               |
+  RAT 04            DPR 02 FWL 02      |
+  > P-Ice Nope                         |
+  > Comhack Securelink Upgrade         |
                                        |
 
 [ SOFTWARE_LIBRARY ]
   - PERSONAL ASSISTANT       (Comm)   [R6]  // Full Def: + Rtg
-  - SOCIAL HUD               (Comm)         // Organize all known info on target.
-  - THERMAL MOOD READING     (Comm)         // Determine emotional state via skin temp (req. thermographic)
 
 [ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
+  > METAGENIC ATT. IMP. (CHARISMA)     |   - SECURETECH SKINSHIELD [+1]
   > EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - CONTACTS [+3]
-  > INSPIRE COMPETENCE                 |   - FLOAT SWITCH [+4]
-  > HOODER                             |   - SECURETECH SKINSHIELD [+1]
-  > METAGENIC ATT. IMP. (CHARISMA)     |   - SECURETECH INVISISHIELD [+10]
   ! SPIRIT BANE (SPIRIT BEASTS)        |   - TRES CHIC [+12]
-  ! INCOMPETENT (OUTDOORS)             |   - MAGICAL LODGE MATERIALS x6
-  ! ALLERGY (COMMON, MODERATE, SPICES) |   - REAGENTS PER DRAM x10
-  > LOW-LIGHT VISION                   |   - NANOCOSMETICS KIT
-                                       |   - NANOCOSMETICS REFILL x5 [+0]
-                                       |   - NANOPASTE DISGUISE KIT [+0]
-                                       |   - NANOPASTE DISGUISE REFILL x5
-                                       |   - SAVIOR MEDKIT
-                                       |   - SAVIOR MEDKIT REFILL x5
-                                       |   - EARBUDS [+1]
-                                       |   - MAGE-SIGHT-GOGGLES
-                                       |   - SUZUKI TRANSIT [+10]
+  > HOODER                             |   - NANOPASTE DISGUISE KIT [+0]
+  > INSPIRE COMPETENCE                 |   - NANOCOSMETICS KIT
+  ! INCOMPETENT (OUTDOORS)             |   - NANOCOSMETICS REFILL [+0]
+  ! ALLERGY (COMMON, MODERATE, SPICES) |   - NANOPASTE DISGUISE REFILL
+  > LOW-LIGHT VISION                   |
 
 [ LIFESTYLE_DATA ]
-  - HIGH (1 Months Pre-paid)
+  - LOW (1 Months Pre-paid)
 
 [ SOCIAL_NETWORK_CONTACTS ]
-  - BRYNNE TAGGART       SEA Fixer                        L:4 I:5 F:0
-  - NI NI XIAOLU         SEA Triad Johnson                L:4 I:3 F:0
-  - WHISKEY              SEA Street Doc                   L:3 I:2 F:0
-  - VINCENT GRISOME      SEA University Prof.             L:4 I:5 F:0
-  - CLAUDETTE LAURIER    NOLA Order of the Golden Dawn... L:4 I:5 F:0
-  - LE TIGRE             NOLA Epoch Model                 L:4 I:5 F:0
-  - JP CHAKRABORTY       NOLA Aurelian Designs Model      L:4 I:4 F:0
-  - ROANOKE              NOLA Ecological Activist         L:1 I:3 F:0
+  - BRYNNE TAGGART       SEA Fixer                        L:1 I:5 F:0
+  - VINCENT GRISOME      SEA University Prof.             L:2 I:5 F:0
+  - CLAUDETTE LAURIER    NOLA Order of the Golden Dawn... L:2 I:5 F:0
+  - LE TIGRE             NOLA Epoch Model                 L:1 I:5 F:0
+  - HANA                 Wuxing Pop Idol                  L:1 I:3 F:0
 
 [ REGISTERED_IDENTITIES ]
-  - SIN: Lee Ji-yoo                     [Rating 6]
+  - SIN: Lee Ji-Yoo                     [Rating 6]
   - SIN: Tanaka Ryo                     [Rating 6]
-  - LIC: Quickening                     [Rating 6]
-  - LIC: Spellcasting                   [Rating 6]
+  - LIC: Quickened Spells               [Rating 6]
+  - LIC: Magician                       [Rating 6]
 
 ___________________________________________________________________________
 // END_OF_FILE // VELVET@ASTRAL:~$ _

@@ -205,9 +205,9 @@ def parse_character(input_path):
                 "choice": choice
             })
             
-            if ref == "improved_ability" and choice:
+            if ref in ["improved_ability", "improved_ability_combat"] and choice:
                 actual_choice = choice
-                if name_out.lower() in ["kim jin-young", "velvet"] and choice.lower() == "stealth" and rating == 4:
+                if name_out.lower() in ["kim jin-young", "velvet", "velvet 0.2"] and choice.lower() in ["stealth", "exotic weapons"]:
                     actual_choice = "sorcery"
                 improved_abilities[actual_choice.lower()] = rating
 
@@ -242,6 +242,12 @@ def parse_character(input_path):
             display_name = ref.replace('_', ' ').title()
             if ref.lower() == "language":
                 display_name = "Native Language"
+            elif ref.lower() == "knowledge":
+                dec_el = skill.find('decision')
+                if dec_el is not None:
+                    val_attr = dec_el.get('value')
+                    if val_attr:
+                        display_name = val_attr.replace('_', ' ').title()
                 
             adept_bonus = improved_abilities.get(ref.lower(), 0)
             
@@ -738,15 +744,7 @@ def generate_ascii_sheet(char_data, verbose=False):
 
     fn_registry = FootnoteRegistry()
 
-    # Quickened footnote definition
-    quickened_fn_items = [
-        "Sustained permanently via Quickening.",
-        "Attributes (Natural -> Augmented): BOD 2->6, REA 4->8, WIL 5->9, INT 4->8, CHA 10->14.",
-        "Enhanced Reflexes spell: Reaction +4, Initiative Dice +4D6.",
-        "Charm spell: +4 to Con and Influence tests.",
-        "Per SRMG, augmented attributes do NOT increase Condition Monitor boxes."
-    ]
-    quickened_fn = fn_registry.add_footnote("Quickened Spells", quickened_fn_items)
+
 
     # Build Page 1 Front
     page1 = []
@@ -773,24 +771,12 @@ def generate_ascii_sheet(char_data, verbose=False):
         left_attr.append(f"  PP  | POWER POINTS: {a['POWER_POINTS']:02}")
     left_attr.append("")
 
-    # Derived pools with quickened values:
-    q_bod = 6
-    q_rea = 8
-    q_wil = 9
-    q_int = 8
-    q_cha = 14
-    
-    q_composure = q_cha + q_wil
-    q_judge_int = q_int + q_wil
-    q_phys_init_val = q_rea + q_int
-    q_phys_init_dice = "+5D6"
     base_dr = cha if has_charismatic_defense else bod
-    q_base_dr = q_cha if has_charismatic_defense else q_bod
     
     # Right Panel: Derived Status and Pools
     right_status = []
     right_status.append("[ DERIVED_STATUS ]")
-    right_status.append(f"  INIT (PHYS)  : {phys_init_val} {phys_init_dice} ({q_phys_init_val} {q_phys_init_dice}){quickened_fn}")
+    right_status.append(f"  INIT (PHYS)  : {phys_init_val} {phys_init_dice}")
     
     mortype_check = char_data.get("mortype", "Magician")
     if mortype_check.lower() == "mysticadept":
@@ -798,8 +784,8 @@ def generate_ascii_sheet(char_data, verbose=False):
     else:
         right_status.append(f"  INIT (ASTRAL): {astral_init_val} {astral_init_dice}")
         
-    right_status.append(f"  COMPOSURE    : {composure} ({q_composure}){quickened_fn}")
-    right_status.append(f"  JUDGE INT    : {judge_int} ({q_judge_int}){quickened_fn}")
+    right_status.append(f"  COMPOSURE    : {composure}")
+    right_status.append(f"  JUDGE INT    : {judge_int}")
     
     # Total armor calculation
     armor_sum = 0
@@ -808,12 +794,9 @@ def generate_ascii_sheet(char_data, verbose=False):
         if is_a and it.get("armorRating"):
             armor_sum += it.get("armorRating", 0)
             
-    q_def_rating = q_base_dr + armor_sum
-    q_def_pool = q_rea + q_int
-    
     dr_label = "CHA+ARM" if has_charismatic_defense else "BOD+ARM"
-    right_status.append(f"  DEF RATING   : {base_dr + armor_sum:02} ({dr_label}) ({q_def_rating}){quickened_fn}")
-    right_status.append(f"  DEF POOL     : {rea + int_:02} (REA+INT) ({q_def_pool:02}){quickened_fn}")
+    right_status.append(f"  DEF RATING   : {base_dr + armor_sum:02} ({dr_label})")
+    right_status.append(f"  DEF POOL     : {rea + int_:02} (REA+INT)")
 
     page1.extend(zip_panels(left_attr, right_status, left_width=44, separator=" | "))
     page1.append("")
@@ -862,18 +845,6 @@ def generate_ascii_sheet(char_data, verbose=False):
             fn_marker = fn_registry.add_footnote(f"{skill_obj.get('name')} adjustments", skill_mods)
             
         q_pool_str = ""
-        if skill_id_clean == "influence":
-            # Natural CHA is 10, augmented is 14 (+4). Charm spell adds +4. Total +8.
-            q_base_pool = base_pool + 8
-            if skill_obj.get("specializations"):
-                q_spec_pool = q_base_pool + 2
-                q_pool_str = f" ({q_base_pool:02}{quickened_fn} / {q_spec_pool:02}{quickened_fn})"
-            else:
-                q_pool_str = f" ({q_base_pool:02}{quickened_fn})"
-        elif skill_id_clean == "astral" and skill_obj.get("untrained"):
-            # Intuition goes from 4 to 8 (+4)
-            q_base_pool = base_pool + 4
-            q_pool_str = f" ({q_base_pool:02}{quickened_fn})"
 
         spec_str = ""
         if skill_obj.get("specializations"):
@@ -941,7 +912,7 @@ def generate_ascii_sheet(char_data, verbose=False):
             pool = mag + sorcery_total + spec_bonus + power_focus_rating
             
             sp_disp = f"{sp_name.upper()} (Drain {drain})"
-            page1.append(f"  - {sp_disp.ljust(36)}-> Pool: {pool:02}{spell_marker}  [Drain Resist: {drain_resist_pool:02} ({drain_resist_pool + 8:02}){quickened_fn}]".rstrip())
+            page1.append(f"  - {sp_disp.ljust(36)}-> Pool: {pool:02}{spell_marker}  [Drain Resist: {drain_resist_pool:02}]".rstrip())
             
             if verbose:
                 rule_info = rules_engine.query_rule(sp_name, category="Spells")
@@ -962,9 +933,12 @@ def generate_ascii_sheet(char_data, verbose=False):
             rating = ap.get("rating", 0)
             choice = ap.get("choice", "")
             
-            # Programmatic override for display: stealth -> sorcery for Velvet
-            if char_data["name"].lower() in ["kim jin-young", "velvet"] and name == "IMPROVED ABILITY" and choice.upper() == "STEALTH" and rating == 4:
-                choice = "Sorcery"
+            # Programmatic override for display: stealth/exotic_weapons -> sorcery for Velvet
+            if char_data["name"].lower() in ["kim jin-young", "velvet", "velvet 0.2"]:
+                if (name == "IMPROVED ABILITY" and choice.upper() == "STEALTH" and rating == 4) or \
+                   (name == "IMPROVED ABILITY COMBAT" and choice.upper() == "EXOTIC WEAPONS" and rating == 3):
+                    name = "IMPROVED ABILITY"
+                    choice = "Sorcery"
                 
             choice_str = f" ({choice.upper()})" if choice else ""
             rating_str = f" [R{rating}]" if rating > 0 else ""
