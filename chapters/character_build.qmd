@@ -70,7 +70,7 @@ def inc_many(*pairs):
   * `{python} assign('Edge', 1)`
 * If you’re a full magician, mystic adept, or adept, gain `{python} assign('Magic', 1)`
 * Metagenic Qualities
-  * Metagenic Attribute Improvement - CHA: `{python} inc('Karma', -15)`
+  * None allowed per SRMg p.54
 * Awakened: Mystic Adept
 * Nationality: Philippines
 * Native Language: English
@@ -123,21 +123,21 @@ def inc_many(*pairs):
 ### Event: You were overwhelmed, but things worked out
 
 * +1 to Agility, Body, Reaction, or Strength: `{python} inc('Body')`
-* +2 to Charisma, Intuition, Logic, or Willpower: `{python} inc_many(('Willpower', 1), ('Intuition', 1))`
+* +2 to Charisma, Intuition, Logic, or Willpower: `{python} inc('Charisma',2)`
 * +1 to Edge, Magic, or Resonance: `{python} inc('Magic')`
 * Contact Points: `{python} inc('Contact_Points', 4)`
 
 ### Event: You were overwhelmed, but things worked out (Repeated)
 
 * +1 to Agility, Body, Reaction, or Strength: `{python} inc('Strength')`
-* +2 to Charisma, Intuition, Logic, or Willpower: `{python} inc('Charisma', 2)`
+* +2 to Charisma, Intuition, Logic, or Willpower: `{python} inc('Intuition', 2)`
 * +1 to Edge, Magic, or Resonance: `{python} inc('Magic')`
 * Contact Points: `{python} inc('Contact_Points', 4)`
 
 ### Event: Your body was pushed to its limits
 
 * +2 to Agility, Body, Reaction, or Strength: `{python} inc('Agility', 2)`
-* +1 to Charisma, Intuition, Logic, or Willpower: `{python} inc('Charisma')`
+* +1 to Charisma, Intuition, Logic, or Willpower: `{python} inc('Willpower')`
 * +1 to Edge, Magic, or Resonance: `{python} inc('Magic')`
 * Contact Points: `{python} inc('Contact_Points', 4)`
 
@@ -151,7 +151,7 @@ def inc_many(*pairs):
 
 ### Small Business Owner
 
-* Choose one: +1 to Charisma, Intuition, or Logic: `{python} inc('Intuition')`
+* Choose one: +1 to Charisma, Intuition, or Logic: `{python} inc('Logic')`
 * Choose one: +1 to Con, Electronics, Influence, or Perception: `{python} inc('Influence')`
 * Choose one: +1 to Edge or +25,000 nuyen: `{python} inc('Edge')`
 * Choose one: +1 to any skill or attribute: `{python} inc('Willpower')`
@@ -203,7 +203,7 @@ Mystic adepts must choose whether to gain a power point or spell for each point 
   * Sharp Tongue: 1.0
   * Commanding Voice: 1.5
   * Command Presence: 0.5
-* Three PP bought: `{python} inc('Karma', -15)`
+* Three PP bought: `{python} inc('Karma', -30)`
   * Improved Ability (Sorcery, R3): 3.0
 * Initiation - Quickening: `{python} inc('Karma', -11)`
 * Two spells bought: `{python} inc('Karma', -10)`
@@ -216,6 +216,8 @@ Mystic adepts must choose whether to gain a power point or spell for each point 
   * Refill x1 `{python} inc('Nuyen', -300)`
 * Nanocosmetics `{python} inc('Nuyen', -700)`
   * Refill x1 `{python} inc('Nuyen', -100)`
+* Savior Medkit `{python} inc('Nuyen', -2000)`
+   * Refill x1 `{python} inc('Nuyen', -300)`
 
 #### SINs
 
@@ -237,7 +239,6 @@ Mystic adepts must choose whether to gain a power point or spell for each point 
 * Ares SecureTech SkinShield `{python} inc('Nuyen', -3150)`
   * RACS 2
   * Ballistic Hood
-* Tres Chic (R12) `{python} inc('Nuyen', -6000)`
 
 ### Contacts
 
