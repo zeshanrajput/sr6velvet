@@ -1,6 +1,6 @@
 ___________________________________________________________________________
 // ACCESSING: KIM_JIN-YOUNG.bin // SOURCE: ASTRAL_PLANE //
-// STATUS: ONLINE // LIFETIME KARMA: 5 // KARMA: 25 // NUYEN: ¥625 //
+// STATUS: ONLINE // LIFETIME KARMA: 5 // KARMA: 5 // NUYEN: ¥4,325 //
 ___________________________________________________________________________
 
 [ IDENTITY ]
@@ -10,8 +10,8 @@ ___________________________________________________________________________
 
 [ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
   PHY | BOD [03] AGI [04] REA [03] STR [02]  |   INIT (PHYS)  : 8 +1D6
-  MNT | WIL [05] LOG [04] INT [05] CHA [10]  |   INIT (ASTRAL): N/A (Mystic Adept)
-  SPP | EDG [03] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 15
+  MNT | WIL [05] LOG [05] INT [05] CHA [09]  |   INIT (ASTRAL): N/A (Mystic Adept)
+  SPP | EDG [03] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 14
   PP  | POWER POINTS: 06                     |   JUDGE INT    : 10
                                              |   DEF RATING   : 04 (BOD+ARM)
                                              |   DEF POOL     : 08 (REA+INT)
@@ -21,22 +21,22 @@ ___________________________________________________________________________
   [-2] [-2] [-3] | [-3]                |   [-2] [-2] [-3] | [-3] [-3]
 
 [ SKILL_MATRICES ]
-  NATIVE LANGUAGE       : 04                          -> Pool: 08
+  NATIVE LANGUAGE       : 04                          -> Pool: 09
   ATHLETICS             : 02                          -> Pool: 06
-  CON                   : 02                          -> Pool: 12
-  INFLUENCE             : 05                          -> Pool: 15
+  CON                   : 02                          -> Pool: 11
+  INFLUENCE             : 05                          -> Pool: 14
   PERCEPTION            : 02                          -> Pool: 07
   SORCERY               : 06 (+3)                     -> Pool: 15
 
 [ KNOWLEDGE ]
-  MCT                   : 01                          -> Pool: 05
-  SMALL UNIT TACTICS    : 01                          -> Pool: 05
-  WUXING                : 01                          -> Pool: 05
-  EAST ASIAN POP CULTURE: 01                          -> Pool: 05
+  MCT                   : 01                          -> Pool: 06
+  SMALL UNIT TACTICS    : 01                          -> Pool: 06
+  WUXING                : 01                          -> Pool: 06
+  EAST ASIAN POP CULTURE: 01                          -> Pool: 06
 
 [ SPELLS ]
-  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 15  [Drain Resist: 15]
-  - INCREASE REFLEXES (Drain 5)         -> Pool: 15  [Drain Resist: 15]
+  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 15  [Drain Resist: 14]
+  - INCREASE REFLEXES (Drain 5)         -> Pool: 15  [Drain Resist: 14]
 
 [ ADEPT_POWERS ]
   - SHARP TONGUE
@@ -58,14 +58,14 @@ ___________________________________________________________________________
   - PERSONAL ASSISTANT       (Comm)   [R6]  // Full Def: + Rtg
 
 [ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
-  > METAGENIC ATT. IMP. (CHARISMA)     |   - SECURETECH SKINSHIELD [+1]
-  > EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - CONTACTS [+3]
-  ! SPIRIT BANE (SPIRIT BEASTS)        |   - TRES CHIC [+12]
+  > EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - SECURETECH SKINSHIELD [+1]
+  ! SPIRIT BANE (SPIRIT BEASTS)        |   - CONTACTS [+3]
   > HOODER                             |   - NANOPASTE DISGUISE KIT [+0]
   > INSPIRE COMPETENCE                 |   - NANOCOSMETICS KIT
   ! INCOMPETENT (OUTDOORS)             |   - NANOCOSMETICS REFILL [+0]
-  ! ALLERGY (COMMON, MODERATE, SPICES) |   - NANOPASTE DISGUISE REFILL
-  > LOW-LIGHT VISION                   |
+  > ATTRIBUTE MASTERY (CHARISMA)       |   - NANOPASTE DISGUISE REFILL
+  ! ALLERGY (COMMON, MODERATE, SPICES) |   - SAVIOR MEDKIT
+  > LOW-LIGHT VISION                   |   - SAVIOR MEDKIT REFILL
 
 [ LIFESTYLE_DATA ]
   - LOW (1 Months Pre-paid)
