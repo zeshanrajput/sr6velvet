@@ -9,16 +9,16 @@ Welcome to the consolidated magic portfolio for **Kim Jin-Young**, operating in 
 * **Designation:** Kim Jin-Young
 * **VTT Alias:** Velvet
 * **Metatype:** Dalakitnon (Elf Variant)
-* **Tradition:** Buddhism
+* **Tradition:** Shinto/Musok
 * **System Status:** ONLINE // AWAKENED
 :::
 
 ::: {.g-col-6 .cyber-card}
 ### [MAGIC_PROGRESSION]
-* **Lifetime Karma:** 16 (11 earned/spent)
+* **Lifetime Karma:** 5
 * **Current Karma:** 5
-* **Liquid Capital:** ¥4,025
-* **Initiation Grade:** 1 (Quickening)
+* **Liquid Capital:** ¥225
+* **Initiation Grade:** 1
 :::
 
 :::
@@ -30,10 +30,21 @@ Born a Dalakitnon to a destitute family in the Philippines, his rare genetic and
 
 ## [ SYSTEM_NAVIGATION ]
 
-Use the sidebar or the indexes below to traverse the sub-grids of this portfolio:
+Use the sidebar or the indexes below to traverse this portfolio:
 
 ### 1. Core Profile
 * **[Identity Core](chapters/identity_core.md)**: Detailed background history and lore.
+* **[Character Build](chapters/character_build.qmd)**: The character build process description.
 * **[Character Sheet](chapters/character_sheet.qmd)**: The dynamically compiled Shadowrun character sheet.
 * **[Rules & Downtime Protocols](chapters/rules_and_downtime.md)**: Spellcasting and summoning formulas, cheat sheets, and active magical configurations.
 * **[Career Log](chapters/character_log.md)**: Full database of past runs, GMs, nuyen payouts, and Karma adjustments.
+
+### 2. Background Narratives
+* **[Transaction](chapters/01_transaction.md)**: Manila slums flashback (Age 5) triggered in Redmond.
+* **[Faceless Mirror](chapters/02_faceless_mirror.md)**: The clinical erasure of identity and bio-sculpting in Tokyo (Age 10).
+* **[Dark Wings](chapters/03_dark_wings.md)**: The astral panopticon and connection with Hana (Age 17).
+* **[Resonance](chapters/04_resonance.md)**: The Neo-Seoul dome and magical geomancy harvest (Age 17-18).
+* **[Sabotage](chapters/05_sabotage.md)**: Sabotaging the Singapore ritual and escaping into the sewers (Age 18).
+* **[First Negotiation](chapters/06_first_negotiation.md)**: Shifting to Lee Ji-yoo in Seattle for a zero-nuyen contract (Age 19).
+* **[Seattle Web](chapters/07_seattle_web.md)**: The corporate joint-venture trap and running offensive in the shadows (Age 19-20).
+
