@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Character Sheet – VELVET // Jin-Young Character Dossier</title>
+<title>Character Creation (Point Buy) – VELVET // Jin-Young Character Dossier</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/character_build_point_buy.html" rel="next">
-<link href="../chapters/identity_core.html" rel="prev">
+<link href="../chapters/character_build.html" rel="next">
+<link href="../chapters/character_sheet.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/identity_core.html">Core Character</a></li><li class="breadcrumb-item"><a href="../chapters/character_sheet.html"><span class="chapter-title">Character Sheet</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/identity_core.html">Core Character</a></li><li class="breadcrumb-item"><a href="../chapters/character_build_point_buy.html"><span class="chapter-title">Character Creation (Point Buy)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -131,12 +131,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/character_sheet.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Character Sheet</span></a>
+  <a href="../chapters/character_sheet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Character Sheet</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/character_build_point_buy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Character Creation (Point Buy)</span></a>
+  <a href="../chapters/character_build_point_buy.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Character Creation (Point Buy)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -207,15 +207,32 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#choose-your-metatypemetavariant" id="toc-choose-your-metatypemetavariant" class="nav-link active" data-scroll-target="#choose-your-metatypemetavariant">Choose Your Metatype/Metavariant</a></li>
+  <li><a href="#choose-mundane-awakened-or-emerged" id="toc-choose-mundane-awakened-or-emerged" class="nav-link" data-scroll-target="#choose-mundane-awakened-or-emerged">Choose Mundane, Awakened, or Emerged</a></li>
+  <li><a href="#purchase-special-metatype-adjustment-points-with-cp" id="toc-purchase-special-metatype-adjustment-points-with-cp" class="nav-link" data-scroll-target="#purchase-special-metatype-adjustment-points-with-cp">Purchase Special / Metatype Adjustment Points with CP</a></li>
+  <li><a href="#purchase-attributes-with-cp" id="toc-purchase-attributes-with-cp" class="nav-link" data-scroll-target="#purchase-attributes-with-cp">Purchase Attributes with CP</a></li>
+  <li><a href="#purchase-skills-with-cp" id="toc-purchase-skills-with-cp" class="nav-link" data-scroll-target="#purchase-skills-with-cp">Purchase Skills with CP</a></li>
+  <li><a href="#purchase-resources-with-cp" id="toc-purchase-resources-with-cp" class="nav-link" data-scroll-target="#purchase-resources-with-cp">Purchase Resources with CP</a></li>
+  <li><a href="#qualities" id="toc-qualities" class="nav-link" data-scroll-target="#qualities">Qualities</a>
+  <ul class="collapse">
+  <li><a href="#gear" id="toc-gear" class="nav-link" data-scroll-target="#gear">Gear</a></li>
+  <li><a href="#contacts" id="toc-contacts" class="nav-link" data-scroll-target="#contacts">Contacts</a></li>
+  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">Other</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/identity_core.html">Core Character</a></li><li class="breadcrumb-item"><a href="../chapters/character_sheet.html"><span class="chapter-title">Character Sheet</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/identity_core.html">Core Character</a></li><li class="breadcrumb-item"><a href="../chapters/character_build_point_buy.html"><span class="chapter-title">Character Creation (Point Buy)</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Character Sheet</span></h1>
+<h1 class="title"><span class="chapter-title">Character Creation (Point Buy)</span></h1>
 </div>
 
 
@@ -232,106 +249,285 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<pre class="text"><code>___________________________________________________________________________
-// ACCESSING: KIM_JIN-YOUNG.bin // SOURCE: ASTRAL_PLANE //
-// STATUS: ONLINE // KARMA: 5 // NUYEN: ¥17,025 //
-___________________________________________________________________________
+<p>This page tracks the character creation process using the Point Buy system (Sixth World Companion).</p>
+<p>Shadowrunners are built with 100 Character Points (CP). You still gain 50 points of customization Karma.</p>
+<ul>
+<li>Character_Points = 100</li>
+<li>Karma = 50</li>
+</ul>
+<section id="choose-your-metatypemetavariant" class="level2">
+<h2 class="anchored" data-anchor-id="choose-your-metatypemetavariant">Choose Your Metatype/Metavariant</h2>
+<ul>
+<li>Choose the metatype or metavariant you want to play: <strong>Dalekitnon</strong> Karma -= 5</li>
+<li>Any metagenetic qualities must also be paid for.
+<ul>
+<li>Metagenetic Attribute Increase (CHA): Karma -= 15</li>
+</ul></li>
+</ul>
+</section>
+<section id="choose-mundane-awakened-or-emerged" class="level2">
+<h2 class="anchored" data-anchor-id="choose-mundane-awakened-or-emerged">Choose Mundane, Awakened, or Emerged</h2>
+<ul>
+<li>Awakened: Character_Points -= 10</li>
+<li>Mystic Adepts start with Magic += 1.
+<ul>
+<li>This unlocks the ability to purchase adept power points (8 CP each for mystic adepts).
+<ul>
+<li>3 Adept Power Points: Character_Points -= 24</li>
+</ul></li>
+<li>Mystic adepts may purchase a number of spells equal to final Magic x2 - PP. Each spell costs 2 CP or 5 Karma each.
+<ul>
+<li>Increase Attributes: Karma -= 5</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="purchase-special-metatype-adjustment-points-with-cp" class="level2">
+<h2 class="anchored" data-anchor-id="purchase-special-metatype-adjustment-points-with-cp">Purchase Special / Metatype Adjustment Points with CP</h2>
+<ul>
+<li>All characters start with 1 Edge: Edge += 1</li>
+<li>All characters start with 1 metatype adjustment point for free: Magic += 1</li>
+<li>You may purchase up to 12 additional adjustment points at 4 CP each
+<ul>
+<li>Magic += 4 : Character_Points -= 16</li>
+<li>Edge += 1 : Character_Points -= 4</li>
+</ul></li>
+</ul>
+</section>
+<section id="purchase-attributes-with-cp" class="level2">
+<h2 class="anchored" data-anchor-id="purchase-attributes-with-cp">Purchase Attributes with CP</h2>
+<ul>
+<li>All character attributes start at the minimum value for their race.
+<ul>
+<li>Body = 1</li>
+<li>Agility = 1</li>
+<li>Reaction = 1</li>
+<li>Strength = 1</li>
+<li>Willpower = 1</li>
+<li>Logic = 1</li>
+<li>Intuition = 1</li>
+<li>Charisma = 1</li>
+</ul></li>
+<li>All characters start with 4 attribute points.
+<ul>
+<li>Charisma += 4</li>
+</ul></li>
+<li>You may purchase up to 20 additional attribute points for 2 CP each.
+<ul>
+<li>Body += 1 : Character_Points -= 2</li>
+<li>Agility += 2 : Character_Points -= 4</li>
+<li>Reaction += 1 : Character_Points -= 2</li>
+<li>Strength += 1 : Character_Points -= 2</li>
+<li>Willpower += 4 : Character_Points -= 8</li>
+<li>Logic += 2 : Character_Points -= 4</li>
+<li>Intuition += 2 : Character_Points -= 4</li>
+<li>Charisma += 5 : Character_Points -= 10</li>
+</ul></li>
+</ul>
+</section>
+<section id="purchase-skills-with-cp" class="level2">
+<h2 class="anchored" data-anchor-id="purchase-skills-with-cp">Purchase Skills with CP</h2>
+<ul>
+<li>All characters start with 12 skill points.
+<ul>
+<li>Influence += 5</li>
+<li>Sorcery += 6</li>
+<li>Conjuring += 1</li>
+</ul></li>
+<li>You may purchase up to 20 additional skill points for 2 CP each.
+<ul>
+<li>Conjuring += 4 : Character_Points -= 8</li>
+</ul></li>
+</ul>
+</section>
+<section id="purchase-resources-with-cp" class="level2">
+<h2 class="anchored" data-anchor-id="purchase-resources-with-cp">Purchase Resources with CP</h2>
+<ul>
+<li>All characters start with Nuyen = 10000</li>
+<li>You may purchase resources at a rate of 1 CP per 20,000 nuyen
+<ul>
+<li>Nuyen += 40000 : Character_Points -= 2</li>
+</ul></li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Attributes</th>
+<th style="text-align: center;">Current Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Body</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td>Agility</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="odd">
+<td>Reaction</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td>Strength</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="odd">
+<td>Willpower</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="even">
+<td>Logic</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="odd">
+<td>Intuition</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td>Charisma</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="odd">
+<td>Magic</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr class="even">
+<td>Edge</td>
+<td style="text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Skills</th>
+<th style="text-align: center;">Current Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Influence</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="even">
+<td>Conjuring</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td>Sorcery</td>
+<td style="text-align: center;">6</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="qualities" class="level2">
+<h2 class="anchored" data-anchor-id="qualities">Qualities</h2>
+<ul>
+<li>Metagenetic Attribute Increase (CHA): (paid for above)</li>
+<li>Exceptional Attribute (CHA): Karma -= 12</li>
+<li>Hooder (R3): Karma += 15</li>
+<li>Inspire Competence: Karma -= 11</li>
+<li>Chronic Pain: Karma += 15</li>
+<li>Focused Concentration (R2): Karma -= 24</li>
+</ul>
+<section id="gear" class="level3">
+<h3 class="anchored" data-anchor-id="gear">Gear</h3>
+<ul>
+<li>Nanopaste Disguise Nuyen -= 1400
+<ul>
+<li>Refill x1 Nuyen -= 300</li>
+</ul></li>
+<li>Nanocosmetics Nuyen -= 700
+<ul>
+<li>Refill x2 Nuyen -= 200</li>
+</ul></li>
+<li>Savior Medkit Nuyen -= 2000
+<ul>
+<li>Refill x1 Nuyen -= 300</li>
+</ul></li>
+</ul>
+<section id="sins" class="level4">
+<h4 class="anchored" data-anchor-id="sins">SINs</h4>
+<ul>
+<li>Lee Ji-Yoo (Rating 6) Nuyen -= 15000
+<ul>
+<li>License: Magician Nuyen -= 1200</li>
+</ul></li>
+<li>Tanaka Ryo (Rating 6) Nuyen -= 15000</li>
+</ul>
+</section>
+<section id="electronics" class="level4">
+<h4 class="anchored" data-anchor-id="electronics">Electronics</h4>
+<ul>
+<li>Contacts (R3, Image Link, Flare Compensation, Thermographic Vision) Nuyen -= 1375</li>
+<li>Erika Elite (R4), Nuyen -= 4350
+<ul>
+<li>Securelink (R2)</li>
+<li>Personal Assistant (R6)</li>
+<li>P-ICE Nope!</li>
+</ul></li>
+</ul>
+</section>
+<section id="armor-clothing" class="level4">
+<h4 class="anchored" data-anchor-id="armor-clothing">Armor &amp; Clothing</h4>
+<ul>
+<li>Ares SecureTech SkinShield Nuyen -= 4150
+<ul>
+<li>RACS 2</li>
+<li>Ballistic Hood</li>
+<li>Tres Chic Social Accessories x2</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="contacts" class="level3">
+<h3 class="anchored" data-anchor-id="contacts">Contacts</h3>
+<p>Gain 6 * Charisma contact points to spend.</p>
+<ul>
+<li>Contact_Points += 60</li>
+</ul>
+<section id="seattle" class="level4">
+<h4 class="anchored" data-anchor-id="seattle">Seattle</h4>
+<ul>
+<li>Brynne Taggart (C5 L1) Contact_Points -= 6</li>
+<li>Vincent Grisome (C5 L3) Contact_Points -= 8</li>
+<li>Whiskey (C2 L3) Contact_Points -= 5</li>
+</ul>
+</section>
+<section id="new-orleans" class="level4">
+<h4 class="anchored" data-anchor-id="new-orleans">New Orleans</h4>
+<ul>
+<li>Claudette Laurier (C5 L3) Contact_Points -= 8</li>
+<li>Le Tigre (C5 L1) Contact_Points -= 6</li>
+</ul>
+</section>
+<section id="hong-kong" class="level4">
+<h4 class="anchored" data-anchor-id="hong-kong">Hong Kong</h4>
+<ul>
+<li>Hana (C6 L6) Contact_Points -= 12</li>
+</ul>
+</section>
+</section>
+<section id="other" class="level3">
+<h3 class="anchored" data-anchor-id="other">Other</h3>
+<ul>
+<li>Conclave (C7 L8): Guild of Freelance Assets
+<ul>
+<li>Contact_Points -= 15</li>
+<li>Karma -= 6</li>
+<li>Monthly Dues: 2400 nuyen</li>
+</ul></li>
+</ul>
+<p>Total Contact Points: 0</p>
+<p>Total Nuyen: 4025</p>
+<p>Total Karma: 2</p>
+<p>Total Character Points: 0</p>
 
-[ IDENTITY ]
-  &gt; NAME: Kim Jin-Young          &gt; ALIAS: Velvet
-  &gt; METATYPE: Dalakitnon         &gt; GENDER: DIVERSE
-  &gt; TRADITION: Shinto            &gt; SIN: [LOCAL_FILE_ENCRYPTED]
 
-[ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
-  PHY | BOD [02] AGI [03] REA [02] STR [02]  |   INIT (PHYS)  : 5 +1D6
-  MNT | WIL [05] LOG [03] INT [03] CHA [10]  |   INIT (ASTRAL): N/A (Mystic Adept)
-  SPP | EDG [02] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 15
-  PP  | POWER POINTS: 03                     |   JUDGE INT    : 8
-                                             |   DEF RATING   : 03 (BOD+ARM)
-                                             |   DEF POOL     : 05 (REA+INT)
-
-[ PHYSICAL_CONDITION_MONITOR ]         | [ STUN_CONDITION_MONITOR ]
-  [0] [0] [-1] | [-1] [-1] [-2]        |   [0] [0] [-1] | [-1] [-1] [-2]
-  [-2] [-2] [-3]                       |   [-2] [-2] [-3] | [-3] [-3]
-
-[ SKILL_MATRICES ]
-  NATIVE LANGUAGE       : 04                          -&gt; Pool: 07
-  CONJURING             : 05                          -&gt; Pool: 11
-  SORCERY               : 06 (+3)                     -&gt; Pool: 15
-  INFLUENCE             : 05                          -&gt; Pool: 15
-
-[ KNOWLEDGE ]
-  SMALL UNIT TACTICS    : 01                          -&gt; Pool: 04
-  MCT                   : 01                          -&gt; Pool: 04
-  WUXING                : 01                          -&gt; Pool: 04
-  EAST ASIAN MEDIA      : 01                          -&gt; Pool: 04
-
-[ SPELLS ]
-  - INCREASE ATTRIBUTE (Drain 3)        -&gt; Pool: 15  [Drain Resist: 15]
-
-[ ADEPT_POWERS ]
-  - IMPROVED ABILITY (SORCERY) [R3]
-
-[ METAMAGICS &amp; INITIATION ]            | [ CONJURING_QUICK_ACTIONS ]
-  - CHANNELING                         |   - SUMMONING   -&gt; Pool: 11  [Drain: 15]
-                                       |   - BINDING     -&gt; Pool: 11  [Drain: 15]
-                                       |   - BANISHING   -&gt; Pool: 11  [Drain: 15]
-
-[ MATRIX_DEVICES ]                     |
-- ERIKA ELITE (COMMLINK)               |
-  RAT 04            DPR 02 FWL 02      |
-  &gt; Comhack Securelink Upgrade         |
-  &gt; P-Ice Nope                         |
-                                       |
-
-[ SOFTWARE_LIBRARY ]
-  - PERSONAL ASSISTANT       (Comm)   [R6]  // Full Def: + Rtg
-  - VIRTUAL MACHINE (Basi)
-  - THERMAL MOOD READING     (Comm)         // Determine emotional state via skin temp (req. thermographic)
-  - NANOMASK (Basi)
-  - MEFEED (Comm)
-  - FACIAL SCANNER (Comm)
-
-[ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
-  &gt; METAGENIC ATT. IMP. (CHARISMA)     |   - SECURETECH SKINSHIELD [+1]
-  &gt; EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - NANOCOSMETICS KIT
-  &gt; INSPIRE COMPETENCE                 |   - NANOCOSMETICS REFILL [+0]
-  ! CHRONIC PAIN                       |   - NANOPASTE DISGUISE KIT [+0]
-  &gt; HOODER                             |   - NANOPASTE DISGUISE REFILL
-  &gt; FOCUSED CONCENTRATION              |   - SAVIOR MEDKIT
-  ! ALLERGY (COMMON, MODERATE, SPICES) |   - SAVIOR MEDKIT REFILL
-  &gt; LOW-LIGHT VISION                   |   - CONTACTS [+3]
-                                       |   - EARBUDS [+3]
-                                       |   - SUBVOCAL MICROPHONE [+N/A]
-
-[ SOCIAL_NETWORK_CONTACTS ]
-  - BRYNNE TAGGART       SEA Fixer                        L:1 I:5 F:0
-  - VINCENT GRISOME      SEA Magic Prof.                  L:3 I:5 F:0
-  - NI NI XIAOLU         SEA Triad Johnson                L:1 I:3 F:0
-  - WHISKEY              SEA Street Doc                   L:3 I:2 F:0
-  - CLAUDETTE LAURIER    NOLA Order of the Golden Dawn... L:4 I:5 F:0
-  - LE TIGRE             NOLA Epoch Model                 L:1 I:5 F:0
-  - HANA                 Wuxing Talismonger / Pop Idol    L:6 I:6 F:0
-  - GUILD OF FREELANCE ASSETS Conclave                         L:3 I:7 F:0
-
-[ REGISTERED_IDENTITIES ]
-  - SIN: Lee Ji-Yoo                     [Rating 6]
-  - SIN: Tanaka Ryo                     [Rating 6]
-  - LIC: Magician                       [Rating 6]
-
-[ CAREER_LOG ]
-  DATE         | KARMA |    NUYEN | EVENT
-  ---------------------------------------------------------------------------
-  2026-07-01   |    +1 |    +1000 | Build-A-Runner (GM: WarDoctor 1077)
-  2026-07-17   |    +8 |   +14000 | SRM 2081-09 | Eviction... (GM: WarDoctor 1077)
-  2026-07-17   |    +8 |        0 | SRM 2081-09: Karma refund for coven
-  2026-07-17   |    +1 |    -2000 | SRM 2081-09: Working for the People
-  ---------------------------------------------------------------------------
-
-___________________________________________________________________________
-// END_OF_FILE // VELVET@ASTRAL:~$ _</code></pre>
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -736,13 +932,13 @@ ___________________________________________________________________________
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/identity_core.html" class="pagination-link" aria-label="**Character Blueprint: The Broken Chord**">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title"><strong>Character Blueprint: The Broken Chord</strong></span></span>
+      <a href="../chapters/character_sheet.html" class="pagination-link" aria-label="Character Sheet">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Character Sheet</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/character_build_point_buy.html" class="pagination-link" aria-label="Character Creation (Point Buy)">
-        <span class="nav-page-text"><span class="chapter-title">Character Creation (Point Buy)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/character_build.html" class="pagination-link" aria-label="Character Creation (Life Path)">
+        <span class="nav-page-text"><span class="chapter-title">Character Creation (Life Path)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
