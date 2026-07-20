@@ -720,10 +720,6 @@ def generate_ascii_sheet(char_data, verbose=False):
     # Metamagics / initiation grade calculation
     initiation = len(char_data["metamagics"])
     
-    # Calculate earned_karma and lifetime_karma dynamically from career log
-    earned_karma = sum(entry["karma"] for entry in char_data.get("career_log", []) if entry["karma"] > 0)
-    lifetime_karma = 5 + earned_karma
-    
     # Power focus rating
     power_focus_rating = sum(fc["rating"] for fc in foci if "power_focus" in fc["id"].lower())
     
@@ -758,7 +754,7 @@ def generate_ascii_sheet(char_data, verbose=False):
     file_name = char_data['name'].upper().replace(' ', '_')
     nuyen = char_data.get('nuyen', 0)
     page1.append(f"// ACCESSING: {file_name}.bin // SOURCE: ASTRAL_PLANE //")
-    page1.append(f"// STATUS: ONLINE // LIFETIME KARMA: {lifetime_karma} // KARMA: {char_data['karma']} // NUYEN: ¥{nuyen:,} //")
+    page1.append(f"// STATUS: ONLINE // KARMA: {char_data['karma']} // NUYEN: ¥{nuyen:,} //")
     page1.append("___________________________________________________________________________")
     page1.append("")
     page1.append("[ IDENTITY ]")
@@ -1304,9 +1300,6 @@ def generate_ascii_sheet(char_data, verbose=False):
             page4.append(f"  {date.ljust(12)} | {karma_str.rjust(5)} | {nuyen_str.rjust(8)} | {event}")
             
         page4.append("  " + "-" * 75)
-        earned_karma_val = sum(entry["karma"] for entry in char_data.get("career_log", []) if entry["karma"] > 0)
-        lifetime_karma_val = 5 + earned_karma_val
-        page4.append(f"  LIFETIME KARMA: {lifetime_karma_val} ({earned_karma_val} earned + 5 from Chargen)")
         page4.append("")
 
     out = []

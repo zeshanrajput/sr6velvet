@@ -1,4 +1,8 @@
-# Character Creation
+# Character Creation (Life Path)
+
+::: {.callout-note title="Archived Build Draft"}
+*This page documents an experimental Life Path draft for historical comparison. The official character build uses the [Point Buy Build](character_build_point_buy.qmd).*
+:::
 
 The character was created using the Life Path rules in 6WC.
 

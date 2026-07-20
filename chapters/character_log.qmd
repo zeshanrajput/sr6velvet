@@ -10,9 +10,11 @@ This log chronicles out-of-session missions, downtime decisions, Karma expenditu
 #| echo: false
 #| include: false
 # Initial values
-Karma = 5
-Lifetime_Karma = 5
-Nuyen = 5000
+Karma = 2
+Lifetime_Karma = 2
+Nuyen = 4025
+Initiation_Grade = 0
+Coven_Loyalty = 8
 
 def inc(name, amount=1):
     globals()[name] += amount
@@ -25,9 +27,22 @@ def assign(name, value):
     globals()[name] = value
     return f"{name} = {value}"
 
-def inc_many(*pairs):
+def inc_many(*args):
+    if len(args) == 1 and isinstance(args[0], (list, tuple)):
+        pairs = args[0]
+    elif len(args) > 0 and isinstance(args[0], (list, tuple)):
+        pairs = args
+    elif len(args) % 2 == 0:
+        pairs = [(args[i], args[i+1]) for i in range(0, len(args), 2)]
+    else:
+        pairs = args
+
     res = []
-    for name, amount in pairs:
+    for item in pairs:
+        if isinstance(item, (list, tuple)) and len(item) == 2:
+            name, amount = item
+        else:
+            continue
         globals()[name] += amount
         if name == 'Karma' and amount > 0:
             globals()['Lifetime_Karma'] += amount
@@ -40,7 +55,7 @@ def inc_many(*pairs):
 
 ### **2026-Jul-01: Build-A-Runner (GM Credit)**
 
-* **GM:** Zeshan R.
+* **GM:** WarDoctor CDT 1077
 * **Karma:** `{python} inc('Karma', 1)`
 * **Nuyen:** ¥`{python} inc('Nuyen', 1000)`
 
@@ -48,6 +63,7 @@ def inc_many(*pairs):
 
 ### **SRM 2081-09 | Eviction Notice**
 
+* **Date:** 2026-Jul-17
 * **PCs:** Poe, BunnyR, YankeeDoodle, Groucho, Jolthead
 * **GM:** WarDoctor CDT 1077
 * **Difficulty:** Veteran
@@ -64,9 +80,8 @@ In the screamsheets the next day, Aztecnology representative Carmen del Silva pr
 
 #### Downtime
 
-* Working for the People `{python} inc('Karma', 1)`, `{python} inc('Nuyen', -2000)`
-* Learning 'Increase Attribute' `{python} inc('Karma', -5)`
-* Learning 'Increase Reflexes' `{python} inc('Karma', -5)`
+* Working for the People: `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+* Initiation - Channeling: `{python} inc_many(('Karma', Coven_Loyalty - 11 - Initiation_Grade), ('Initiation_Grade', 1))`
 
 GM Reward correction: `{python} inc('Nuyen', 1000)`
 

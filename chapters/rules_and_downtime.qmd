@@ -5,31 +5,40 @@ This section aggregates core cheat sheets and templates for downtime registratio
 ```{python}
 #| echo: false
 #| include: false
-# Core Attributes (Life Path Build)
-Body = 3
-Agility = 4
-Reaction = 3
-Strength = 2
-Willpower = 5
-Logic = 5
-Intuition = 5
-Charisma = 9
-Magic = 6
-Edge = 3
+import sys
+import os
+sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
+from char_engine import get_character_stats
+
+stats = get_character_stats()
+
+# Core Attributes
+Body = stats["Body"]
+Agility = stats["Agility"]
+Reaction = stats["Reaction"]
+Strength = stats["Strength"]
+Willpower = stats["Willpower"]
+Logic = stats["Logic"]
+Intuition = stats["Intuition"]
+Charisma = stats["Charisma"]
+Magic = stats["Magic"]
+Edge = stats["Edge"]
 
 # Skills & Adept Bonuses
-Sorcery = 6
-Improved_Ability_Sorcery = 3
-Influence = 5
+Sorcery = stats["Sorcery"]
+Improved_Ability_Sorcery = stats["Improved_Ability_Sorcery"]
+Influence = stats["Influence"]
+Conjuring = stats["Conjuring"]
 
 # Derived Pools
-Spellcasting_Pool = Sorcery + Improved_Ability_Sorcery + Magic # 15
-Drain_Resist_Pool = Willpower + Charisma                      # 14
+Spellcasting_Pool = Sorcery + Improved_Ability_Sorcery + Magic
+Conjuring_Pool = Conjuring + Magic
+Drain_Resist_Pool = Willpower + Charisma
 
-Influence_Pool = Influence + Charisma                         # 14
-Commanding_Voice_Pool = Influence + Charisma + 1              # 15
-Sharp_Tongue_Pool = Charisma + Magic                          # 15
-Inspire_Confidence_Pool = Charisma + Influence + 2            # 16
+Influence_Pool = Influence + Charisma
+Commanding_Voice_Pool = Influence + Charisma + 1
+Sharp_Tongue_Pool = Charisma + Magic
+Inspire_Confidence_Pool = Charisma + Influence + 2
 ```
 
 ## Spellcasting & Foci Integration
@@ -48,29 +57,6 @@ Inspire_Confidence_Pool = Charisma + Influence + 2            # 16
 * **Pool:** Influence (`{python} Influence`) + Charisma (`{python} Charisma`) = **`{python} Influence_Pool` dice**
   * Nanopaste Disguise / Nanocosmetics: +1 Situational Edge
   * Social Rating: CHA (`{python} Charisma`)
-
----
-
-### Commanding Voice
-
-SW p. 78
-
-* **Action**: Major Action.
-* **Pool**: Influence (`{python} Influence`) + Charisma (`{python} Charisma`) + Commanding Voice (1) = **`{python} Commanding_Voice_Pool` dice**
-* **Opposed By**: Willpower + Intuition
-* **Effect**: Target obeys a single command of 5 words or less, or freezes for 1 round/level.
-* **Constraint**: Orders cannot cause direct self-harm.
-
-### Sharp Tongue
-
-SO p. 111
-
-* **Action**: Major Action.
-* **Pool**: Charisma (`{python} Charisma`) + Magic (`{python} Magic`) = **`{python} Sharp_Tongue_Pool` dice**
-* **Opposed By**: Willpower + Intuition
-* **Effect**: Inflict net hits as unresisted Stun damage.
-* **Alternate Effect**: Choose to daze before rolling. Succeeds if net hits $\ge$ target's WIL.
-* **Constraint**: Target must be in line of sight and understand the adept.
 
 ### Inspire Confidence
 

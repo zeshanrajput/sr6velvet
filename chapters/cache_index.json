@@ -1,0 +1,107 @@
+{
+  "quality_stats:metageneticattributeimprovement": {
+    "positive": true,
+    "page": "121",
+    "rating": 1,
+    "description": "This quality raises the maximum value for one of the character\u2019s attributes by 1. It can only be taken once per attribute and stacks with the Exceptional Attribute quality."
+  },
+  "quality_stats:exceptionalattribute": {
+    "positive": true,
+    "page": "72",
+    "rating": 0,
+    "description": "A quality that increases the maximum rank of a chosen Physical or Mental attribute by 1. It can only be purchased once per attribute and costs 12 Karma."
+  },
+  "quality_stats:inspirecompetence": {
+    "positive": true,
+    "page": "133",
+    "rating": 0,
+    "description": "This quality allows a character to assist another character on a Teamwork test with any skill, granting a point of Edge to either the user or the assisted character. It costs 11 Karma and is considered a positive quality in the Sixth World Companion."
+  },
+  "quality_stats:chronicpain": {
+    "positive": false,
+    "page": "137",
+    "rating": 0,
+    "description": "A negative quality that causes pain flares, imposing a -1 die penalty on most tests throughout a session."
+  },
+  "quality_stats:hooder": {
+    "positive": false,
+    "page": "137",
+    "rating": 5,
+    "description": "A negative quality where someone wants you dead, leading to assassins appearing when your Heat is 15 or higher, resulting in unavoidable damage each session."
+  },
+  "quality_stats:focusedconcentration": {
+    "positive": true,
+    "page": "72",
+    "rating": 3,
+    "description": "Allows sustaining multiple spells or complex forms without penalty, with one additional spell or complex form per level, as long as the modified Drain Value is not 7 or greater."
+  },
+  "quality_stats:allergy": {
+    "positive": false,
+    "page": "74, 75",
+    "rating": 0,
+    "description": "Allergy is a negative quality that causes discomfort from specific substances or conditions, leading to penalties in tests involving Physical attributes and the inability to spend or gain Edge when exposed to the allergen."
+  },
+  "quality_stats:lowlightvision": {
+    "positive": true,
+    "page": "73",
+    "rating": 0,
+    "description": "Allows the user to see in low-light conditions thanks to an increase in rod cells or augmentation, providing a bonus Edge if the opponent lacks similar vision enhancements."
+  },
+  "spell_stats:increaseattribute": {
+    "category": "Spell",
+    "type": "Mana",
+    "duration": "S",
+    "range": "Touch",
+    "drain": 3,
+    "page": 138
+  },
+  "is_weapon:securetechskinshield": false,
+  "is_armor:securetechskinshield": true,
+  "armor_stats:securetechskinshield": {
+    "armor_rating": "2"
+  },
+  "matrix_stats:erikaelite": {
+    "subType": "COMMLINK",
+    "attack": 3,
+    "sleaze": 4,
+    "dataProcessing": 3,
+    "firewall": 4,
+    "page": "172"
+  },
+  "is_weapon:nanocosmeticskit": false,
+  "is_armor:nanocosmeticskit": true,
+  "armor_stats:nanocosmeticskit": {
+    "armor_rating": "+2"
+  },
+  "is_weapon:nanocosmeticsrefill": false,
+  "is_armor:nanocosmeticsrefill": true,
+  "armor_stats:nanocosmeticsrefill": {
+    "armor_rating": "nanocosmetics_refill"
+  },
+  "is_weapon:nanopastedisguisekit": false,
+  "is_armor:nanopastedisguisekit": true,
+  "armor_stats:nanopastedisguisekit": {
+    "armor_rating": 0
+  },
+  "is_weapon:nanopastedisguiserefill": false,
+  "is_armor:nanopastedisguiserefill": true,
+  "armor_stats:nanopastedisguiserefill": {
+    "armor_rating": 0
+  },
+  "is_weapon:saviormedkit": false,
+  "is_armor:saviormedkit": true,
+  "armor_stats:saviormedkit": {
+    "armor_rating": 2
+  },
+  "is_weapon:saviormedkitrefill": false,
+  "is_armor:saviormedkitrefill": false,
+  "is_weapon:contacts": false,
+  "is_armor:contacts": false,
+  "is_weapon:earbuds": false,
+  "is_armor:earbuds": false,
+  "is_weapon:subvocalmicrophone": false,
+  "is_armor:subvocalmicrophone": true,
+  "armor_stats:subvocalmicrophone": {
+    "armor_rating": 0
+  }
+}

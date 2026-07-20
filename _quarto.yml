@@ -13,6 +13,7 @@ book:
       chapters:
         - chapters/identity_core.md
         - chapters/character_sheet.qmd
+        - chapters/character_build_point_buy.qmd
         - chapters/character_build.qmd
         - chapters/rules_and_downtime.qmd
         - chapters/character_log.qmd

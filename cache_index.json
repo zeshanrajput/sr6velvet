@@ -510,5 +510,11 @@
     "page": "138",
     "rating": 0,
     "description": "This quality causes the character to take an extra box of damage of the same type (Physical or Stun) whenever they suffer damage from any source."
-  }
+  },
+  "is_weapon:subvocalmicrophone": false,
+  "is_armor:subvocalmicrophone": true,
+  "armor_stats:subvocalmicrophone": {
+    "armor_rating": "N/A"
+  },
+  "SW-0533:summary": "Channeling uses Force, with available actions costing 1 Force. Metamagics cost Force to use and reduce the dice pool of the character."
 }

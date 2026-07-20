@@ -1,9 +1,5 @@
 # Character Creation (Point Buy)
 
-::: {.callout-note title="Archived Build Draft"}
-*This page documents an experimental Point Buy draft for historical comparison. The official character build uses the [Life Path Build](character_build.qmd).*
-:::
-
 This page tracks the character creation process using the Point Buy system (Sixth World Companion).
 
 ```{python}
@@ -66,6 +62,7 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
   * This unlocks the ability to purchase adept power points (8 CP each for mystic adepts). 
     * 3 Adept Power Points: `{python} inc('Character_Points', -24)`
   * Mystic adepts may purchase a number of spells equal to final Magic x2 - PP. Each spell costs 2 CP or 5 Karma each.
+    * Increase Attributes: `{python} inc('Karma', -5)`
 
 ## Purchase Special / Metatype Adjustment Points with CP
 
@@ -91,11 +88,11 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 * You may purchase up to 20 additional attribute points for 2 CP each.
   * `{python} inc('Body', 1)` : `{python} inc('Character_Points', -2)`
   * `{python} inc('Agility', 2)` : `{python} inc('Character_Points', -4)`
-  * `{python} inc('Reaction', 2)` : `{python} inc('Character_Points', -4)`
+  * `{python} inc('Reaction', 1)` : `{python} inc('Character_Points', -2)`
   * `{python} inc('Strength', 1)` : `{python} inc('Character_Points', -2)`
   * `{python} inc('Willpower', 4)` : `{python} inc('Character_Points', -8)`
-  * `{python} inc('Logic', 3)` : `{python} inc('Character_Points', -6)`
-  * `{python} inc('Intuition', 3)` : `{python} inc('Character_Points', -6)`
+  * `{python} inc('Logic', 2)` : `{python} inc('Character_Points', -4)`
+  * `{python} inc('Intuition', 2)` : `{python} inc('Character_Points', -4)`
   * `{python} inc('Charisma', 5)` : `{python} inc('Character_Points', -10)`
 
 ## Purchase Skills with CP
@@ -105,7 +102,7 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
   * `{python} inc('Sorcery', 6)` 
   * `{python} inc('Conjuring', 1)`
 * You may purchase up to 20 additional skill points for 2 CP each.
-  * `{python} inc('Conjuring', 1)` : `{python} inc('Character_Points', -2)`
+  * `{python} inc('Conjuring', 4)` : `{python} inc('Character_Points', -8)`
   
 ## Purchase Resources with CP
 
@@ -139,7 +136,7 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 * Hooder (R3): `{python} inc('Karma', 15)`
 * Inspire Competence: `{python} inc('Karma', -11)`
 * Chronic Pain: `{python} inc('Karma', 15)`
-* Focused Concentration (R3): `{python} inc('Karma', -36)`
+* Focused Concentration (R2): `{python} inc('Karma', -24)`
 
 ### Gear
 
@@ -166,9 +163,10 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 
 #### Armor & Clothing
 
-* Ares SecureTech SkinShield `{python} inc('Nuyen', -3150)`
+* Ares SecureTech SkinShield `{python} inc('Nuyen', -4150)`
   * RACS 2
   * Ballistic Hood
+  * Tres Chic Social Accessories x2
 
 ### Contacts
 
@@ -178,19 +176,25 @@ Gain 6 * Charisma contact points to spend.
 
 #### Seattle
 
-* Brynne Taggart (C5 L4) `{python} inc('Contact_Points', -9)`
-* Vincent Grisome (C5 L4) `{python} inc('Contact_Points', -9)`
-* Ni Ni Xiaolu (C3 L4) `{python} inc('Contact_Points', -7)`
+* Brynne Taggart (C5 L1) `{python} inc('Contact_Points', -6)`
+* Vincent Grisome (C5 L3) `{python} inc('Contact_Points', -8)`
 * Whiskey (C2 L3) `{python} inc('Contact_Points', -5)`
 
 #### New Orleans
 
-* Claudette Laurier (C5 L4) `{python} inc('Contact_Points', -9)`
-* Le Tigre (C5 L4) `{python} inc('Contact_Points', -9)`
+* Claudette Laurier (C5 L3) `{python} inc('Contact_Points', -8)`
+* Le Tigre (C5 L1) `{python} inc('Contact_Points', -6)`
 
 #### Hong Kong
 
 * Hana (C6 L6) `{python} inc('Contact_Points', -12)`
+
+### Other
+
+* Conclave (C7 L8): Guild of Freelance Assets
+  * `{python} inc('Contact_Points', -15)`
+  * `{python} inc('Karma', -6)`
+  * Monthly Dues: 2400 nuyen
 
 Total Contact Points: `{python} Contact_Points`
 
