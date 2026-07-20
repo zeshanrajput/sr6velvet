@@ -67,7 +67,7 @@ def parse_career_log(xml_root):
     career_log.sort(key=lambda x: (x['date'], x['title']))
     return career_log
 
-def load_overrides(char_name, meta_type):
+def load_overrides(char_name, alias_name, meta_type):
     script_dir = os.path.dirname(os.path.abspath(__file__))
     overrides_file = os.path.join(script_dir, "overrides.json")
     if not os.path.exists(overrides_file):
@@ -79,6 +79,8 @@ def load_overrides(char_name, meta_type):
         char_overrides = data.get("character_overrides", {})
         if char_name and char_name.lower() in char_overrides:
             return char_overrides[char_name.lower()]
+        if alias_name and alias_name.lower() in char_overrides:
+            return char_overrides[alias_name.lower()]
         if meta_type and meta_type in char_overrides:
             return char_overrides[meta_type]
     except Exception as e:
@@ -120,7 +122,7 @@ def parse_character(input_path):
     metatype = root.get('meta', 'Unknown').replace('-', ' ').title()
     
     # Load overrides.json configuration block
-    overrides = load_overrides(name_out, root.get('meta'))
+    overrides = load_overrides(name_out, alias_out, root.get('meta'))
     
     # Load attributes
     attributes = {}
@@ -130,6 +132,10 @@ def parse_character(input_path):
             attr_id = attr.get('id')
             attr_val = int(attr.get('value', 0))
             attributes[attr_id] = attr_val
+            
+    if overrides and "attribute_overrides" in overrides:
+        for attr_k, attr_v in overrides["attribute_overrides"].items():
+            attributes[attr_k.upper()] = attr_v
             
     # Calculate Initiative values
     rea_val = attributes.get('REACTION', 0)
@@ -882,6 +888,10 @@ def generate_ascii_sheet(char_data, verbose=False):
             page1.extend(get_skill_formatted_line(skill_obj).split("\n"))
     page1.append("")
 
+    tradition = char_data.get("tradition", "buddhism").lower()
+    drain_attrs = TRADITION_DRAIN_MAP.get(tradition, ("WILLPOWER", "INTUITION"))
+    drain_resist_pool = a.get(drain_attrs[0], 0) + a.get(drain_attrs[1], 0)
+
     # Spells
     if char_data["spells"]:
         page1.append("[ SPELLS ]")
@@ -891,10 +901,6 @@ def generate_ascii_sheet(char_data, verbose=False):
         sorcery_total = sorcery_rating + sorcery_adept_bonus
         has_spellcasting_spec = any(sp.get("id") == "spellcasting" or sp.get("name", "").lower() == "spellcasting" for sp in sorcery_skill.get("specializations", []))
         spec_bonus = 2 if has_spellcasting_spec else 0
-        
-        tradition = char_data.get("tradition", "buddhism").lower()
-        drain_attrs = TRADITION_DRAIN_MAP.get(tradition, ("WILLPOWER", "INTUITION"))
-        drain_resist_pool = a.get(drain_attrs[0], 0) + a.get(drain_attrs[1], 0)
         
         spell_mods = []
         if power_focus_rating > 0:

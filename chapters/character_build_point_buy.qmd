@@ -1,0 +1,201 @@
+# Character Creation (Point Buy)
+
+::: {.callout-note title="Archived Build Draft"}
+*This page documents an experimental Point Buy draft for historical comparison. The official character build uses the [Life Path Build](character_build.qmd).*
+:::
+
+This page tracks the character creation process using the Point Buy system (Sixth World Companion).
+
+```{python}
+#| echo: false
+#| include: false
+# Initial stats
+Body = 0
+Agility = 0
+Reaction = 0
+Strength = 0
+Willpower = 0
+Logic = 0
+Intuition = 0
+Charisma = 0
+Magic = 0
+Edge = 0
+
+Influence = 0
+Conjuring = 0
+Sorcery = 0
+
+Karma = 0
+Nuyen = 0
+Contact_Points = 0
+Character_Points = 0
+
+def inc(name, amount=1):
+    globals()[name] += amount
+    op = "+=" if amount >= 0 else "-="
+    return f"{name} {op} {abs(amount)}"
+
+def assign(name, value):
+    globals()[name] = value
+    return f"{name} = {value}"
+
+def inc_many(*pairs):
+    res = []
+    for name, amount in pairs:
+        globals()[name] += amount
+        op = "+=" if amount >= 0 else "-="
+        res.append(f"{name} {op} {abs(amount)}")
+    return ", ".join(res)
+```
+
+Shadowrunners are built with 100 Character Points (CP). You still gain 50 points of customization Karma.
+
+* `{python} assign('Character_Points', 100)`
+* `{python} assign('Karma', 50)`
+
+## Choose Your Metatype/Metavariant
+
+* Choose the metatype or metavariant you want to play: **Dalekitnon** `{python} inc('Karma', -5)`
+* Any metagenetic qualities must also be paid for.
+  * Metagenetic Attribute Increase (CHA): `{python} inc('Karma', -15)`
+
+## Choose Mundane, Awakened, or Emerged
+
+* Awakened: `{python} inc('Character_Points', -10)`
+* Mystic Adepts start with `{python} inc('Magic', 1)`.
+  * This unlocks the ability to purchase adept power points (8 CP each for mystic adepts). 
+    * 3 Adept Power Points: `{python} inc('Character_Points', -24)`
+  * Mystic adepts may purchase a number of spells equal to final Magic x2 - PP. Each spell costs 2 CP or 5 Karma each.
+
+## Purchase Special / Metatype Adjustment Points with CP
+
+* All characters start with 1 Edge: `{python} inc('Edge', 1)`
+* All characters start with 1 metatype adjustment point for free: `{python} inc('Magic', 1)`
+* You may purchase up to 12 additional adjustment points at 4 CP each
+  * `{python} inc('Magic', 4)` : `{python} inc('Character_Points', -16)`
+  * `{python} inc('Edge', 1)` : `{python} inc('Character_Points', -4)`
+
+## Purchase Attributes with CP
+
+* All character attributes start at the minimum value for their race. 
+  * `{python} assign('Body', 1)`
+  * `{python} assign('Agility', 1)`
+  * `{python} assign('Reaction', 1)`
+  * `{python} assign('Strength', 1)`
+  * `{python} assign('Willpower', 1)`
+  * `{python} assign('Logic', 1)`
+  * `{python} assign('Intuition', 1)`
+  * `{python} assign('Charisma', 1)`
+* All characters start with 4 attribute points.
+  * `{python} inc('Charisma', 4)`
+* You may purchase up to 20 additional attribute points for 2 CP each.
+  * `{python} inc('Body', 1)` : `{python} inc('Character_Points', -2)`
+  * `{python} inc('Agility', 2)` : `{python} inc('Character_Points', -4)`
+  * `{python} inc('Reaction', 2)` : `{python} inc('Character_Points', -4)`
+  * `{python} inc('Strength', 1)` : `{python} inc('Character_Points', -2)`
+  * `{python} inc('Willpower', 4)` : `{python} inc('Character_Points', -8)`
+  * `{python} inc('Logic', 3)` : `{python} inc('Character_Points', -6)`
+  * `{python} inc('Intuition', 3)` : `{python} inc('Character_Points', -6)`
+  * `{python} inc('Charisma', 5)` : `{python} inc('Character_Points', -10)`
+
+## Purchase Skills with CP
+
+* All characters start with 12 skill points.
+  * `{python} inc('Influence', 5)`
+  * `{python} inc('Sorcery', 6)` 
+  * `{python} inc('Conjuring', 1)`
+* You may purchase up to 20 additional skill points for 2 CP each.
+  * `{python} inc('Conjuring', 1)` : `{python} inc('Character_Points', -2)`
+  
+## Purchase Resources with CP
+
+* All characters start with `{python} assign('Nuyen', 10000)`
+* You may purchase resources at a rate of 1 CP per 20,000 nuyen
+  * `{python} inc('Nuyen', 40000)` : `{python} inc('Character_Points', -2)`
+
+| Attributes | Current Value |
+|------------|:-------------:|
+| Body       | `{python} Body` |
+| Agility    | `{python} Agility` |
+| Reaction   | `{python} Reaction` |
+| Strength   | `{python} Strength` |
+| Willpower  | `{python} Willpower` |
+| Logic      | `{python} Logic` |
+| Intuition  | `{python} Intuition` |
+| Charisma   | `{python} Charisma` |
+| Magic      | `{python} Magic` |
+| Edge       | `{python} Edge` |
+
+| Skills     | Current Value |
+|------------|:-------------:|
+| Influence  | `{python} Influence` |
+| Conjuring  | `{python} Conjuring` |
+| Sorcery    | `{python} Sorcery` |
+
+## Qualities
+
+* Metagenetic Attribute Increase (CHA): (paid for above)
+* Exceptional Attribute (CHA): `{python} inc('Karma', -12)`
+* Hooder (R3): `{python} inc('Karma', 15)`
+* Inspire Competence: `{python} inc('Karma', -11)`
+* Chronic Pain: `{python} inc('Karma', 15)`
+* Focused Concentration (R3): `{python} inc('Karma', -36)`
+
+### Gear
+
+* Nanopaste Disguise `{python} inc('Nuyen', -1400)`
+  * Refill x1 `{python} inc('Nuyen', -300)`
+* Nanocosmetics `{python} inc('Nuyen', -700)`
+  * Refill x2 `{python} inc('Nuyen', -200)`
+* Savior Medkit `{python} inc('Nuyen', -2000)`
+   * Refill x1 `{python} inc('Nuyen', -300)`
+
+#### SINs
+
+* Lee Ji-Yoo (Rating 6) `{python} inc('Nuyen', -15000)`
+  * License: Magician `{python} inc('Nuyen', -1200)`
+* Tanaka Ryo (Rating 6) `{python} inc('Nuyen', -15000)`
+
+#### Electronics
+
+* Contacts (R3, Image Link, Flare Compensation, Thermographic Vision) `{python} inc('Nuyen', -1375)`
+* Erika Elite (R4), `{python} inc('Nuyen', -4350)`
+  * Securelink (R2)
+  * Personal Assistant (R6)
+  * P-ICE Nope!
+
+#### Armor & Clothing
+
+* Ares SecureTech SkinShield `{python} inc('Nuyen', -3150)`
+  * RACS 2
+  * Ballistic Hood
+
+### Contacts
+
+Gain 6 * Charisma contact points to spend.
+
+* `{python} inc_many(('Contact_Points', 6 * Charisma))`
+
+#### Seattle
+
+* Brynne Taggart (C5 L4) `{python} inc('Contact_Points', -9)`
+* Vincent Grisome (C5 L4) `{python} inc('Contact_Points', -9)`
+* Ni Ni Xiaolu (C3 L4) `{python} inc('Contact_Points', -7)`
+* Whiskey (C2 L3) `{python} inc('Contact_Points', -5)`
+
+#### New Orleans
+
+* Claudette Laurier (C5 L4) `{python} inc('Contact_Points', -9)`
+* Le Tigre (C5 L4) `{python} inc('Contact_Points', -9)`
+
+#### Hong Kong
+
+* Hana (C6 L6) `{python} inc('Contact_Points', -12)`
+
+Total Contact Points: `{python} Contact_Points`
+
+Total Nuyen: `{python} Nuyen`
+
+Total Karma: `{python} Karma`
+
+Total Character Points: `{python} Character_Points`

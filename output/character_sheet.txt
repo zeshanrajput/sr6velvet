@@ -1,6 +1,6 @@
 ___________________________________________________________________________
 // ACCESSING: KIM_JIN-YOUNG.bin // SOURCE: ASTRAL_PLANE //
-// STATUS: ONLINE // LIFETIME KARMA: 5 // KARMA: 5 // NUYEN: ¥4,325 //
+// STATUS: ONLINE // LIFETIME KARMA: 15 // KARMA: 5 // NUYEN: ¥1,800 //
 ___________________________________________________________________________
 
 [ IDENTITY ]
@@ -11,7 +11,7 @@ ___________________________________________________________________________
 [ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
   PHY | BOD [03] AGI [04] REA [03] STR [02]  |   INIT (PHYS)  : 8 +1D6
   MNT | WIL [05] LOG [05] INT [05] CHA [09]  |   INIT (ASTRAL): N/A (Mystic Adept)
-  SPP | EDG [03] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 14
+  SPP | EDG [03] MAG [06] ESS [6.0] INI [00] |   COMPOSURE    : 14
   PP  | POWER POINTS: 06                     |   JUDGE INT    : 10
                                              |   DEF RATING   : 04 (BOD+ARM)
                                              |   DEF POOL     : 08 (REA+INT)
@@ -44,9 +44,6 @@ ___________________________________________________________________________
   - IMPROVED ABILITY (SORCERY) [R3]
   - COMMAND PRESENCE
 
-[ METAMAGICS & INITIATION ]            |
-  - QUICKENING                         |
-
 [ MATRIX_DEVICES ]                     |
 - ERIKA ELITE (COMMLINK)               |
   RAT 04            DPR 02 FWL 02      |
@@ -59,11 +56,11 @@ ___________________________________________________________________________
 
 [ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
   > EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - SECURETECH SKINSHIELD [+1]
-  ! SPIRIT BANE (SPIRIT BEASTS)        |   - CONTACTS [+3]
-  > HOODER                             |   - NANOPASTE DISGUISE KIT [+0]
-  > INSPIRE COMPETENCE                 |   - NANOCOSMETICS KIT
-  ! INCOMPETENT (OUTDOORS)             |   - NANOCOSMETICS REFILL [+0]
-  > ATTRIBUTE MASTERY (CHARISMA)       |   - NANOPASTE DISGUISE REFILL
+  > HOODER                             |   - CONTACTS [+3]
+  > INSPIRE COMPETENCE                 |   - NANOPASTE DISGUISE KIT [+0]
+  ! CHRONIC PAIN                       |   - NANOCOSMETICS KIT
+  ! INJURY PRONE                       |   - NANOCOSMETICS REFILL [+0]
+  > FOCUSED CONCENTRATION              |   - NANOPASTE DISGUISE REFILL
   ! ALLERGY (COMMON, MODERATE, SPICES) |   - SAVIOR MEDKIT
   > LOW-LIGHT VISION                   |   - SAVIOR MEDKIT REFILL
 
@@ -72,16 +69,24 @@ ___________________________________________________________________________
 
 [ SOCIAL_NETWORK_CONTACTS ]
   - BRYNNE TAGGART       SEA Fixer                        L:1 I:5 F:0
-  - VINCENT GRISOME      SEA University Prof.             L:2 I:5 F:0
-  - CLAUDETTE LAURIER    NOLA Order of the Golden Dawn... L:2 I:5 F:0
-  - LE TIGRE             NOLA Epoch Model                 L:1 I:5 F:0
-  - HANA                 Wuxing Pop Idol                  L:1 I:3 F:0
+  - VINCENT GRISOME      SEA University Prof.             L:1 I:5 F:0
+  - CLAUDETTE LAURIER    NOLA Order of the Golden Dawn... L:1 I:5 F:0
+  - HANA                 Wuxing Pop Idol                  L:6 I:6 F:0
+  - MS. SNOW             SEA Johnson                      L:1 I:5 F:1
 
 [ REGISTERED_IDENTITIES ]
   - SIN: Lee Ji-Yoo                     [Rating 6]
   - SIN: Tanaka Ryo                     [Rating 6]
-  - LIC: Quickened Spells               [Rating 6]
   - LIC: Magician                       [Rating 6]
+
+[ CAREER_LOG ]
+  DATE         | KARMA |    NUYEN | EVENT
+  ---------------------------------------------------------------------------
+  2026-07-01   |    +1 |    +1000 | Build-A-Runner (GM Credit)
+  2026-07-17   |    +8 |   +14000 | SRM 2081-09 | Eviction Notice (GM: Z. Rajput)
+  2026-07-17   |    +1 |    -2000 | SRM 2081-09: Working for the People
+  ---------------------------------------------------------------------------
+  LIFETIME KARMA: 15 (10 earned + 5 from Chargen)
 
 ___________________________________________________________________________
 // END_OF_FILE // VELVET@ASTRAL:~$ _

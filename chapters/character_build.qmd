@@ -76,7 +76,7 @@ def inc_many(*pairs):
 * Native Language: English
 * Qualities
   * Exceptional Attribute - CHA: `{python} inc('Karma', -12)`
-  * Spirit Bane - Beasts: `{python} inc('Karma', 12)`
+  * Injury Prone (R3): `{python} inc('Karma', 15)`
 
 ## Growing Up, Early Childhood, and Adolescence
 
@@ -97,7 +97,7 @@ def inc_many(*pairs):
 * Define your character's best attribute (cannot be Edge, Magic, or Resonance)
   * Charisma: `{python} inc('Charisma', 5)`
 * Qualities
-  * Incompetent (Outdoors): `{python} inc('Karma', 10)`
+  * Chronic Pain: `{python} inc('Karma', 15)`
 * Childhood Contact: 4 Points: `{python} inc_many(('Contact_Points', 4), ('Nuyen', 25000))`
 
 ## Adult Life Modules
@@ -126,7 +126,7 @@ def inc_many(*pairs):
 * +2 to Charisma, Intuition, Logic, or Willpower: `{python} inc('Charisma',2)`
 * +1 to Edge, Magic, or Resonance: `{python} inc('Magic')`
 * Contact Points: `{python} inc('Contact_Points', 4)`
-* Quality - Attribute Mastery (CHA): `{python} inc('Karma', -3)`
+* Quality - Focused Concentration (R3): `{python} inc('Karma', -36)`
 
 ### Event: You were overwhelmed, but things worked out (Repeated)
 
@@ -163,7 +163,7 @@ def inc_many(*pairs):
 * Choose one: +1 to Body, Charisma, or Logic: `{python} inc('Logic')`
 * Choose one: +1 to Agility, Intuition, or Willpower: `{python} inc('Intuition')`
 * Choose one: +1 to Con, Influence, Perception, or Stealth: `{python} inc('Influence')`
-* Resources: +25,000 nuyen: `{python} inc('Nuyen', 25000)`
+* Resources: `{python} inc('Nuyen', 25000)`
 * Contact Points: `{python} inc('Contact_Points', 2)`
   * Contact Types: Corporate, Government
 * Knowledge skill: **Wuxing**
@@ -206,24 +206,19 @@ Mystic adepts must choose whether to gain a power point or spell for each point 
   * Command Presence: 0.5
 * Three PP bought: `{python} inc('Karma', -30)`
   * Improved Ability (Sorcery, R3): 3.0
-* Initiation - Quickening: `{python} inc('Karma', -11)`
-* Two spells bought: `{python} inc('Karma', -10)`
-  * Increase Attribute
-  * Increase Reflexes
 
 ### Gear
 
 * Nanopaste Disguise `{python} inc('Nuyen', -1400)`
   * Refill x1 `{python} inc('Nuyen', -300)`
 * Nanocosmetics `{python} inc('Nuyen', -700)`
-  * Refill x1 `{python} inc('Nuyen', -100)`
+  * Refill x2 `{python} inc('Nuyen', -200)`
 * Savior Medkit `{python} inc('Nuyen', -2000)`
    * Refill x1 `{python} inc('Nuyen', -300)`
 
 #### SINs
 
 * Lee Ji-Yoo (Rating 6) `{python} inc('Nuyen', -15000)`
-  * License: Quickening `{python} inc('Nuyen', -1200)`
   * License: Magician `{python} inc('Nuyen', -1200)`
 * Tanaka Ryo (Rating 6) `{python} inc('Nuyen', -15000)`
 
@@ -246,16 +241,15 @@ Mystic adepts must choose whether to gain a power point or spell for each point 
 #### Seattle
 
 * Brynne Taggart (C5 L1) `{python} inc('Contact_Points', -6)`
-* Vincent Grisome (C5 L2) `{python} inc('Contact_Points', -7)`
+* Vincent Grisome (C5 L1) `{python} inc('Contact_Points', -6)`
 
 #### New Orleans
 
-* Claudette Laurier (C5 L2) `{python} inc('Contact_Points', -7)`
-* Le Tigre (C5 L1) `{python} inc('Contact_Points', -6)`
+* Claudette Laurier (C5 L1) `{python} inc('Contact_Points', -6)`
 
 #### Hong Kong
 
-* Hana (C3 L1) `{python} inc('Contact_Points', -4)`
+* Hana (C6 L6) `{python} inc('Contact_Points', -12)`
 
 Total Contact Points: `{python} Contact_Points`
 

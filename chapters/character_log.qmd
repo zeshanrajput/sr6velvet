@@ -1,0 +1,79 @@
+# Character Career Log
+
+This log chronicles out-of-session missions, downtime decisions, Karma expenditures, and financial ledgers.
+
+::: {.callout-warning title="Spoilers"}
+*This section may contain spoilers.*
+:::
+
+```{python}
+#| echo: false
+#| include: false
+# Initial values
+Karma = 5
+Lifetime_Karma = 5
+Nuyen = 5000
+
+def inc(name, amount=1):
+    globals()[name] += amount
+    if name == 'Karma' and amount > 0:
+        globals()['Lifetime_Karma'] += amount
+    op = "+=" if amount >= 0 else "-="
+    return f"{name} {op} {abs(amount)}"
+
+def assign(name, value):
+    globals()[name] = value
+    return f"{name} = {value}"
+
+def inc_many(*pairs):
+    res = []
+    for name, amount in pairs:
+        globals()[name] += amount
+        if name == 'Karma' and amount > 0:
+            globals()['Lifetime_Karma'] += amount
+        op = "+=" if amount >= 0 else "-="
+        res.append(f"{name} {op} {abs(amount)}")
+    return ", ".join(res)
+```
+
+---
+
+### **2026-Jul-01: Build-A-Runner (GM Credit)**
+
+* **GM:** Zeshan R.
+* **Karma:** `{python} inc('Karma', 1)`
+* **Nuyen:** ¥`{python} inc('Nuyen', 1000)`
+
+---
+
+### **SRM 2081-09 | Eviction Notice**
+
+* **PCs:** Poe, BunnyR, YankeeDoodle, Groucho, Jolthead
+* **GM:** WarDoctor CDT 1077
+* **Difficulty:** Veteran
+* **Rewards:** `{python} inc('Nuyen', 13000)`, `{python} inc('Karma', 8)` (Veteran rewards included)
+* **Reputation:** +2 SEA
+* **Contacts:**
+  * **ALL:** +2 FP Ms. Snow (SEA Johnson, Connection 5, Elven female)
+  * **BunnyR:** +1 FP Whiskey, +1 FP Belial
+  * **Poe:** +1 FP Vincent, +1 FP Ms. Snow (for services rendered)
+* **Heat:** 0 (Roll 4 + 6, -3 w/ "contributions" from BunnyR, Jolthead, Groucho)
+* **Downtime:** 1 Major, 1 Minor
+
+In the screamsheets the next day, Aztecnology representative Carmen del Silva proudly announces a new corporate initiative from their pharmaceutical division targeting the pain management market with an even better side effect profile than ever before. The announcement is accompanied by several scientific publications in reputable journals, all done by Aztlani universities. Most journal editors conclude "further research is required".
+
+#### Downtime
+
+* Working for the People `{python} inc('Karma', 1)`, `{python} inc('Nuyen', -2000)`
+* Learning 'Increase Attribute' `{python} inc('Karma', -5)`
+* Learning 'Increase Reflexes' `{python} inc('Karma', -5)`
+
+GM Reward correction: `{python} inc('Nuyen', 1000)`
+
+---
+
+### **Current Totals**
+
+* **Lifetime Karma:** `{python} Lifetime_Karma`
+* **Available Karma:** `{python} Karma`
+* **Total Nuyen:** ¥`{python} f"{Nuyen:,}"`

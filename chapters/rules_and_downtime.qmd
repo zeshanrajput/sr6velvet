@@ -1,0 +1,83 @@
+# Downtime Protocols & Common Rules
+
+This section aggregates core cheat sheets and templates for downtime registration, magic spellcasting, conjuring, and foci benefits.
+
+```{python}
+#| echo: false
+#| include: false
+# Core Attributes (Life Path Build)
+Body = 3
+Agility = 4
+Reaction = 3
+Strength = 2
+Willpower = 5
+Logic = 5
+Intuition = 5
+Charisma = 9
+Magic = 6
+Edge = 3
+
+# Skills & Adept Bonuses
+Sorcery = 6
+Improved_Ability_Sorcery = 3
+Influence = 5
+
+# Derived Pools
+Spellcasting_Pool = Sorcery + Improved_Ability_Sorcery + Magic # 15
+Drain_Resist_Pool = Willpower + Charisma                      # 14
+
+Influence_Pool = Influence + Charisma                         # 14
+Commanding_Voice_Pool = Influence + Charisma + 1              # 15
+Sharp_Tongue_Pool = Charisma + Magic                          # 15
+Inspire_Confidence_Pool = Charisma + Influence + 2            # 16
+```
+
+## Spellcasting & Foci Integration
+
+### **Tradition: (Shinto/Musok — Willpower + Charisma)**
+
+* **Starting Attributes**: Willpower `{python} Willpower`, Charisma `{python} Charisma`, Intuition `{python} Intuition`, Body `{python} Body`.
+* **Starting Spellcasting Pool**: Sorcery (`{python} Sorcery`) + Impr. Ability (Sorc, `{python} Improved_Ability_Sorcery`) + Magic (`{python} Magic`) = `{python} Spellcasting_Pool`
+* **Spellcasting Pool**: `{python} Spellcasting_Pool` dice $\rightarrow$ **Buys `{python} Spellcasting_Pool // 4` Hits**.
+* **Drain Resistance Pool**: `{python} Drain_Resist_Pool` dice (`{python} Willpower` WIL + `{python} Charisma` CHA) $\rightarrow$ **Buys `{python} Drain_Resist_Pool // 4` Hits** `[SR6, Page 36]`.
+
+---
+
+## Influence Tests
+
+* **Pool:** Influence (`{python} Influence`) + Charisma (`{python} Charisma`) = **`{python} Influence_Pool` dice**
+  * Nanopaste Disguise / Nanocosmetics: +1 Situational Edge
+  * Social Rating: CHA (`{python} Charisma`)
+
+---
+
+### Commanding Voice
+
+SW p. 78
+
+* **Action**: Major Action.
+* **Pool**: Influence (`{python} Influence`) + Charisma (`{python} Charisma`) + Commanding Voice (1) = **`{python} Commanding_Voice_Pool` dice**
+* **Opposed By**: Willpower + Intuition
+* **Effect**: Target obeys a single command of 5 words or less, or freezes for 1 round/level.
+* **Constraint**: Orders cannot cause direct self-harm.
+
+### Sharp Tongue
+
+SO p. 111
+
+* **Action**: Major Action.
+* **Pool**: Charisma (`{python} Charisma`) + Magic (`{python} Magic`) = **`{python} Sharp_Tongue_Pool` dice**
+* **Opposed By**: Willpower + Intuition
+* **Effect**: Inflict net hits as unresisted Stun damage.
+* **Alternate Effect**: Choose to daze before rolling. Succeeds if net hits $\ge$ target's WIL.
+* **Constraint**: Target must be in line of sight and understand the adept.
+
+### Inspire Confidence
+
+6WC p. 133
+
+* **Pool:** Charisma (`{python} Charisma`) + Influence (`{python} Influence`) + Command Presence (2) = **`{python} Inspire_Confidence_Pool` dice**
+* **Effect**
+  * Hits function as a teamwork test for any skill.
+  * One character may gain one (1) Edge.
+  * Velvet gains one (1) Edge (Command Presence).

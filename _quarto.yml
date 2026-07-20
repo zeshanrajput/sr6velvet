@@ -14,8 +14,8 @@ book:
         - chapters/identity_core.md
         - chapters/character_sheet.qmd
         - chapters/character_build.qmd
-        - chapters/rules_and_downtime.md
-        - chapters/character_log.md
+        - chapters/rules_and_downtime.qmd
+        - chapters/character_log.qmd
     - part: "Narrative Log"
       chapters:
         - chapters/01_transaction.md

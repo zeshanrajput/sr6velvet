@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char gender="DIVERSE" karmaF="25" meta="dalakitnon" nuyen="4325">
+<sr6char career="true" gender="DIVERSE" karmaF="5" karmaI="10" meta="dalakitnon" nuyen="1800">
    <lifestyles>
       <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1"/>
    </lifestyles>
@@ -13,17 +13,11 @@
       <quality lang="en" ref="exceptional_attribute" uuid="06d98b51-c77b-4ecc-9865-8de750f9995a">
          <decision choice="4096584c-eb76-49b2-be6b-1a6c0ca9e50a" value="CHARISMA"/>
       </quality>
-      <quality lang="en" ref="spirit_bane" uuid="fe1ee17b-1bf3-4e61-b609-86bc8e61149a">
-         <decision choice="281aba04-1bd9-4d84-b6f4-f7bb97d217f0" value="spirit_beasts"/>
-      </quality>
       <quality lang="en" ref="hooder" uuid="371247b7-e82a-4762-a6b0-6c4eaeb64bd7" value="3"/>
       <quality lang="en" ref="inspire_competence" uuid="ab099e59-f11c-41ce-8a71-3b6e6d161830"/>
-      <quality lang="en" ref="incompetent" uuid="18fabc5e-c051-4478-8e0c-6bd44a1488bd">
-         <decision choice="d0b872d0-0783-4b7a-b38a-35db1cef3685" value="outdoors"/>
-      </quality>
-      <quality lang="en" ref="attribute_mastery" uuid="a2aeaf16-4444-4d41-85fa-573b34e24c44">
-         <decision choice="58b2700b-918d-4746-83a2-ccc189f1cb1c" value="CHARISMA"/>
-      </quality>
+      <quality lang="en" ref="chronic_pain" uuid="529d6953-968d-4d30-941a-d0aa37b99b4a"/>
+      <quality lang="en" ref="injury_prone" uuid="70c13614-c27e-4fa8-bd85-fabf0f01b0eb"/>
+      <quality lang="en" ref="focused_concentration" uuid="2e1bb439-06b1-4b58-81c4-17ebb7ab9a1e" value="3"/>
       <quality lang="en" ref="allergy" uuid="fe2953dc-b337-4a44-bdf1-d010508e301b">
          <decision choice="55a6dda7-7565-4108-9a04-65b7607081df" value="common"/>
          <decision choice="b3cd035c-f2c3-4c56-abcd-9a218954d92a" value="moderate"/>
@@ -43,23 +37,21 @@
       </adeptpower>
       <adeptpower lang="en" ref="command_presence"/>
    </adeptPowers>
-   <metaEchoes>
-      <metaEcho lang="en" ref="quickening"/>
-   </metaEchoes>
    <sins>
       <sin name="Lee Ji-Yoo" quality="SECOND_LIFE" uniqueid="1aa1c262-f752-4609-bf11-4d61189762e8"/>
       <sin name="Tanaka Ryo" quality="SECOND_LIFE" uniqueid="aa60c1ba-3579-49f6-a190-f67b7d820e07"/>
    </sins>
    <licenses>
-      <licenses name="Quickened Spells" rating="SECOND_LIFE" sin="1aa1c262-f752-4609-bf11-4d61189762e8" uniqueid="20f5451d-495d-4107-a9b0-96adff7d500a"/>
       <licenses name="Magician" rating="SECOND_LIFE" sin="1aa1c262-f752-4609-bf11-4d61189762e8" uniqueid="bbcbe7a8-b86f-4447-919e-b35147f1df79"/>
    </licenses>
    <contacts>
       <contact id="d943f5a4-4126-40a5-b6a9-de3265dbd34e" loy="1" name="Brynne Taggart" rat="5" type="STREET" typename="SEA Fixer"/>
-      <contact id="16f330cb-2e63-435d-803f-62ccda5f3007" loy="2" name="Vincent Grisome" rat="5" type="MAGIC" typename="SEA University Prof."/>
-      <contact id="a73a0c67-3910-42b8-acc9-9a2609f65621" loy="2" name="Claudette Laurier" rat="5" type="MAGIC" typename="NOLA Order of the Golden Dawn Librarian"/>
-      <contact id="b353219f-ea24-4162-a55d-f8970d632429" loy="1" name="Le Tigre" rat="5" type="MEDIA" typename="NOLA Epoch Model"/>
-      <contact id="1bf712c1-4557-4f81-abd0-b52e894cc7cd" loy="1" name="Hana" rat="3" type="STREET" typename="Wuxing Pop Idol"/>
+      <contact id="16f330cb-2e63-435d-803f-62ccda5f3007" loy="1" name="Vincent Grisome" rat="5" type="MAGIC" typename="SEA University Prof."/>
+      <contact id="a73a0c67-3910-42b8-acc9-9a2609f65621" loy="1" name="Claudette Laurier" rat="5" type="MAGIC" typename="NOLA Order of the Golden Dawn Librarian"/>
+      <contact id="1bf712c1-4557-4f81-abd0-b52e894cc7cd" loy="6" name="Hana" rat="6" type="MAGIC" typename="Wuxing Pop Idol"/>
+      <contact favors="1" id="ef102af8-3448-4f21-935f-abb45d95de59" loy="1" name="Ms. Snow" rat="5" type="CORPORATE" typename="SEA Johnson">
+         <description>SRM 2081-09: +2 FP -- L1 / FP 1</description>
+      </contact>
    </contacts>
    <name>Velvet</name>
    <datasets mode="ALL"/>
@@ -157,5 +149,22 @@
       <itemmod date="2026-07-17T19:26:27.519-04:00" expCost="11" ref="quickening" type="METAECHO"/>
       <itemmod date="2026-07-17T20:05:51.551-04:00" ref="command_presence" type="ADEPT_POWER"/>
       <itemmod date="2026-07-17T20:15:21.898-04:00" ref="command_presence" type="ADEPT_POWER"/>
+      <itemmod date="2026-07-19T21:20:12.108-04:00" expCost="5" ref="increase_attribute" type="SPELL"/>
+      <itemmod date="2026-07-19T21:32:45.762-04:00" expCost="5" ref="increase_reflexes" type="SPELL"/>
    </history>
+   <rewards>
+      <reward date="2026-07-01T00:00:00.000-04:00" exp="1" money="1000">
+         <title>Build-A-Runner (GM Credit)</title>
+      </reward>
+      <reward date="2026-07-17T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>SRM 2081-09: Working for the People</title>
+      </reward>
+      <reward date="2026-07-17T00:00:00.000-04:00" exp="8" money="14000">
+         <title>SRM 2081-09 | Eviction Notice</title>
+         <gamemaster>Z. Rajput</gamemaster>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="2" when="ALLCREATE"/>
+         </modifications>
+      </reward>
+   </rewards>
 </sr6char>

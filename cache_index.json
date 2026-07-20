@@ -492,5 +492,23 @@
     "dataProcessing": 2,
     "firewall": 2,
     "page": "268"
+  },
+  "quality_stats:focusedconcentration": {
+    "positive": true,
+    "page": "72",
+    "rating": 3,
+    "description": "Allows the user to sustain multiple spells or complex forms without penalty, with each level permitting one additional sustained spell or complex form. The sustained spell cannot have a modified Drain Value of 7 or greater."
+  },
+  "quality_stats:chronicpain": {
+    "positive": false,
+    "page": "137",
+    "rating": 0,
+    "description": "A quality where the character frequently suffers from a condition that flares up, causing pain and imposing a penalty on most tests."
+  },
+  "quality_stats:injuryprone": {
+    "positive": false,
+    "page": "138",
+    "rating": 0,
+    "description": "This quality causes the character to take an extra box of damage of the same type (Physical or Stun) whenever they suffer damage from any source."
   }
 }

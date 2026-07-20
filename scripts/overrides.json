@@ -1,5 +1,15 @@
 {
   "character_overrides": {
+    "velvet": {
+      "attribute_overrides": {
+        "MAGIC": 6
+      }
+    },
+    "kim jin-young": {
+      "attribute_overrides": {
+        "MAGIC": 6
+      }
+    },
     "pilot-ai": {
       "inject_items": [
         {
