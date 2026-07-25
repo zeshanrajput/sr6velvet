@@ -16,11 +16,18 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Install uv
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Set up uv
         uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
-          python-version: '3.13'
+
+      - name: Install dependencies
+        run: uv sync
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -31,3 +38,4 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          QUARTO_PYTHON: ${{ github.workspace }}/.venv/bin/python

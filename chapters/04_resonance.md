@@ -8,7 +8,7 @@ Ryo hit the center mark. The copper plates beneath his boots hummed, their surfa
 
 It wasn't an ovation; it was a harvest. The crowd was an over-saturated circuit—a volatile ocean of emotional energy waiting for a gateway. He dropped the protective thresholds of his consciousness, turning his mind into a hollow conduit—but the vacuum did not stop at the ambient excitement of the arena. The matrix was too precise; it dove deeper, its lines hooking directly into the illegal, silent pocket beneath his ribs where he hid the syllables of her name.
 
-The drag was physical, a sharp claw tearing at the center of his throat. Ryo felt his internal thresholds begin to buckle.
+The drag was physical, a sharp claw tearing at the center of his throat. His internal thresholds buckled under the sudden surge.
 
 He refused to let go. Instead of unclenching his core, Ryo threw the internal valves wide, driving his larynx down into a predatory, unworldly overdrive his managers had never rehearsed. He didn't just sing the bridge; he weaponized the anatomy, tilting his chin to maximize the infernal symmetry of his jaw. The gentle siphon turned into a raging flood.
 
@@ -20,7 +20,7 @@ The stadium lights snapped shut, leaving the backstage corridor in the gray, fla
 
 In the recovery suite, there were no congratulatory executives, no flowers, no noise. There were only two Mitsuhama assistants standing over a monitor, their faces illuminated by the shifting green bar graphs of the astral flow rates.
 
-Ryo sat on the edge of the examination table, his hands flat against his thighs. His throat did not feel empty; it felt choked, heavy with the thick, stolen vitality of eighty-two thousand strangers.
+Ryo sat on the edge of the examination table, his hands flat against his thighs. His throat was not empty; it throbbed, choked with the thick, stolen vitality of eighty-two thousand strangers.
 
 "Extraction peaked at one hundred and twelve percent," the first assistant said, her thumb trembling slightly as she scrolled down the stylus pad. "The southern sector consumer market is showing a unprecedented drop—nearly a six-point drain toward the logistics funds. The ambient crowd recovery matrix is completely flat."
 

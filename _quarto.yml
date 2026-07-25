@@ -1,7 +1,8 @@
 project:
   type: book
   output-dir: _book
-  pre-render: uv run python scripts/main.py "input/Velvet.xml" --output "output/character_sheet.txt"
+  pre-render:
+    - uv run python scripts/main.py "input/Velvet.xml" --output "output/character_sheet.txt"
 
 book:
   title: "VELVET // Jin-Young Character Dossier"
@@ -26,7 +27,10 @@ book:
         - chapters/05_sabotage.md
         - chapters/06_first_negotiation.md
         - chapters/07_seattle_web.md
-
+    - part: "Reference & Specifications"
+      chapters:
+        - reference/story_continuity.md
+        - reference/narrative_standards.md
 
 format:
   html:

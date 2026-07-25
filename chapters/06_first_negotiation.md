@@ -1,6 +1,6 @@
 # 6. The First Negotiation
 
-The rain in the Redmond Barrens smelled of sulfur and wet slag, a constant, chemical drizzle that slicked the cracked asphalt of the alleyways. Tanaka Ryo kept the grey, unbadged Suzuki idling between his knees, a low, wet vibration that rattled the loose plastic of the fairing. Through the double-polarized visor of his Shoei helmet, the neon sign of the *Red Line* was a bleeding smear of crimson in the fog. He adjusted the collar of his armored riding leathers, keeping his chin tucked. In the Barrens, a face was a liability; a face like his, even under the dulling damp of Seattle's rain, was a tracking beacon.
+The rain in the Redmond Barrens smelled of sulfur and wet slag, a constant, chemical drizzle that slicked the cracked asphalt of the alleyways. Tanaka Ryo kept the grey, unbadged Suzuki idling between his knees, a low, wet vibration that rattled the loose plastic of the fairing. Through the double-polarized visor of his Shoei helmet, the neon sign of the *Red Line* was a bleeding smear of crimson in the fog. He adjusted the collar of his armored riding leathers, keeping his chin tucked. In the Barrens, a face was a liability; a face like his, even under the dulling damp of Seattle's rain, was an exposed target.
 
 He killed the engine, the sudden silence filled only by the rhythmic drip of water from the rusted fire escape overhead. Carrying the helmet under his arm, Ryo pushed open the heavy steel door of the basement dive bar. The air inside was warm and thick, smelling of stale yeast, cheap tobacco, and the chemical tang of soy-caf.
 
@@ -42,7 +42,7 @@ The Johnson looked up, his hand twitching toward his pocket before freezing.
 
 The red neon of the bar sign caught the symmetry of her face. The corporate Johnson did not speak. He did not look at the datapad he had prepared. The perfection of her features was so absolute it carried a cold, almost hostile weight—a clinical, multi-million nuyen marvel of bio-sculpting that no natural lineage could produce. The Johnson’s pulse hammered visibly against his collar, his heart rate monitor on her HUD spiking into the red.
 
-"You're late," the Johnson said. The words lacked any real weight. In the twitch of his jaw and the rigid set of his shoulders, she read the sudden, mounting panic of a man who realized he was sitting across from a runaway corporate investment of unimaginable scale.
+"You're late," the Johnson said. The words lacked any real weight. In the twitch of his jaw and the rigid set of his shoulders, she read the sudden, mounting panic of a man sitting across from a runaway corporate investment of unimaginable scale.
 
 "The security sweeps downtown were heavy," she said. Her voice carried a clear, silver chime—a neurologically mapped pitch designed to lower the heart rate of the listener, yet it held a cold, commanding cadence. "The transit was delayed."
 
@@ -62,9 +62,9 @@ The Johnson’s expression shifted from confusion to a deep, visceral wariness. 
 
 "No game," Ji-yoo said, her disarming smile remaining perfectly in place. "We will retrieve the data cleanly. Renraku will not even register the loss. And when the job is done, you will owe me a favor. A personal marker, redeemable on demand."
 
-The Johnson sat back, his spine stiffening. She watched the realization register in his eyes like a cold, corporate draft: a debt was far more dangerous than a payout. By stripping away the nuyen, she had stripped him of his leverage. She was no longer a street mercenary to him; she was an operative collecting assets.
+The Johnson sat back, his spine stiffening. She watched the realization register in his eyes like a cold, corporate draft: a debt was far more dangerous than a payout. By stripping away the nuyen, she had stripped him of his advantage. She was no longer a street mercenary to him; she was an operative collecting assets.
 
-He stared at the flawless lines of her face, the expensive, Mitsuhama-signature grace of her posture. In his pale face and the sudden rigidity of his frame, she saw the recognition click. He knew the signature of a high-value corporate asset program when he saw one—a predator that had slid silently into his small, dirty pond. He was a mid-level manager trying to scrape by, and he looked like a man who had suddenly realized he was signing a contract with a shark.
+He stared at the flawless lines of her face, the expensive, Mitsuhama-signature grace of her posture. In his pale face and the sudden rigidity of his frame, she saw the recognition click. He knew the signature of a high-value corporate asset program when he saw one—a predator that had slid silently into his small, dirty pond. He was a mid-level manager trying to scrape by, his widened eyes betraying the sudden terror of signing a contract with a shark.
 
 "Who... what are you?" the Johnson whispered, his voice dry.
 

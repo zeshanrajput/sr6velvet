@@ -1,0 +1,246 @@
+identity:
+  handle: Velvet
+  real_name: Kim Jin-Young
+  metatype: Dalakitnon Elf
+  tradition: Shinto / Musok
+  mortype: Mystic Adept
+  gender: DIVERSE
+  age: 20
+  size: 165 cm
+  weight: 78 kg
+  hair_color: White
+  eye_color: Obsidian
+  skin_color: White
+attributes:
+  body: 2
+  agility: 3
+  reaction: 2
+  strength: 2
+  willpower: 5
+  logic: 3
+  intuition: 3
+  charisma: 10
+  edge: 2
+  magic: 6
+  resonance: 0
+  power_points: 3
+qualities:
+  positive:
+  - name: Metagenetic Attribute Improvement (Charisma)
+    ref: metagenetic_attribute_improvement
+    choice: Charisma
+  - name: Exceptional Attribute (Charisma)
+    ref: exceptional_attribute
+    choice: Charisma
+  - name: Inspire Competence
+    ref: inspire_competence
+  - name: Low-Light Vision
+    ref: low-light_vision
+  negative:
+  - name: Chronic Pain
+    ref: chronic_pain
+  - name: Hooder
+    ref: hooder
+    rating: 3
+  - name: Focused Concentration
+    ref: focused_concentration
+    rating: 2
+  - name: Allergy (Spices, Common Moderate)
+    ref: allergy
+    choice: Spices
+skills:
+- name: Sorcery
+  id: sorcery
+  attribute: Magic
+  rating: 6
+  adept_bonus: 2
+- name: Conjuring
+  id: conjuring
+  attribute: Magic
+  rating: 1
+- name: Influence
+  id: influence
+  attribute: Charisma
+  rating: 5
+- name: Native Language
+  id: language
+  attribute: Logic
+  rating: 4
+- name: Small Unit Tactics
+  id: small_unit_tactics
+  attribute: Logic
+  rating: 1
+  is_knowledge: true
+- name: MCT
+  id: mct
+  attribute: Logic
+  rating: 1
+  is_knowledge: true
+- name: Wuxing
+  id: wuxing
+  attribute: Logic
+  rating: 1
+  is_knowledge: true
+- name: East Asian Media
+  id: east_asian_media
+  attribute: Logic
+  rating: 1
+  is_knowledge: true
+spells:
+- name: Increase Attribute
+  ref: increase_attribute
+  drain: 3
+  category: Health
+adept_powers:
+- name: Improved Ability (Sorcery)
+  ref: improved_ability_combat
+  rating: 3
+  choice: Sorcery
+meta_echoes:
+- name: Channeling
+  ref: channeling
+armors:
+- name: SecureTech Skinshield
+  ref: securetech_skinshield
+  defense_rating: 1
+  accessories:
+  - Ballistic Hood
+  - Fashion Accessory: Très Chic x2
+matrix_devices:
+- name: Erika Elite
+  ref: erika_elite
+  device_rating: 4
+  data_processing: 2
+  firewall: 2
+  accessories:
+  - Comhack Securelink Upgrade
+  - P-Ice Nope
+software:
+- name: Personal Assistant
+  ref: personal_assistant
+  rating: 6
+  cat: Commlink Apps
+- name: Virtual Machine
+  ref: virtual_machine
+  cat: Basic programs
+- name: Thermal Mood Reading
+  ref: thermal_mood_reading
+  cat: Commlink Apps
+- name: Nanomask
+  ref: nanomask
+  cat: Basic programs
+- name: MeFeed
+  ref: mefeed
+  cat: Commlink Apps
+- name: Facial Scanner
+  ref: facial_scanner
+  cat: Commlink Apps
+items:
+- name: Nanocosmetics Kit
+  ref: nanocosmetics_kit
+- name: Nanocosmetics Refill
+  ref: nanocosmetics_refill
+- name: Nanopaste Disguise Kit
+  ref: nanopaste_disguise_kit
+- name: Nanopaste Disguise Refill
+  ref: nanopaste_disguise_refill
+- name: Savior Medkit
+  ref: savior_medkit
+- name: Savior Medkit Refill
+  ref: savior_medkit_refill
+- name: Contacts
+  ref: contacts
+  rating: 3
+  accessories:
+  - Flare Compensation
+  - Image Link
+  - Thermographic Vision
+- name: Earbuds
+  ref: earbuds
+  rating: 3
+- name: Subvocal Microphone
+  ref: subvocal_microphone
+sins:
+- name: Lee Ji-Yoo
+  quality: SECOND_LIFE
+  rating: 6
+- name: Tanaka Ryo
+  quality: SECOND_LIFE
+  rating: 6
+licenses:
+- name: Magician
+  rating: SECOND_LIFE
+  sin: Lee Ji-Yoo
+contacts:
+- name: Brynne Taggart
+  connection: 5
+  loyalty: 1
+  favors: 0
+  type: Fixer
+  archetype: Fixer
+  region: SEA
+  description: Chargen Contact
+- name: Vincent Grisome
+  connection: 5
+  loyalty: 3
+  favors: 0
+  type: Magic Prof.
+  archetype: Magic Prof.
+  region: SEA
+  description: Chargen Contact
+- name: Ni Ni Xiaolu
+  connection: 3
+  loyalty: 1
+  favors: 0
+  type: Triad Johnson
+  archetype: Triad Johnson
+  region: SEA
+  description: Chargen Contact
+- name: Whiskey
+  connection: 2
+  loyalty: 3
+  favors: 0
+  type: Street Doc
+  archetype: Street Doc
+  region: SEA
+  description: Chargen Contact
+- name: Claudette Laurier
+  connection: 5
+  loyalty: 4
+  favors: 0
+  type: Order of the Golden Dawn Librarian
+  archetype: Order of the Golden Dawn Librarian
+  region: NOLA
+  description: Chargen Contact
+- name: Le Tigre
+  connection: 5
+  loyalty: 1
+  favors: 0
+  type: Epoch Model
+  archetype: Epoch Model
+  region: NOLA
+  description: Chargen Contact
+- name: Hana
+  connection: 6
+  loyalty: 6
+  favors: 0
+  type: Wuxing Talismonger / Pop Idol
+  archetype: Wuxing Talismonger / Pop Idol
+  region: SEA
+  description: Chargen Contact
+- name: Guild of Freelance Assets
+  connection: 7
+  loyalty: 8
+  favors: 0
+  type: Conclave
+  archetype: Conclave
+  region: GEN
+  description: Chargen Contact (Conclave C7 L8)
+- name: Ms. Snow
+  connection: 5
+  loyalty: 1
+  favors: 1
+  type: Johnson
+  archetype: Johnson
+  region: SEA
+  description: SRM 2081-09 Eviction Notice (Elven female)

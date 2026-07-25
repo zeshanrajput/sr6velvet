@@ -34,36 +34,37 @@ Conjuring = stats["Conjuring"]
 Spellcasting_Pool = Sorcery + Improved_Ability_Sorcery + Magic
 Conjuring_Pool = Conjuring + Magic
 Drain_Resist_Pool = Willpower + Charisma
-
 Influence_Pool = Influence + Charisma
-Commanding_Voice_Pool = Influence + Charisma + 1
-Sharp_Tongue_Pool = Charisma + Magic
-Inspire_Confidence_Pool = Charisma + Influence + 2
 ```
 
 ## Spellcasting & Foci Integration
 
-### **Tradition: (Shinto/Musok — Willpower + Charisma)**
+### **Tradition: Shinto / Musok (Willpower + Charisma)**
 
-* **Starting Attributes**: Willpower `{python} Willpower`, Charisma `{python} Charisma`, Intuition `{python} Intuition`, Body `{python} Body`.
-* **Starting Spellcasting Pool**: Sorcery (`{python} Sorcery`) + Impr. Ability (Sorc, `{python} Improved_Ability_Sorcery`) + Magic (`{python} Magic`) = `{python} Spellcasting_Pool`
-* **Spellcasting Pool**: `{python} Spellcasting_Pool` dice $\rightarrow$ **Buys `{python} Spellcasting_Pool // 4` Hits**.
-* **Drain Resistance Pool**: `{python} Drain_Resist_Pool` dice (`{python} Willpower` WIL + `{python} Charisma` CHA) $\rightarrow$ **Buys `{python} Drain_Resist_Pool // 4` Hits** `[SR6, Page 36]`.
+* **Core Attributes**: Willpower `{python} Willpower`, Charisma `{python} Charisma`, Intuition `{python} Intuition`, Body `{python} Body`, Magic `{python} Magic`.
+* **Spellcasting Pool**: Sorcery (`{python} Sorcery`) + Impr. Ability (Sorc, `{python} Improved_Ability_Sorcery`) + Magic (`{python} Magic`) = **`{python} Spellcasting_Pool` dice** $\rightarrow$ **Buys `{python} Spellcasting_Pool // 4` Hits**.
+* **Drain Resistance Pool**: Willpower (`{python} Willpower`) + Charisma (`{python} Charisma`) = **`{python} Drain_Resist_Pool` dice** $\rightarrow$ **Buys `{python} Drain_Resist_Pool // 4` Hits** `[SR6, Page 36]`.
+
+---
+
+## Conjuring & Spirit Protocols
+
+* **Conjuring Pool**: Conjuring (`{python} Conjuring`) + Magic (`{python} Magic`) = **`{python} Conjuring_Pool` dice** $\rightarrow$ **Buys `{python} Conjuring_Pool // 4` Hits**.
+* **Drain Resistance Pool**: Willpower (`{python} Willpower`) + Charisma (`{python} Charisma`) = **`{python} Drain_Resist_Pool` dice**.
 
 ---
 
 ## Influence Tests
 
-* **Pool:** Influence (`{python} Influence`) + Charisma (`{python} Charisma`) = **`{python} Influence_Pool` dice**
-  * Nanopaste Disguise / Nanocosmetics: +1 Situational Edge
-  * Social Rating: CHA (`{python} Charisma`)
+* **Influence Pool:** Influence (`{python} Influence`) + Charisma (`{python} Charisma`) = **`{python} Influence_Pool` dice** $\rightarrow$ **Buys `{python} Influence_Pool // 4` Hits**.
+  * Nanopaste Disguise / Nanocosmetics: +1 Situational Edge.
+  * Social Rating: CHA (`{python} Charisma`) + 4 (Tres Chic accessories)
 
-### Inspire Confidence
+### Inspire Competence
 
-6WC p. 133
+*6WC p. 133*
 
-* **Pool:** Charisma (`{python} Charisma`) + Influence (`{python} Influence`) + Command Presence (2) = **`{python} Inspire_Confidence_Pool` dice**
+* **Pool:** Charisma (`{python} Charisma`) + Influence (`{python} Influence`) = **`{python} Influence_Pool` dice**
 * **Effect**
-  * Hits function as a teamwork test for any skill.
-  * One character may gain one (1) Edge.
-  * Velvet gains one (1) Edge (Command Presence).
+  * Hits function as a teamwork test to assist an ally's skill test.
+  * Target ally gains one (1) Edge.

@@ -16,9 +16,9 @@ For three weeks after the initial bone-shearing, his head had been wrapped in th
 
 "The sutures are dissolved," she said. "The spells have settled into the cartilage. Let's take the gauze down."
 
-The assistants worked in silence. Their hands were small, gloved in enchanted latex that squeaked as they pulled the dressings. Each layer that came off felt like a peeling of dry skin, the air hitting the raw, spell-bound flesh with a cold, chemical sting.
+The assistants worked in silence. Their hands were small, gloved in enchanted latex that squeaked as they pulled the dressings. Each layer peeled away like dry parchment, the air striking the raw, spell-bound flesh with a cold, chemical sting.
 
-When the last layer fell his face felt tight, like a drumhead pulled to the limit. The air felt too close.
+When the last layer fell, his skin pulled taut as a drumhead. The surrounding air pressed suffocatingly close.
 
 "Hold," the surgeon said, adjusting her loupes. "Align the light. Let's see the symmetry."
 
@@ -34,7 +34,7 @@ Jin-Young stared at the two faces on the screen. The first, Lee Ji-yoo, was cali
 
 They were two distinct strangers, and he was the negative space between them.
 
-He reached up, his fingers touching the smooth, unbroken skin of his cheek. It felt like touching a plastic shell. He tried to mimic the wide, gap-toothed grin his mother used to laugh at in the Manila rain.
+He reached up, his fingers meeting the smooth, unbroken surface of his cheek—a hard plastic shell where his features used to live. He tried to mimic the wide, gap-toothed grin his mother used to laugh at in the Manila rain.
 
 His muscles did not respond. The nerve endings had been re-routed, mapped to parallel astral aspects. The cartilage in his cheeks, bound by permanent corporate spells, refused to crease. When he forced the expression, his mouth only turned up into a stiff, polite curve—the rehearsed stage-smile that was now written into his cells.
 

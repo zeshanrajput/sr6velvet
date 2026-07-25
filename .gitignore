@@ -26,3 +26,7 @@ scratch/
 rules_vault/*
 !rules_vault/
 !rules_vault/SRMG-*.md
+
+# Kokoro TTS models & archives
+kokoro*/
+*.tar.bz2

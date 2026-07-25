@@ -38,7 +38,7 @@ Ryo frowned, his fingers tightening against the cold steel of the ventilator hou
 
 She gestured slightly to the room behind her. "Wuxing has restructured the contracts. I have been promoted to the executive tier. I am the lead center of Yueying, and my face is projected across every major node in the Sixth World. It is a beautiful, gilded cage, Jin. Built for an audience of one."
 
-Ryo felt a sudden, suffocating vertigo.
+A sudden, suffocating vertigo gripped Ryo's chest.
 
 "They are waiting for you to come home," she said. "The lines are being recalibrated. Wuxing needs the gateway node. Mitsuhama wants their property back. The contracts have already been cross-collateralized."
 

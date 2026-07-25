@@ -1,18 +1,18 @@
 ___________________________________________________________________________
 // ACCESSING: KIM_JIN-YOUNG.bin // SOURCE: ASTRAL_PLANE //
-// STATUS: ONLINE // KARMA: 5 // NUYEN: ¥17,025 //
+// STATUS: ONLINE // KARMA: 1 (9 EARNED) // NUYEN: ¥19,025 //
 ___________________________________________________________________________
 
 [ IDENTITY ]
   > NAME: Kim Jin-Young          > ALIAS: Velvet
-  > METATYPE: Dalakitnon         > GENDER: DIVERSE
+  > METATYPE: Elf                > GENDER: DIVERSE
   > TRADITION: Shinto            > SIN: [LOCAL_FILE_ENCRYPTED]
 
 [ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
   PHY | BOD [02] AGI [03] REA [02] STR [02]  |   INIT (PHYS)  : 5 +1D6
   MNT | WIL [05] LOG [03] INT [03] CHA [10]  |   INIT (ASTRAL): N/A (Mystic Adept)
   SPP | EDG [02] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 15
-  PP  | POWER POINTS: 03                     |   JUDGE INT    : 8
+  PP  | POWER POINTS: 04                     |   JUDGE INT    : 8
                                              |   DEF RATING   : 03 (BOD+ARM)
                                              |   DEF POOL     : 05 (REA+INT)
 
@@ -22,63 +22,59 @@ ___________________________________________________________________________
 
 [ SKILL_MATRICES ]
   NATIVE LANGUAGE       : 04                          -> Pool: 07
-  CONJURING             : 05                          -> Pool: 11
-  SORCERY               : 06 (+3)                     -> Pool: 15
+  SORCERY               : 06 (+2)                     -> Pool: 14
   INFLUENCE             : 05                          -> Pool: 15
+  CONJURING             : 01                          -> Pool: 07
 
 [ KNOWLEDGE ]
-  SMALL UNIT TACTICS    : 01                          -> Pool: 04
   MCT                   : 01                          -> Pool: 04
   WUXING                : 01                          -> Pool: 04
+  SMALL UNIT TACTICS    : 01                          -> Pool: 04
   EAST ASIAN MEDIA      : 01                          -> Pool: 04
 
 [ SPELLS ]
-  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 15  [Drain Resist: 15]
+  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 14  [Drain Resist: 15]
 
 [ ADEPT_POWERS ]
-  - IMPROVED ABILITY (SORCERY) [R3]
+  - COSMETIC CONTROL [R2]
+  - IMPROVED ABILITY (SORCERY) [R2]
 
 [ METAMAGICS & INITIATION ]            | [ CONJURING_QUICK_ACTIONS ]
-  - CHANNELING                         |   - SUMMONING   -> Pool: 11  [Drain: 15]
-                                       |   - BINDING     -> Pool: 11  [Drain: 15]
-                                       |   - BANISHING   -> Pool: 11  [Drain: 15]
+  - CHANNELING                         |   - SUMMONING   -> Pool: 07  [Drain: 15]
+                                       |   - BINDING     -> Pool: 07  [Drain: 15]
+                                       |   - BANISHING   -> Pool: 07  [Drain: 15]
 
 [ MATRIX_DEVICES ]                     |
 - ERIKA ELITE (COMMLINK)               |
   RAT 04            DPR 02 FWL 02      |
-  > Comhack Securelink Upgrade         |
   > P-Ice Nope                         |
+  > Comhack Securelink Upgrade         |
+  > Personal Assistant (R6)            |
                                        |
-
-[ SOFTWARE_LIBRARY ]
-  - PERSONAL ASSISTANT       (Comm)   [R6]  // Full Def: + Rtg
-  - VIRTUAL MACHINE (Basi)
-  - THERMAL MOOD READING     (Comm)         // Determine emotional state via skin temp (req. thermographic)
-  - NANOMASK (Basi)
-  - MEFEED (Comm)
-  - FACIAL SCANNER (Comm)
 
 [ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
   > METAGENIC ATT. IMP. (CHARISMA)     |   - SECURETECH SKINSHIELD [+1]
-  > EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - NANOCOSMETICS KIT
-  > INSPIRE COMPETENCE                 |   - NANOCOSMETICS REFILL [+0]
-  ! CHRONIC PAIN                       |   - NANOPASTE DISGUISE KIT [+0]
-  > HOODER                             |   - NANOPASTE DISGUISE REFILL
+  > EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - NANOPASTE DISGUISE KIT [+0]
+  > INSPIRE COMPETENCE                 |   - NANOPASTE DISGUISE REFILL
+  ! HOODER                             |   - NANOCOSMETICS KIT
+  ! CHRONIC PAIN                       |   - NANOCOSMETICS REFILL [+0]
   > FOCUSED CONCENTRATION              |   - SAVIOR MEDKIT
-  ! ALLERGY (COMMON, MODERATE, SPICES) |   - SAVIOR MEDKIT REFILL
-  > LOW-LIGHT VISION                   |   - CONTACTS [+3]
-                                       |   - EARBUDS [+3]
-                                       |   - SUBVOCAL MICROPHONE [+N/A]
+  > LOW-LIGHT VISION                   |   - SAVIOR MEDKIT REFILL
+                                       |   - CONTACTS [+3]
 
 [ SOCIAL_NETWORK_CONTACTS ]
-  - BRYNNE TAGGART       SEA Fixer                        L:1 I:5 F:0
-  - VINCENT GRISOME      SEA Magic Prof.                  L:3 I:5 F:0
-  - NI NI XIAOLU         SEA Triad Johnson                L:1 I:3 F:0
-  - WHISKEY              SEA Street Doc                   L:3 I:2 F:0
-  - CLAUDETTE LAURIER    NOLA Order of the Golden Dawn... L:4 I:5 F:0
-  - LE TIGRE             NOLA Epoch Model                 L:1 I:5 F:0
-  - HANA                 Wuxing Talismonger / Pop Idol    L:6 I:6 F:0
-  - GUILD OF FREELANCE ASSETS Conclave                         L:3 I:7 F:0
+  -- SEATTLE (SEA) --
+  - BRYNNE TAGGART       Fixer                            L:2 I:5 F:0
+  - VINCENT GRISOME      Magic Prof                       L:3 I:5 F:0
+  - WHISKEY              Street Doc                       L:2 I:2 F:0
+  - HANA                 Wuxing Talismonger and Pop Idol  L:6 I:6 F:0
+
+  -- NEW ORLEANS (NOLA) --
+  - CLAUDETTE LAURIER    Order of the Golden Dawn Libr... L:3 I:5 F:0
+  - LE TIGRE             Epoch Model                      L:1 I:5 F:0
+
+  -- GENERAL / MATRIX / OTHER (GEN) --
+  - GUILD OF FREELANC... Conclave                         L:8 I:7 F:0
 
 [ REGISTERED_IDENTITIES ]
   - SIN: Lee Ji-Yoo                     [Rating 6]
@@ -90,8 +86,6 @@ ___________________________________________________________________________
   ---------------------------------------------------------------------------
   2026-07-01   |    +1 |    +1000 | Build-A-Runner (GM: WarDoctor 1077)
   2026-07-17   |    +8 |   +14000 | SRM 2081-09 | Eviction... (GM: WarDoctor 1077)
-  2026-07-17   |    +8 |        0 | SRM 2081-09: Karma refund for coven
-  2026-07-17   |    +1 |    -2000 | SRM 2081-09: Working for the People
   ---------------------------------------------------------------------------
 
 ___________________________________________________________________________

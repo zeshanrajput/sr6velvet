@@ -10,8 +10,8 @@ This log chronicles out-of-session missions, downtime decisions, Karma expenditu
 #| echo: false
 #| include: false
 # Initial values
-Karma = 2
-Lifetime_Karma = 2
+Karma = 0
+Lifetime_Karma = 0
 Nuyen = 4025
 Initiation_Grade = 0
 Coven_Loyalty = 8
@@ -49,6 +49,90 @@ def inc_many(*args):
         op = "+=" if amount >= 0 else "-="
         res.append(f"{name} {op} {abs(amount)}")
     return ", ".join(res)
+
+Contacts = {}
+
+def detect_region(name, type_name, region_param="AUTO"):
+    if region_param and region_param != "AUTO":
+        return region_param
+    full = (type_name + " " + name).upper()
+    if "SEA " in full or "SEATTLE" in full or name in ["Brynne Taggart", "Whiskey", "Vincent Grisome", "Ni Ni Xiaolu", "Ms. Snow", "Hana"]:
+        return "SEA"
+    if "NOLA " in full or "NOLA" in full or name in ["Claudette Laurier", "Le Tigre"]:
+        return "NOLA"
+    if "AMS " in full or "AMSTERDAM" in full or "DUTCH" in full or "PENOSE" in full:
+        return "AMS"
+    if "KY " in full or "KENTUCKY" in full:
+        return "KY"
+    if "DW " in full or "DENVER" in full:
+        return "DW"
+    return "GEN"
+
+def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact", region="AUTO", notes=""):
+    reg = detect_region(name, type_name, region)
+    
+    clean_type = type_name
+    for prefix in ["SEA ", "NOLA ", "AMS ", "KY ", "DW "]:
+        if clean_type.startswith(prefix):
+            clean_type = clean_type[len(prefix):]
+            break
+
+    if name not in Contacts:
+        start_loyalty = loyalty if loyalty is not None else 0
+        Contacts[name] = {
+            "name": name,
+            "connection": connection,
+            "loyalty": start_loyalty,
+            "favors": favors,
+            "fp_acc": 0,
+            "type": clean_type,
+            "raw_type": type_name,
+            "region": reg,
+            "notes": notes
+        }
+    else:
+        if connection > Contacts[name]["connection"]:
+            Contacts[name]["connection"] = connection
+        if loyalty is not None and loyalty > Contacts[name]["loyalty"]:
+            Contacts[name]["loyalty"] = loyalty
+        if clean_type and clean_type != "Contact":
+            Contacts[name]["type"] = clean_type
+        if reg != "GEN":
+            Contacts[name]["region"] = reg
+        if notes:
+            if Contacts[name]["notes"]:
+                Contacts[name]["notes"] += f" | {notes}"
+            else:
+                Contacts[name]["notes"] = notes
+
+    c = Contacts[name]
+    if fp > 0:
+        c["fp_acc"] += fp
+        if c["loyalty"] == 0 and c["fp_acc"] >= 1:
+            c["loyalty"] = 1
+            c["fp_acc"] -= 1
+        while c["fp_acc"] >= (c["loyalty"] + 1):
+            c["fp_acc"] -= (c["loyalty"] + 1)
+            c["loyalty"] += 1
+
+    if favors > 0 and c["favors"] < favors:
+        c["favors"] = favors
+    elif c["fp_acc"] > 0 and c["favors"] == 0:
+        c["favors"] = c["fp_acc"]
+
+    fp_str = f" (+{fp} FP)" if fp > 0 else ""
+    reg_badge = f"[{c['region']}] " if c['region'] != "GEN" else ""
+    return f"**{name}** ({reg_badge}{c['type']}, C:{c['connection']} L:{c['loyalty']} F:{c['favors']}{fp_str})"
+
+# Seed Chargen Contacts with explicit regions
+contact("Brynne Taggart", connection=5, loyalty=1, type_name="Fixer", region="SEA", notes="Chargen Contact")
+contact("Vincent Grisome", connection=5, loyalty=3, type_name="Magic Prof.", region="SEA", notes="Chargen Contact")
+contact("Ni Ni Xiaolu", connection=3, loyalty=1, type_name="Triad Johnson", region="SEA", notes="Chargen Contact")
+contact("Whiskey", connection=2, loyalty=3, type_name="Street Doc", region="SEA", notes="Chargen Contact")
+contact("Claudette Laurier", connection=5, loyalty=4, type_name="Order of the Golden Dawn Librarian", region="NOLA", notes="Chargen Contact")
+contact("Le Tigre", connection=5, loyalty=1, type_name="Epoch Model", region="NOLA", notes="Chargen Contact")
+contact("Hana", connection=6, loyalty=6, type_name="Wuxing Talismonger / Pop Idol", region="SEA", notes="Chargen Contact")
+contact("Guild of Freelance Assets", connection=7, loyalty=8, type_name="Conclave", region="GEN", notes="Chargen Contact (Conclave C7 L8)")
 ```
 
 ---
@@ -70,7 +154,7 @@ def inc_many(*args):
 * **Rewards:** `{python} inc('Nuyen', 13000)`, `{python} inc('Karma', 8)` (Veteran rewards included)
 * **Reputation:** +2 SEA
 * **Contacts:**
-  * **ALL:** +2 FP Ms. Snow (SEA Johnson, Connection 5, Elven female)
+  * **ALL:** `{python} contact("Ms. Snow", connection=5, fp=2, type_name="Johnson", region="SEA", notes="SRM 2081-09 Eviction Notice (Elven female)")`
   * **BunnyR:** +1 FP Whiskey, +1 FP Belial
   * **Poe:** +1 FP Vincent, +1 FP Ms. Snow (for services rendered)
 * **Heat:** 0 (Roll 4 + 6, -3 w/ "contributions" from BunnyR, Jolthead, Groucho)
@@ -80,10 +164,68 @@ In the screamsheets the next day, Aztecnology representative Carmen del Silva pr
 
 #### Downtime
 
-* Working for the People: `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+* Learned 'Increase Attribute': `{python} inc('Karma', -5)`
 * Initiation - Channeling: `{python} inc_many(('Karma', Coven_Loyalty - 11 - Initiation_Grade), ('Initiation_Grade', 1))`
 
 GM Reward correction: `{python} inc('Nuyen', 1000)`
+
+---
+
+### **Active Contacts Summary**
+
+```{python}
+#| echo: false
+#| output: asis
+region_names = {
+    "SEA": "Seattle (SEA)",
+    "NOLA": "New Orleans (NOLA)",
+    "AMS": "Amsterdam / UNL (AMS)",
+    "KY": "Kentucky (KY)",
+    "DW": "Denver (DW)",
+    "GEN": "General / Matrix / Other (GEN)"
+}
+
+grouped = {}
+for name, c in Contacts.items():
+    grouped.setdefault(c["region"], []).append(c)
+
+for reg in ["SEA", "NOLA", "AMS", "KY", "DW", "GEN"]:
+    if reg in grouped:
+        print(f"#### {region_names[reg]}\n")
+        print("| Contact Name | Connection | Loyalty | Favors | Type / Archetype | Notes |")
+        print("|---|:---:|:---:|:---:|---|---|")
+        for c in grouped[reg]:
+            print(f"| {c['name']} | {c['connection']} | {c['loyalty']} | {c['favors']} | {c['type']} | {c['notes']} |")
+        print("\n")
+```
+
+```{python}
+#| echo: false
+#| include: false
+import yaml, os
+if Contacts:
+    yaml_path = os.path.abspath("velvet_master.yaml")
+    if not os.path.exists(yaml_path):
+        yaml_path = os.path.join(os.getcwd(), "velvet_master.yaml")
+    if os.path.exists(yaml_path):
+        with open(yaml_path, "r", encoding="utf-8") as f:
+            mdata = yaml.safe_load(f) or {}
+        clist = []
+        for name, c in Contacts.items():
+            clist.append({
+                "name": name,
+                "connection": c["connection"],
+                "loyalty": c["loyalty"],
+                "favors": c["favors"],
+                "type": c["type"],
+                "archetype": c["type"],
+                "region": c.get("region", "GEN"),
+                "description": c["notes"]
+            })
+        mdata["contacts"] = clist
+        with open(yaml_path, "w", encoding="utf-8") as f:
+            yaml.dump(mdata, f, sort_keys=False, allow_unicode=True, indent=2)
+```
 
 ---
 

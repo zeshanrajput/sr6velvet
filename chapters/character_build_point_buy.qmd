@@ -51,7 +51,7 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 
 ## Choose Your Metatype/Metavariant
 
-* Choose the metatype or metavariant you want to play: **Dalekitnon** `{python} inc('Karma', -5)`
+* Choose the metatype or metavariant you want to play: **Elf**
 * Any metagenetic qualities must also be paid for.
   * Metagenetic Attribute Increase (CHA): `{python} inc('Karma', -15)`
 
@@ -60,9 +60,10 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 * Awakened: `{python} inc('Character_Points', -10)`
 * Mystic Adepts start with `{python} inc('Magic', 1)`.
   * This unlocks the ability to purchase adept power points (8 CP each for mystic adepts). 
-    * 3 Adept Power Points: `{python} inc('Character_Points', -24)`
+    * 4 Adept Power Points: `{python} inc('Character_Points', -32)`
+      * Cosmetic Control (R2): 2 pp
+      * Improved Ability (Sorcery, R2): 2 pp
   * Mystic adepts may purchase a number of spells equal to final Magic x2 - PP. Each spell costs 2 CP or 5 Karma each.
-    * Increase Attributes: `{python} inc('Karma', -5)`
 
 ## Purchase Special / Metatype Adjustment Points with CP
 
@@ -102,7 +103,6 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
   * `{python} inc('Sorcery', 6)` 
   * `{python} inc('Conjuring', 1)`
 * You may purchase up to 20 additional skill points for 2 CP each.
-  * `{python} inc('Conjuring', 4)` : `{python} inc('Character_Points', -8)`
   
 ## Purchase Resources with CP
 
@@ -136,7 +136,7 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 * Hooder (R3): `{python} inc('Karma', 15)`
 * Inspire Competence: `{python} inc('Karma', -11)`
 * Chronic Pain: `{python} inc('Karma', 15)`
-* Focused Concentration (R2): `{python} inc('Karma', -24)`
+* Focused Concentration (R3): `{python} inc('Karma', -36)`
 
 ### Gear
 

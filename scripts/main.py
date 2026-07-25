@@ -2,6 +2,7 @@ import json
 import argparse
 import sys
 import os
+import yaml
 import dotenv
 import re
 import xml.etree.ElementTree as ET
@@ -12,6 +13,7 @@ dotenv.load_dotenv()
 from utils import sanitize_string, normalize_name
 from rules_data import REF_MAP, SW_CAT_MAP
 from rules_engine import RulesEngine
+from log_engine import get_log_totals
 
 # Global Rules Engine
 rules_engine = RulesEngine()
@@ -87,10 +89,178 @@ def load_overrides(char_name, alias_name, meta_type):
         print(f"[*] Warning: Could not parse overrides: {e}")
     return None
 
+def parse_character_yaml(yaml_path):
+    with open(yaml_path, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    
+    identity = data.get("identity", {})
+    attrs = data.get("attributes", {})
+    
+    attributes = {
+        "BODY": attrs.get("body", 2),
+        "AGILITY": attrs.get("agility", 3),
+        "REACTION": attrs.get("reaction", 2),
+        "STRENGTH": attrs.get("strength", 2),
+        "WILLPOWER": attrs.get("willpower", 5),
+        "LOGIC": attrs.get("logic", 3),
+        "INTUITION": attrs.get("intuition", 3),
+        "CHARISMA": attrs.get("charisma", 10),
+        "EDGE": attrs.get("edge", 2),
+        "MAGIC": attrs.get("magic", 6),
+        "RESONANCE": 0,
+    }
+
+    rea_val = attributes.get('REACTION', 2)
+    int_val = attributes.get('INTUITION', 3)
+    wil_val = attributes.get('WILLPOWER', 5)
+    bod_val = attributes.get('BODY', 2)
+
+    phys_init_val = rea_val + int_val
+    phys_init_dice = "+1D6"
+    astral_init_val = int_val * 2
+    astral_init_dice = "+2D6"
+    initiatives_json = [
+        {"id": "INITIATIVE_PHYSICAL", "value": phys_init_val, "dice": phys_init_dice},
+        {"id": "INITIATIVE_ASTRAL", "value": astral_init_val, "dice": astral_init_dice}
+    ]
+
+    stun_cm_boxes = (wil_val + 1) // 2 + 8
+    phys_cm_boxes = (bod_val + 1) // 2 + 8
+    
+    qual_data = data.get("qualities", {})
+    qualities = []
+    for q in qual_data.get("positive", []):
+        qualities.append({
+            "id": q.get("ref", q.get("name").lower().replace(" ", "_")),
+            "name": q.get("name"),
+            "positive": True,
+            "choice": q.get("choice", ""),
+            "rating": q.get("rating", 0),
+        })
+    for q in qual_data.get("negative", []):
+        qualities.append({
+            "id": q.get("ref", q.get("name").lower().replace(" ", "_")),
+            "name": q.get("name"),
+            "positive": False,
+            "choice": q.get("choice", ""),
+            "rating": q.get("rating", 0),
+        })
+        
+    skills = {}
+    for s in data.get("skills", []):
+        s_id = s.get("id", s["name"].lower().replace(" ", "_"))
+        skills[s_id] = {
+            "name": s.get("name"),
+            "id": s_id,
+            "rating": s.get("rating", 1),
+            "attribute": s.get("attribute", "Magic"),
+            "adept_bonus": s.get("adept_bonus", 0),
+            "is_knowledge": s.get("is_knowledge", False),
+        }
+
+    log_totals = get_log_totals()
+
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    xml_input_path = os.path.join(base_dir, "input", "Velvet.xml")
+    career_log = []
+    if os.path.exists(xml_input_path):
+        try:
+            tree = ET.parse(xml_input_path)
+            career_log = parse_career_log(tree.getroot())
+        except Exception:
+            pass
+
+    metamagics = []
+    for mm in data.get("meta_echoes", data.get("metamagics", [])):
+        mm_ref = mm.get("ref", mm.get("name", "").lower().replace(" ", "_"))
+        metamagics.append({
+            "id": mm_ref,
+            "name": mm.get("name", mm_ref.replace("_", " ").title()),
+            "page": mm.get("page", "")
+        })
+
+    foci = []
+    for fc in data.get("foci", []):
+        fc_ref = fc.get("ref", fc.get("name", "").lower().replace(" ", "_"))
+        foci.append({
+            "id": fc_ref,
+            "name": fc.get("name", fc_ref.replace("_", " ").title()),
+            "rating": fc.get("rating", 0),
+            "choice": fc.get("choice", "")
+        })
+
+    matrix_items = []
+    for m in data.get("matrix_devices", []):
+        matrix_items.append({
+            "name": m.get("name", "Erika Elite"),
+            "subType": m.get("subType", "Commlink"),
+            "rating": m.get("device_rating", 4),
+            "dataProcessing": m.get("data_processing", 2),
+            "firewall": m.get("firewall", 2),
+            "attack": m.get("attack", 0),
+            "sleaze": m.get("sleaze", 0),
+            "accessories": m.get("accessories", [])
+        })
+
+    xml_software = []
+    for sw in data.get("software", []):
+        xml_software.append({
+            "ref": sw.get("ref", sw.get("name", "").lower().replace(" ", "_")),
+            "name": sw.get("name", ""),
+            "rating": sw.get("rating", 0),
+            "target": sw.get("target", ""),
+            "cat": sw.get("cat", "Commlink Apps")
+        })
+
+    return {
+        "name": identity.get("real_name", "Kim Jin-Young"),
+        "alias": identity.get("handle", "Velvet"),
+        "metatype": identity.get("metatype", "Dalakitnon Elf"),
+        "tradition": identity.get("tradition", "Shinto"),
+        "mortype": identity.get("mortype", "Mystic Adept"),
+        "gender": identity.get("gender", "DIVERSE"),
+        "attributes": attributes,
+        "qualities": qualities,
+        "skills": skills,
+        "spells": data.get("spells", []),
+        "adept_powers": data.get("adept_powers", []),
+        "metamagics": metamagics,
+        "foci": foci,
+        "drones": data.get("drones", []),
+        "matrix_items": matrix_items,
+        "armors": data.get("armors", []),
+        "weapons": data.get("weapons", {}),
+        "software": data.get("software", []),
+        "items": data.get("items", []),
+        "sins": data.get("sins", []),
+        "genesis_sins": [],
+        "licenses": data.get("licenses", []),
+        "contacts": data.get("contacts", []),
+        "lifestyles": data.get("lifestyles", []),
+        "stun_condition_monitor_boxes": stun_cm_boxes,
+        "phys_condition_monitor_boxes": phys_cm_boxes,
+        "career_log": career_log,
+        "initiatives": initiatives_json,
+        "xml_software": xml_software,
+        "nuyen": log_totals.get("Nuyen", 17025),
+        "karma": log_totals.get("Karma", 5),
+        "karmaI": log_totals.get("Lifetime_Karma", 18),
+    }
+
 def parse_character(input_path):
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    yaml_master_path = os.path.join(base_dir, "velvet_master.yaml")
+
+    if input_path.endswith(".yaml") or input_path.endswith(".yml"):
+        return parse_character_yaml(input_path)
+
     path_xml = input_path
     if not path_xml.endswith(".xml"):
         path_xml = input_path.replace(".json", ".xml")
+        
+    # Fallback to YAML master if XML does not exist
+    if not os.path.exists(path_xml) and os.path.exists(yaml_master_path):
+        return parse_character_yaml(yaml_master_path)
         
     # 1. XML Ingestion
     if not os.path.exists(path_xml):
@@ -104,9 +274,10 @@ def parse_character(input_path):
         print(f"Error parsing XML file {path_xml}: {e}")
         sys.exit(1)
         
-    nuyen = int(root.get('nuyen', 0))
-    karma = int(root.get('karmaF', 0))
-    karmaI = int(root.get('karmaI', 0))
+    log_totals = get_log_totals()
+    nuyen = log_totals.get("Nuyen", int(root.get('nuyen', 0)))
+    karma = log_totals.get("Karma", int(root.get('karmaF', 0)))
+    karmaI = log_totals.get("Lifetime_Karma", int(root.get('karmaI', 0)))
     gender = root.get('gender', 'Unknown')
     
     # Real Name and Name mapping
@@ -170,11 +341,16 @@ def parse_character(input_path):
             val = q.get('value')
             rating = int(val) if val and val.isdigit() else (q_stats.get("rating", 0))
             
+            known_negative = {"hooder", "chronic_pain", "injury_prone", "incompetent", "prejudiced", "allergy", "arrogant", "bad_luck", "code_of_honor", "dependent", "distinctive_style", "gremlins", "impulsiveness", "loss_of_confidence", "pacifist", "social_stress", "squeamish", "uncouth", "uneducated", "weak_immune_system"}
+            is_pos = q_stats.get("positive", True) if "positive" in q_stats else True
+            if ref.lower() in known_negative or "negative" in str(q_stats.get("type", "")).lower():
+                is_pos = False
+
             qualities.append({
                 "id": ref,
                 "name": q_stats.get("name") if q_stats.get("name") else ref.replace('_', ' ').title(),
                 "choice": choice,
-                "positive": q_stats.get("positive", True) if "positive" in q_stats else True,
+                "positive": is_pos,
                 "rating": rating,
                 "page": q_stats.get("page", "")
             })
@@ -204,17 +380,22 @@ def parse_character(input_path):
                     choices.append(val_attr.replace('_', ' ').title())
             choice = ", ".join(choices) if choices else ""
             
+            ref_name = ref.replace('_', ' ').title()
+            actual_choice = choice
+            if ref in ["improved_ability", "improved_ability_combat"] and choice.lower() in ["stealth", "exotic weapons", "exotic_weapons"]:
+                ref = "improved_ability"
+                ref_name = "Improved Ability"
+                choice = "Sorcery"
+                actual_choice = "sorcery"
+
             adept_powers.append({
                 "id": ref,
-                "name": ref.replace('_', ' ').title(),
+                "name": ref_name,
                 "rating": rating,
                 "choice": choice
             })
             
             if ref in ["improved_ability", "improved_ability_combat"] and choice:
-                actual_choice = choice
-                if name_out.lower() in ["kim jin-young", "velvet", "velvet 0.2"] and choice.lower() in ["stealth", "exotic weapons"]:
-                    actual_choice = "sorcery"
                 improved_abilities[actual_choice.lower()] = rating
 
     # Load skills
@@ -754,7 +935,8 @@ def generate_ascii_sheet(char_data, verbose=False):
     file_name = char_data['name'].upper().replace(' ', '_')
     nuyen = char_data.get('nuyen', 0)
     page1.append(f"// ACCESSING: {file_name}.bin // SOURCE: ASTRAL_PLANE //")
-    page1.append(f"// STATUS: ONLINE // KARMA: {char_data['karma']} // NUYEN: ¥{nuyen:,} //")
+    karma_earned = char_data.get('karmaI', char_data['karma'])
+    page1.append(f"// STATUS: ONLINE // KARMA: {char_data['karma']} ({karma_earned} EARNED) // NUYEN: ¥{nuyen:,} //")
     page1.append("___________________________________________________________________________")
     page1.append("")
     page1.append("[ IDENTITY ]")
@@ -935,12 +1117,11 @@ def generate_ascii_sheet(char_data, verbose=False):
             rating = ap.get("rating", 0)
             choice = ap.get("choice", "")
             
-            # Programmatic override for display: stealth/exotic_weapons -> sorcery for Velvet
-            if char_data["name"].lower() in ["kim jin-young", "velvet", "velvet 0.2"]:
-                if (name == "IMPROVED ABILITY" and choice.upper() == "STEALTH" and rating == 4) or \
-                   (name == "IMPROVED ABILITY COMBAT" and choice.upper() == "EXOTIC WEAPONS" and rating == 3):
-                    name = "IMPROVED ABILITY"
-                    choice = "Sorcery"
+            # Programmatic override for display: stealth/exotic_weapons -> sorcery placeholder in Genesis
+            if choice.lower() in ["stealth", "exotic weapons", "exotic_weapons"] or \
+               (name in ["IMPROVED ABILITY", "IMPROVED ABILITY COMBAT"] and choice.upper() in ["STEALTH", "EXOTIC WEAPONS"]):
+                name = "IMPROVED ABILITY"
+                choice = "Sorcery"
                 
             choice_str = f" ({choice.upper()})" if choice else ""
             rating_str = f" [R{rating}]" if rating > 0 else ""
@@ -1050,58 +1231,27 @@ def generate_ascii_sheet(char_data, verbose=False):
                 
             accs = m.get("accessories", [])
             for acc in accs:
-                dev_block.append(f"  > {acc.get('name')}")
+                acc_name = acc.get('name') if isinstance(acc, dict) else str(acc)
+                dev_block.append(f"  > {acc_name}")
+                
+            if m_type.upper() == "COMMLINK" and char_data.get("xml_software"):
+                seen_sw = set(a.get('name', '').lower() if isinstance(a, dict) else str(a).lower() for a in accs)
+                for sw in char_data["xml_software"]:
+                    sw_name = sw.get("name", "")
+                    sw_rating = sw.get("rating", 0)
+                    sw_key = sw_name.lower()
+                    if sw_key in seen_sw:
+                        continue
+                    seen_sw.add(sw_key)
+                    if sw_rating > 0:
+                        dev_block.append(f"  > {sw_name} (R{sw_rating})")
+                    else:
+                        dev_block.append(f"  > {sw_name}")
             dev_block.append("")
             left_devs.extend(dev_block)
 
         page2.extend(zip_panels(left_devs, right_devs, left_width=38, separator=" | "))
         page2.append("")
-
-    # Software library
-    if char_data.get("xml_software"):
-        sw_details = {
-            "p-ice spines": ("(Comm)", "", "// Atkr takes net hits dmg (min 1)"),
-            "personal assistant": ("(Comm)", "[R6]", "// Full Def: + Rtg"),
-            "social hud": ("(Comm)", "", "// Organize all known info on target."),
-            "thermal mood reading": ("(Comm)", "", "// Determine emotional state via skin temp (req. thermographic)"),
-        }
-        
-        sw_lines = ["[ SOFTWARE_LIBRARY ]"]
-        seen_software = set()
-        for sw in char_data["xml_software"]:
-            sw_name = sw["name"]
-            rating = sw["rating"]
-            target = sw["target"]
-            sw_ref = sw["ref"]
-            lookup_name = sw_name.split(" (")[0]
-            if sw_ref == "p-ice_spines":
-                lookup_name = "P-ICE Spines"
-                
-            lookup_key = lookup_name.lower().replace("-", " ")
-            if lookup_key in seen_software:
-                continue
-            seen_software.add(lookup_key)
-            
-            clean_cat = sw.get("cat", "Basic programs")
-            norm_name = lookup_name.lower().replace("-", " ")
-            if norm_name in sw_details:
-                cat_tag, rtg_tag, desc = sw_details[norm_name]
-                name_str = f"  - {lookup_name.upper()}".ljust(29)
-                cat_str = cat_tag.ljust(8)
-                rtg_str = rtg_tag.ljust(5) if rtg_tag else "".ljust(5)
-                sw_title_line = f"{name_str}{cat_str} {rtg_str}"
-                if desc:
-                    sw_title_line = f"{sw_title_line} {desc}"
-                sw_lines.append(sw_title_line)
-            else:
-                cat_str = f"({clean_cat[:4]})"
-                rating_str = f" [R{rating}]" if rating and int(rating) > 0 else ""
-                sw_title_line = f"  - {lookup_name.upper()}{rating_str} {cat_str}"
-                sw_lines.append(sw_title_line)
-
-        if len(sw_lines) > 1:
-            page2.extend(sw_lines)
-            page2.append("")
 
     # Qualities vs Equipment side-by-side
     qual_lines = []
@@ -1218,12 +1368,7 @@ def generate_ascii_sheet(char_data, verbose=False):
         page2.extend(zip_panels(qual_lines, equip_lines, left_width=38, separator=" | "))
         page2.append("")
 
-    if char_data.get("lifestyles"):
-        page2.append("[ LIFESTYLE_DATA ]")
-        for life in char_data["lifestyles"]:
-            l_name = life.get("name", "Unknown")
-            page2.append(f"  - {l_name.upper()} ({life.get('paidMonths', 0)} Months Pre-paid)")
-        page2.append("")
+
 
 
 
@@ -1234,16 +1379,61 @@ def generate_ascii_sheet(char_data, verbose=False):
 
     if char_data["contacts"]:
         page3.append("[ SOCIAL_NETWORK_CONTACTS ]")
+        
+        def get_c_region(c):
+            if c.get("region"):
+                return c["region"]
+            c_name = c.get("name", "")
+            c_type = c.get("archetype") or c.get("typename") or c.get("type", "")
+            full = (c_type + " " + c_name).upper()
+            if "SEA " in full or "SEATTLE" in full or c_name in ["Brynne Taggart", "Whiskey", "Vincent Grisome", "Ni Ni Xiaolu", "Ms. Snow", "Hana"]:
+                return "SEA"
+            if "NOLA " in full or "NOLA" in full or c_name in ["Claudette Laurier", "Le Tigre"]:
+                return "NOLA"
+            if "AMS " in full or "AMSTERDAM" in full or "DUTCH" in full or "PENOSE" in full:
+                return "AMS"
+            if "KY " in full or "KENTUCKY" in full:
+                return "KY"
+            if "DW " in full or "DENVER" in full:
+                return "DW"
+            return "GEN"
+
+        grouped = {}
         for c in char_data["contacts"]:
-            name = c.get("name", "Unknown")
-            c_type = c.get("type", "Contact")
-            loy = c.get("loyalty", 0)
-            inf = c.get("influence", 0)
-            fav = c.get("favors", 0)
-            if len(c_type) > 32:
-                c_type = c_type[:29] + "..."
-            page3.append(f"  - {name.upper().ljust(20)} {c_type.ljust(32)} L:{loy} I:{inf} F:{fav}")
-        page3.append("")
+            reg = get_c_region(c)
+            grouped.setdefault(reg, []).append(c)
+
+        region_headers = [
+            ("SEA", "-- SEATTLE (SEA) --"),
+            ("NOLA", "-- NEW ORLEANS (NOLA) --"),
+            ("AMS", "-- AMSTERDAM / UNL (AMS) --"),
+            ("KY", "-- KENTUCKY (KY) --"),
+            ("DW", "-- DENVER (DW) --"),
+            ("GEN", "-- GENERAL / MATRIX / OTHER (GEN) --")
+        ]
+
+        for reg_code, header_title in region_headers:
+            clist = grouped.get(reg_code, [])
+            if not clist:
+                continue
+            page3.append(f"  {header_title}")
+            for c in clist:
+                name = c.get("name", "Unknown")
+                name_display = name.upper()
+                if len(name_display) > 20:
+                    name_display = name_display[:17] + "..."
+                c_type = c.get("archetype") or c.get("typename") or c.get("type", "Contact")
+                for prefix in ["SEA ", "NOLA ", "AMS ", "KY ", "DW "]:
+                    if c_type.startswith(prefix):
+                        c_type = c_type[len(prefix):]
+                        break
+                if len(c_type) > 32:
+                    c_type = c_type[:29] + "..."
+                loy = c.get("loyalty", 0)
+                inf = c.get("influence", c.get("connection", 0))
+                fav = c.get("favors", 0)
+                page3.append(f"  - {name_display.ljust(20)} {c_type.ljust(32)} L:{loy} I:{inf} F:{fav}")
+            page3.append("")
 
     if char_data["sins"] or char_data["licenses"]:
         page3.append("[ REGISTERED_IDENTITIES ]")
@@ -1314,9 +1504,72 @@ def generate_ascii_sheet(char_data, verbose=False):
     sheet_text = "\n".join(out)
     return sheet_text
 
+def post_process_json(raw_json_path, log_totals, out_json_path):
+    try:
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        yaml_master_path = os.path.join(base_dir, "velvet_master.yaml")
+        ydata = {}
+        if os.path.exists(yaml_master_path):
+            with open(yaml_master_path, "r", encoding="utf-8") as f:
+                ydata = yaml.safe_load(f) or {}
+
+        if os.path.exists(raw_json_path):
+            with open(raw_json_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        else:
+            data = {}
+
+        data["name"] = "Velvet"
+        data["realName"] = "Kim Jin-Young"
+        data["nuyen"] = log_totals.get("Nuyen", 17025)
+        data["karma"] = log_totals.get("Karma", 5)
+        data["karmaI"] = log_totals.get("Lifetime_Karma", 18)
+        data["lifetimeKarma"] = log_totals.get("Lifetime_Karma", 18)
+
+        os.makedirs(os.path.dirname(out_json_path) or '.', exist_ok=True)
+        with open(out_json_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+        print(f"[*] Post-processed JSON saved to: {out_json_path}")
+    except Exception as e:
+        print(f"[*] Warning: Could not post-process JSON file: {e}")
+
+def post_process_xml(raw_xml_path, log_totals, out_xml_path):
+    try:
+        if not os.path.exists(raw_xml_path):
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            raw_xml_path = os.path.join(base_dir, "input", "Velvet.xml")
+
+        if not os.path.exists(raw_xml_path):
+            print(f"[*] Warning: Raw XML not found at {raw_xml_path}, skipping XML post-processing.")
+            return
+
+        tree = ET.parse(raw_xml_path)
+        root = tree.getroot()
+
+        root.set("nuyen", str(log_totals.get("Nuyen", 17025)))
+        root.set("karmaF", str(log_totals.get("Karma", 5)))
+        root.set("karmaI", str(log_totals.get("Lifetime_Karma", 18)))
+
+        # Clean circular software library attributes if present
+        items_el = root.find("items")
+        if items_el is not None:
+            for item in items_el.findall("item"):
+                if item.get("ref") == "software_library":
+                    accs_el = item.find("accessories")
+                    if accs_el is not None:
+                        for acc in accs_el.findall("item"):
+                            if "inFactoryItem" in acc.attrib:
+                                del acc.attrib["inFactoryItem"]
+
+        os.makedirs(os.path.dirname(out_xml_path) or '.', exist_ok=True)
+        tree.write(out_xml_path, encoding="utf-8", xml_declaration=True)
+        print(f"[*] Post-processed XML saved to: {out_xml_path}")
+    except Exception as e:
+        print(f"[*] Warning: Could not post-process XML file: {e}")
+
 def main():
-    parser = argparse.ArgumentParser(description="Generate SR6 CLI Character Sheet from XML")
-    parser.add_argument("input_xml", help="Path to the SR6 character XML file")
+    parser = argparse.ArgumentParser(description="Generate SR6 CLI Character Sheet from XML/YAML")
+    parser.add_argument("input_xml", help="Path to the SR6 character XML or YAML file")
     parser.add_argument("--output", "-o", help="Output text file path or directory", default="output")
     parser.add_argument("--verbose", "-v", action="store_true", help="Print actual rules text inline on sheet")
     args = parser.parse_args()
@@ -1324,17 +1577,47 @@ def main():
     char_data = parse_character(args.input_xml)
     sheet_text = generate_ascii_sheet(char_data, verbose=args.verbose)
     
-    out_path = args.output
-    if not out_path.endswith('.txt') and not out_path.endswith('.md'):
-        os.makedirs(out_path, exist_ok=True)
+    out_arg = args.output
+    if out_arg.endswith('.txt') or out_arg.endswith('.md'):
+        out_dir = os.path.dirname(out_arg) or '.'
+        txt_path = out_arg
+    else:
+        out_dir = out_arg
         filename = char_data['name'].replace(' ', '_') + ".txt"
-        out_path = os.path.join(out_path, filename)
+        txt_path = os.path.join(out_dir, filename)
         
-    os.makedirs(os.path.dirname(out_path) or '.', exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True)
     
-    with open(out_path, "w", encoding="utf-8") as f:
+    with open(txt_path, "w", encoding="utf-8") as f:
         f.write(sheet_text)
-    print(f"[*] Sheet saved to: {out_path}")
+    print(f"[*] Sheet saved to: {txt_path}")
+
+    # Post-process XML and JSON outputs into output directory
+    log_totals = get_log_totals()
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    input_dir = os.path.join(base_dir, "input")
+    
+    if args.input_xml.endswith('.yaml') or args.input_xml.endswith('.yml'):
+        raw_json = os.path.join(input_dir, "Velvet.json")
+        raw_xml = os.path.join(input_dir, "Velvet.xml")
+    else:
+        raw_json = args.input_xml if args.input_xml.endswith('.json') else args.input_xml.replace('.xml', '.json')
+        if not os.path.isabs(raw_json):
+            raw_json = os.path.join(base_dir, raw_json)
+        if not os.path.exists(raw_json):
+            raw_json = os.path.join(input_dir, "Velvet.json")
+            
+        raw_xml = args.input_xml.replace('.json', '.xml') if args.input_xml.endswith('.json') else args.input_xml
+        if not os.path.isabs(raw_xml):
+            raw_xml = os.path.join(base_dir, raw_xml)
+        if not os.path.exists(raw_xml):
+            raw_xml = os.path.join(input_dir, "Velvet.xml")
+        
+    out_json = os.path.join(out_dir, "Velvet.json")
+    out_xml = os.path.join(out_dir, "Velvet.xml")
+    
+    post_process_json(raw_json, log_totals, out_json)
+    post_process_xml(raw_xml, log_totals, out_xml)
 
 if __name__ == "__main__":
     main()
