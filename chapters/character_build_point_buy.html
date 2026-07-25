@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6b004faca8ee0f94b3a5dd19405fa1b2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-dab96f89d24d8a403d78413fa12f2c61.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-36dd35d365bc851285d80bc5b3f6d67c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-84655643db954891a5609a18ee9cfadf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -202,6 +205,27 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Reference &amp; Specifications</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/story_continuity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Story Continuity &amp; Relationship Graph Index</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/narrative_standards.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Narrative Standards &amp; Writing Guide</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -258,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="choose-your-metatypemetavariant" class="level2">
 <h2 class="anchored" data-anchor-id="choose-your-metatypemetavariant">Choose Your Metatype/Metavariant</h2>
 <ul>
-<li>Choose the metatype or metavariant you want to play: <strong>Dalekitnon</strong> Karma -= 5</li>
+<li>Choose the metatype or metavariant you want to play: <strong>Elf</strong></li>
 <li>Any metagenetic qualities must also be paid for.
 <ul>
 <li>Metagenetic Attribute Increase (CHA): Karma -= 15</li>
@@ -273,12 +297,13 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>This unlocks the ability to purchase adept power points (8 CP each for mystic adepts).
 <ul>
-<li>3 Adept Power Points: Character_Points -= 24</li>
-</ul></li>
-<li>Mystic adepts may purchase a number of spells equal to final Magic x2 - PP. Each spell costs 2 CP or 5 Karma each.
+<li>4 Adept Power Points: Character_Points -= 32
 <ul>
-<li>Increase Attributes: Karma -= 5</li>
+<li>Cosmetic Control (R2): 2 pp</li>
+<li>Improved Ability (Sorcery, R2): 2 pp</li>
 </ul></li>
+</ul></li>
+<li>Mystic adepts may purchase a number of spells equal to final Magic x2 - PP. Each spell costs 2 CP or 5 Karma each.</li>
 </ul></li>
 </ul>
 </section>
@@ -334,10 +359,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Sorcery += 6</li>
 <li>Conjuring += 1</li>
 </ul></li>
-<li>You may purchase up to 20 additional skill points for 2 CP each.
-<ul>
-<li>Conjuring += 4 : Character_Points -= 8</li>
-</ul></li>
+<li>You may purchase up to 20 additional skill points for 2 CP each.</li>
 </ul>
 </section>
 <section id="purchase-resources-with-cp" class="level2">
@@ -413,7 +435,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>Conjuring</td>
-<td style="text-align: center;">5</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr class="odd">
 <td>Sorcery</td>
@@ -430,7 +452,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Hooder (R3): Karma += 15</li>
 <li>Inspire Competence: Karma -= 11</li>
 <li>Chronic Pain: Karma += 15</li>
-<li>Focused Concentration (R2): Karma -= 24</li>
+<li>Focused Concentration (R3): Karma -= 36</li>
 </ul>
 <section id="gear" class="level3">
 <h3 class="anchored" data-anchor-id="gear">Gear</h3>
@@ -522,7 +544,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Total Contact Points: 0</p>
 <p>Total Nuyen: 4025</p>
-<p>Total Karma: 2</p>
+<p>Total Karma: 0</p>
 <p>Total Character Points: 0</p>
 
 

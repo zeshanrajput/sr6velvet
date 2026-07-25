@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6b004faca8ee0f94b3a5dd19405fa1b2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-dab96f89d24d8a403d78413fa12f2c61.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-36dd35d365bc851285d80bc5b3f6d67c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-84655643db954891a5609a18ee9cfadf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -231,6 +234,27 @@ window.Quarto = {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Reference &amp; Specifications</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/story_continuity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Story Continuity &amp; Relationship Graph Index</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/narrative_standards.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Narrative Standards &amp; Writing Guide</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -243,11 +267,12 @@ window.Quarto = {
   <ul>
   <li><a href="#spellcasting-foci-integration" id="toc-spellcasting-foci-integration" class="nav-link active" data-scroll-target="#spellcasting-foci-integration">Spellcasting &amp; Foci Integration</a>
   <ul class="collapse">
-  <li><a href="#tradition-shintomusok-willpower-charisma" id="toc-tradition-shintomusok-willpower-charisma" class="nav-link" data-scroll-target="#tradition-shintomusok-willpower-charisma"><strong>Tradition: (Shinto/Musok — Willpower + Charisma)</strong></a></li>
+  <li><a href="#tradition-shinto-musok-willpower-charisma" id="toc-tradition-shinto-musok-willpower-charisma" class="nav-link" data-scroll-target="#tradition-shinto-musok-willpower-charisma"><strong>Tradition: Shinto / Musok (Willpower + Charisma)</strong></a></li>
   </ul></li>
+  <li><a href="#conjuring-spirit-protocols" id="toc-conjuring-spirit-protocols" class="nav-link" data-scroll-target="#conjuring-spirit-protocols">Conjuring &amp; Spirit Protocols</a></li>
   <li><a href="#influence-tests" id="toc-influence-tests" class="nav-link" data-scroll-target="#influence-tests">Influence Tests</a>
   <ul class="collapse">
-  <li><a href="#inspire-confidence" id="toc-inspire-confidence" class="nav-link" data-scroll-target="#inspire-confidence">Inspire Confidence</a></li>
+  <li><a href="#inspire-competence" id="toc-inspire-competence" class="nav-link" data-scroll-target="#inspire-competence">Inspire Competence</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -277,36 +302,42 @@ window.Quarto = {
 <p>This section aggregates core cheat sheets and templates for downtime registration, magic spellcasting, conjuring, and foci benefits.</p>
 <section id="spellcasting-foci-integration" class="level2">
 <h2 class="anchored" data-anchor-id="spellcasting-foci-integration">Spellcasting &amp; Foci Integration</h2>
-<section id="tradition-shintomusok-willpower-charisma" class="level3">
-<h3 class="anchored" data-anchor-id="tradition-shintomusok-willpower-charisma"><strong>Tradition: (Shinto/Musok — Willpower + Charisma)</strong></h3>
+<section id="tradition-shinto-musok-willpower-charisma" class="level3">
+<h3 class="anchored" data-anchor-id="tradition-shinto-musok-willpower-charisma"><strong>Tradition: Shinto / Musok (Willpower + Charisma)</strong></h3>
 <ul>
-<li><strong>Starting Attributes</strong>: Willpower 5, Charisma 10, Intuition 3, Body 2.</li>
-<li><strong>Starting Spellcasting Pool</strong>: Sorcery (6) + Impr. Ability (Sorc, 3) + Magic (6) = 15</li>
-<li><strong>Spellcasting Pool</strong>: 15 dice <span class="math inline">\(\rightarrow\)</span> <strong>Buys 3 Hits</strong>.</li>
-<li><strong>Drain Resistance Pool</strong>: 15 dice (5 WIL + 10 CHA) <span class="math inline">\(\rightarrow\)</span> <strong>Buys 3 Hits</strong> <code>[SR6, Page 36]</code>.</li>
+<li><strong>Core Attributes</strong>: Willpower 5, Charisma 10, Intuition 3, Body 2, Magic 6.</li>
+<li><strong>Spellcasting Pool</strong>: Sorcery (6) + Impr. Ability (Sorc, 2) + Magic (6) = <strong>14 dice</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Buys 3 Hits</strong>.</li>
+<li><strong>Drain Resistance Pool</strong>: Willpower (5) + Charisma (10) = <strong>15 dice</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Buys 3 Hits</strong> <code>[SR6, Page 36]</code>.</li>
 </ul>
 <hr>
 </section>
 </section>
+<section id="conjuring-spirit-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="conjuring-spirit-protocols">Conjuring &amp; Spirit Protocols</h2>
+<ul>
+<li><strong>Conjuring Pool</strong>: Conjuring (1) + Magic (6) = <strong>7 dice</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Buys 1 Hits</strong>.</li>
+<li><strong>Drain Resistance Pool</strong>: Willpower (5) + Charisma (10) = <strong>15 dice</strong>.</li>
+</ul>
+<hr>
+</section>
 <section id="influence-tests" class="level2">
 <h2 class="anchored" data-anchor-id="influence-tests">Influence Tests</h2>
 <ul>
-<li><strong>Pool:</strong> Influence (5) + Charisma (10) = <strong>15 dice</strong>
+<li><strong>Influence Pool:</strong> Influence (5) + Charisma (10) = <strong>15 dice</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Buys 3 Hits</strong>.
 <ul>
-<li>Nanopaste Disguise / Nanocosmetics: +1 Situational Edge</li>
-<li>Social Rating: CHA (10)</li>
+<li>Nanopaste Disguise / Nanocosmetics: +1 Situational Edge.</li>
+<li>Social Rating: CHA (10) + 4 (Tres Chic accessories)</li>
 </ul></li>
 </ul>
-<section id="inspire-confidence" class="level3">
-<h3 class="anchored" data-anchor-id="inspire-confidence">Inspire Confidence</h3>
-<p>6WC p.&nbsp;133</p>
+<section id="inspire-competence" class="level3">
+<h3 class="anchored" data-anchor-id="inspire-competence">Inspire Competence</h3>
+<p><em>6WC p.&nbsp;133</em></p>
 <ul>
-<li><strong>Pool:</strong> Charisma (10) + Influence (5) + Command Presence (2) = <strong>17 dice</strong></li>
+<li><strong>Pool:</strong> Charisma (10) + Influence (5) = <strong>15 dice</strong></li>
 <li><strong>Effect</strong>
 <ul>
-<li>Hits function as a teamwork test for any skill.</li>
-<li>One character may gain one (1) Edge.</li>
-<li>Velvet gains one (1) Edge (Command Presence).</li>
+<li>Hits function as a teamwork test to assist an ally’s skill test.</li>
+<li>Target ally gains one (1) Edge.</li>
 </ul></li>
 </ul>
 

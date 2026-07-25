@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6b004faca8ee0f94b3a5dd19405fa1b2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-dab96f89d24d8a403d78413fa12f2c61.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-36dd35d365bc851285d80bc5b3f6d67c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-84655643db954891a5609a18ee9cfadf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -202,6 +205,27 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Reference &amp; Specifications</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/story_continuity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Story Continuity &amp; Relationship Graph Index</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/narrative_standards.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Narrative Standards &amp; Writing Guide</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -234,19 +258,19 @@ ul.task-list li input[type="checkbox"] {
 
 <pre class="text"><code>___________________________________________________________________________
 // ACCESSING: KIM_JIN-YOUNG.bin // SOURCE: ASTRAL_PLANE //
-// STATUS: ONLINE // KARMA: 5 // NUYEN: ¥17,025 //
+// STATUS: ONLINE // KARMA: 1 (9 EARNED) // NUYEN: ¥19,025 //
 ___________________________________________________________________________
 
 [ IDENTITY ]
   &gt; NAME: Kim Jin-Young          &gt; ALIAS: Velvet
-  &gt; METATYPE: Dalakitnon         &gt; GENDER: DIVERSE
+  &gt; METATYPE: Elf                &gt; GENDER: DIVERSE
   &gt; TRADITION: Shinto            &gt; SIN: [LOCAL_FILE_ENCRYPTED]
 
 [ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
   PHY | BOD [02] AGI [03] REA [02] STR [02]  |   INIT (PHYS)  : 5 +1D6
   MNT | WIL [05] LOG [03] INT [03] CHA [10]  |   INIT (ASTRAL): N/A (Mystic Adept)
   SPP | EDG [02] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 15
-  PP  | POWER POINTS: 03                     |   JUDGE INT    : 8
+  PP  | POWER POINTS: 04                     |   JUDGE INT    : 8
                                              |   DEF RATING   : 03 (BOD+ARM)
                                              |   DEF POOL     : 05 (REA+INT)
 
@@ -256,63 +280,59 @@ ___________________________________________________________________________
 
 [ SKILL_MATRICES ]
   NATIVE LANGUAGE       : 04                          -&gt; Pool: 07
-  CONJURING             : 05                          -&gt; Pool: 11
-  SORCERY               : 06 (+3)                     -&gt; Pool: 15
+  SORCERY               : 06 (+2)                     -&gt; Pool: 14
   INFLUENCE             : 05                          -&gt; Pool: 15
+  CONJURING             : 01                          -&gt; Pool: 07
 
 [ KNOWLEDGE ]
-  SMALL UNIT TACTICS    : 01                          -&gt; Pool: 04
   MCT                   : 01                          -&gt; Pool: 04
   WUXING                : 01                          -&gt; Pool: 04
+  SMALL UNIT TACTICS    : 01                          -&gt; Pool: 04
   EAST ASIAN MEDIA      : 01                          -&gt; Pool: 04
 
 [ SPELLS ]
-  - INCREASE ATTRIBUTE (Drain 3)        -&gt; Pool: 15  [Drain Resist: 15]
+  - INCREASE ATTRIBUTE (Drain 3)        -&gt; Pool: 14  [Drain Resist: 15]
 
 [ ADEPT_POWERS ]
-  - IMPROVED ABILITY (SORCERY) [R3]
+  - COSMETIC CONTROL [R2]
+  - IMPROVED ABILITY (SORCERY) [R2]
 
 [ METAMAGICS &amp; INITIATION ]            | [ CONJURING_QUICK_ACTIONS ]
-  - CHANNELING                         |   - SUMMONING   -&gt; Pool: 11  [Drain: 15]
-                                       |   - BINDING     -&gt; Pool: 11  [Drain: 15]
-                                       |   - BANISHING   -&gt; Pool: 11  [Drain: 15]
+  - CHANNELING                         |   - SUMMONING   -&gt; Pool: 07  [Drain: 15]
+                                       |   - BINDING     -&gt; Pool: 07  [Drain: 15]
+                                       |   - BANISHING   -&gt; Pool: 07  [Drain: 15]
 
 [ MATRIX_DEVICES ]                     |
 - ERIKA ELITE (COMMLINK)               |
   RAT 04            DPR 02 FWL 02      |
-  &gt; Comhack Securelink Upgrade         |
   &gt; P-Ice Nope                         |
+  &gt; Comhack Securelink Upgrade         |
+  &gt; Personal Assistant (R6)            |
                                        |
-
-[ SOFTWARE_LIBRARY ]
-  - PERSONAL ASSISTANT       (Comm)   [R6]  // Full Def: + Rtg
-  - VIRTUAL MACHINE (Basi)
-  - THERMAL MOOD READING     (Comm)         // Determine emotional state via skin temp (req. thermographic)
-  - NANOMASK (Basi)
-  - MEFEED (Comm)
-  - FACIAL SCANNER (Comm)
 
 [ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
   &gt; METAGENIC ATT. IMP. (CHARISMA)     |   - SECURETECH SKINSHIELD [+1]
-  &gt; EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - NANOCOSMETICS KIT
-  &gt; INSPIRE COMPETENCE                 |   - NANOCOSMETICS REFILL [+0]
-  ! CHRONIC PAIN                       |   - NANOPASTE DISGUISE KIT [+0]
-  &gt; HOODER                             |   - NANOPASTE DISGUISE REFILL
+  &gt; EXCEPTIONAL ATTRIBUTE (CHARISMA)   |   - NANOPASTE DISGUISE KIT [+0]
+  &gt; INSPIRE COMPETENCE                 |   - NANOPASTE DISGUISE REFILL
+  ! HOODER                             |   - NANOCOSMETICS KIT
+  ! CHRONIC PAIN                       |   - NANOCOSMETICS REFILL [+0]
   &gt; FOCUSED CONCENTRATION              |   - SAVIOR MEDKIT
-  ! ALLERGY (COMMON, MODERATE, SPICES) |   - SAVIOR MEDKIT REFILL
-  &gt; LOW-LIGHT VISION                   |   - CONTACTS [+3]
-                                       |   - EARBUDS [+3]
-                                       |   - SUBVOCAL MICROPHONE [+N/A]
+  &gt; LOW-LIGHT VISION                   |   - SAVIOR MEDKIT REFILL
+                                       |   - CONTACTS [+3]
 
 [ SOCIAL_NETWORK_CONTACTS ]
-  - BRYNNE TAGGART       SEA Fixer                        L:1 I:5 F:0
-  - VINCENT GRISOME      SEA Magic Prof.                  L:3 I:5 F:0
-  - NI NI XIAOLU         SEA Triad Johnson                L:1 I:3 F:0
-  - WHISKEY              SEA Street Doc                   L:3 I:2 F:0
-  - CLAUDETTE LAURIER    NOLA Order of the Golden Dawn... L:4 I:5 F:0
-  - LE TIGRE             NOLA Epoch Model                 L:1 I:5 F:0
-  - HANA                 Wuxing Talismonger / Pop Idol    L:6 I:6 F:0
-  - GUILD OF FREELANCE ASSETS Conclave                         L:3 I:7 F:0
+  -- SEATTLE (SEA) --
+  - BRYNNE TAGGART       Fixer                            L:2 I:5 F:0
+  - VINCENT GRISOME      Magic Prof                       L:3 I:5 F:0
+  - WHISKEY              Street Doc                       L:2 I:2 F:0
+  - HANA                 Wuxing Talismonger and Pop Idol  L:6 I:6 F:0
+
+  -- NEW ORLEANS (NOLA) --
+  - CLAUDETTE LAURIER    Order of the Golden Dawn Libr... L:3 I:5 F:0
+  - LE TIGRE             Epoch Model                      L:1 I:5 F:0
+
+  -- GENERAL / MATRIX / OTHER (GEN) --
+  - GUILD OF FREELANC... Conclave                         L:8 I:7 F:0
 
 [ REGISTERED_IDENTITIES ]
   - SIN: Lee Ji-Yoo                     [Rating 6]
@@ -324,8 +344,6 @@ ___________________________________________________________________________
   ---------------------------------------------------------------------------
   2026-07-01   |    +1 |    +1000 | Build-A-Runner (GM: WarDoctor 1077)
   2026-07-17   |    +8 |   +14000 | SRM 2081-09 | Eviction... (GM: WarDoctor 1077)
-  2026-07-17   |    +8 |        0 | SRM 2081-09: Karma refund for coven
-  2026-07-17   |    +1 |    -2000 | SRM 2081-09: Working for the People
   ---------------------------------------------------------------------------
 
 ___________________________________________________________________________
