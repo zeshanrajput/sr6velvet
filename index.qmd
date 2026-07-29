@@ -59,4 +59,7 @@ Use the sidebar or the indexes below to traverse this portfolio:
 * **[Sabotage](chapters/05_sabotage.md)**: Sabotaging the Singapore ritual and escaping into the sewers (Age 18).
 * **[First Negotiation](chapters/06_first_negotiation.md)**: Shifting to Lee Ji-yoo in Seattle for a zero-nuyen contract (Age 19).
 * **[Seattle Web](chapters/07_seattle_web.md)**: The corporate joint-venture trap and running offensive in the shadows (Age 19-20).
+* **[Bliss](chapters/08_bliss.md)**: Un-manufactured solace over real pork-bone broth in West Seattle (Age 20).
+* **[Tea in Tacoma](chapters/09_Tea_in_Tacoma.md)**: Dropping corporate gravity with Ni Ni Xiaolu over un-taxed Tieguanyin tea (Age 20).
+
 

@@ -27,6 +27,9 @@ book:
         - chapters/05_sabotage.md
         - chapters/06_first_negotiation.md
         - chapters/07_seattle_web.md
+        - chapters/08_bliss.md
+        - chapters/09_Tea_in_Tacoma.md
+
     - part: "Reference & Specifications"
       chapters:
         - reference/story_continuity.md

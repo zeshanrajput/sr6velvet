@@ -189,7 +189,6 @@ GM Reward correction: `{python} inc('Nuyen', 1000)`
 #### Downtime & Monthly Expenses (SRM #2)
 
 * **Monthly Expenses:** `{python} inc('Nuyen', -7400)` (Low Lifestyle ¥2,000 + Hooder R3 ¥3,000 + Coven Dues ¥2,400)
-
 * **Major Downtime Action:** Coven Ritual Maintenance & Service (Guild of Freelance Assets / Shinto-Musok Coven)
 * **Minor Downtime Action:** Working for the People (Funded by Hooder ¥3,000 allocation): `{python} inc('Karma', 1)` (+1 Karma, no extra Nuyen charge)
 
