@@ -1,0 +1,99 @@
+___________________________________________________________________________
+// ACCESSING: KIM_JIN-YOUNG.bin // SOURCE: ASTRAL_PLANE //
+// STATUS: ONLINE // KARMA: 9 (17 EARNED) // NUYEN: ¥21,625 //
+___________________________________________________________________________
+
+[ IDENTITY ]
+  > NAME: Kim Jin-Young          > ALIAS: Velvet
+  > METATYPE: Dalakitnon Elf     > GENDER: DIVERSE
+  > TRADITION: Shinto / Musok    > SIN: [LOCAL_FILE_ENCRYPTED]
+
+[ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
+  PHY | BOD [02] AGI [03] REA [02] STR [02]  |   INIT (PHYS)  : 5 +1D6
+  MNT | WIL [05] LOG [03] INT [03] CHA [10]  |   INIT (ASTRAL): 6 +2D6
+  SPP | EDG [02] MAG [06] ESS [6.0] INI [01] |   COMPOSURE    : 15
+                                             |   JUDGE INT    : 8
+                                             |   DEF RATING   : 02 (BOD+ARM)
+                                             |   DEF POOL     : 05 (REA+INT)
+
+[ PHYSICAL_CONDITION_MONITOR ]         | [ STUN_CONDITION_MONITOR ]
+  [0] [0] [-1] | [-1] [-1] [-2]        |   [0] [0] [-1] | [-1] [-1] [-2]
+  [-2] [-2] [-3]                       |   [-2] [-2] [-3] | [-3] [-3]
+
+[ SKILL_MATRICES ]
+  SORCERY               : 06 (+2)                     -> Pool: 14
+  CONJURING             : 01                          -> Pool: 07
+  INFLUENCE             : 05                          -> Pool: 15
+  NATIVE LANGUAGE       : 04                          -> Pool: 07
+  SMALL UNIT TACTICS    : 01                          -> Pool: 04
+  MCT                   : 01                          -> Pool: 04
+  WUXING                : 01                          -> Pool: 04
+  EAST ASIAN MEDIA      : 01                          -> Pool: 04
+
+[ SPELLS ]
+  - INCREASE ATTRIBUTE (Drain 3)        -> Pool: 14  [Drain Resist: 08]
+
+[ ADEPT_POWERS ]
+  - IMPROVED ABILITY (SORCERY) (SORCERY) [R3]
+
+[ METAMAGICS & INITIATION ]            | [ CONJURING_QUICK_ACTIONS ]
+  - CHANNELING                         |   - SUMMONING   -> Pool: 07  [Drain: 08]
+                                       |   - BINDING     -> Pool: 07  [Drain: 08]
+                                       |   - BANISHING   -> Pool: 07  [Drain: 08]
+
+[ MATRIX_DEVICES ]                     |
+- ERIKA ELITE (Commlink)               |
+  RAT 04            DPR 02 FWL 02      |
+  > Comhack Securelink Upgrade         |
+  > P-Ice Nope                         |
+  > Personal Assistant (R6)            |
+  > Virtual Machine                    |
+  > Thermal Mood Reading               |
+  > Nanomask                           |
+  > MeFeed                             |
+  > Facial Scanner                     |
+                                       |
+
+[ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
+  > METAGENIC ATT. IMP. (CHARISMA) ... |   - NANOCOSMETICS KIT
+  > EXCEPTIONAL ATTRIBUTE (CHARISMA... |   - NANOCOSMETICS REFILL [+0]
+  > INSPIRE COMPETENCE                 |   - NANOPASTE DISGUISE KIT [+0]
+  > LOW-LIGHT VISION                   |   - NANOPASTE DISGUISE REFILL
+  ! CHRONIC PAIN                       |   - SAVIOR MEDKIT
+  ! HOODER                             |   - SAVIOR MEDKIT REFILL
+  ! FOCUSED CONCENTRATION              |   - CONTACTS [+3]
+  ! ALLERGY (SPICES, COMMON MODERAT... |   - EARBUDS [+3]
+                                       |   - SUBVOCAL MICROPHONE [+N/A]
+
+[ SOCIAL_NETWORK_CONTACTS ]
+  -- SEATTLE (SEA) --
+  - BRYNNE TAGGART       Fixer                            L:1 I:5 F:0
+  - VINCENT GRISOME      Magic Prof.                      L:3 I:5 F:0
+  - NI NI XIAOLU         Triad Johnson                    L:2 I:3 F:0
+  - WHISKEY              Street Doc                       L:3 I:2 F:0
+  - HANA                 Wuxing Talismonger / Pop Idol    L:6 I:6 F:0
+  - MS. SNOW             Johnson                          L:1 I:5 F:1
+  - BOOKIE               Ancients Bookie                  L:1 I:3 F:0
+  - TRUDY                Cutters Lieutenant               L:1 I:2 F:0
+
+  -- NEW ORLEANS (NOLA) --
+  - CLAUDETTE LAURIER    Order of the Golden Dawn Libr... L:4 I:5 F:0
+  - LE TIGRE             Epoch Model                      L:1 I:5 F:0
+
+  -- GENERAL / MATRIX / OTHER (GEN) --
+  - GUILD OF FREELANC... Conclave                         L:8 I:7 F:0
+
+[ REGISTERED_IDENTITIES ]
+  - SIN: Lee Ji-Yoo                     [Rating 6]
+  - SIN: Tanaka Ryo                     [Rating 6]
+  - LIC: Magician                       [Rating 6]
+
+[ CAREER_LOG ]
+  DATE         | KARMA |    NUYEN | EVENT
+  ---------------------------------------------------------------------------
+  2026-07-01   |    +1 |    +1000 | Build-A-Runner (GM: WarDoctor 1077)
+  2026-07-17   |    +8 |   +14000 | SRM 2081-09 | Eviction... (GM: WarDoctor 1077)
+  ---------------------------------------------------------------------------
+
+___________________________________________________________________________
+// END_OF_FILE // VELVET@ASTRAL:~$ _

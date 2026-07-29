@@ -171,6 +171,32 @@ GM Reward correction: `{python} inc('Nuyen', 1000)`
 
 ---
 
+### **SRM 2081-07 | Bootleg Bliss**
+
+* **Date:** 2026-Jul-26
+* **GM:** CDT Agent Kira Capalu (#TBD)
+* **Player:** Velvet (WarDoctor)
+* **Team:** Frazz (Grankle), Glyph (Wyntr), Havoc (ShuiroHanaga1), Rei (Snowcrash), Velvet (WarDoctor), Yankee Doodle (Inirlan)
+* **Difficulty:** Veteran
+* **Summary:** The team got hired by Ni Ni Xiaolu to make an example of Dwight Baxter, a small-fry dealer who dared to sell his products under the Triad branding at the Night Market. Through their contacts they were able to secure an appointment with the person in charge of the local Ancients holdout, and after a round of drone dog fight betting he told them that their target was here to see them before heading to the rival Cutters gang. Bookie offered them money if they’d come across intel on the Cutters. Following the lead, the team went to the Cutters headquarter upstairs the Oshki Piroshki and convinced the person in charge, Trudy, to help them on their quest in exchange for their promise to letting the blame fall on her bosses so she could hopefully rise up the ranks. Trudy pointed the team to a Vory safehouse in Tukwila, and after seeing the goons in the basement, they landed on the roof and found the target in the right room, but it proved to be a trap. After taking care of the goons, they decided to drop their target over the Night Market.
+* **Rewards:** `{python} inc('Nuyen', 10000)`, `{python} inc('Karma', 7)` (7,000¥ Ni Ni + 1,000¥ Bookie + 2,000¥ Veteran; 6 + 1 Veteran Karma)
+* **Reputation:** ±0 | **Heat:** ±0 (Roll 6+1, Base +2, Bribes -2 by Havoc & Rei)
+* **Contacts & Favor Points:**
+  * `{python} contact("Ni Ni Xiaolu", connection=3, fp=2, type_name="Triad Johnson", region="SEA", notes="Chargen Contact | +2 FP SRM 2081-07 Bootleg Bliss (looking forward to date)")`
+  * `{python} contact("Bookie", connection=3, fp=1, type_name="Ancients Bookie", region="SEA", notes="SRM 2081-07 Bootleg Bliss")`
+  * `{python} contact("Trudy", connection=2, fp=1, type_name="Cutters Lieutenant", region="SEA", notes="SRM 2081-07 Bootleg Bliss")`
+
+#### Downtime & Monthly Expenses (SRM #2)
+
+* **Monthly Expenses:** `{python} inc('Nuyen', -7400)` (Low Lifestyle ¥2,000 + Hooder R3 ¥3,000 + Coven Dues ¥2,400)
+
+* **Major Downtime Action:** Coven Ritual Maintenance & Service (Guild of Freelance Assets / Shinto-Musok Coven)
+* **Minor Downtime Action:** Working for the People (Funded by Hooder ¥3,000 allocation): `{python} inc('Karma', 1)` (+1 Karma, no extra Nuyen charge)
+
+
+
+---
+
 ### **Active Contacts Summary**
 
 ```{python}

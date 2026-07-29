@@ -37,6 +37,26 @@ Drain_Resist_Pool = Willpower + Charisma
 Influence_Pool = Influence + Charisma
 ```
 
+---
+
+## SRM Monthly Expenses & Downtime Cadence Protocol
+
+> **Mandatory Campaign Protocol:** Every second official Shadowrun Missions (SRM) run (excluding CMPs or non-SRM special events), Velvet must settle monthly expenses and execute mandatory downtime allocations.
+
+### 1. Monthly Expenses Package
+Every 2nd SRM mission, the following recurring obligations are deducted from liquid Nuyen:
+- **Lifestyle Expenses:** Low Lifestyle (¥2,000/mo) or Middle Lifestyle (¥5,000/mo).
+- **Hooder Quality (Rating 3):** ¥3,000/mo obligation allocated to community assistance.
+- **Coven Dues:** ¥2,400/mo dues paid to the Guild of Freelance Assets.
+
+
+### 2. Mandatory Downtime Actions (Expense Months)
+During an expense month, Velvet receives 1 Major Downtime Action and 1 Minor Downtime Action, allocated as follows:
+- **1 Major Downtime Action:** Dedicated to Coven service, ritual maintenance, and keeping Coven Loyalty in good standing.
+- **1 Minor Downtime Action:** *Working for the People*—funded directly by the Hooder ¥3,000 nuyen obligation, generating **+1 Karma** at no additional nuyen charge.
+
+---
+
 ## Spellcasting & Foci Integration
 
 ### **Tradition: Shinto / Musok (Willpower + Charisma)**

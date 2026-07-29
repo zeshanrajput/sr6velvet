@@ -229,37 +229,10 @@ def get_processed_weapons() -> Dict[str, Any]:
 def get_character_stats(yaml_path: str = "velvet_master.yaml") -> Dict[str, Any]:
     """
     Returns Velvet's core attribute and skill ratings as a dictionary.
+    Strictly draws from the master YAML file (velvet_master.yaml).
     Used by identity_core, rules_and_downtime.qmd, etc.
     """
-    base_dir = get_base_dir()
-    xml_path = os.path.join(base_dir, "input", "Velvet.xml")
-    if os.path.exists(xml_path):
-        try:
-            from main import parse_character
-            cd = parse_character(xml_path)
-            attrs = cd.get("attributes", {})
-            s_map = {sk["id"]: sk for sk in cd.get("skills", {}).values()}
-            sorc = s_map.get("sorcery", {})
-            inf = s_map.get("influence", {})
-            conj = s_map.get("conjuring", {})
-            return {
-                "Body": attrs.get("BODY", 2),
-                "Agility": attrs.get("AGILITY", 3),
-                "Reaction": attrs.get("REACTION", 2),
-                "Strength": attrs.get("STRENGTH", 2),
-                "Willpower": attrs.get("WILLPOWER", 5),
-                "Logic": attrs.get("LOGIC", 3),
-                "Intuition": attrs.get("INTUITION", 3),
-                "Charisma": attrs.get("CHARISMA", 10),
-                "Magic": attrs.get("MAGIC", 6),
-                "Edge": attrs.get("EDGE", 2),
-                "Sorcery": sorc.get("rating", 6),
-                "Improved_Ability_Sorcery": sorc.get("adept_bonus", 2),
-                "Influence": inf.get("rating", 5),
-                "Conjuring": conj.get("rating", 1),
-            }
-        except Exception as e:
-            print(f"[*] Warning reading XML in char_engine: {e}")
+
 
     data = load_master_data(yaml_path)
     attrs = data.get("attributes", {})

@@ -190,12 +190,13 @@ contacts:
   description: Chargen Contact
 - name: Ni Ni Xiaolu
   connection: 3
-  loyalty: 1
+  loyalty: 2
   favors: 0
   type: Triad Johnson
   archetype: Triad Johnson
   region: SEA
-  description: Chargen Contact
+  description: Chargen Contact | Chargen Contact | +2 FP SRM 2081-07 Bootleg Bliss
+    (looking forward to date)
 - name: Whiskey
   connection: 2
   loyalty: 3
@@ -244,3 +245,19 @@ contacts:
   archetype: Johnson
   region: SEA
   description: SRM 2081-09 Eviction Notice (Elven female)
+- name: Bookie
+  connection: 3
+  loyalty: 1
+  favors: 0
+  type: Ancients Bookie
+  archetype: Ancients Bookie
+  region: SEA
+  description: SRM 2081-07 Bootleg Bliss
+- name: Trudy
+  connection: 2
+  loyalty: 1
+  favors: 0
+  type: Cutters Lieutenant
+  archetype: Cutters Lieutenant
+  region: SEA
+  description: SRM 2081-07 Bootleg Bliss

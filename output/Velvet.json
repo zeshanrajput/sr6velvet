@@ -10,9 +10,9 @@
   "gender": "FEMALE",
   "heat": 0,
   "reputation": 0,
-  "karma": 1,
+  "karma": 9,
   "freeKarma": -12,
-  "nuyen": 19025,
+  "nuyen": 21625,
   "initiation": 1,
   "submersion": 0,
   "attributes": [
@@ -699,6 +699,6 @@
   "signatureManeuvers": [],
   "notes": null,
   "realName": "Kim Jin-Young",
-  "karmaI": 9,
-  "lifetimeKarma": 9
+  "karmaI": 17,
+  "lifetimeKarma": 17
 }

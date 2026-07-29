@@ -10,6 +10,10 @@ Our primary standard of quality is professional short speculative fiction. We ai
 
 Every narrative chapter or log entry must actively engage with at least one of these thematic pillars. Magic and technology in these stories are never just aesthetic dressing—they are literal manifestations of commodification and control.
 
+### The Foundational Character Arc: The Discovery of Empathy
+
+> **Crucial Rule:** Velvet is **not originally empathic**. Engineered by Mitsuhama as a cold, clinical product, Jin-Young was trained to simulate emotion as an algorithmic performance designed to extract compliance and market value. His journey across Story Arc 1 is not the deployment of pre-existing compassion, but the slow, hesitant **discovery of genuine empathy**—learning to shift from calculated corporate manipulation to authentic human connection through small, un-manufactured encounters.
+
 ### I. The Manufactured Commodity
 
 * **The Concept:** The corporate entertainment complex does not sign talent; it manufactures products. A child is bought, bio-sculpted, and trained to be a specific consumer asset.
@@ -34,6 +38,12 @@ Every narrative chapter or log entry must actively engage with at least one of t
 * **The Concept:** Escaping the corporate machine is not a clean, heroic triumph. It is a messy, destructive rupture that leaves scars and collateral damage.
 * **Shadowrun Integration:** Velvet's sabotage of the Singapore mega-ritual saved Hana's life but shattered the lives and careers of his bandmates, who now hunt him. He lives in Seattle's rain-slicked sprawl, selling his skills to covertly fund Hana's safety.
 * **Narrative Focus:** The lingering guilt of leaving others behind, the paranoia of being hunted, and the irony of using his corporate training (weaponized charisma, the "Universal Face") to survive the shadows.
+
+### V. The Fluid Canvas & Bespoke Solace (Cosmetic Control R2)
+
+* **The Concept:** Mitsuhama surgically erased Jin-Young’s origin to manufacture two rigid, mass-marketed corporate assets (Lee Ji-yoo and Tanaka Ryo). Through Adept discipline, Velvet reclaims agency over their own flesh, using Cosmetic Control R2 to achieve fluid biological malleability.
+* **Narrative Integration:** Shifting forms begins as identity erasure and stealth, but over the course of Story Arc 1, Velvet *discovers* how to turn flesh into an instrument of emerging empathy. Velvet crafts tailored personas (such as Mei Jing) to create specific, un-engineered sanctuaries for others.
+* **The Thematic Paradox:** Corporate entertainment uses faces to exploit and extract vitality. Velvet slowly learns to use infinite physical variation to offer un-monetized comfort, discovering how weaponized charisma can evolve into genuine human connection.
 
 ---
 
@@ -61,7 +71,10 @@ To maintain a high literary bar, we reject standard pulp sci-fi tropes, action-m
 
 ### IV. Linguistic Identity & The Trauma of the Shift (The Pronoun Rule)
 
-* **The Rule:** Pronouns and linguistic demeanor are strictly locked to his active biological form. When configured as Lee Ji-yoo, the text must use she/her, and her demeanor must adapt to the soft, algorithmically optimized elegance mandated by the label. When configured as Tanaka Ryo, the text must use he/him, maintaining a sharp, masculine baseline tempered by the clean, effeminate symmetry of the idol industry.  
+* **The Rule:** Pronouns and linguistic demeanor are strictly locked to his active biological form. When configured as Lee Ji-yoo, the text must use she/her, and her demeanor must adapt to the soft, algorithmically optimized elegance mandated by the label. When configured as Tanaka Ryo, the text must use he/him, maintaining a sharp, masculine baseline tempered by the clean, effeminate symmetry of the idol industry. When in a custom female persona (such as Mei Jing), the text must use she/her.
+* **Physical Mechanics of Cosmetic Control (R2):**
+  * **Visceral Cost:** Shifting bone density, facial cartilage, dermal pigmentation, and vocal geometry is never instantaneous or painless. It carries a distinct biological tax—a dull, metallic ache in the jaw, heat behind the ears, and resetting cartilage.
+  * **The Anchor:** No matter how many street profiles or temporary personas Velvet constructs, the underlying Jin-Young core—and the raw, un-sculpted obsidian heritage—remains the silent baseline waiting beneath the spell-cartilage.
 * **The Charisma 12 Standard:** A Charisma of 6 is the maximum possible for a human. An 8 is borderline supernatural. Velvet's Charisma rating of 12 is an unearthly, supernatural presence. The prose must illustrate this physical perfection—unblemished facial symmetry, the hypnotic cadence of their voice, the precise weight of their posture—without ever sliding into pulp romance clichés or provocative smut. Their beauty should feel slightly uncanny, a hyper-optimized corporate design meant to disarm the viewer.  
 * **The Toll of Transition:** Shifting forms is a visceral violation of the body. The prose must document the bone-deep ache of resetting cartilage, the shifting of muscle mass, and the chemical nausea of re-keying localized DNA strands. The internal monologue must reflect the psychological friction of this displacement—the vertigo of a self that is constantly being overwritten.  
 * **Example (Literary Execution):**
