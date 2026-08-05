@@ -1,4 +1,4 @@
-# 5. The Sabotage
+# The Sabotage
 
 The humidity of the Singapore dome was different from Manila’s; it didn't smell of the river or rotting papaya, but of chlorinated coolant and the damp carpets of the VIP skyboxes. Behind the heavy dressing room doors, the air-conditioning unit ran at a steady, aggressive hum, trying to scrub the sweat of rehearsal from Ryo's skin before the wardrobe team arrived.
 

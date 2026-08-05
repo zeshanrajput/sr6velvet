@@ -2,7 +2,7 @@ project:
   type: book
   output-dir: _book
   pre-render:
-    - uv run python scripts/main.py "input/Velvet.xml" --output "output/character_sheet.txt"
+    - uv run sr6 export velvet --format=vtt
 
 book:
   title: "VELVET // Jin-Young Character Dossier"
@@ -43,3 +43,7 @@ format:
     toc: true
     number-sections: false
     code-copy: true
+
+execute:
+  engine: jupyter
+  python: .venv/Scripts/python.exe

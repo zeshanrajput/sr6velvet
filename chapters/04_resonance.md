@@ -1,4 +1,4 @@
-# 4. The Resonance
+# The Resonance
 
 The sub-bass frequencies did not travel through the air; they drove straight up from the sub-floor foundations, vibrating through the copper-alloy staging plates until Ryo could feel the tremor in the marrow of his shins. Eighty-two thousand faces blurred into a single, wet canvas of moving mouths beneath the Neo-Seoul dome.
 

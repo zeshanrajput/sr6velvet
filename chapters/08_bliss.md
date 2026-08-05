@@ -1,4 +1,4 @@
-# 8. Bliss
+# Bliss
 
 The rain over the West Seattle Night Market tasted of sulfur and wet copper, a persistent drizzle that flattened the steam rising from the four-stool noodle stall beneath the overpass. High above, the concrete deck groaned under the weight of automated freight haulers, sending periodic tremors through the rusted iron frame of the cart.
 

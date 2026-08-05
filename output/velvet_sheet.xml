@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sr6char gender="DIVERSE" meta="dalakitnon elf" karmaF="11" karmaI="5" nuyen="19625">
+   <name>Velvet</name>
+   <realName>Kim Jin-Young</realName>
+   <attributes>
+      <attributes id="BODY" value="2" />
+      <attributes id="AGILITY" value="3" />
+      <attributes id="REACTION" value="2" />
+      <attributes id="STRENGTH" value="2" />
+      <attributes id="WILLPOWER" value="5" />
+      <attributes id="LOGIC" value="3" />
+      <attributes id="INTUITION" value="3" />
+      <attributes id="CHARISMA" value="10" />
+      <attributes id="EDGE" value="2" />
+      <attributes id="MAGIC" value="6" />
+      <attributes id="RESONANCE" value="0" />
+   </attributes>
+   <qualities>
+      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="df26e28e-036c-4302-b055-c4d889f5bd27">
+         <decision choice="29ff7f7b-6485-4cc7-9a9c-1355706eed6e" value="Charisma" />
+      </quality>
+      <quality lang="en" ref="exceptional_attribute" uuid="ae607e20-4c53-476a-bd16-3dbfa4c9d0be">
+         <decision choice="da300fb5-9f4e-4276-a054-bf10fdb1dc35" value="Charisma" />
+      </quality>
+      <quality lang="en" ref="inspire_competence" uuid="f09c05cc-5289-4334-ae75-09a7a6695f53" />
+      <quality lang="en" ref="low-light_vision" uuid="93da783d-2e67-44ae-bd6f-472c8eb5e349" />
+      <quality lang="en" ref="chronic_pain" uuid="239af20d-37c0-4c42-8676-d12cd3606550" />
+      <quality lang="en" ref="hooder" uuid="7842e6a8-ffdb-4951-8ec8-e567adacc339" value="3" />
+      <quality lang="en" ref="focused_concentration" uuid="be79d893-29f4-4d30-b530-bd9ef319a35b" value="2" />
+      <quality lang="en" ref="allergy" uuid="efb0f50a-13fd-4cf7-8de0-3a96cf234eea">
+         <decision choice="a21b5868-2f0d-4dcd-aabb-185fb9cb189b" value="Spices" />
+      </quality>
+   </qualities>
+   <skills>
+      <skill lang="en" ref="sorcery" uuid="99bd7b67-f063-49f7-b06d-ce48e156f286" value="6" />
+      <skill lang="en" ref="conjuring" uuid="a7a12273-f989-43d0-8516-511ed6339b50" value="1" />
+      <skill lang="en" ref="influence" uuid="8cdd164a-e128-4962-913b-5e41c230f2c8" value="5" />
+      <skill lang="en" ref="language" uuid="d5929af3-6ad1-4113-8b32-c976d33de641" value="4" />
+      <skill lang="en" ref="small_unit_tactics" uuid="17b9efc8-3ebc-4da5-b218-e872bc24ecce" value="1" />
+      <skill lang="en" ref="mct" uuid="d11c7e5d-d610-4ff7-bd51-8520822c15de" value="1" />
+      <skill lang="en" ref="wuxing" uuid="3cc8684d-8513-4d68-af1a-f7591d969a90" value="1" />
+      <skill lang="en" ref="east_asian_media" uuid="0f7d7593-fe52-4592-a695-85f87109e3c5" value="1" />
+   </skills>
+   <items />
+   <contacts>
+      <contact name="Brynne Taggart" rat="4" type="STREET" typename="Fixer" loy="1" favors="0">
+         <description>Chargen Contact</description>
+      </contact>
+      <contact name="Vincent Grisome" rat="5" type="MAGIC" typename="Seattle University Professor" loy="3" favors="0">
+         <description>Chargen Contact</description>
+      </contact>
+      <contact name="Ni Ni Xiaolu" rat="3" type="CRIMINAL" typename="Triad Johnson" loy="1" favors="2">
+         <description>Chargen Contact | +2 FP SRM 2081-07 Bootleg Bliss (looking forward to date)</description>
+      </contact>
+      <contact name="Whiskey" rat="2" type="MEDICAL" typename="Street Doc" loy="3" favors="0">
+         <description>Chargen Contact</description>
+      </contact>
+      <contact name="Claudette Laurier" rat="5" type="MATRIX" typename="Golden Dawn Librarian" loy="4" favors="0">
+         <description>Chargen Contact</description>
+      </contact>
+      <contact name="Le Tigre" rat="5" type="MAGIC" typename="Epoch Model" loy="1" favors="0">
+         <description>Chargen Contact</description>
+      </contact>
+      <contact name="Hana" rat="6" type="MAGIC" typename="Wuxing Talismonger / Pop Idol" loy="6" favors="0">
+         <description>Chargen Contact</description>
+      </contact>
+      <contact name="Guild of Freelance Assets" rat="7" type="STREET" typename="Conclave" loy="8" favors="0">
+         <description>Chargen Contact (Conclave C7 L8)</description>
+      </contact>
+      <contact name="Ms. Snow" rat="5" type="CORPORATE" typename="Shadow Chapters Johnson" loy="1" favors="2">
+         <description>SRM 2081-09 Eviction Notice (Elven female)</description>
+      </contact>
+      <contact name="Bookie" rat="3" type="STREET" typename="Ancients Bookie" loy="1" favors="1">
+         <description>SRM 2081-07 Bootleg Bliss</description>
+      </contact>
+      <contact name="Trudy" rat="2" type="STREET" typename="Cutters Lieutenant" loy="1" favors="1">
+         <description>SRM 2081-07 Bootleg Bliss</description>
+      </contact>
+   </contacts>
+   <rewards>
+      <reward date="2026-07-01T00:00:00.000Z" exp="1" money="1000">
+         <title>Build-A-Runner (GM Credit)</title>
+         <gamemaster>WarDoctor CDT 1077</gamemaster>
+      </reward>
+      <reward date="2026-01-01T00:00:00.000Z" exp="7" money="11000">
+         <title>SRM 2081-09 | Eviction Notice</title>
+         <gamemaster>WarDoctor CDT 1077</gamemaster>
+      </reward>
+      <reward date="2026-01-01T00:00:00.000Z" exp="7" money="10000">
+         <title>SRM 2081-07 | Bootleg Bliss</title>
+         <gamemaster>CDT Agent Kira Capalu (#TBD)</gamemaster>
+      </reward>
+      <reward date="2026-01-01T00:00:00.000Z" exp="0" money="0">
+         <title>Active Contacts Summary</title>
+      </reward>
+      <reward date="2026-01-01T00:00:00.000Z" exp="0" money="0">
+         <title>Current Totals</title>
+      </reward>
+   </rewards>
+</sr6char>

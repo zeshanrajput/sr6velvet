@@ -5,12 +5,9 @@ Welcome to the consolidated magic portfolio for **Kim Jin-Young**, operating in 
 ```{python}
 #| echo: false
 #| include: false
-import sys
-import os
-sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
-from log_engine import get_log_totals
+from sr6core.log_engine import get_log_totals
 
-log_totals = get_log_totals()
+log_totals = get_log_totals(["chapters/character_log.qmd"])
 ```
 
 ::: {.grid}
@@ -29,7 +26,7 @@ log_totals = get_log_totals()
 * **Lifetime Karma:** `{python} log_totals['Lifetime_Karma']`
 * **Current Karma:** `{python} log_totals['Karma']`
 * **Liquid Capital:** ¥`{python} f"{log_totals['Nuyen']:,}"`
-* **Initiation Grade:** `{python} log_totals['Initiation_Grade']`
+* **Initiation Grade:** `{python} log_totals.get('Initiation_Grade', 1)`
 :::
 
 :::

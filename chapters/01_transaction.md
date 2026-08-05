@@ -1,4 +1,4 @@
-# 1. The Transaction
+# The Transaction
 
 The neon sign above the Redmond quick-mart did not buzz so much as rattle, a loose fitting in the housing shivering against the sheet metal every time the wind came off the Barrens. Inside, the air smelled of stale grease and the wet dirt of the automated soy-brewer behind the counter.
 

@@ -1,4 +1,4 @@
-# 09. Tea in Tacoma
+# Tea in Tacoma
 
 The salt fog coming off Commencement Bay smelled of creosote, wet iron, and the heavy diesel exhaust of container ships idling at the Tacoma docks. It rolled up the dark slope of the waterfront, wrapping around the low wooden roof of *Xingfu Chaguan* and muffling the sound of the automated gantry cranes two miles out in the harbor.
 

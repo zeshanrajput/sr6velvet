@@ -1,4 +1,4 @@
-# 3. The Dark Wings
+# The Dark Wings
 
 Under the hundred-thousand-watt daylight arrays of the Wuxing soundstage, there was no shadow for a soul to hide in. Ryo was seventeen, his skin artificially saturated with the radiant, cross-border vitality mandated by the label's branding executives. The three-acre floor of *Astral Athletics: Idol Showdown* was a labyrinth of chrome obstacles and synchronized cameras, every square inch precisely calculated to extract maximum fan resonance.
 

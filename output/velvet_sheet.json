@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "system": "Shadowrun 6th Edition (SR6)",
+  "character": {
+    "name": "Velvet",
+    "real_name": "Kim Jin-Young",
+    "metatype": "Dalakitnon Elf",
+    "stream": "",
+    "attributes": {
+      "body": 2,
+      "agility": 3,
+      "reaction": 2,
+      "strength": 2,
+      "willpower": 5,
+      "logic": 3,
+      "intuition": 3,
+      "charisma": 10,
+      "edge": 2,
+      "resonance": 0
+    },
+    "living_persona": {},
+    "skills": [
+      {
+        "name": "Sorcery",
+        "id": "sorcery",
+        "attribute": "Magic",
+        "rating": 6,
+        "adept_bonus": 2
+      },
+      {
+        "name": "Conjuring",
+        "id": "conjuring",
+        "attribute": "Magic",
+        "rating": 1
+      },
+      {
+        "name": "Influence",
+        "id": "influence",
+        "attribute": "Charisma",
+        "rating": 5
+      },
+      {
+        "name": "Native Language",
+        "id": "language",
+        "attribute": "Logic",
+        "rating": 4
+      },
+      {
+        "name": "Small Unit Tactics",
+        "id": "small_unit_tactics",
+        "attribute": "Logic",
+        "rating": 1,
+        "is_knowledge": true
+      },
+      {
+        "name": "MCT",
+        "id": "mct",
+        "attribute": "Logic",
+        "rating": 1,
+        "is_knowledge": true
+      },
+      {
+        "name": "Wuxing",
+        "id": "wuxing",
+        "attribute": "Logic",
+        "rating": 1,
+        "is_knowledge": true
+      },
+      {
+        "name": "East Asian Media",
+        "id": "east_asian_media",
+        "attribute": "Logic",
+        "rating": 1,
+        "is_knowledge": true
+      }
+    ],
+    "qualities": {
+      "positive": [
+        {
+          "name": "Metagenetic Attribute Improvement (Charisma)",
+          "ref": "metagenetic_attribute_improvement",
+          "choice": "Charisma"
+        },
+        {
+          "name": "Exceptional Attribute (Charisma)",
+          "ref": "exceptional_attribute",
+          "choice": "Charisma"
+        },
+        {
+          "name": "Inspire Competence",
+          "ref": "inspire_competence"
+        },
+        {
+          "name": "Low-Light Vision",
+          "ref": "low-light_vision"
+        }
+      ],
+      "negative": [
+        {
+          "name": "Chronic Pain",
+          "ref": "chronic_pain"
+        },
+        {
+          "name": "Hooder",
+          "ref": "hooder",
+          "rating": 3
+        },
+        {
+          "name": "Focused Concentration",
+          "ref": "focused_concentration",
+          "rating": 2
+        },
+        {
+          "name": "Allergy (Spices, Common Moderate)",
+          "ref": "allergy",
+          "choice": "Spices"
+        }
+      ]
+    },
+    "drones": [],
+    "complex_forms": []
+  }
+}

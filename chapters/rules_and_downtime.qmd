@@ -5,30 +5,33 @@ This section aggregates core cheat sheets and templates for downtime registratio
 ```{python}
 #| echo: false
 #| include: false
-import sys
-import os
-sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
-from char_engine import get_character_stats
+from sr6core.character_manager import CharacterManager
 
-stats = get_character_stats()
+cm = CharacterManager()
+_char = cm.get_character_data("velvet") or {}
+attrs = _char.get("attributes", {})
 
 # Core Attributes
-Body = stats["Body"]
-Agility = stats["Agility"]
-Reaction = stats["Reaction"]
-Strength = stats["Strength"]
-Willpower = stats["Willpower"]
-Logic = stats["Logic"]
-Intuition = stats["Intuition"]
-Charisma = stats["Charisma"]
-Magic = stats["Magic"]
-Edge = stats["Edge"]
+Body = attrs.get("body", 2)
+Agility = attrs.get("agility", 3)
+Reaction = attrs.get("reaction", 2)
+Strength = attrs.get("strength", 2)
+Willpower = attrs.get("willpower", 5)
+Logic = attrs.get("logic", 3)
+Intuition = attrs.get("intuition", 3)
+Charisma = attrs.get("charisma", 10)
+Magic = attrs.get("magic", 6)
+Edge = attrs.get("edge", 2)
 
 # Skills & Adept Bonuses
-Sorcery = stats["Sorcery"]
-Improved_Ability_Sorcery = stats["Improved_Ability_Sorcery"]
-Influence = stats["Influence"]
-Conjuring = stats["Conjuring"]
+skills_dict = {s["name"]: s.get("rating", 0) for s in _char.get("skills", [])}
+Sorcery = skills_dict.get("Sorcery", 6)
+Conjuring = skills_dict.get("Conjuring", 1)
+Influence = skills_dict.get("Influence", 5)
+
+# Adept Powers
+adept_dict = {p["name"]: p.get("rating", 0) for p in _char.get("adept_powers", [])}
+Improved_Ability_Sorcery = adept_dict.get("Improved Ability (Sorcery)", 2)
 
 # Derived Pools
 Spellcasting_Pool = Sorcery + Improved_Ability_Sorcery + Magic
@@ -44,14 +47,18 @@ Influence_Pool = Influence + Charisma
 > **Mandatory Campaign Protocol:** Every second official Shadowrun Missions (SRM) run (excluding CMPs or non-SRM special events), Velvet must settle monthly expenses and execute mandatory downtime allocations.
 
 ### 1. Monthly Expenses Package
+
 Every 2nd SRM mission, the following recurring obligations are deducted from liquid Nuyen:
+
 - **Lifestyle Expenses:** Low Lifestyle (¥2,000/mo) or Middle Lifestyle (¥5,000/mo).
 - **Hooder Quality (Rating 3):** ¥3,000/mo obligation allocated to community assistance.
 - **Coven Dues:** ¥2,400/mo dues paid to the Guild of Freelance Assets.
 
 
 ### 2. Mandatory Downtime Actions (Expense Months)
+
 During an expense month, Velvet receives 1 Major Downtime Action and 1 Minor Downtime Action, allocated as follows:
+
 - **1 Major Downtime Action:** Dedicated to Coven service, ritual maintenance, and keeping Coven Loyalty in good standing.
 - **1 Minor Downtime Action:** *Working for the People*—funded directly by the Hooder ¥3,000 nuyen obligation, generating **+1 Karma** at no additional nuyen charge.
 

@@ -1,51 +1,45 @@
 # Shadowrun 6e Portfolio - Velvet
 
-This repository contains the interactive character dossier, downtime tracking system, rules cheatsheets, and narrative log for **Velvet** (Kim Jin-Young), a Dalakitnon Buddhist Mage character built for Shadowrun 6th Edition (Sixth World).
+This repository contains the interactive character dossier, downtime tracking system, rules cheatsheets, and narrative log for **Velvet** (Kim Jin-Young), a Dalakitnon Shinto/Musok Mage character built for Shadowrun 6th Edition (Sixth World) and active in **Shadowrun Missions** organized play.
 
-The project is compiled into a polished, responsive book using **Quarto** and hosted on GitHub Pages.
+The project is compiled into a polished, responsive book using **Quarto** and powered by [`sr6-core`](https://github.com/zeshanrajput/sr6-core).
 
 ---
 
 ## Project Structure
 
-- `scripts/`: Python utility scripts (including `main.py` and the parsing engines) that dynamically parse character exports (XML/JSON) to generate updated cheatsheets and markdown summaries.
+- `velvet_master.yaml`: Authoritative master dossier file containing raw sheet statistics, attributes, qualities, spells, and gear.
 - `chapters/`: The source files for the Quarto book:
   - `identity_core.md`: Metatype, background history, story context, and identity core.
   - `character_sheet.qmd`: Embeds the generated plain-text character sheet.
   - `rules_and_downtime.qmd`: Spellcasting math, summoning/binding calculations, and quickening metamagic cheat sheets.
   - `character_log.qmd`: Complete run history, karma trackers, nuyen ledgers, and contact lists.
 - `input/`: Character source files (XML export from Chummer6/Genesis and Foundry JSON datasets).
-- `output/`: Holds the compiled text character sheet (`character_sheet.txt`).
-- `rules_vault/`: Rules database containing text rules used by the parsing script.
+- `output/`: Holds compiled text character sheet (`velvet_sheet.txt`), Roll20 JSON (`velvet_sheet.json`), and CommLink XML (`velvet_sheet.xml`).
+- `reference/`: Story continuity indices and narrative standards documents.
 
 ---
 
-## The Rules Vault (`rules_vault/`)
+## Local Development & Ecosystem Sync
 
-The rules engine dynamically references snippets in the `rules_vault/` directory to build footnotes and verification blocks. 
+`sr6velvet` relies on `sr6-core` for export generation, rules indexing, prose linting, and CommLink GUI roundtrip synchronization.
 
-> [!IMPORTANT]
-> **Copyright & `.gitignore`**
->
-> To respect copyright laws, the `rules_vault/` directory is **git-ignored by default** (except for the publicly available Shadowrun Missions Guide files, `SRMG-*.md`).
->
-> If you clone this repository, you must populate the vault locally with your own rulebook extractions (e.g. `6WB-*.md` for *Sixth World Book*, `WN-*.md` for *Wild Blue*, etc.) parsed from your purchased PDFs.
-
----
-
-## Local Development & Compilation
-
-To generate the sheets and build the book locally:
-
-1. **Setup Dependencies**: Ensure you have Python and `uv` installed.
+1. **Setup Dependencies**:
    ```bash
    uv sync
    ```
-2. **Build the Dossier**: Run the script to parse your inputs and output the character sheet.
+
+2. **Build Character Exports**:
    ```bash
-   uv run python scripts/main.py "input/Velvet.json" --output "output/character_sheet.txt"
+   uv run sr6 export velvet --format=vtt
    ```
-3. **Compile the Quarto Book**: Render the project locally.
+
+3. **Ecosystem & CommLink GUI Sync**:
+   ```bash
+   uv run sr6 sync-all
+   ```
+
+4. **Compile the Quarto Book**:
    ```bash
    quarto render
    ```

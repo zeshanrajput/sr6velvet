@@ -9,120 +9,20 @@ This log chronicles out-of-session missions, downtime decisions, Karma expenditu
 ```{python}
 #| echo: false
 #| include: false
-# Initial values
-Karma = 0
-Lifetime_Karma = 0
-Nuyen = 4025
-Initiation_Grade = 0
-Coven_Loyalty = 8
+from sr6core.log_engine import (
+    inc, inc_many, contact, add_rep, start_mission, state, assign, print_contacts_summary
+)
 
-def inc(name, amount=1):
-    globals()[name] += amount
-    if name == 'Karma' and amount > 0:
-        globals()['Lifetime_Karma'] += amount
-    op = "+=" if amount >= 0 else "-="
-    return f"{name} {op} {abs(amount)}"
+# Initial baseline values
+assign("Karma", 0)
+assign("Lifetime_Karma", 0)
+assign("Nuyen", 4025)
+assign("Initiation_Grade", 0)
+assign("Coven_Loyalty", 8)
 
-def assign(name, value):
-    globals()[name] = value
-    return f"{name} = {value}"
-
-def inc_many(*args):
-    if len(args) == 1 and isinstance(args[0], (list, tuple)):
-        pairs = args[0]
-    elif len(args) > 0 and isinstance(args[0], (list, tuple)):
-        pairs = args
-    elif len(args) % 2 == 0:
-        pairs = [(args[i], args[i+1]) for i in range(0, len(args), 2)]
-    else:
-        pairs = args
-
-    res = []
-    for item in pairs:
-        if isinstance(item, (list, tuple)) and len(item) == 2:
-            name, amount = item
-        else:
-            continue
-        globals()[name] += amount
-        if name == 'Karma' and amount > 0:
-            globals()['Lifetime_Karma'] += amount
-        op = "+=" if amount >= 0 else "-="
-        res.append(f"{name} {op} {abs(amount)}")
-    return ", ".join(res)
-
-Contacts = {}
-
-def detect_region(name, type_name, region_param="AUTO"):
-    if region_param and region_param != "AUTO":
-        return region_param
-    full = (type_name + " " + name).upper()
-    if "SEA " in full or "SEATTLE" in full or name in ["Brynne Taggart", "Whiskey", "Vincent Grisome", "Ni Ni Xiaolu", "Ms. Snow", "Hana"]:
-        return "SEA"
-    if "NOLA " in full or "NOLA" in full or name in ["Claudette Laurier", "Le Tigre"]:
-        return "NOLA"
-    if "AMS " in full or "AMSTERDAM" in full or "DUTCH" in full or "PENOSE" in full:
-        return "AMS"
-    if "KY " in full or "KENTUCKY" in full:
-        return "KY"
-    if "DW " in full or "DENVER" in full:
-        return "DW"
-    return "GEN"
-
-def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact", region="AUTO", notes=""):
-    reg = detect_region(name, type_name, region)
-    
-    clean_type = type_name
-    for prefix in ["SEA ", "NOLA ", "AMS ", "KY ", "DW "]:
-        if clean_type.startswith(prefix):
-            clean_type = clean_type[len(prefix):]
-            break
-
-    if name not in Contacts:
-        start_loyalty = loyalty if loyalty is not None else 0
-        Contacts[name] = {
-            "name": name,
-            "connection": connection,
-            "loyalty": start_loyalty,
-            "favors": favors,
-            "fp_acc": 0,
-            "type": clean_type,
-            "raw_type": type_name,
-            "region": reg,
-            "notes": notes
-        }
-    else:
-        if connection > Contacts[name]["connection"]:
-            Contacts[name]["connection"] = connection
-        if loyalty is not None and loyalty > Contacts[name]["loyalty"]:
-            Contacts[name]["loyalty"] = loyalty
-        if clean_type and clean_type != "Contact":
-            Contacts[name]["type"] = clean_type
-        if reg != "GEN":
-            Contacts[name]["region"] = reg
-        if notes:
-            if Contacts[name]["notes"]:
-                Contacts[name]["notes"] += f" | {notes}"
-            else:
-                Contacts[name]["notes"] = notes
-
-    c = Contacts[name]
-    if fp > 0:
-        c["fp_acc"] += fp
-        if c["loyalty"] == 0 and c["fp_acc"] >= 1:
-            c["loyalty"] = 1
-            c["fp_acc"] -= 1
-        while c["fp_acc"] >= (c["loyalty"] + 1):
-            c["fp_acc"] -= (c["loyalty"] + 1)
-            c["loyalty"] += 1
-
-    if favors > 0 and c["favors"] < favors:
-        c["favors"] = favors
-    elif c["fp_acc"] > 0 and c["favors"] == 0:
-        c["favors"] = c["fp_acc"]
-
-    fp_str = f" (+{fp} FP)" if fp > 0 else ""
-    reg_badge = f"[{c['region']}] " if c['region'] != "GEN" else ""
-    return f"**{name}** ({reg_badge}{c['type']}, C:{c['connection']} L:{c['loyalty']} F:{c['favors']}{fp_str})"
+Initiation_Grade = state["Initiation_Grade"]
+Coven_Loyalty = state["Coven_Loyalty"]
+Contacts = state["Contacts"]
 
 # Seed Chargen Contacts with explicit regions
 contact("Brynne Taggart", connection=5, loyalty=1, type_name="Fixer", region="SEA", notes="Chargen Contact")
@@ -151,7 +51,7 @@ contact("Guild of Freelance Assets", connection=7, loyalty=8, type_name="Conclav
 * **PCs:** Poe, BunnyR, YankeeDoodle, Groucho, Jolthead
 * **GM:** WarDoctor CDT 1077
 * **Difficulty:** Veteran
-* **Rewards:** `{python} inc('Nuyen', 13000)`, `{python} inc('Karma', 8)` (Veteran rewards included)
+* **Rewards:** `{python} inc('Nuyen', 11000)`, `{python} inc('Karma', 7)`
 * **Reputation:** +2 SEA
 * **Contacts:**
   * **ALL:** `{python} contact("Ms. Snow", connection=5, fp=2, type_name="Johnson", region="SEA", notes="SRM 2081-09 Eviction Notice (Elven female)")`
@@ -201,61 +101,15 @@ GM Reward correction: `{python} inc('Nuyen', 1000)`
 ```{python}
 #| echo: false
 #| output: asis
-region_names = {
-    "SEA": "Seattle (SEA)",
-    "NOLA": "New Orleans (NOLA)",
-    "AMS": "Amsterdam / UNL (AMS)",
-    "KY": "Kentucky (KY)",
-    "DW": "Denver (DW)",
-    "GEN": "General / Matrix / Other (GEN)"
-}
-
-grouped = {}
-for name, c in Contacts.items():
-    grouped.setdefault(c["region"], []).append(c)
-
-for reg in ["SEA", "NOLA", "AMS", "KY", "DW", "GEN"]:
-    if reg in grouped:
-        print(f"#### {region_names[reg]}\n")
-        print("| Contact Name | Connection | Loyalty | Favors | Type / Archetype | Notes |")
-        print("|---|:---:|:---:|:---:|---|---|")
-        for c in grouped[reg]:
-            print(f"| {c['name']} | {c['connection']} | {c['loyalty']} | {c['favors']} | {c['type']} | {c['notes']} |")
-        print("\n")
+print_contacts_summary()
 ```
 
-```{python}
-#| echo: false
-#| include: false
-import yaml, os
-if Contacts:
-    yaml_path = os.path.abspath("velvet_master.yaml")
-    if not os.path.exists(yaml_path):
-        yaml_path = os.path.join(os.getcwd(), "velvet_master.yaml")
-    if os.path.exists(yaml_path):
-        with open(yaml_path, "r", encoding="utf-8") as f:
-            mdata = yaml.safe_load(f) or {}
-        clist = []
-        for name, c in Contacts.items():
-            clist.append({
-                "name": name,
-                "connection": c["connection"],
-                "loyalty": c["loyalty"],
-                "favors": c["favors"],
-                "type": c["type"],
-                "archetype": c["type"],
-                "region": c.get("region", "GEN"),
-                "description": c["notes"]
-            })
-        mdata["contacts"] = clist
-        with open(yaml_path, "w", encoding="utf-8") as f:
-            yaml.dump(mdata, f, sort_keys=False, allow_unicode=True, indent=2)
-```
+
 
 ---
 
 ### **Current Totals**
 
-* **Lifetime Karma:** `{python} Lifetime_Karma`
-* **Available Karma:** `{python} Karma`
-* **Total Nuyen:** ¥`{python} f"{Nuyen:,}"`
+* **Lifetime Karma:** `{python} state['Lifetime_Karma']`
+* **Available Karma:** `{python} state['Karma']`
+* **Total Nuyen:** ¥`{python} f"{state['Nuyen']:,}"`

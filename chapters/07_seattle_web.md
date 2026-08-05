@@ -1,4 +1,4 @@
-# 7. The Seattle Web
+# The Seattle Web
 
 The downtown Seattle sprawl was a jagged silhouette of corporate towers, their neon logos cutting through the low-hanging rain clouds like glowing knives. From the flat roof of the Redmond tenement, the Wuxing needle was a slender, green line in the distance, its laser-link arrays pulsing with high-frequency data.
 

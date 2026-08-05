@@ -1,4 +1,4 @@
-# 2. The Faceless Mirror
+# The Faceless Mirror
 
 The cauterizer in Whiskey's basement clinic had a bad coil. Every time she pressed the foot pedal, it emitted a high, thin whine that smelled of singed hair and burning flesh, a clinical stink that hung in the corners of the concrete room despite the intake fan rattling in the high window.
 
