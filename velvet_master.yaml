@@ -1,7 +1,7 @@
 identity:
   handle: Velvet
   real_name: Kim Jin-Young
-  metatype: Dalakitnon Elf
+  metatype: Elf
   tradition: Shinto / Musok
   mortype: Mystic Adept
   gender: DIVERSE
@@ -29,6 +29,7 @@ qualities:
   - name: Metagenetic Attribute Improvement (Charisma)
     ref: metagenetic_attribute_improvement
     choice: Charisma
+    karma: 0
   - name: Exceptional Attribute (Charisma)
     ref: exceptional_attribute
     choice: Charisma
@@ -36,18 +37,21 @@ qualities:
     ref: inspire_competence
   - name: Low-Light Vision
     ref: low-light_vision
+    karma: 0
+  - name: Focused Concentration
+    ref: focused_concentration
+    rating: 2
+
   negative:
   - name: Chronic Pain
     ref: chronic_pain
   - name: Hooder
     ref: hooder
     rating: 3
-  - name: Focused Concentration
-    ref: focused_concentration
-    rating: 2
   - name: Allergy (Spices, Common Moderate)
     ref: allergy
     choice: Spices
+
 skills:
 - name: Sorcery
   id: sorcery

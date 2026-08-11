@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char gender="DIVERSE" meta="dalakitnon elf" karmaF="11" karmaI="5" nuyen="19625">
+<sr6char gender="DIVERSE" meta="dalakitnon elf" karmaF="7" karmaI="15" nuyen="27925">
    <name>Velvet</name>
    <realName>Kim Jin-Young</realName>
    <attributes>
@@ -16,41 +16,41 @@
       <attributes id="RESONANCE" value="0" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="df26e28e-036c-4302-b055-c4d889f5bd27">
-         <decision choice="29ff7f7b-6485-4cc7-9a9c-1355706eed6e" value="Charisma" />
+      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="cd07892d-6a38-45a6-9c17-3f302fc846de">
+         <decision choice="d72ef07d-849d-4272-afd4-1928e451128a" value="Charisma" />
       </quality>
-      <quality lang="en" ref="exceptional_attribute" uuid="ae607e20-4c53-476a-bd16-3dbfa4c9d0be">
-         <decision choice="da300fb5-9f4e-4276-a054-bf10fdb1dc35" value="Charisma" />
+      <quality lang="en" ref="exceptional_attribute" uuid="28855b70-3485-480c-bcab-56340d5858bd">
+         <decision choice="0cab3df5-69ac-4a59-ab3a-ec857289040c" value="Charisma" />
       </quality>
-      <quality lang="en" ref="inspire_competence" uuid="f09c05cc-5289-4334-ae75-09a7a6695f53" />
-      <quality lang="en" ref="low-light_vision" uuid="93da783d-2e67-44ae-bd6f-472c8eb5e349" />
-      <quality lang="en" ref="chronic_pain" uuid="239af20d-37c0-4c42-8676-d12cd3606550" />
-      <quality lang="en" ref="hooder" uuid="7842e6a8-ffdb-4951-8ec8-e567adacc339" value="3" />
-      <quality lang="en" ref="focused_concentration" uuid="be79d893-29f4-4d30-b530-bd9ef319a35b" value="2" />
-      <quality lang="en" ref="allergy" uuid="efb0f50a-13fd-4cf7-8de0-3a96cf234eea">
-         <decision choice="a21b5868-2f0d-4dcd-aabb-185fb9cb189b" value="Spices" />
+      <quality lang="en" ref="inspire_competence" uuid="1dacb8ef-967d-4cbe-901c-274a4c4cccf8" />
+      <quality lang="en" ref="low-light_vision" uuid="dd362bdb-0959-4dc9-8bd8-4d742b5bf4b9" />
+      <quality lang="en" ref="focused_concentration" uuid="3a1c8642-e7a0-4094-a3fa-9296adf2ace3" value="2" />
+      <quality lang="en" ref="chronic_pain" uuid="5b8567ac-6d04-407b-a065-4d6dbdf7c025" />
+      <quality lang="en" ref="hooder" uuid="6862ed4c-0bc3-4bb4-8560-df503c8ff24c" value="3" />
+      <quality lang="en" ref="allergy" uuid="0cf92fae-2dfe-4063-9b33-025420c667ee">
+         <decision choice="19b6c5ca-b0d8-4fed-a964-17af07a8b1fd" value="Spices" />
       </quality>
    </qualities>
    <skills>
-      <skill lang="en" ref="sorcery" uuid="99bd7b67-f063-49f7-b06d-ce48e156f286" value="6" />
-      <skill lang="en" ref="conjuring" uuid="a7a12273-f989-43d0-8516-511ed6339b50" value="1" />
-      <skill lang="en" ref="influence" uuid="8cdd164a-e128-4962-913b-5e41c230f2c8" value="5" />
-      <skill lang="en" ref="language" uuid="d5929af3-6ad1-4113-8b32-c976d33de641" value="4" />
-      <skill lang="en" ref="small_unit_tactics" uuid="17b9efc8-3ebc-4da5-b218-e872bc24ecce" value="1" />
-      <skill lang="en" ref="mct" uuid="d11c7e5d-d610-4ff7-bd51-8520822c15de" value="1" />
-      <skill lang="en" ref="wuxing" uuid="3cc8684d-8513-4d68-af1a-f7591d969a90" value="1" />
-      <skill lang="en" ref="east_asian_media" uuid="0f7d7593-fe52-4592-a695-85f87109e3c5" value="1" />
+      <skill lang="en" ref="sorcery" uuid="7d5d3acb-8aa5-4715-8d07-a0be4da20d47" value="6" />
+      <skill lang="en" ref="conjuring" uuid="b221265d-e24f-4093-8c4a-d9bfb2e10ace" value="1" />
+      <skill lang="en" ref="influence" uuid="2417443a-0415-4a8c-87c1-5fb562944763" value="5" />
+      <skill lang="en" ref="language" uuid="f9d1c8c9-02d3-41ea-9319-00ce2ffc89dd" value="4" />
+      <skill lang="en" ref="small_unit_tactics" uuid="78845e35-7ee3-4de6-9f53-dda9dc8d4c69" value="1" />
+      <skill lang="en" ref="mct" uuid="6f5f5eba-d931-446e-9f66-a97d186b24f5" value="1" />
+      <skill lang="en" ref="wuxing" uuid="8e52df01-66d6-4cb2-a942-60168c74e3e2" value="1" />
+      <skill lang="en" ref="east_asian_media" uuid="843d7198-41c6-4ce7-8517-9c1594cd8e20" value="1" />
    </skills>
    <items />
    <contacts>
-      <contact name="Brynne Taggart" rat="4" type="STREET" typename="Fixer" loy="1" favors="0">
-         <description>Chargen Contact</description>
+      <contact name="Brynne Taggart" rat="4" type="STREET" typename="Fixer" loy="1" favors="2">
+         <description>SRM 2081-01 Death of a Fixer</description>
       </contact>
       <contact name="Vincent Grisome" rat="5" type="MAGIC" typename="Seattle University Professor" loy="3" favors="0">
          <description>Chargen Contact</description>
       </contact>
       <contact name="Ni Ni Xiaolu" rat="3" type="CRIMINAL" typename="Triad Johnson" loy="1" favors="2">
-         <description>Chargen Contact | +2 FP SRM 2081-07 Bootleg Bliss (looking forward to date)</description>
+         <description>Chargen Contact | +2 FP SRM 2081-07 Bootleg Bliss | SRM 2081-01 </description>
       </contact>
       <contact name="Whiskey" rat="2" type="MEDICAL" typename="Street Doc" loy="3" favors="0">
          <description>Chargen Contact</description>
@@ -89,6 +89,10 @@
       <reward date="2026-01-01T00:00:00.000Z" exp="7" money="10000">
          <title>SRM 2081-07 | Bootleg Bliss</title>
          <gamemaster>CDT Agent Kira Capalu (#TBD)</gamemaster>
+      </reward>
+      <reward date="2026-01-01T00:00:00.000Z" exp="6" money="8300">
+         <title>SRM 2081-01 | Death of a Fixer</title>
+         <gamemaster>WarDoctor</gamemaster>
       </reward>
       <reward date="2026-01-01T00:00:00.000Z" exp="0" money="0">
          <title>Active Contacts Summary</title>
