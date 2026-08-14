@@ -38,9 +38,7 @@ Slowly, deliberately, Ni Ni’s right hand slid three inches across the cedar ta
 
 "Who engineered you, Mr. Tanaka?" Ni Ni asked, her voice dropping an octave into cold, iron authority. "Was it Mitsuhama? Or did Wuxing build you to slide into my backroom and listen through my walls?"
 
-Ryo did not draw a weapon. He did not shift his weight or deploy an aura mask to project a combat threat.
-
-Instead, Ryo deliberately dropped the active, aggressive thresholds of his Charisma.
+Ryo deliberately dropped the active, aggressive thresholds of the magic he had been sustaining.
 
 The heavy, magnetic pull that usually filled the air around Tanaka Ryo receded like a falling tide. The unearthly, corporate gravity that forced people to hold their breath dissolved, leaving behind only the simple, physical reality of two people sitting in a dark room beneath the Tacoma rain. Behind his jawbone, a faint metallic click echoed through his throat as the active spell-cartilage relaxed into a quiet baseline.
 

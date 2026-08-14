@@ -37,7 +37,7 @@ contact("Guild of Freelance Assets", connection=7, loyalty=8, type_name="Conclav
 
 ---
 
-### **2026-Jul-01: Build-A-Runner (GM Credit)**
+## **2026-Jul-01: Build-A-Runner (GM Credit)**
 
 * **GM:** WarDoctor CDT 1077
 * **Karma:** `{python} inc('Karma', 1)`
@@ -45,7 +45,7 @@ contact("Guild of Freelance Assets", connection=7, loyalty=8, type_name="Conclav
 
 ---
 
-### **SRM 2081-09 | Eviction Notice**
+## **SRM 2081-09 | Eviction Notice**
 
 * **Date:** 2026-Jul-17
 * **PCs:** Poe, BunnyR, YankeeDoodle, Groucho, Jolthead
@@ -62,7 +62,7 @@ contact("Guild of Freelance Assets", connection=7, loyalty=8, type_name="Conclav
 
 In the screamsheets the next day, Aztecnology representative Carmen del Silva proudly announces a new corporate initiative from their pharmaceutical division targeting the pain management market with an even better side effect profile than ever before. The announcement is accompanied by several scientific publications in reputable journals, all done by Aztlani universities. Most journal editors conclude "further research is required".
 
-#### Downtime
+### Downtime
 
 * Learned 'Increase Attribute': `{python} inc('Karma', -5)`
 * Initiation - Channeling: `{python} initiate("Channeling", coven_loyalty=Coven_Loyalty)`
@@ -71,7 +71,7 @@ GM Reward correction: `{python} inc('Nuyen', 1000)`
 
 ---
 
-### **SRM 2081-07 | Bootleg Bliss**
+## **SRM 2081-07 | Bootleg Bliss**
 
 * **Date:** 2026-Jul-26
 * **GM:** CDT Agent Kira Capalu (#TBD)
@@ -86,7 +86,7 @@ GM Reward correction: `{python} inc('Nuyen', 1000)`
   * `{python} contact("Bookie", connection=3, fp=1, type_name="Ancients Bookie", region="SEA", notes="SRM 2081-07 Bootleg Bliss")`
   * `{python} contact("Trudy", connection=2, fp=1, type_name="Cutters Lieutenant", region="SEA", notes="SRM 2081-07 Bootleg Bliss")`
 
-#### Downtime & Monthly Expenses (SRM #2)
+### Downtime & Monthly Expenses (SRM #2)
 
 * **Monthly Expenses:** `{python} inc('Nuyen', -7400)` (Low Lifestyle ¥2,000 + Hooder R3 ¥3,000 + Coven Dues ¥2,400)
 * **Major Downtime Action:** Coven Ritual Maintenance & Service (Guild of Freelance Assets / Shinto-Musok Coven)
@@ -94,23 +94,24 @@ GM Reward correction: `{python} inc('Nuyen', 1000)`
 
 ---
 
-### **SRM 2081-01 | Death of a Fixer**
+## **SRM 2081-01 | Death of a Fixer**
 
 * **Date:** 2026-Aug-07
 * **GM:** WarDoctor
 * **Player:** Velvet (WarDoctor)
 * **Team:** Trax, Hurricane, Jolthead, Hedgehog
 * **Difficulty:** Normal
-* **Rewards:** `{python} inc('Nuyen', 8300)`, `{python} inc('Karma', 6)` 
-* **Reputation:** ±0 | **Heat:** ±0 
+* **Rewards:** `{python} inc('Nuyen', 8300)`, `{python} inc('Karma', 6)`
+* **Reputation:** ±0 | **Heat:** ±0
 * **Contacts & Favor Points:**
   * `{python} contact("Ni Ni Xiaolu", connection=3, fp=2, type_name="Triad Johnson", region="SEA", notes="Chargen Contact | +2 FP SRM 2081-07 Bootleg Bliss | SRM 2081-01 ")`
   * `{python} contact("Brynne Taggart", connection=4, fp=2, type_name="Fixer", region="SEA", notes="SRM 2081-01 Death of a Fixer")`
 * **Major Downtime Action:** Initiation: Finding Your Way (Magician's Way) `{python} initiate("Finding Your Way", coven_loyalty=Coven_Loyalty)`
 * **Minor Downtime Action:** Learned Spell 'Increase Reflexes' `{python} inc('Karma', -5)`
+
 ---
 
-### **Active Contacts Summary**
+## **Active Contacts Summary**
 
 ```{python}
 #| echo: false
@@ -118,11 +119,9 @@ GM Reward correction: `{python} inc('Nuyen', 1000)`
 print_contacts_summary()
 ```
 
-
-
 ---
 
-### **Current Totals**
+## **Current Totals**
 
 * **Lifetime Karma:** `{python} state['Lifetime_Karma']`
 * **Available Karma:** `{python} state['Karma']`

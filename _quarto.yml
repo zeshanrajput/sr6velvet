@@ -32,8 +32,10 @@ book:
 
     - part: "Reference & Specifications"
       chapters:
+        - reference/voice_spec.md
+        - reference/story_arc1.md
+        - reference/story_arc2.md
         - reference/story_continuity.md
-        - reference/narrative_standards.md
 
 format:
   html:

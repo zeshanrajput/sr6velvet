@@ -1,4 +1,4 @@
-# [CARD] Reference Card Deck: Velvet (Dalakitnon Elf)
+# [CARD] Reference Card Deck: Velvet (Elf)
 *Total Reference Cards: 10*
 
 ---
