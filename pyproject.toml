@@ -16,6 +16,7 @@ dependencies = [
     "torchaudio",
     "kokoro",
     "soundfile",
+    "mutagen>=1.47.0",
     "sr6-core",
 ]
 
