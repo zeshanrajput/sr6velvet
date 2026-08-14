@@ -1,5 +1,7 @@
 # The Seattle Web
 
+<audio controls src="audio/07_seattle_web.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 The downtown Seattle sprawl was a jagged silhouette of corporate towers, their neon logos cutting through the low-hanging rain clouds like glowing knives. From the flat roof of the Redmond tenement, the Wuxing needle was a slender, green line in the distance, its laser-link arrays pulsing with high-frequency data.
 
 Lee Ji-yoo sat on a rusted ventilation housing, her Transys Avalon commlink casting a blue, flickering light over her fingers.

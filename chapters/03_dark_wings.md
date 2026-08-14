@@ -1,5 +1,7 @@
 # The Dark Wings
 
+<audio controls src="audio/03_dark_wings.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 Under the hundred-thousand-watt daylight arrays of the Wuxing soundstage, there was no shadow for a soul to hide in. Ryo was seventeen, his skin artificially saturated with the radiant, cross-border vitality mandated by the label's branding executives. The three-acre floor of *Astral Athletics: Idol Showdown* was a labyrinth of chrome obstacles and synchronized cameras, every square inch precisely calculated to extract maximum fan resonance.
 
 Then, the secondary transformer beneath the floor emitted a high-frequency scream, and the world went black.

@@ -1,5 +1,7 @@
 # Tea in Tacoma
 
+<audio controls src="audio/09_Tea_in_Tacoma.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 The salt fog coming off Commencement Bay smelled of creosote, wet iron, and the heavy diesel exhaust of container ships idling at the Tacoma docks. It rolled up the dark slope of the waterfront, wrapping around the low wooden roof of *Xingfu Chaguan* and muffling the sound of the automated gantry cranes two miles out in the harbor.
 
 Inside the private backroom, the ambient noise of the sprawl died completely. The room was lined with thick, old-growth cedar panels, completely devoid of Matrix displays or visible terminal interfaces. A small cast-iron kettle sat over a silent charcoal burner, sending a thin, steady thread of steam toward the bamboo ceiling.

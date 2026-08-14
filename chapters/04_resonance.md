@@ -1,5 +1,7 @@
 # The Resonance
 
+<audio controls src="audio/04_resonance.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 The sub-bass frequencies did not travel through the air; they drove straight up from the sub-floor foundations, vibrating through the copper-alloy staging plates until Ryo could feel the tremor in the marrow of his shins. Eighty-two thousand faces blurred into a single, wet canvas of moving mouths beneath the Neo-Seoul dome.
 
 He did not think about the choreography. Fifteen years of repetition ensured his limbs cleared the transit markers with millimeter precision. To his left, Ji-Hoon hit the northern apex, his posture rigid as his cybernetics clicked, drawing a sharp, unnatural draft across the stage that sounded of dry paper. Behind them, Tae-Hyun’s vocal line dropped into an engineered growl, his neon wolf mask casting jagged blue shadows across the front rows, while Min-Ki anchored the western node to lock the corners of the array.

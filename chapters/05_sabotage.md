@@ -1,5 +1,7 @@
 # The Sabotage
 
+<audio controls src="audio/05_sabotage.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 The humidity of the Singapore dome was different from Manila’s; it didn't smell of the river or rotting papaya, but of chlorinated coolant and the damp carpets of the VIP skyboxes. Behind the heavy dressing room doors, the air-conditioning unit ran at a steady, aggressive hum, trying to scrub the sweat of rehearsal from Ryo's skin before the wardrobe team arrived.
 
 He sat under the vanity lights, his fingers tracing the immaculate line of his jaw. The infernal symmetry remained, but beneath the surface, the thick, stolen vitality from the Seoul stadium still sat in his marrow like heavy water—a foreign, sluggish heat that refused to disperse.

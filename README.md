@@ -39,7 +39,20 @@ The project is compiled into a polished, responsive book using **Quarto** and po
    uv run sr6 sync-all
    ```
 
-4. **Compile the Quarto Book**:
+4. **Audio Book Narration & Prose Diagnostics**:
+   ```bash
+   # Generate TTS audio narration for a chapter (Kokoro GPU engine)
+   uv run sr6 narrate chapters/01_transaction.md
+
+   # Lint chapter prose for AI buzzwords, em-dash cadence, and tone
+   uv run sr6 lint chapters/01_transaction.md
+
+   # Run narrative continuity audit
+   uv run sr6 continuity .
+   ```
+
+5. **Compile the Quarto Book**:
    ```bash
    quarto render
    ```
+

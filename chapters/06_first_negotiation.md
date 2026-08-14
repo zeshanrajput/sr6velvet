@@ -1,5 +1,7 @@
 # The First Negotiation
 
+<audio controls src="audio/06_first_negotiation.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 The rain in the Redmond Barrens smelled of sulfur and wet slag, a constant, chemical drizzle that slicked the cracked asphalt of the alleyways. Tanaka Ryo kept the grey, unbadged Suzuki idling between his knees, a low, wet vibration that rattled the loose plastic of the fairing. Through the double-polarized visor of his Shoei helmet, the neon sign of the *Red Line* was a bleeding smear of crimson in the fog. He adjusted the collar of his armored riding leathers, keeping his chin tucked. In the Barrens, a face was a liability; a face like his, even under the dulling damp of Seattle's rain, was an exposed target.
 
 He killed the engine, the sudden silence filled only by the rhythmic drip of water from the rusted fire escape overhead. Carrying the helmet under his arm, Ryo pushed open the heavy steel door of the basement dive bar. The air inside was warm and thick, smelling of stale yeast, cheap tobacco, and the chemical tang of soy-caf.

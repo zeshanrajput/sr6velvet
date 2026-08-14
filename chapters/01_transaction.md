@@ -1,5 +1,7 @@
 # The Transaction
 
+<audio controls src="audio/01_transaction.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 The neon sign above the Redmond quick-mart did not buzz so much as rattle, a loose fitting in the housing shivering against the sheet metal every time the wind came off the Barrens. Inside, the air smelled of stale grease and the wet dirt of the automated soy-brewer behind the counter.
 
 Velvet set three certified credsticks on the scratched laminate. The clerk, a human with a dented cyber-optic that rattled in its socket when he turned his head, did not look up from his screen. He swept the credsticks into the drawer with a thumb that clicked—cheap corporate chrome, third-generation surplus.

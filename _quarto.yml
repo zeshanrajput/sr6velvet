@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: _book
+  resources:
+    - chapters/audio/
   pre-render:
     - uv run sr6 export velvet --format=vtt
 
