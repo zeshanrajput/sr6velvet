@@ -1,4 +1,4 @@
-# The Seattle Web
+# Seattle Web
 
 <audio controls src="audio/07_seattle_web.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
@@ -8,13 +8,13 @@ Lee Ji-yoo sat on a rusted ventilation housing, her Transys Avalon commlink cast
 
 To secure the connection against the active corporate scans, she had to push a high-force warding spell through the transmission signal. She let her astral mask drop, channeling the raw mana through her marrow.
 
-The magic surged, and with it came the shift back to a neutral profile. Without the active discipline of sustaining the Lee Ji-yoo configuration, its true, un-sculpted form leaked through. The cartilage in its face snapped and widened, its planed jawbone expanding back to its sharp, native angularity. The warm brown of its calibrated irises bled away, returning to the bottomless, solid obsidian of its heritage. It gasped as its lungs expanded, its ribcage widening to its natural volume with a dull, bone-deep ache that made it shudder. Yet, as its skin darkened and the corporate symmetry fell away, a profound sense of self returned—it was breathing its own air, even if it smelled of sulfur.
+The magic surged, and with it came the shift back to a neutral profile. Without the active discipline of sustaining the Lee Ji-yoo configuration, his true, un-sculpted form leaked through. The cartilage in his face snapped and widened, his planed jawbone expanding back to its sharp, native angularity. The warm brown of calibrated irises bled away, returning to the bottomless, solid obsidian of his heritage. He gasped as his lungs expanded, his ribcage widening to its natural volume with a dull, bone-deep ache that made him shudder. Yet, as his skin darkened and the corporate symmetry fell away, a quiet sense of self returned. He was breathing his own air, even if it smelled of sulfur.
 
-It tapped the commlink, Tanaka Ryo's masculine profile stabilizing on the interface as his vocal cords dropped back to their resonant, low baseline.
+He tapped the commlink, Tanaka Ryo's masculine profile stabilizing on the interface as his vocal cords dropped back to their resonant, low baseline.
 
 The network was expensive. Thousands of nuyen already gone, distributed through secure, nested accounts to obtain supplies, reagents, and network connections. The deckers he employed spent their nights scrubbing Velvet's digital footprint, maintaining the counter-espionage shields around Hana’s personal commlink in Neo-Seoul, and monitoring the Wuxing security feeds.
 
-Two days ago, they had flagged an active, high-priority sweep on the local grid—a systematic, cross-border audit executed by the surviving members of his old performance unit. It wasn’t a personal hunt; it was a desperate collection order. The Singapore sabotage had left the remaining assets compromised, their files marked for physical disposal if they failed to retrieve the missing gateway node. To them, he was no longer a brother who had escaped; he was a balance-sheet error they had to correct to protect their own survival.
+Two days ago, they had flagged an active, high-priority sweep on the local grid, a systematic, cross-border audit executed by the surviving members of his old performance unit. It wasn’t a personal hunt; it was a desperate collection order. The Singapore sabotage had left the remaining assets compromised, their files marked for physical disposal if they failed to retrieve the missing gateway node. To them, he was no longer a brother who had escaped; he was a balance-sheet error they had to correct to protect their own survival.
 
 Ryo initiated the encrypted link the deckers had established. The terminal hummed, the signal routing through three dead-letter boxes in Denver and Hong Kong before the connection clicked.
 
@@ -24,7 +24,7 @@ Hana sat in a dressing room in Neo-Seoul. The room was not the clinical, sterile
 
 "Jin-Young," she said.
 
-Her voice did not shake. Her eyes—perfect, glassy spheres—autofocused with a faint, mechanical click that Ryo heard through the receiver.
+Her voice did not shake. Her eyes, perfect glassy spheres, autofocused with a faint mechanical click that Ryo heard through the receiver.
 
 "The proxies are active," Ryo said, his voice low and flat. "The deckers have scrubbed this connection. You're clean for now."
 
@@ -54,8 +54,8 @@ His commlink flared with an untraceable ping. A single amber glyph hovered in th
 
 The text dissolved, spawning two competing execution pathways across the glass of his Transys Avalon. The first was a factory-default corporate routine: `RUN_AWAY?`. If executed, it would instantly burn his current street registries, scrub his SINs, and map an automated, blind evacuation vector out of Seattle. The second was an open-ended, multi-threaded script: `RUN_SHADOWS?`. If executed, it would lower the firewalls on his local nodes, disable the passive logging loops, and order his network to deploy on the offensive.
 
-Ryo’s thumb hovered three millimeters above the screen. The sulfur rain runnelled across the casing, catching the blue glare of the interface. For three slow, heavy heartbeats, his finger remained suspended—the entire trajectory of his design hanging in the space between the buttons.
+Ryo’s thumb hovered three millimeters above the screen. The sulfur rain runnelled across the casing, catching the blue glare of the interface. For three slow, heavy heartbeats, his finger remained suspended, the entire trajectory of his design hanging in the space between the buttons.
 
-He stood up, his pace the smooth, steady gait that had been drilled into him—an economy of movement that wasted no energy, yet commanded attention. In the shadow of the fire escape, he adjusted the collar of his armored riding leathers.
+He stood up, his pace the smooth, steady gait that had been drilled into him, an economy of movement that wasted no energy, yet commanded attention. In the shadow of the fire escape, he adjusted the collar of his armored riding leathers.
 
 He tapped the `RUN_SHADOWS` icon and tossed the commlink into a dumpster. The plastic cracked as it hit the bottom, sparks of blue light dying out in the puddle of refuse.

@@ -1,4 +1,4 @@
-# The Faceless Mirror
+# Faceless Mirror
 
 <audio controls src="audio/02_faceless_mirror.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
@@ -8,11 +8,11 @@ Ryo sat on the edge of the steel table, his shirt draped over his shoulders. Whi
 
 "Hold still," Whiskey muttered. "I'm no plastic surgeon, and I know this body is worth more nuyen than I'll ever imagine."
 
-He did not move. He kept his eyes on the grey ceiling tiles, breathing in the ozone. The smell always brought back Tokyo.
+He did not move. He kept his eyes on the grey ceiling tiles, breathing in the burnt mist of the cauterizer. The smell always brought back Tokyo.
 
-The recovery ward smelled of sterilized linen and the faint, ozone tang of liquid coolant cycling through the neural arrays. He was ten years old, his eyes bandaged with smart-gauze that pulsed in sync with his heartbeat. Through the thin partition, the Mitsuhama research team spoke in the flat, rhythmic cadences of accountants reviewing a quarterly audit.
+The recovery ward smelled of sterilized linen and the faint, chemical tang of fluorocarbon coolant cycling through the neural arrays. He was ten years old, his eyes bandaged with smart-gauze that pulsed in sync with his heartbeat. Through the thin partition, the Mitsuhama research team spoke in the flat, rhythmic cadences of accountants reviewing a quarterly audit.
 
-They were discussing the micro-geometry of his left eyelid. A specialized AI cluster had been running a loop for forty-eight hours, calculating slight variations of follicular density and lash curvature, searching for the exact mathematical threshold where human neurology shifts from attraction to evolutionary surrender. Beside the technicians sat a consultant from an outside contractor—a bound spirit of the lower spheres, its corporate compliance collar humming softly to suppress its ash-scented aura. The entity didn't speak in prophecy or curses; it adjusted a digital stylus on a tablet, refining the infernal symmetry of the child's jawline to align with the ancient, proven paradigms of the succubus archetype. They were building a masterpiece of mass compliance, one cellular edit at a time. And on the bed, the boy simply stared into the black cloth, his new facial muscles twitching against the stitches as they memorized a stranger's smile.
+They were discussing the micro-geometry of his left eyelid. A specialized AI cluster had been running a loop for forty-eight hours, calculating slight variations of follicular density and lash curvature, searching for the exact mathematical threshold where human neurology shifts from attraction to evolutionary surrender. Beside the technicians sat a consultant from an outside contractor, a bound spirit of the lower spheres with its corporate compliance collar humming softly to suppress its ash-scented aura. The entity didn't speak in prophecy or curses; it adjusted a digital stylus on a tablet, refining the sterile symmetry of the child's jawline to align with consumer compliance targets. They were building a masterpiece of mass compliance, one cellular edit at a time. And on the bed, the boy simply stared into the black cloth, his new facial muscles twitching against the stitches as they memorized a stranger's smile.
 
 For three weeks after the initial bone-shearing, his head had been wrapped in those layers of damp, chemically treated gauze. When the time came, the lead surgeon, a woman whose name Jin-Young never knew, stepped into the ward. Her eyes were shielded behind Wuxing-brand diagnostic specs that threw green lines across the room.
 
@@ -36,9 +36,9 @@ Jin-Young stared at the two faces on the screen. The first, Lee Ji-yoo, was cali
 
 They were two distinct strangers, and he was the negative space between them.
 
-He reached up, his fingers meeting the smooth, unbroken surface of his cheek—a hard plastic shell where his features used to live. He tried to mimic the wide, gap-toothed grin his mother used to laugh at in the Manila rain.
+He reached up, his fingers meeting the smooth, unbroken surface of his cheek, a hard plastic shell where his features used to live. He tried to mimic the wide, gap-toothed grin his mother used to laugh at in the Manila rain.
 
-His muscles did not respond. The nerve endings had been re-routed, mapped to parallel astral aspects. The cartilage in his cheeks, bound by permanent corporate spells, refused to crease. When he forced the expression, his mouth only turned up into a stiff, polite curve—the rehearsed stage-smile that was now written into his cells.
+His muscles did not respond. The nerve endings had been re-routed, mapped to parallel astral aspects. The cartilage in his cheeks, bound by permanent corporate spells, refused to crease. When he forced the expression, his mouth only turned up into a stiff, polite curve, the rehearsed stage-smile that was now written into his cells.
 
 "The baseline symmetry is within ninety-nine percent of the target blueprint," the surgeon said, writing a line on her datapad. "MCT Property ID 440-Alpha. Archive the original images. The asset is ready for second stage sculpting."
 
@@ -46,7 +46,7 @@ His muscles did not respond. The nerve endings had been re-routed, mapped to par
 
 Ryo pulled his shirt over his head, the clean linen rubbing against the fresh burn. He stood up and stepped to the sink, looking into Whiskey's cracked, grease-spotted mirror.
 
-The face staring back at him was still a stranger’s. Even without the expensive Mitsuhama blockers, the algorithmically calculated symmetry remained—a beautiful, permanent cage of flesh and spell-cartilage. He leaned close to the glass. If he squinted, he could see the faint, dark lines around the corners of his eyes where the spell was beginning to erode, the obsidian of his true heritage waiting to split the corporate seams.
+The face staring back at him was still a stranger’s. Even without the expensive Mitsuhama blockers, the algorithmically calculated symmetry remained, a beautiful, permanent cage of flesh and spell-cartilage. He leaned close to the glass. If he squinted, he could see the faint, dark lines around the corners of his eyes where the spell was beginning to erode, the obsidian of his true heritage waiting to split the corporate seams.
 
 He reached into his pocket, counted out Whiskey’s nuyen in certified sticks, and left them on the tray.
 
@@ -56,4 +56,4 @@ Ryo paused with his hand on the iron door. "Would it really help if I came in he
 
 "No," she said, a low, raspy exhale filtering through her teeth. She looked away from his face, her fingers gripping the edge of the tool tray to anchor herself against the pull of his posture. "That might just make it worse."
 
-Ryo pushed the heavy iron door open, stepping out into the alley dark. The Seattle rain hit his face—cold, sharp, and entirely unable to find a single human crease to follow.
+Ryo pushed the heavy iron door open, stepping out into the alley dark. The Seattle rain hit his face: cold, sharp, and entirely unable to find a single human crease to follow.

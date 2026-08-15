@@ -2,7 +2,7 @@
 
 <audio controls src="audio/08_bliss.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
-The rain over the West Seattle Night Market tasted of sulfur and wet copper, a persistent drizzle that flattened the steam rising from the four-stool noodle stall beneath the overpass. High above, the concrete deck groaned under the weight of automated freight haulers, sending periodic tremors through the rusted iron frame of the cart.
+The rain over the West Seattle Night Market tasted of sulfur and wet iron, a persistent drizzle that flattened the steam rising from the four-stool noodle stall beneath the overpass. High above, the concrete deck groaned under the weight of automated freight haulers, sending periodic tremors through the rusted iron frame of the cart.
 
 Velvet sat on the end stool, wrapped in a dark, unbranded oilskin slicker. She had adopted the persona of Mei Jing, a young Chinese woman in her early twenties carrying a sharp, street-hardened profile tailored for the Night Market. Dark street ink traced the tendons of her right hand and crept up the left side of her throat beneath the slicker's collar, the stylized line-work of the Forty-Sixers blending into older, faded gang marks. Her facial structure held a striking, dangerous symmetry, carrying a magnetic presence that commanded the small counter without the synthetic polish of a corporate idol. Residual warmth from the localized tissue sculpting still pulsed beneath her cheekbones, her dark eyes reflecting the amber neon of the rain.
 

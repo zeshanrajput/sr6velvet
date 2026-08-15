@@ -1,4 +1,4 @@
-# The First Negotiation
+# First Negotiation
 
 <audio controls src="audio/06_first_negotiation.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
@@ -10,11 +10,11 @@ He did not walk directly to the booths. He stood near the broken arcade cabinet 
 
 He eyed the Mr. Johnson sitting in the corner booth.
 
-The man was human, dressed in a corporate-surplus wool coat that still bore the faint stitch-marks where a NeoNet security patch had been removed. He was nursing a glass of genuine whiskey, his hand hovering three inches from his pocket—a nervous, defensive habit of a mid-level corporate asset out of his depth.
+The man was human, dressed in a corporate-surplus wool coat that still bore the faint stitch-marks where a NeoNet security patch had been removed. He was nursing a glass of genuine whiskey, his hand hovering three inches from his pocket, a nervous, defensive habit of a mid-level corporate asset out of his depth.
 
 Ryo’s HUD blinked, its recognition algorithms sweeping the Johnson's profile to cross-reference biometric nodes with archived corporate registries and active "MeFeed" social media feeds. The scrap was brief but telling: the Johnson was a retired logistics manager, a man whose corporate career had been defined by rigid hierarchies and a history of reporting directly to high-ranking female executives. More telling was his physical behavior in the room; Ryo watched the reflection in the mirror behind the bar as the Johnson’s eyes repeatedly darted toward the female bartender, his pupil dilation and the micro-saccadic twitch of his eyelids showing a classic pattern of visual compliance. He was a man who looked for authority in a feminine voice.
 
-Ryo calculated the margins. A masculine approach would trigger the Johnson’s defensive, street-hardened posturing. A female presentation—specifically one that carried the polished, unyielding gravity of the corporate suite—would bypass those defenses entirely, lowering his negotiating resistance by a calculated third.
+Ryo considered his approach. A masculine approach would trigger the Johnson’s defensive, street-hardened posturing. A female presentation, specifically one that carried the polished, unyielding gravity of the corporate suite, would bypass those defenses entirely, lowering his negotiating resistance by a calculated third.
 
 Ryo turned, slipping past the bar toward the grimy hallway that led to the restroom.
 
@@ -24,11 +24,11 @@ He set his helmet on the tank of the toilet and unzipped his heavy riding jacket
 
 Then, he initiated the transition.
 
-The shift began with the Avalon commlink re-keying the local wireless registers, spoofing the digital identity tags to broadcast the SIN of Lee Ji-yoo. Physically, the violation was immediate and absolute. It started as a dry, chemical heat in the back of his throat, a sudden wave of nausea as the localized DNA strands began to overwrite their own cellular instructions.
+The shift began with the Avalon commlink re-keying the local wireless registers, spoofing the digital identity tags to broadcast the SIN of Lee Ji-yoo. The physical violation was immediate and absolute. It started as a dry, chemical heat in the back of his throat, a sudden wave of nausea as the localized DNA strands began to overwrite their own cellular instructions.
 
 Ryo gripped the cold edges of the sink, his knuckles turning the color of salt. In the mirror, his features began to blur. The bones of his ribcage slid together with a dry, grinding friction, narrowing his frame and shortening his breath as three inches of height drained from his posture. The cartilage of his larynx settled with a wet, heavy click, shifting the vocal cords into a lighter, silver register. The ache in his skull was bone-deep, a dull pressure behind the eyes as his jawline and cheekbones planed down, aligning with the mathematically optimized Mitsuhama R&D blueprint.
 
-He closed his eyes, waiting for the vertigo to pass. In the dark of his mind, the pronouns fractured, the masculine baseline of Tanaka Ryo systematically dissolving into the parallel databases of the idol persona. He was he, until the final alignment of the tissue locked into place, and she was she.
+He closed his eyes, waiting for the vertigo to pass. In the dark of his mind, the pronouns fractured, the masculine baseline of Tanaka Ryo systematically dissolving into the parallel databases of the idol persona. He was he, until the final alignment of the tissue locked into place and she was she.
 
 She opened her eyes.
 
@@ -42,11 +42,11 @@ She did not look at the patrons. She walked with a light, measured stride, her s
 
 The Johnson looked up, his hand twitching toward his pocket before freezing.
 
-The red neon of the bar sign caught the symmetry of her face. The corporate Johnson did not speak. He did not look at the datapad he had prepared. The perfection of her features was so absolute it carried a cold, almost hostile weight—a clinical, multi-million nuyen marvel of bio-sculpting that no natural lineage could produce. The Johnson’s pulse hammered visibly against his collar, his heart rate monitor on her HUD spiking into the red.
+The red neon of the bar sign caught the symmetry of her face. The corporate Johnson did not speak. He did not look at the datapad he had prepared. The perfection of her features was so absolute it carried a cold, almost hostile weight, a clinical, multi-million nuyen marvel of bio-sculpting that no natural lineage could produce. The Johnson’s pulse hammered visibly against his collar, his heart rate monitor on her HUD spiking into the red.
 
-"You're late," the Johnson said. The words lacked any real weight. In the twitch of his jaw and the rigid set of his shoulders, she read the sudden, mounting panic of a man sitting across from a runaway corporate investment of unimaginable scale.
+"You're late," the Johnson said. The words lacked any real weight. In the twitch of his jaw and the rigid set of his shoulders, she read the mounting panic of a man sitting across from a runaway corporate investment of unimaginable scale.
 
-"The security sweeps downtown were heavy," she said. Her voice carried a clear, silver chime—a neurologically mapped pitch designed to lower the heart rate of the listener, yet it held a cold, commanding cadence. "The transit was delayed."
+"The security sweeps downtown were heavy," she said. Her voice carried a clear, silver chime, a neurologically mapped pitch designed to lower the heart rate of the listener, yet it held a cold, commanding cadence. "The transit was delayed."
 
 The Johnson set the datapad on the table, his hand trembling slightly. "The job is a data retrieval from a Renraku storage node. Ten thousand nuyen. Half up front."
 
@@ -58,7 +58,7 @@ The Johnson blinked, his mouth opening slightly. He looked at her, then down at 
 
 "Eight thousand nuyen," she repeated, her voice a disarming murmur that systematically bled his resolve. "And we do not require an advance."
 
-The Johnson’s expression shifted from confusion to a deep, visceral wariness. She had expected the reaction; in the Barrens, runners fought for every single nuyen, demanding upfront credits to buy ammo, pay off contacts, or simply keep the lights on. A runner who talked the price down—who rejected the advance entirely—was a dangerous anomaly, someone clearly not operating for survival.
+The Johnson’s expression shifted from confusion to a deep, visceral wariness. She had expected the reaction; in the Barrens, runners fought for every single nuyen, demanding upfront credits to buy ammo, pay off contacts, or simply keep the lights on. A runner who talked the price down, who rejected the advance entirely, was an anomaly not operating for survival.
 
 "Runners don't talk people *down*," the Johnson muttered, his fingers tightening around his whiskey glass. Every line of his posture screamed corporate self-preservation, but his eyes remained locked on the planed symmetry of her cheekbones, held in the vise of her manufactured charm. "What kind of game is this?"
 
@@ -66,9 +66,9 @@ The Johnson’s expression shifted from confusion to a deep, visceral wariness. 
 
 The Johnson sat back, his spine stiffening. She watched the realization register in his eyes like a cold, corporate draft: a debt was far more dangerous than a payout. By stripping away the nuyen, she had stripped him of his advantage. She was no longer a street mercenary to him; she was an operative collecting assets.
 
-He stared at the flawless lines of her face, the expensive, Mitsuhama-signature grace of her posture. In his pale face and the sudden rigidity of his frame, she saw the recognition click. He knew the signature of a high-value corporate asset program when he saw one—a predator that had slid silently into his small, dirty pond. He was a mid-level manager trying to scrape by, his widened eyes betraying the sudden terror of signing a contract with a shark.
+He stared at the flawless lines of her face, the expensive, Mitsuhama-signature grace of her posture. In his pale face and the sudden rigidity of his frame, the recognition clicked. He knew the signature of a high-value corporate asset program when he saw one, a predator that had slid silently into his small, dirty pond.
 
-"Who... what are you?" the Johnson whispered, his voice dry.
+"What are you?" the Johnson whispered, his voice dry.
 
 "Your new creditor," Ji-yoo said. She extended a slender, perfect hand and took the datapad from the table. "Do we have a deal?"
 

@@ -1,10 +1,10 @@
-# The Sabotage
+# Sabotage
 
 <audio controls src="audio/05_sabotage.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
 The humidity of the Singapore dome was different from Manila’s; it didn't smell of the river or rotting papaya, but of chlorinated coolant and the damp carpets of the VIP skyboxes. Behind the heavy dressing room doors, the air-conditioning unit ran at a steady, aggressive hum, trying to scrub the sweat of rehearsal from Ryo's skin before the wardrobe team arrived.
 
-He sat under the vanity lights, his fingers tracing the immaculate line of his jaw. The infernal symmetry remained, but beneath the surface, the thick, stolen vitality from the Seoul stadium still sat in his marrow like heavy water—a foreign, sluggish heat that refused to disperse.
+He sat under the vanity lights, his fingers tracing the immaculate line of his jaw. The infernal symmetry remained, but beneath the surface, the thick, stolen vitality from the Seoul stadium still sat in his marrow like heavy water, a foreign, sluggish heat that refused to disperse.
 
 On the slate-gray terminal screen beside his mirror, the technical logistics for the evening's joint broadcast were already locked. The data lines for Hana’s group were highlighted in red, flagged for a maximum-intensity astral draw during the final arrangement. The managers called it a 'synergistic consolidation.' Ryo called it a liquidation.
 
@@ -12,11 +12,11 @@ Cold, narrowing panic gripped his throat. Hana would be left a hollowed-out shel
 
 "Thirty seconds," the floor manager’s voice rattled through the earpiece. "Position nodes. The grid is active."
 
-On stage, under the glare of the smart-lights, the show began. The choreography was a military-grade progression—a complex dance that Ryo had rehearsed ten thousand times until the movements were carved into his nerves. Ji-Hoon moved to his left, his posture tightening as he drew the northern axis line; Tae-Hyun anchored the eastern node, his voice dropping into that engineered growl that pulled the stadium's collective heat toward the front rows, while Min-Ki locked the western parameters of the array. Ryo stood in the center, his throat aching against the sluggish, stolen warmth in his bones as his aura opened to receive the flow.
+On stage, under the glare of the smart-lights, the show began. The choreography was a military-grade progression, a complex dance that Ryo had rehearsed ten thousand times until the movements were carved into his nerves. Ji-Hoon moved to his left, his posture tightening as he drew the northern axis line; Tae-Hyun anchored the eastern node, his voice dropping into that engineered growl that pulled the stadium's collective heat toward the front rows, while Min-Ki locked the western parameters of the array. Ryo stood in the center, his throat aching against the sluggish, stolen warmth in his bones as his aura opened to receive the flow.
 
 He saw Hana in the wings, her perfect, glassy Wuxing-optics reflecting the stage lights, her body straight and still.
 
-At the climax of the arrangement, as the ritual peaked and the raw emotional current of eighty-five thousand fans surged into the gateway, Ryo did not pass the energy along. He didn't complete the circuit. Instead, he locked his jaw, tilted his chin a fraction of a degree, and deliberately skewed the internal geometry of his aura. He turned the incoming harvest directly inward, dropping the grid straight into his own nervous system.
+At the climax of the arrangement, as the ritual peaked and the raw emotional current of eighty-five thousand fans surged into the gateway, Ryo did not pass the energy along. Instead, he locked his jaw, tilted his chin a fraction of a degree, and deliberately skewed the internal geometry of his aura. He turned the incoming harvest directly inward, dropping the grid straight into his own nervous system.
 
 The feedback loop was immediate and violent. Liquid lead surged through his veins, a white-hot hammer blow striking his brain and tearing through his spiritual architecture. The geomantic circuit shattered. The copper plates beneath his boots buckled with a sharp, electrical crack, throwing a shower of blue sparks twenty feet into the air.
 
@@ -26,7 +26,7 @@ The stadium dome blackened in a split second, the holographs vanishing, the musi
 
 Ryo fell. He did not feel his knees hit the stage; only the raw, metallic tearing in his chest as his aura buckled. Through the smoke and the blue electrical glare of the emergency lights, he saw Ji-Hoon looking at him, his face twisted in disbelief.
 
-He did not wait for the security teams. He rolled off the edge of the stage into the technical trench, his hands scrambling in the dark until he found the iron handle of the drainage hatch.
+He rolled off the edge of the stage into the technical trench, his hands scrambling in the dark until he found the iron handle of the drainage hatch.
 
 The Singapore sewers were cold, dark, and smelled of grease and brackish seawater.
 
