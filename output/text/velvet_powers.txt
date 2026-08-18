@@ -5,11 +5,13 @@
  I=Instant)
 ----------------------------------------------------------------------------
  SUBMERSION ECHOES / METAMAGIC:
-  - Channeling                       
+  - Channeling                       | Finding Your Way
 ----------------------------------------------------------------------------
  SPELLS & SORCERY:
   - Increase Attribute         | Drain: 3
+  - Increase Reflexes          | Drain: 4
 ----------------------------------------------------------------------------
  ADEPT POWERS:
   - Improved Ability (Sorcery) | Cost: 0 PP
+  - Cosmetic Control           | Cost: 0 PP
 ----------------------------------------------------------------------------

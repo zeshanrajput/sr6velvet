@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char gender="DIVERSE" meta="elf" karmaF="7" karmaI="15" nuyen="27925">
+<sr6char gender="DIVERSE" meta="elf" karmaF="2" karmaI="20" nuyen="27275">
    <name>Velvet</name>
    <realName>Kim Jin-Young</realName>
    <attributes>
@@ -16,30 +16,30 @@
       <attributes id="RESONANCE" value="0" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="b1c9165b-8878-47d2-9edf-a34692e0fb22">
-         <decision choice="746362e1-377c-4fce-baf5-a3515f5c2d7a" value="Charisma" />
+      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="6a0a1d2e-81ad-4778-a364-b9b6213fdbc5">
+         <decision choice="61a881ae-19e7-4bdb-8593-6976e5a219b5" value="Charisma" />
       </quality>
-      <quality lang="en" ref="exceptional_attribute" uuid="6e4b3efa-256f-4a71-a038-5ffd9dd024aa">
-         <decision choice="e5680589-62d4-4405-a63d-03797535f9ff" value="Charisma" />
+      <quality lang="en" ref="exceptional_attribute" uuid="5be11fd7-666e-4bab-ab2b-6bd861c9067c">
+         <decision choice="a8fdcee3-32ce-4a97-8765-749bbf714af6" value="Charisma" />
       </quality>
-      <quality lang="en" ref="inspire_competence" uuid="6d2c0c26-7042-4ed1-b6c6-3e26c05567eb" />
-      <quality lang="en" ref="low-light_vision" uuid="61a0a845-0fce-4242-b78f-0e05b8af7f1c" />
-      <quality lang="en" ref="focused_concentration" uuid="f100fcb6-cc45-4d97-930f-9db60011eab9" value="2" />
-      <quality lang="en" ref="chronic_pain" uuid="a029e89c-a6e8-4b2d-bed9-119b54a37b70" />
-      <quality lang="en" ref="hooder" uuid="9b404fd4-2a26-4d62-a661-620984699515" value="3" />
-      <quality lang="en" ref="allergy" uuid="9760b366-53d9-40a4-ae8b-1e165d286afb">
-         <decision choice="6aadb7ef-9570-4f11-aa62-e6ae58e99429" value="Spices" />
+      <quality lang="en" ref="inspire_competence" uuid="06a89d34-fb01-46a6-9f23-bbeae723d94b" />
+      <quality lang="en" ref="low-light_vision" uuid="48ea2af0-c2f3-4593-bbf7-a4eb4eeb80c8" />
+      <quality lang="en" ref="focused_concentration" uuid="9abbfa05-32f0-407a-b1a6-4474efa07fa9" value="3" />
+      <quality lang="en" ref="chronic_pain" uuid="e42bebe2-d3b5-468d-812a-d24cc8f2ad22" />
+      <quality lang="en" ref="hooder" uuid="f262c96e-f5c9-4aef-a8bd-ac6406c8ec22" value="3" />
+      <quality lang="en" ref="allergy" uuid="86342881-9e2a-4d7f-a41d-15d8750efb3a">
+         <decision choice="e6add71a-b46f-461d-81b7-9f3f8be510c2" value="Spices" />
       </quality>
    </qualities>
    <skills>
-      <skill lang="en" ref="sorcery" uuid="b683375f-d8ea-4b1b-981e-22bbf5259f6b" value="6" />
-      <skill lang="en" ref="conjuring" uuid="52ccbbfb-4d1b-4493-b212-ad3f8ab99d55" value="1" />
-      <skill lang="en" ref="influence" uuid="ef11fe4e-991d-4f77-bf70-c4d74b485634" value="5" />
-      <skill lang="en" ref="language" uuid="003e0734-a8cd-4158-87b0-d34c69e99edf" value="4" />
-      <skill lang="en" ref="small_unit_tactics" uuid="8e1ff2ef-8bc9-4be7-9b34-b2ca11ab81a6" value="1" />
-      <skill lang="en" ref="mct" uuid="6b5aa4c9-090a-46e4-9961-bc005bbecb96" value="1" />
-      <skill lang="en" ref="wuxing" uuid="d0965dfd-7a5c-4e08-be3c-2012c987bcb2" value="1" />
-      <skill lang="en" ref="east_asian_media" uuid="00f6c6e8-6842-4840-a12f-119f9de8363b" value="1" />
+      <skill lang="en" ref="sorcery" uuid="ebb1cfdc-3c26-4402-aaac-123f9ecb2683" value="6" />
+      <skill lang="en" ref="conjuring" uuid="3627026c-ebfc-4644-b320-f267e1fce28e" value="1" />
+      <skill lang="en" ref="influence" uuid="1c9e4108-822a-415a-bc40-b5413686a74c" value="5" />
+      <skill lang="en" ref="language" uuid="99ec5841-7884-4b0a-aac8-b4309de2e54e" value="4" />
+      <skill lang="en" ref="small_unit_tactics" uuid="a5d98639-62a7-4c5d-9e38-3c797dfeee29" value="1" />
+      <skill lang="en" ref="mct" uuid="fd7ccf46-1579-438c-a16d-d1e692ed8d7e" value="1" />
+      <skill lang="en" ref="wuxing" uuid="4afd14c5-e93f-4e99-a33e-0931a1071555" value="1" />
+      <skill lang="en" ref="east_asian_media" uuid="91682da8-2d72-4ff4-959e-38282df70426" value="1" />
    </skills>
    <items />
    <contacts>

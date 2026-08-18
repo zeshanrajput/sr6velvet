@@ -5,8 +5,8 @@
  the SRM Guide.
 ----------------------------------------------------------------------------
  [01] BRYNNE TAGGART (Fixer) [SEA]
-      Connection: 5 (Fixed) | Loyalty: 1 | Active Favors: 0
-      History / Changes: Chargen Contact
+      Connection: 4 (Fixed) | Loyalty: 1 | Active Favors: 0
+      History / Changes: Chargen Contact | SRM 2081-01 Death of a Fixer
 ----------------------------------------------------------------------------
  [02] VINCENT GRISOME (Magic Prof.) [SEA]
       Connection: 5 (Fixed) | Loyalty: 3 | Active Favors: 0
@@ -14,8 +14,8 @@
 ----------------------------------------------------------------------------
  [03] NI NI XIAOLU (Triad Johnson) [SEA]
       Connection: 3 (Fixed) | Loyalty: 2 | Active Favors: 0
-      History / Changes: Chargen Contact | Chargen Contact | +2 FP SRM
-      2081-07 Bootleg Bliss (looking forward to date)
+      History / Changes: Chargen Contact | +2 FP SRM 2081-07 Bootleg Bliss
+      (looking forward to date)
 ----------------------------------------------------------------------------
  [04] WHISKEY (Street Doc) [SEA]
       Connection: 2 (Fixed) | Loyalty: 3 | Active Favors: 0

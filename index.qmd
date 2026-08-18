@@ -7,56 +7,93 @@ Welcome to the consolidated magic portfolio for **Kim Jin-Young**, operating in 
 #| include: false
 from sr6core.log_engine import get_log_totals
 
-log_totals = get_log_totals(["chapters/character_log.qmd"])
+log_totals = get_log_totals(["chapters/character_log.qmd", "chapters/character_purchases.qmd"])
 ```
 
 ::: {.grid}
 
 ::: {.g-col-6 .cyber-card}
 ### [CHARACTER_DOSSIER]
+
 * **Designation:** Kim Jin-Young
 * **VTT Alias:** Velvet
 * **Metatype:** Dalakitnon (Elf Variant)
-* **Tradition:** Shinto/Musok
+* **Tradition:** Shinto / Musok
 * **System Status:** ONLINE // AWAKENED
 :::
 
 ::: {.g-col-6 .cyber-card}
 ### [MAGIC_PROGRESSION]
+
 * **Lifetime Karma:** `{python} log_totals['Lifetime_Karma']`
 * **Current Karma:** `{python} log_totals['Karma']`
+* **Lifetime Nuyen Earned:** ¥`{python} f"{log_totals.get('Lifetime_Nuyen', 0):,}"`
 * **Liquid Capital:** ¥`{python} f"{log_totals['Nuyen']:,}"`
-* **Initiation Grade:** `{python} log_totals.get('Initiation_Grade', 1)`
+* **Initiation Grade:** `{python} log_totals.get('Initiation_Grade', 2)`
+* **Total Reputation:** `{python} log_totals.get('Total_Reputation', 2)`
 :::
 
 :::
 
 ::: {.cyber-card}
-### [CORE_SUMMARY]
-Born a Dalakitnon to a destitute family in the Philippines, his rare genetic and spiritual architecture and extreme charisma made him a corporate asset for Mitsuhama. Reconstructed into a pan-Asian idol group, TXM (The Death Messengers), he was used as a gateway for massive collective geomantic rituals. Sabotaging a mega-ritual, he vanished into the shadows, now running dirty jobs to build a network to survive.
+### [CORE_SUMMARY & CREATIVE VISION]
+Born a Dalakitnon to a destitute family in the Manila slums, Jin-Young's rare genetic and spiritual architecture and extreme charisma made him a corporate asset for Mitsuhama. Reconstructed into a pan-Asian idol commodity and deployed as the center Face of TXM (*The Death Messengers*), his voice and movement were used to channel immense collective geomantic rituals across metroplexes. Sabotaging a lethal mega-ritual in Singapore to save Hana and shatter the ritual matrix, he vanished into the Seattle shadows to build a sovereign sanctuary for Awakened refugees.
+
+This anthology explores the rich, visceral spaces between game mechanics:
+* **The Visceral Somatic Cost of Identity:** Resetting bone cartilage, localized DNA re-keying, and wearing algorithmic masks (Lee Ji-yoo, Tanaka Ryo) while protecting the un-sculpted obsidian baseline.
+* **The Discovery of Genuine Empathy:** Evolving from a manufactured corporate weapon to crafting un-monetized sanctuaries of quiet respect, roasted Tieguanyin tea, and genuine connection.
+:::
+
+::: {.cyber-card}
+### Brief Background
+
+#### Character Goals
+
+1. *Sanctuary & Sovereign Autonomy:* Build an unassailable shadow network and magical sanctuary in Seattle to protect Awakened refugees from corporate IP reclamation.
+2. *Liberation & Solidarity:* Sever Mitsuhama's ownership claims and liberate Hana from Wuxing's gilded cage.
+3. *Spiritual Mastery:* Advance Shinto-Musok initiation (Channeling, Finding Your Way) to channel ancestral spirit ribbons without succumbing to biological drain.
+
+#### Secrets
+
+1. Velvet conceals that his original identity was the center star of Mitsuhama's TXM. If revealed, MCT Asset Recovery units would deploy kill-teams to reclaim their multi-million nuyen asset.
+2. Velvet secretly channels sensory anchors and shadow resources across the Pacific to support Hana while evading dual-megacorp surveillance.
+
+#### Key Connections
+
+* **Seattle (SEA):** Brynne Taggart (Fixer), Ni Ni Xiaolu (Triad Johnson), Whiskey (Street Doc), Vincent Grisome (Magic Prof.), Ms. Snow (Johnson)
+* **Neo-Seoul / Global:** Hana / Luna (Pop Idol & Wuxing Talismonger)
+* **New Orleans (NOLA):** Claudette Laurier (Golden Dawn Librarian), Le Tigre (Epoch Model)
+* **Magical Conclave:** Guild of Freelance Assets (Coven Loyalty 8)
 :::
 
 ## [ SYSTEM_NAVIGATION ]
 
 Use the sidebar or the indexes below to traverse this portfolio:
 
-### 1. Core Profile
+### 1. Core Character Profile
 * **[Identity Core](chapters/identity_core.md)**: Detailed background history and lore.
-* **[Character Build (Point Buy)](chapters/character_build_point_buy.qmd)**: The character build process description (Point Buy).
-* **[Life Path Build (Archived)](chapters/character_build.qmd)**: Archived Life Path build process description.
-* **[Character Sheet](chapters/character_sheet.qmd)**: The dynamically compiled Shadowrun character sheet.
-* **[Rules & Downtime Protocols](chapters/rules_and_downtime.qmd)**: Spellcasting and summoning formulas, cheat sheets, and active magical configurations.
-* **[Career Log](chapters/character_log.qmd)**: Full database of past runs, GMs, nuyen payouts, and Karma adjustments.
+* **[Character Build (Point Buy)](chapters/character_build_point_buy.qmd)**: Official character creation point buy allocation.
+* **[Life Path Build (Archived)](chapters/character_build.qmd)**: Archived experimental Life Path build.
+* **[Character Dossier & Modular Sheets](chapters/character_sheet.qmd)**: Full character sheet and dedicated modular sheets (Base, Combat, Inventory, Powers & Spells, Contacts) plus PDF and VTT downloads.
+* **[Career Totals & Networks](chapters/character_totals.qmd)**: Live dashboard of Karma, Nuyen, Initiation grade, Coven loyalty, and Contact Registry Sync.
+* **[Session Chronicles](chapters/character_log.qmd)**: Full database of past campaign runs, GMs, nuyen payouts, and Karma adjustments.
+* **[Equipment & Advancement Ledger](chapters/character_purchases.qmd)**: Itemized gear, nanocosmetics, SINs, spells, and lifestyle expenses.
+* **[Twenty Questions](chapters/twenty_questions.qmd)**: Standard character questionnaire defining personality, trauma, ethics, and relationships.
+* **[Rules & Downtime Protocols](chapters/rules_and_downtime.qmd)**: Spellcasting formulas, drain calculations, and coven downtime protocols.
 
-### 2. Background Narratives
-* **[Transaction](chapters/01_transaction.md)**: Manila slums flashback (Age 5) triggered in Redmond.
-* **[Faceless Mirror](chapters/02_faceless_mirror.md)**: The clinical erasure of identity and bio-sculpting in Tokyo (Age 10).
-* **[Dark Wings](chapters/03_dark_wings.md)**: The astral panopticon and connection with Hana (Age 17).
-* **[Resonance](chapters/04_resonance.md)**: The Neo-Seoul dome and magical geomancy harvest (Age 17-18).
-* **[Sabotage](chapters/05_sabotage.md)**: Sabotaging the Singapore ritual and escaping into the sewers (Age 18).
-* **[First Negotiation](chapters/06_first_negotiation.md)**: Shifting to Lee Ji-yoo in Seattle for a zero-nuyen contract (Age 19).
-* **[Seattle Web](chapters/07_seattle_web.md)**: The corporate joint-venture trap and running offensive in the shadows (Age 19-20).
-* **[Bliss](chapters/08_bliss.md)**: Un-manufactured solace over real pork-bone broth in West Seattle (Age 20).
-* **[Tea in Tacoma](chapters/09_Tea_in_Tacoma.md)**: Dropping corporate gravity with Ni Ni Xiaolu over un-taxed Tieguanyin tea (Age 20).
+### 2. Background & Campaign Narratives
+* **[01. The Transaction](chapters/01_transaction.md)**: Manila slums flashback (Age 5) triggered in Redmond mud.
+* **[02. The Faceless Mirror](chapters/02_faceless_mirror.md)**: The clinical erasure of identity and bio-sculpting in Tokyo (Age 10).
+* **[03. The Dark Wings](chapters/03_dark_wings.md)**: The astral panopticon and connection with Hana (Age 17).
+* **[04. The Resonance](chapters/04_resonance.md)**: The Neo-Seoul dome and geomantic mana harvest (Age 17-18).
+* **[05. The Sabotage](chapters/05_sabotage.md)**: Sabotaging the Singapore mega-ritual and escaping into the conduits (Age 18).
+* **[06. The First Negotiation](chapters/06_first_negotiation.md)**: Deploying Lee Ji-yoo in Seattle for a zero-nuyen contract (Age 19).
+* **[07. The Seattle Web](chapters/07_seattle_web.md)**: The corporate joint-venture trap and running offensive in the shadows (Age 19-20).
+* **[08. Bliss](chapters/08_bliss.md)**: Un-manufactured solace over real pork-bone broth in West Seattle (Age 20).
+* **[09. Tea in Tacoma](chapters/09_Tea_in_Tacoma.md)**: Dropping corporate gravity with Ni Ni Xiaolu over un-taxed Tieguanyin tea (Age 20).
 
-
+### 3. Reference & Specifications
+* **[Voice Specification & Sensory Schema](reference/voice_spec.md)**: Character voice rules, somatic shift discipline, and TTS fluency constraints.
+* **[Story Arc 1: Manufactured Solace & The Honeytrap](reference/story_arc1.md)**: Arc 1 plot beats and thematic arcs.
+* **[Story Arc 2: The Sovereign Underground](reference/story_arc2.md)**: Arc 2 plot beats and thematic progression.
+* **[Story Continuity & Entity Tracker](reference/story_continuity.md)**: Entity tracker and chapter index generated by `sr6 continuity .`.

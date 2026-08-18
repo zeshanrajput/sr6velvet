@@ -1,22 +1,21 @@
 ============================================================================
  SHADOWRUN 6E DOSSIER: VELVET
 ============================================================================
- Real Name : Kim Jin-Young      | Metatype : Elf (N/A)
- Submersion: Grade 0            | Gender   : DIVERSE (Age: 20)
- Available Nuyen : 27,925¥ | Karma: 7 Pool (22 Lifetime)
+ Real Name : Kim Jin-Young      | Metatype : Elf (Shinto / Musok)
+ Initiation: Grade 0            | Gender   : DIVERSE (Age: 20)
+ Available Nuyen : 27,275¥ | Karma: 2 Pool (22 Lifetime)
 ----------------------------------------------------------------------------
  ATTRIBUTES & DERIVED RATINGS:
-  ATT (STR): 4  | SLZ (REA): 8  | DP (AGI): 6  | FW (BOD): 6 
+  BOD: 2        | AGI: 3        | REA: 2       | STR: 2 
   WIL: 5        | LOG: 3        | INT: 3       | CHA: 10
   EDG: 2        | RES: 0        | MAG: 6       | ESS: 6.0
   Derived Pools       : Composure [15] | Judge Int [8] | Memory [8]
-  Condition Monitors  : Physical [11 boxes] | Stun [11 boxes]
+  Condition Monitors  : Physical [9 boxes] | Stun [11 boxes]
 ----------------------------------------------------------------------------
- LIVING PERSONA / MATRIX STATS:
-  ASDF Ratings        : A:4 | S:8 | D:6 | F:6
-  Full Matrix Defense : 18d6 (4 Hits)
-    [RES 0 + FW 6 + PA 6 + DP 6 + Focus 0 = 18d6]
-  Matrix Initiative   : 10 + 4D6 (Hot-Sim VR / Overclock)
+ MAGICAL TRADITION & PROTOCOLS:
+  Tradition           : Shinto / Musok
+  Drain Resistance    : 15d6 (3 Hits) [WIL 5 + CHA 10 = 15d6]
+  Adept Power Points  : 3 PP
 ----------------------------------------------------------------------------
  ACTIVE SKILLS & TABLE-RELEVANT DICE POOLS:
   - Sorcery             : 12d6  [MAG 6 + 6 Rtg]

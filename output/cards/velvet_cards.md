@@ -1,12 +1,12 @@
 # [CARD] Reference Card Deck: Velvet
-*Total Cards in Deck: 13*
+*Total Cards in Deck: 15*
 
 ---
 ### [CARD] VELVET - BASE ATTRIBUTES & POOLS (Core)
-> **ATT (STR)**: 4 | **SLZ (REA)**: 8 | **DP (AGI)**: 6 | **FW (BOD)**: 6 | **WIL**: 5 | **LOG**: 3 | **INT**: 3 | **CHA**: 10 | **EDG**: 2 | **RES / MAG**: 0/6 | **ESS**: 6.0 | **Submersion**: Grade 0 | **Nuyen & Karma**: 27,925¥ | 7 Karma | **Composure**: 15 | **Judge Intentions**: 8 | **Memory**: 8 | **Lift & Carry**: 10 | **Matrix Initiative**: 10 + 4D6 (Hot-Sim VR / Overclock) | **Condition Boxes**: Phys [11] | Stun [11] | **ASDF Ratings**: A:4 S:8 D:6 F:6 | **Full Matrix Def**: 18d6 (4 Hits)
+> **ATT (STR)**: 4 | **SLZ (REA)**: 8 | **DP (AGI)**: 6 | **FW (BOD)**: 6 | **WIL**: 5 | **LOG**: 3 | **INT**: 3 | **CHA**: 10 | **EDG**: 2 | **RES / MAG**: 0/6 | **ESS**: 6.0 | **Submersion**: Grade 0 | **Nuyen & Karma**: 27,275¥ | 2 Karma | **Composure**: 15 | **Judge Intentions**: 8 | **Memory**: 8 | **Lift & Carry**: 10 | **Matrix Initiative**: 10 + 4D6 (Hot-Sim VR / Overclock) | **Condition Boxes**: Phys [11] | Stun [11] | **ASDF Ratings**: A:4 S:8 D:6 F:6 | **Full Matrix Def**: 18d6 (4 Hits)
 
 Runner: Velvet (Elf) | Stream: N/A
-Submersion Grade 0 | Available Funds: 27,925¥ | Active Karma: 7 Pool
+Submersion Grade 0 | Available Funds: 27,275¥ | Active Karma: 2 Pool
 Derived Pools: Composure [15], Judge Intentions [8], Memory [8], Lift/Carry [10].
 Full Matrix Defense: 18d6 [RES 0 + FW 6 + PA 6 + DP 6 + Focus 0 = 18d6].
 
@@ -92,7 +92,7 @@ Thanks to an increase in the number of rod cells in your natural eyes, an implan
 ---
 
 ### [CARD] Focused Concentration (Quality)
-> **Karma**: 12 | **Quality Type**: positive | **Max Rating**: 3 | **Source**: core | **Rating**: 2
+> **Karma**: 12 | **Quality Type**: positive | **Max Rating**: 3 | **Source**: core | **Rating**: 3
 
 ## Focused Concentration (1 to 3)
 
@@ -168,6 +168,21 @@ The touch of the mage strengthens, speeds, or enlightens the target, temporarily
 
 ---
 
+### [CARD] Increase Reflexes (Spell)
+> **Category**: Health | **Drain**: 4 | **Range**: TOUCH | **Duration**: Instant | **Source**: core
+
+## Increase Reflexes
+
+**==> picture [228 x 20] intentionally omitted \<==**
+
+<br>
+
+The reaction time and speed of the target increase, making them better able to anticipate and respond to others. The caster rolls a Sorcery + Magic (5 – Essence) test. They can select how many net hits they actually apply to the target to increase both their Reaction score and the number of Initiative Dice, at a rate of 1 point of increase and 1 Initiative Die per net hit; for each net hit applied beyond the first, the Drain Value of the spell increases by 1.
+
+*Source: [Berlin Edition, Page 12]*
+
+---
+
 ### [CARD] Channeling (Meta Echo)
 
 ## Channeling
@@ -177,6 +192,16 @@ Ah, channeling. This metamagic has gotten me out of some serious clusterfrags ov
 > Our line protects his line, because a Childe of Wolf never forgets a life debt.
 
 > Torch
+
+*Source: [Street Wyrd, Page 1]*
+
+---
+
+### [CARD] Finding Your Way (Meta Echo)
+
+## Finding Your Way
+
+When an adept initiates, they may choose this Metamagic to gain an adept way (see p. 76) at no Karma cost. This may be an adept gaining their initial way, or this manner of introspection may represent a paradigm shift as they leave an existing way and transition to a new one (in which case they lose all the benefits of their original choice while gaining all the benefits of their new way).
 
 *Source: [Street Wyrd, Page 1]*
 

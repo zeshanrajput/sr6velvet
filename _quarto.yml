@@ -3,8 +3,10 @@ project:
   output-dir: _book
   resources:
     - chapters/audio/
+    - output/pdf/
+    - output/vtt/
   pre-render:
-    - uv run sr6 export velvet --format=vtt
+    - uv run sr6 sync-all
 
 book:
   title: "VELVET // Jin-Young Character Dossier"
@@ -15,11 +17,14 @@ book:
     - part: "Core Character"
       chapters:
         - chapters/identity_core.md
-        - chapters/character_sheet.qmd
         - chapters/character_build_point_buy.qmd
+        - chapters/character_sheet.qmd
+        - chapters/character_totals.qmd
+        - chapters/character_log.qmd
+        - chapters/character_purchases.qmd
+        - chapters/twenty_questions.qmd
         - chapters/character_build.qmd
         - chapters/rules_and_downtime.qmd
-        - chapters/character_log.qmd
     - part: "Narrative Log"
       chapters:
         - chapters/01_transaction.md

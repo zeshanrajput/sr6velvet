@@ -31,7 +31,7 @@ Influence = skills_dict.get("Influence", 5)
 
 # Adept Powers
 adept_dict = {p["name"]: p.get("rating", 0) for p in _char.get("adept_powers", [])}
-Improved_Ability_Sorcery = adept_dict.get("Improved Ability (Sorcery)", 2)
+Improved_Ability_Sorcery = adept_dict.get("Improved Ability (Sorcery)", 3)
 
 # Derived Pools
 Spellcasting_Pool = Sorcery + Improved_Ability_Sorcery + Magic
@@ -64,6 +64,54 @@ During an expense month, Velvet receives 1 Major Downtime Action and 1 Minor Dow
 
 ---
 
+## Sustained Attribute Spell Strategy (Focused Concentration R3)
+
+Velvet's primary source of attribute augmentations is the **Increase Attribute** Health spell. Under **Focused Concentration (Rating 3)**, Velvet can sustain up to **3 Increase Attribute spells simultaneously with 0 sustaining penalties**, reaching the maximum **+4 SRMG Augmentation Cap** across three key attributes:
+
+1. **Universal Sustained Anchor 1 — Charisma (+4)**: Boosts Charisma from 10 to **14** *(Exceptional natural/metagenetic baseline + 4)*.
+2. **Universal Sustained Anchor 2 — Willpower (+4)**: Boosts Willpower from 5 to **9**.
+3. **Scene-Calibrated Sustained Anchor 3**:
+   - **Social & Legwork Scenes**: Boosts **Intuition (+4)** from 3 to **7** (Unlocks 16d6 Judge Intentions, 10d6 Cosmetic Control shifts, and 12d6 Memory).
+   - **Combat Scenes (Reflexes/Initiative)**: Boosts **Reaction (+4)** from 2 to **6** (Unlocks 9d6 Defense Test and 9 + 1D6 Physical Initiative).
+   - **Combat Scenes (Hardened Armor/Soak)**: Boosts **Body (+4)** from 2 to **6** (Unlocks 7d6 Soak and expands Physical Monitor to 11 boxes).
+
+### Operational Scene Strategy & Dice Pool Cheatsheet
+
+```{python}
+#| echo: false
+#| output: asis
+from sr6core.rules_engine import get_scene_strategy_table
+print(get_scene_strategy_table("velvet"))
+```
+
+---
+
+## Optimal Magic Action & Protocol Table
+
+Breakdown of base statistics, adept powers (`Improved Ability Sorcery R3`), foci, final effective dice pools, and bought hits.
+
+```{python}
+#| echo: false
+#| output: asis
+from sr6core.rules_engine import get_magic_action_table
+print(get_magic_action_table("velvet"))
+```
+
+---
+
+## Optimal Social & Face Action Table
+
+Breakdown of social negotiation, leadership, disguise, composure, and micro-expression reading pools with applied wardrobe/cosmetic synergies.
+
+```{python}
+#| echo: false
+#| output: asis
+from sr6core.rules_engine import get_social_action_table
+print(get_social_action_table("velvet"))
+```
+
+---
+
 ## Spellcasting & Foci Integration
 
 ### **Tradition: Shinto / Musok (Willpower + Charisma)**
@@ -81,17 +129,17 @@ During an expense month, Velvet receives 1 Major Downtime Action and 1 Minor Dow
 
 ---
 
-## Influence Tests
+## Social Leverage & Inspire Competence
 
 * **Influence Pool:** Influence (`{python} Influence`) + Charisma (`{python} Charisma`) = **`{python} Influence_Pool` dice** $\rightarrow$ **Buys `{python} Influence_Pool // 4` Hits**.
   * Nanopaste Disguise / Nanocosmetics: +1 Situational Edge.
-  * Social Rating: CHA (`{python} Charisma`) + 4 (Tres Chic accessories)
+  * Social Rating: CHA (`{python} Charisma`) + 4 (Très Chic accessories).
 
 ### Inspire Competence
 
 *6WC p. 133*
 
 * **Pool:** Charisma (`{python} Charisma`) + Influence (`{python} Influence`) = **`{python} Influence_Pool` dice**
-* **Effect**
+* **Effect**:
   * Hits function as a teamwork test to assist an ally's skill test.
   * Target ally gains one (1) Edge.
