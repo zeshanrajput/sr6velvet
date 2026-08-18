@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sr6char gender="DIVERSE" meta="elf" karmaF="7" karmaI="15" nuyen="27925">
+   <name>Velvet</name>
+   <realName>Kim Jin-Young</realName>
+   <attributes>
+      <attributes id="BODY" value="2" />
+      <attributes id="AGILITY" value="3" />
+      <attributes id="REACTION" value="2" />
+      <attributes id="STRENGTH" value="2" />
+      <attributes id="WILLPOWER" value="5" />
+      <attributes id="LOGIC" value="3" />
+      <attributes id="INTUITION" value="3" />
+      <attributes id="CHARISMA" value="10" />
+      <attributes id="EDGE" value="2" />
+      <attributes id="MAGIC" value="6" />
+      <attributes id="RESONANCE" value="0" />
+   </attributes>
+   <qualities>
+      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="b1c9165b-8878-47d2-9edf-a34692e0fb22">
+         <decision choice="746362e1-377c-4fce-baf5-a3515f5c2d7a" value="Charisma" />
+      </quality>
+      <quality lang="en" ref="exceptional_attribute" uuid="6e4b3efa-256f-4a71-a038-5ffd9dd024aa">
+         <decision choice="e5680589-62d4-4405-a63d-03797535f9ff" value="Charisma" />
+      </quality>
+      <quality lang="en" ref="inspire_competence" uuid="6d2c0c26-7042-4ed1-b6c6-3e26c05567eb" />
+      <quality lang="en" ref="low-light_vision" uuid="61a0a845-0fce-4242-b78f-0e05b8af7f1c" />
+      <quality lang="en" ref="focused_concentration" uuid="f100fcb6-cc45-4d97-930f-9db60011eab9" value="2" />
+      <quality lang="en" ref="chronic_pain" uuid="a029e89c-a6e8-4b2d-bed9-119b54a37b70" />
+      <quality lang="en" ref="hooder" uuid="9b404fd4-2a26-4d62-a661-620984699515" value="3" />
+      <quality lang="en" ref="allergy" uuid="9760b366-53d9-40a4-ae8b-1e165d286afb">
+         <decision choice="6aadb7ef-9570-4f11-aa62-e6ae58e99429" value="Spices" />
+      </quality>
+   </qualities>
+   <skills>
+      <skill lang="en" ref="sorcery" uuid="b683375f-d8ea-4b1b-981e-22bbf5259f6b" value="6" />
+      <skill lang="en" ref="conjuring" uuid="52ccbbfb-4d1b-4493-b212-ad3f8ab99d55" value="1" />
+      <skill lang="en" ref="influence" uuid="ef11fe4e-991d-4f77-bf70-c4d74b485634" value="5" />
+      <skill lang="en" ref="language" uuid="003e0734-a8cd-4158-87b0-d34c69e99edf" value="4" />
+      <skill lang="en" ref="small_unit_tactics" uuid="8e1ff2ef-8bc9-4be7-9b34-b2ca11ab81a6" value="1" />
+      <skill lang="en" ref="mct" uuid="6b5aa4c9-090a-46e4-9961-bc005bbecb96" value="1" />
+      <skill lang="en" ref="wuxing" uuid="d0965dfd-7a5c-4e08-be3c-2012c987bcb2" value="1" />
+      <skill lang="en" ref="east_asian_media" uuid="00f6c6e8-6842-4840-a12f-119f9de8363b" value="1" />
+   </skills>
+   <items />
+   <contacts>
+      <contact name="Brynne Taggart" rat="4" type="STREET" typename="Fixer" loy="2" favors="0">
+         <description>Uses: Getting jobs, fencing gear, gangs (Shadowrun Missions Seattle) | Types: Criminal, Street</description>
+      </contact>
+      <contact name="Vincent Grisome" rat="5" type="MAGIC" typename="Seattle University Professor" loy="3" favors="0">
+         <description>Chargen Contact</description>
+      </contact>
+      <contact name="Ni Ni Xiaolu" rat="3" type="CRIMINAL" typename="Triad Johnson" loy="2" favors="2">
+         <description>Uses: Getting jobs, drugs, street rumors, triads (Shadowrun Missions Seattle) | Types: Criminal</description>
+      </contact>
+      <contact name="Whiskey" rat="2" type="MEDICAL" typename="Street Doc" loy="3" favors="0">
+         <description>Uses: Medicine, street docs (Shadowrun Missions Seattle) | Types: Medical</description>
+      </contact>
+      <contact name="Claudette Laurier" rat="5" type="MATRIX" typename="Golden Dawn Librarian" loy="4" favors="0">
+         <description>Uses: Getting jobs, magical traditions | Types: Criminal, Matrix</description>
+      </contact>
+      <contact name="Le Tigre" rat="5" type="MAGIC" typename="Epoch Model" loy="1" favors="0">
+         <description>Uses: Getting jobs, parties, modeling | Types: Corporate, Magic</description>
+      </contact>
+      <contact name="Hana" rat="6" type="MAGIC" typename="Wuxing Talismonger / Pop Idol" loy="6" favors="0">
+         <description>Chargen Contact</description>
+      </contact>
+      <contact name="Guild of Freelance Assets" rat="7" type="STREET" typename="Conclave" loy="8" favors="0">
+         <description>Chargen Contact (Conclave C7 L8)</description>
+      </contact>
+      <contact name="Ms. Snow" rat="5" type="CORPORATE" typename="Shadow Chapters Johnson" loy="2" favors="0">
+         <description>Uses: Corporate rumors, getting jobs, military (Shadowrun Missions Seattle) | Types: Corporate, Government</description>
+      </contact>
+      <contact name="Bookie" rat="3" type="STREET" typename="Ancients Bookie" loy="1" favors="1">
+         <description>SRM 2081-07 Bootleg Bliss</description>
+      </contact>
+      <contact name="Trudy" rat="2" type="STREET" typename="Cutters Lieutenant" loy="1" favors="1">
+         <description>SRM 2081-07 Bootleg Bliss</description>
+      </contact>
+   </contacts>
+   <rewards />
+</sr6char>

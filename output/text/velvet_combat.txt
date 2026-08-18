@@ -1,0 +1,8 @@
+============================================================================
+ COMBAT, WEAPON ARRAYS & BALLISTICS: VELVET
+============================================================================
+ WEAPONS & TACTICAL ARRAYS:
+  No weapons listed in dossier.
+ BALLISTIC ARMOR & DEFENSIVE PROTECTION:
+  * SECURETECH SKINSHIELD (Defense Rating Bonus: +1)
+----------------------------------------------------------------------------
