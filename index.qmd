@@ -85,12 +85,11 @@ Use the sidebar or the indexes below to traverse this portfolio:
 * **[01. The Transaction](chapters/01_transaction.md)**: Manila slums flashback (Age 5) triggered in Redmond mud.
 * **[02. The Faceless Mirror](chapters/02_faceless_mirror.md)**: The clinical erasure of identity and bio-sculpting in Tokyo (Age 10).
 * **[03. The Dark Wings](chapters/03_dark_wings.md)**: The astral panopticon and connection with Hana (Age 17).
-* **[04. The Resonance](chapters/04_resonance.md)**: The Neo-Seoul dome and geomantic mana harvest (Age 17-18).
-* **[05. The Sabotage](chapters/05_sabotage.md)**: Sabotaging the Singapore mega-ritual and escaping into the conduits (Age 18).
-* **[06. The First Negotiation](chapters/06_first_negotiation.md)**: Deploying Lee Ji-yoo in Seattle for a zero-nuyen contract (Age 19).
-* **[07. The Seattle Web](chapters/07_seattle_web.md)**: The corporate joint-venture trap and running offensive in the shadows (Age 19-20).
-* **[08. Bliss](chapters/08_bliss.md)**: Un-manufactured solace over real pork-bone broth in West Seattle (Age 20).
-* **[09. Tea in Tacoma](chapters/09_Tea_in_Tacoma.md)**: Dropping corporate gravity with Ni Ni Xiaolu over un-taxed Tieguanyin tea (Age 20).
+* **[04. The Sabotage](chapters/04_sabotage.md)**: Sabotaging the Singapore mega-ritual and escaping into the conduits (Age 18).
+* **[05. The First Negotiation](chapters/05_first_negotiation.md)**: Deploying Lee Ji-yoo in Seattle for a zero-nuyen contract (Age 19).
+* **[06. The Seattle Web](chapters/06_seattle_web.md)**: The corporate joint-venture trap and running offensive in the shadows (Age 19-20).
+* **[07. Bliss](chapters/07_bliss.md)**: Un-manufactured solace over real pork-bone broth in West Seattle (Age 20).
+* **[08. Tea in Tacoma](chapters/08_Tea_in_Tacoma.md)**: Dropping corporate gravity with Ni Ni Xiaolu over un-taxed Tieguanyin tea (Age 20).
 
 ### 3. Reference & Specifications
 * **[Voice Specification & Sensory Schema](reference/voice_spec.md)**: Character voice rules, somatic shift discipline, and TTS fluency constraints.

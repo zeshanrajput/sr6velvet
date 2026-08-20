@@ -30,12 +30,12 @@ book:
         - chapters/01_transaction.md
         - chapters/02_faceless_mirror.md
         - chapters/03_dark_wings.md
-        - chapters/04_resonance.md
-        - chapters/05_sabotage.md
-        - chapters/06_first_negotiation.md
-        - chapters/07_seattle_web.md
-        - chapters/08_bliss.md
-        - chapters/09_Tea_in_Tacoma.md
+        - chapters/04_sabotage.md
+        - chapters/05_first_negotiation.md
+        - chapters/06_seattle_web.md
+        - chapters/07_bliss.md
+        - chapters/08_Tea_in_Tacoma.md
+
 
     - part: "Reference & Specifications"
       chapters:

@@ -13,7 +13,7 @@ Velvet (Kim Jin-Young) is an engineered, bio-sculpted Elf Mystic Adept built by 
 
 1. **The Manufactured Asset & The Discovery of Empathy**: Jin-Young was not originally empathic. Engineered as a cold, clinical commodity and trained to simulate emotion as an algorithmic performance, Velvet's journey is the slow, hesitant **discovery of genuine empathy**—moving from calculated manipulation to crafting quiet, un-monetized sanctuaries for broken people.
 2. **Somatic Reality of Cosmetic Control (R2)**: Shifting between Tanaka Ryo, Lee Ji-yoo, and temporary personas is never instantaneous or painless. It carries a heavy biological tax: bone cartilage resetting with wet clicks, metallic heat behind the jaw, shortened ribcages, and localized DNA re-keying. Beneath every sculpted mask lies the un-sculpted obsidian baseline of his true heritage.
-3. **Charisma 12 Gravity & Uncanny Perfection**: Charisma 12 is a physical and psychological gravitational force—the pinnacle of unrestricted corporate engineering. It commands silence in boardrooms and obsessive adoration from marks, but acts as an indelible corporate signature that invites corporate reclamation.
+3. **Charisma 12 Horror & Cognitive Distrust**: Charisma 12 is an existential and psychological horror—the pinnacle of unrestricted corporate engineering. When someone is in a room with a creature engineered to warp how they feel, it becomes impossible for them to know whether their own thoughts, pity, attraction, or compliance are their own or the product of an imperceptible biological manipulation they cannot detect. This creates an uncanny, suffocating gravity around Velvet that terrifies hardened street veterans (Whiskey, Ni Ni Xiaolu, Johnsons)—and forms Velvet's deepest personal tragedy: he can never be certain if anyone's care for him is authentic, or merely their nervous system falling into his manufactured gravity.
 4. **Shinto-Musok Astral Phenomenology**: Mana is not high-fantasy sparks; it is perceived as spirit ribbons, ancestor presence, talismanic resonance, and subtle emotional hue shifts in metahuman auras.
 
 ---
@@ -53,21 +53,19 @@ chapter_tiers:
     passing_threshold: "9.0 / 10"
     role: "Existential breakthroughs, major Initiation milestones, pivotal revelations, foundational shifts"
     chapters:
-      - "01 The Transaction (Origin, Mitsuhama Purchase & Cold Appraisal)"
-      - "05 The Sabotage (Singapore Concert Mega-Ritual Break & Escape)"
-      - "06 First Negotiation (Establishing Seattle Footprint & Power Dynamics)"
-      - "Arc 1 Climax (The Gilded Honeytrap Reveal — Hana as Dual-Megacorp Bait)"
+      - "01 Transaction (Origin, Manila Childhood & Mitsuhama Purchase)"
+      - "04 Sabotage (Singapore Concert Mega-Ritual Break & Escape)"
+      - "06 Seattle Web (The Gilded Honeytrap Reveal — Hana as Dual-Megacorp Bait)"
 
   tier_2_narrative_evolution:
     passing_threshold: "8.5 / 10"
     role: "Mission runs, shadow operations, relationship deepening, regional texture, evolutionary steps"
     chapters:
-      - "02 The Faceless Mirror"
-      - "03 Dark Wings"
-      - "04 Resonance"
-      - "07 Seattle Web"
-      - "08 Bliss"
-      - "09 Tea in Tacoma"
+      - "02 Faceless Mirror (Seattle Clinic / Tokyo Bio-sculpting Ward)"
+      - "03 Dark Wings (Backstage Wuxing Soundstage with Hana)"
+      - "05 First Negotiation (Establishing Seattle Footprint & NeoNet Johnson)"
+      - "07 Bliss (Noodle Cart & Solace with Pavel)"
+      - "08 Tea in Tacoma (Tea Ceremony with Ni Ni Xiaolu)"
 
   tier_3_atmospheric_bridges:
     passing_threshold: "8.0 / 10"
@@ -95,6 +93,9 @@ voice_schema:
       - "Passive, timid, or naive victimhood"
       - "Generic cyberpunk sensory clichés ('burnt copper', 'hot solder', 'chemical tang of processing')"
       - "Smutty or pulp-romance framing of Charisma (it is cold, engineered gravity and psychological pressure)"
+      - "Lore preaching & meta-exposition (repeating 'multi-million nuyen asset/cage', 'mathematically optimized', 'algorithmically calculated')"
+      - "Thesis monologuing (delivering explanatory speeches about own bio-sculpted tragedy to other characters)"
+      - "Repetitive vocal register / frequency tagging ('silver-chimed', 'upper register', 'engineered growl')"
     metaphor_domains:
       - "High fashion, silk tension, perfume notes, social leverage, theater"
       - "Musok shamanic spirit ribbons, kami whispers, aura colors, mana currents"
@@ -129,28 +130,32 @@ Velvet's narrative voice operates across three distinct operational domains:
 domain_vocabulary_rules:
   domain_1_somatic_shift_and_identity:
     context: "Internal monologue, physical transformations via Cosmetic Control R2, trauma of biological overwriting"
-    rule: "Emphasize visceral biological friction, resetting cartilage, tracheal geometry, and obsidian baseline"
+    rule: "Emphasize visceral biological friction, resetting cartilage, tracheal geometry, and obsidian baseline without explaining corporate blueprints"
     approved_terms:
       - "resetting cartilage"
-      - "metallic ache behind the jaw"
+      - "dull ache behind the jaw"
       - "shortened ribcage / altered vocal geometry"
       - "un-sculpted obsidian iris baseline"
       - "re-keying localized DNA signatures"
     banned_cliches:
       - "effortless shape-shifting / magical puff of smoke"
       - "instantaneous disguise"
+      - "multi-million nuyen lungs/body/marvel"
+      - "designed for a megacorp boardroom"
 
   domain_2_social_manipulation_and_negotiation:
     context: "Negotiations with corporate Johnsons, Triad Red Poles, fixers, and street marks"
-    rule: "Treat presence as physical force, economic leverage, acoustic pitch control, and micro-expression parsing"
+    rule: "Treat presence as physical force, economic leverage, acoustic pitch control, and micro-expression parsing through target reactions"
     approved_terms:
       - "acoustic modulation / vocal timbre calibration"
       - "micro-expression appraisal"
-      - "corporate gravity / engineered presence"
+      - "engineered presence"
       - "un-monetized stillness"
     banned_cliches:
       - "she batted her eyelashes"
       - "he flashed a winning smile and everyone fell in love"
+      - "neurologically mapped pitch"
+      - "evolutionary surrender"
 
   domain_3_shinto_musok_astral_phenomenology:
     context: "Spellcasting, channeling, astral perception, spirit interaction, drain management"
@@ -166,6 +171,7 @@ domain_vocabulary_rules:
 
   linguistic_identity_and_pronoun_rule:
     rule: "Pronouns and demeanor strictly locked to active biological form: Lee Ji-yoo = she/her (soft, algorithmic elegance); Tanaka Ryo = he/him (masculine, clean corporate authority); Mei Jing = she/her; un-sculpted Jin-Young = he/they/raw self."
+
 ```
 
 ---

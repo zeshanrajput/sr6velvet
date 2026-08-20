@@ -2,38 +2,46 @@
 
 <audio controls src="audio/01_transaction.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
-The neon sign above the Redmond quick-mart did not buzz so much as rattle, a loose fitting in the housing shivering against the sheet metal every time the wind came off the Barrens. Inside, the air smelled of stale grease and the wet dirt of the automated soy-brewer behind the counter.
+The neon housing above the Redmond quick-mart shivered against the corrugated sheet metal every time the sulfur wind came off the Barrens, a rhythmic metallic rattle in the damp cold. Inside, heat radiated off the rusted coils of an automated soykaf brewer behind the scratched laminate counter, competing with the sour green glow of a pirated local grid terminal looping reruns of old Neo-Tokyo urban combat trids. Lee Ji-yoo set three certified credsticks on the counter beside a small paper sack of synthetic strawberry drops. The clerk's dented cyber-optic stayed locked on his overhead feed, gears grinding in the socket as his blind thumb swept the sticks into the cash drawer, cheap corporate chrome clicking against the tin tray.
 
-Velvet set three certified credsticks on the scratched laminate. The clerk, a human with a dented cyber-optic that rattled in its socket when he turned his head, did not look up from his screen. He swept the credsticks into the drawer with a thumb that clicked—cheap corporate chrome, third-generation surplus.
+"Need a bag?" the clerk asked, his voice rasping through an artificial vocal box scarred by industrial soot.
 
-"Need a bag?"
+"No," she said. The voice was Lee Ji-yoo’s, soft, clear, and quiet, though the resetting cartilage in her throat still radiated a dull, grinding ache from the shift thirty minutes prior. She kept the oversized collar of the heavy oilskin coat pulled high, burying a jawline smoothed of any native human imperfection. The clerk’s cyber-optic whirred, its autofocus hunting for a clean lock across the shadowed bridge of her nose, caught by the strange, motionless poise beneath the grease-stained canvas. She slid the paper sack into her pocket, took a single wrapped hard candy, and stepped out onto the wet gravel beneath the rattling eave.
 
-"No," she said.
+The wrapper tore with a brittle pop. She slipped the pink sugar sphere past her teeth, and the chemical strawberry flavor hit her tongue with a sharp, synthetic coldness that left an oily film over her enamel.
 
-Her voice was Lee Ji-yoo’s, soft and silvered in the upper registers, though the rearranged cartilage still radiated a dull, metallic ache from the transition. She kept the collar of the oversized oilskin coat pulled high, burying a jawline carved to an artificially immaculate, cross-cultural ideal, a geometry that left no room for organic asymmetry. Even beneath the grease-stained canvas, her posture held an unworldly gravity. The clerk’s cyber-optic whirred, its lens hunting for focus, struggling to parse a presence designed for a megacorp boardroom standing in three inches of brackish floor-sludge.
+Jin-Young had been five years old when that specific coldness first touched his palate, arriving on the same rain-drenched morning as the talent suit from Mitsuhama. The man had stepped out of an armored black sedan into the grey Manila humidity, wearing a three-piece suit of dust-repelling charcoal weave that shed the mud of the Tondo floodway without a stain. He had walked through the narrow alley where the sewer ditches overflowed with brackish tide water, his polished calfskin boots stepping deliberately across the cinder blocks to avoid the spots where raw drainage pooled against the wooden shanties.
 
-The scent hit her before the sugar did: a sharp, chemical strawberry that tasted of industrial solvents and left a cold, synthetic film over her incisors.
+Inside the shack, the torrential monsoon rain drummed against the rusted tin roof with the steady force of thrown gravel. Jin-Young’s father sat on the edge of the wood-frame cot with his hands wedged tight between his knees, staring down at knuckles scarred from thirty years of shipyard welding along the Pasig canal. His mother stood by the single kerosene burner, where a dented aluminum pot of thin rice gruel simmered with bitter melon greens, her fingers twisting the frayed hem of her faded cotton shirt until the seams pulled taut against her knuckles.
 
-Jin-Young had been five years old when that specific coldness first sat on his tongue, arriving the same morning as the man from the corporation. The man wore a three-piece suit of dust-repelling charcoal weave that rejected the grey Manila humidity. He stood in the center of the dirt-floor room, his shined leather never touching the damp spots where the tin roof leaked.
+The suit stood in the center of the dirt-floor room, completely dry, bringing with him the smell of sterile corporate air conditioning and expensive fabric protectant. His sensor specs threw thin green diagnostic reticles across Jin-Young’s face, measuring the distance between the boy's temples and the precise curvature of his nasal cartilage. His gaze ignored the water pooling in the corner and the damp laundry hanging from the ceiling rafters, focusing entirely on the biological geometry before him.
 
-Jin-Young’s father had sat on the edge of the wood-frame cot, his hands wedged between his knees. His mother stood by the small, kerosene stove, her fingers twisting the hem of her faded cotton shirt.
+"The expression is clean," the suit said, his voice carrying the flat, measured detachment of a customs inspector checking freight manifests. His fingers were entirely dry as they hooked beneath Jin-Young’s chin, tilting the boy's head toward the grey daylight leaking through the open doorway to verify the alignment of the cheekbones and the solid obsidian depth of the Dalakitnon iris against the light. "The subterranean variance has settled properly in the bone structure. The baseline deviation fits the primary export profile. We will claim the biological deduction under Section Twelve."
 
-"The expression is clean," the suit said. His fingers were entirely dry as they hooked beneath Jin-Young’s chin, tilting his face toward the leaking tin roof. The man didn’t look at the child’s eyes; he looked at the way the dim light caught the obsidian depth of the iris, checking the margins like an appraiser looking at porcelain. He spoke with the flat, small-print cadence of an auditor certifying a ledger. "The subterranean variance has settled properly in the bone structure. The facial geometry meets the standard deviation for the export market. We will claim the deduction."
+"He's quiet," his mother whispered, her eyes locked onto the floor near the clay water jar where Jin-Young sat watching the silver thread on the suit's cuffs. "He doesn't cry. Even when the fever came last winter, he stayed quiet."
 
-"He's quiet," his mother said. She did not look at Jin-Young, who sat in the corner by the water jar, watching the light catch the silver thread on the scout's cuffs. "He doesn't cry."
+The suit tapped the edge of a silver datapad with a manicured fingernail, checking the genetic telemetry feeds. "Compliance is factored into the initial grading matrix. The vocal geometry shows early resonance markers. The shaping spells will take cleanly to the cartilage before the pubertal growth cycle begins." He spoke of cellular elasticity and corporate patent registrations with the same dry cadence vendors at the corner palengke used when weighing scrap iron on a hanging scale.
 
-The pad in the man’s hand cast a blue, sterile light across the raw wood walls, washing out the little remaining color from his mother’s shirt. The suit did not read the text aloud. He spoke of patents and lineages with the dry, flat rhythm Jin-Young had heard vendors use at the corner palengke when bartering over a rusted iron spade or a used hammer, the casual, small-money appraisal of an object. The child sat perfectly still by the water jar. He was the iron being weighed.
+The man reached into his breast pocket and laid a heavy silver credstick on the rough wooden table.
 
-"Ten thousand nuyen. Certified." The suit laid a clean, silver credstick on the table. It was the only clean thing in the room. "The remainder will be held in a trust, payable upon the successful completion of the first cosmetic reconstruction cycle."
+"Ten thousand nuyen," the suit said, the silver plastic gleaming bright and sterile against the stained grain of the wood. "Certified by Mitsuhama Financial Services. The remainder of the stipend will be held in corporate trust, payable upon completion of the secondary reconstruction cycle in Kyoto."
 
-His mother’s hand had hovered over the silver stick for just a moment before her fingers closed around it.
+The shack was completely silent except for the roar of the rain on the tin roof and the steady drip of water falling into an empty tin can behind the cot. Jin-Young’s father kept his eyes locked on his calloused hands, motionless on the rough mattress. His mother’s hand hovered above the table for two long seconds, her fingers trembling against the humid air before they closed around the cold silver casing, tucking it deep into her apron pocket.
 
-When they walked to the sedan, the street was silent. The neighborhood children stood in the rain, their bellies swollen from starch, watching the clean, black car with the Mitsuhama logo etched into the armored glass. The suit opened the door. The interior smelled of leather and air conditioning, a dry, sterile cold that made Jin-Young shiver.
+"Gather his things," the suit said.
 
-Jin-Young looked through the glass as the engine hummed to life. His mother was already back inside, her silhouette visible through the open doorway, her face turned down toward the blue light of the credstick as she checked the balance. She did not look up when the tires threw grey mud against the side of the house.
+"He has no things," his father said, his voice dropping into the dirt floor between his feet.
 
-The suit reached into his pocket and handed him a small, pink sphere. "For the ride," he said.
+The neighborhood children stood along the mud alley in the pouring rain, watching in silence as the suit led Jin-Young toward the waiting sedan. The car's windows were dark smoked glass with the triple-rhombus crest of Mitsuhama etched into the corner. The driver opened the rear door, releasing a blast of refrigerated, dust-filtered air that made Jin-Young shiver through his thin cotton shirt.
 
-Jin-Young bit into it. The candy was bright, smooth, and tasted of nothing at all, just a cold, chemical sweet that sat on his tongue like plastic.
+The door sealed with a heavy pneumatic thud, cutting off the sound of the rain and the smell of the slum in an instant. Through the dark glass, Jin-Young watched his mother standing in the doorway of the shack, her right hand pressed flat over her apron where the credstick sat against her ribs. Her arms hung rigid at her sides. Her gaze remained fixed on the sedan's rear tires as they churned through the grey sludge of the alley, throwing muddy spray against the corrugated tin walls.
 
-Ji-yoo stood beneath the shivering eave, the artificial strawberry solvent coating the back of her teeth. She spat the drop into the black sludge. It lay there, a precise prick of mass-market pink against the Redmond grime, before the rain began to strip its coloring, bleeding a faint, chemical dye into the puddle. She adjusted the heavy coat to protect the fragile, multi-million nuyen lungs that had been carved into her chest, and stepped back out into the dirt.
+The suit sat in the leather seat opposite him, opening a briefcase lined with velvet compartments. He reached into a small sealed cylinder and took out a pink sugar drop, holding it out between gloved fingers.
+
+"For the ride," the suit said, his voice smooth and neutral. "Keep it on your tongue. It prevents nausea during transit."
+
+The candy tasted of synthetic strawberry and cold industrial solvent, slick on the palate like wet plastic. By the time the sedan cleared the corporate security gates at the Manila airfield, the sweet chemical coating had numbed the roof of the boy's mouth, leaving behind only the sterile taste of air conditioning and clean leather.
+
+Ji-yoo stood beneath the shivering metal eave in Redmond twenty years later, the same synthetic strawberry film coating the back of her teeth. She spat the pink drop into the black sludge at the edge of the asphalt. It lay there, a small sphere of artificial color against the grime, before the sulfur rain began to wash its pink dye into the puddle.
+
+She pulled the heavy canvas collar tight against the damp wind coming off the Barrens, adjusted the strap of her bag, and stepped out into the dark.

@@ -3,12 +3,12 @@
 
 ---
 ### [CARD] VELVET - BASE ATTRIBUTES & POOLS (Core)
-> **ATT (STR)**: 4 | **SLZ (REA)**: 8 | **DP (AGI)**: 6 | **FW (BOD)**: 6 | **WIL**: 5 | **LOG**: 3 | **INT**: 3 | **CHA**: 10 | **EDG**: 2 | **RES / MAG**: 0/6 | **ESS**: 6.0 | **Submersion**: Grade 0 | **Nuyen & Karma**: 27,275¥ | 2 Karma | **Composure**: 15 | **Judge Intentions**: 8 | **Memory**: 8 | **Lift & Carry**: 10 | **Matrix Initiative**: 10 + 4D6 (Hot-Sim VR / Overclock) | **Condition Boxes**: Phys [11] | Stun [11] | **ASDF Ratings**: A:4 S:8 D:6 F:6 | **Full Matrix Def**: 18d6 (4 Hits)
+> **ATT (STR)**: 10 | **SLZ (REA)**: 5 | **DP (AGI)**: 4 | **FW (BOD)**: 8 | **WIL**: 5 | **LOG**: 3 | **INT**: 3 | **CHA**: 10 | **EDG**: 2 | **RES / MAG**: 0/6 | **ESS**: 6.0 | **Submersion**: Grade 0 | **Nuyen & Karma**: 27,275¥ | 2 Karma | **Composure**: 15 | **Judge Intentions**: 8 | **Memory**: 8 | **Lift & Carry**: 18 | **Matrix Initiative**: 7 + 3D6 (AR) / 7 + 3D6 (Hot-Sim VR) | **Condition Boxes**: Phys [12] | Stun [11] | **ASDF Ratings**: A:10 S:5 D:4 F:8 | **Full Matrix Def**: 13d6 (3 Hits)
 
 Runner: Velvet (Elf) | Stream: N/A
 Submersion Grade 0 | Available Funds: 27,275¥ | Active Karma: 2 Pool
-Derived Pools: Composure [15], Judge Intentions [8], Memory [8], Lift/Carry [10].
-Full Matrix Defense: 18d6 [RES 0 + FW 6 + PA 6 + DP 6 + Focus 0 = 18d6].
+Derived Pools: Composure [15], Judge Intentions [8], Memory [8], Lift/Carry [18].
+Full Matrix Defense: 13d6 [WIL 5 + FW 8 = 13d6].
 
 *Source: [SR6 Core Rulebook, Character Dossier]*
 

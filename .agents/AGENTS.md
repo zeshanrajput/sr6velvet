@@ -1,112 +1,80 @@
-# Master Workspace Agent Instructions: sr6velvet
+# Workspace Agent Instructions: sr6velvet (Velvet Portfolio)
 
-This document defines the agentic workflow, sub-agent capabilities, narrative standards, and the **Primary Master Orchestrator (`narrative-director`)** for the Shadowrun 6e multi-agent narrative production framework in the `sr6velvet` repository, integrating with `sr6-core`.
-
----
-
-## 1. Master Orchestrator: `narrative-director`
-
-The `narrative-director` is the primary autonomous orchestrator responsible for end-to-end narrative generation, multi-agent evaluation, iterative self-correction, and state tracking.
-
-```
-                      +-----------------------------+
-                      |   1. CONTEXT INGESTION      |
-                      | Outline, Voice Spec, Dossier|
-                      +--------------+--------------+
-                                     |
-                                     v
-                      +-----------------------------+
-                      |   2. INITIAL DRAFT (v1)     |
-                      +--------------+--------------+
-                                     |
-                                     v
-         +-------------------------------------------------------+
-         |            3. PARALLEL SUB-AGENT AUDIT PANEL          |
-         |  - axis-voice-internality   - axis-pacing-structure   |
-         |  - axis-agency-motivation   - axis-worldbuilding-grit |
-         |  - no-ai-slop               - continuity-tracker      |
-         |  - sr6-rules                                          |
-         +---------------------------+---------------------------+
-                                     |
-                                     v
-                      +-----------------------------+
-                      | 4. SYNTHESIS & SELF-CORRECT |  <-- (Fails threshold?
-                      |  Passes all 7 thresholds?   |       Re-draft v2, v3)
-                      +--------------+--------------+
-                                     | Passes
-                                     v
-                      +-----------------------------+
-                      |  5. PUBLISH & STATE TRACK   |
-                      |  Output .qmd & YAML diffs   |
-                      +-----------------------------+
-```
+This document defines character-specific bindings and constraints for **Velvet (Kim Jin-Young)** in the `sr6velvet` repository. Core workflow orchestration, the 6-stage lifecycle, 7-axis evaluation metrics, and anti-slop rules are inherited directly from the **`sr6-narrative-suite`** plugin ([`.agents/plugins.json`](file:///c:/GitHub/sr6velvet/.agents/plugins.json)).
 
 ---
 
-## 2. Six-Stage Execution Workflow
+## 1. Authoritative Character State & Master Documents
 
-### Stage 1: Context Ingestion
-Before drafting or editing, `narrative-director` ingests:
-1. **Scene Outline / Prompt**: User-provided beat sheet, plot points, or target goals.
-2. **Character Voice Specification**: Loads local [`reference/voice_spec.md`](file:///c:/GitHub/sr6velvet/reference/voice_spec.md), extending [`sr6-core/reference/default_voice_spec.md`](file:///c:/GitHub/sr6-core/reference/default_voice_spec.md).
-3. **Master Character Dossier**: Reads [`velvet_master.yaml`](file:///c:/GitHub/sr6velvet/velvet_master.yaml) (attributes, magic, adept powers, inventory, karma, nuyen, contacts, qualities).
-4. **Active Story Arcs**: Reads [`reference/story_arc1.md`](file:///c:/GitHub/sr6velvet/reference/story_arc1.md) and [`reference/story_arc2.md`](file:///c:/GitHub/sr6velvet/reference/story_arc2.md).
-5. **RAG Story Continuity & Rules**: Queries recent chapter logs via `sr6 continuity .` and rule queries via `sr6-rules` or `sr6 rag query`.
+When executing narrative generation, evaluation, or state tracking for Velvet, bind to the following workspace files:
 
-### Stage 2: Initial Draft Generation (`v1`)
-Generate Scene Draft `v1`, adhering strictly to:
-* POV, visceral somatic cost of shifting, astral aura perception, and cognitive bias from `reference/voice_spec.md`.
-* 4-beat scene structure (Inciting Friction -> Escalation -> Climax -> Aftermath).
-* Mechanical reality constraints and resource tracking from `velvet_master.yaml`.
-
-### Stage 3: Parallel Sub-Agent Audit Panel
-Dispatches draft `v1` simultaneously to all **7 sub-agent evaluators**:
-
-| Sub-Agent Skill | Focus Dimension | Passing Threshold |
+| Dimension | Primary Workspace File | Purpose |
 | :--- | :--- | :--- |
-| **`axis-voice-internality`** | Velvet's era-aware voice & cognitive bias (Arc 1 vs Arc 2), pronoun discipline, somatic shift cost, Shinto-Musok mana | **8.0 / 10** |
-| **`axis-pacing-structure`** | 4-beat structure, entry/exit discipline, action-to-exposition (80/20) | **8.0 / 10** |
-| **`axis-agency-motivation`** | Proactive choice, survival stakes, sanctuary protection, resistance against corporate reclamation | **8.0 / 10** |
-| **`axis-worldbuilding-grit`** | Dystopian texture, corporate commodification, Seattle sprawl & underground grit, zero info-dumps | **8.0 / 10** |
-| **`no-ai-slop`** | Anti-slop pattern detection, forbidden terms list, redline removal | **8.5 / 10** |
-| **`continuity-tracker`** | Ammo/nuyen balances, physical/stun tracks, spell sustaining, contact favor points, state diff generation | **8.5 / 10** |
-| **`sr6-rules`** | SR6 mechanics (Spellcasting drain, Adept powers, Cosmetic Control R2, Edge, Social negotiations) accuracy | **8.5 / 10** |
-
-### Stage 4: Synthesis & Automated Self-Correction Loop
-1. Collate audit reports into a unified **Revision Matrix**.
-2. If any sub-agent score falls below its threshold, formulate a targeted re-draft prompt combining all redline fixes.
-3. The re-draft cycle (`v1` -> `v2` -> `v3`) repeats autonomously until **all 7 sub-agents pass threshold standards**.
-
-### Stage 5: Publishing & State Tracking
-Upon successful panel approval:
-1. **Narrative Output**: Emits the final polished prose as a clean Quarto markdown file (`.qmd`) or markdown chapter in `chapters/`.
-2. **State Diff Proposal**: Emits an explicit YAML patch proposing updates to `velvet_master.yaml` for changes in nuyen, ammunition, physical/stun drain damage, Karma, initiation grades, or contact relationships.
-
-### Stage 6: Refinement Mode for Existing Chapters
-When refining an existing chapter:
-1. Dispatch target chapter directly to the 7-sub-agent audit panel.
-2. Synthesize feedback and execute line-level prose chisel refactoring.
-3. Write revised content **directly to the target file** for inspection via IDE diff view.
-4. Log metrics (banned words, cognitive verbs, em-dash density, 5D scores) in the run's `walkthrough.md`.
+| **Character Dossier** | [`velvet_master.yaml`](file:///c:/GitHub/sr6velvet/velvet_master.yaml) | Authoritative tabletop play state (attributes, skills, spells, adept powers, inventory, karma, nuyen balances). |
+| **Voice Specification** | [`reference/voice_spec.md`](file:///c:/GitHub/sr6velvet/reference/voice_spec.md) | Character voice rules, somatic shift discipline, TTS fluency, domain vocabulary, and chapter tier calibrations (Extends `sr6-core/reference/default_voice_spec.md`). |
+| **Active Story Arcs** | [`reference/story_arc1.md`](file:///c:/GitHub/sr6velvet/reference/story_arc1.md)<br>[`reference/story_arc2.md`](file:///c:/GitHub/sr6velvet/reference/story_arc2.md) | Arc 1: *Manufactured Solace & The Honeytrap* (Ch 01–08)<br>Arc 2: *The Sovereign Underground* (Ch 09–18+) |
+| **Story Continuity** | [`reference/story_continuity.md`](file:///c:/GitHub/sr6velvet/reference/story_continuity.md) | Continuity index, contact favor points, and entity heatmaps maintained via `sr6 continuity .`. |
+| **Quarto Narrative Book** | [`chapters/`](file:///c:/GitHub/sr6velvet/chapters/) & [`_quarto.yml`](file:///c:/GitHub/sr6velvet/_quarto.yml) | Published Quarto story anthology and modular dossier chapters. |
 
 ---
 
-## 3. Writing & Anti-Slop Discipline
+## 2. Character-Specific Constraints & Somatic Rules
 
-- Adhere to `no-ai-slop` instructions (`c:\GitHub\sr6-core\.agents\skills\no-ai-slop\SKILL.md`).
-- **Sensory Restraint**: Ground scenes in visceral, physical reality (resetting bone cartilage, metallic copper tang of drain, roasted tea steam, oilskin coats against cold Redmond drizzle, damp cedar panels).
-- **AI Writing Patterns**: Eliminate binary contrasts ("not X, but Y"), colon reveals, fake-profound kickers, summary recaps, throat-clearing openers, excessive em-dashes (>1.0 per 300 words), and excessive ellipses (>0.6 per 300 words).
-- **Linguistic Identity / Pronouns**: Pronouns must be strictly locked to active biological form (Lee Ji-yoo = she/her; Tanaka Ryo = he/him; Mei Jing = she/her; un-sculpted Jin-Young = he/they/raw self).
-- **Walkthrough Metrics Logging:** Whenever `no-ai-slop` or `literary-analysis` is invoked, record full performance metrics in `walkthrough.md`.
+All narrative drafting, editing, and evaluation in this workspace must enforce these character-specific rules:
+
+### A. Persona & Biological Pronoun Discipline
+
+Pronouns and demeanor are strictly locked to Velvet's active biological persona:
+
+- **Lee Ji-yoo**: `she/her` (soft, algorithmic elegance, high-fashion face).
+- **Tanaka Ryo**: `he/him` (clean corporate authority, sharp masculine presence).
+- **Mei Jing**: `she/her` (Cantonese triad/commercial persona).
+- **Kim Jin-Young (Un-sculpted)**: `he/they` or raw baseline self.
+
+### B. Somatic Reality of Cosmetic Control (R2)
+
+- Shifting between personas carries a heavy visceral tax: bone cartilage resetting with wet clicks, dull metallic heat behind the jaw, shortened or broadened ribcages, and localized DNA re-keying.
+- Beneath every sculpted mask lies the un-sculpted obsidian iris baseline of his Dalakitnon heritage.
+- Never portray physical transformation as instantaneous, painless, or effortless shape-shifting.
+
+### C. Charisma 10 (14) Horror & Engineered Gravity
+
+- Treat Charisma 10 (14 with buff spells) as an uncanny, suffocating psychological pressure—the pinnacle of unrestricted corporate engineering.
+- Avoid smutty or pulp-romance tropes. Velvet's central tragedy is that he can never know if anyone's affection, pity, or compliance is authentic, or merely their nervous system collapsing into his manufactured biological gravity.
+
+### D. Shinto-Musok Astral Phenomenology
+
+- Describe magic as spirit ribbons, kami whispers, talismanic paper foci, and subtle emotional hue shifts in metahuman auras.
+- Visceral drain taxation must be grounded in physical exhaustion: dry throat, bone fatigue, and metabolic strain.
 
 ---
 
-## 4. Workspace Diagnostic & Automation Utilities
+## 3. Workspace Diagnostic Commands & MCP Resources
 
-Before completing edits or reviewing narrative/character updates, run the corresponding `sr6` CLI commands:
+When auditing character files or evaluating drafts, use the following workspace-bound commands and MCP tools:
 
-- **Prose & Markdown Linter:** `sr6 lint "chapters/<file>.qmd"` (checks markdownlint, em-dash density, cognitive verbs, banned words, cadence).
-- **Continuity Engine:** `sr6 continuity .` (indexes relationships, contact favor points, locations, and narrative heatmaps into `reference/story_continuity.md`).
-- **Dossier & Ledger Auditor:** `sr6 characters audit velvet` (verifies Karma/Nuyen balance consistency, Initiation grade calculations, and spell/power costs).
-- **Dual-Ledger CommLink6 Sync:** `sr6 db sync-commlink` (patches active CommLink6 GUI player saves).
-- **Ecosystem Synchronizer:** `sr6 sync-all` (deep item audits, output regeneration, CommLink6 save patching).
+```bash
+# Character & Tabletop State Audit
+uv run sr6 characters audit velvet
+
+# Chapter Prose Linter & Anti-Slop Audit
+uv run sr6 lint "chapters/<chapter_file>.md"
+
+# 7-Axis Narrative Evaluator (Tier 1: 9.0, Tier 2: 8.5, Tier 3: 8.0)
+uv run sr6 evaluate "chapters/<chapter_file>.md" --tier 1|2|3
+
+# Tabletop Action & Combat Ledger Extractor
+uv run sr6 ledger parse "chapters/<chapter_file>.md"
+
+# Story Continuity Indexer
+uv run sr6 continuity .
+
+# Ecosystem Sync & CommLink6 GUI Save Patching
+uv run sr6 sync-all
+```
+
+### Native MCP Resources
+
+- `sr6://characters/velvet/master`: Live character sheet and dossier data.
+- `sr6://campaign/contacts`: Campaign contact registry and favor point balances.
+- `sr6://rules/summary`: Summary of core rules and authority citations.

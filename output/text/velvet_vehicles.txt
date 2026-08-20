@@ -1,7 +1,5 @@
 ============================================================================
- VEHICLES & DRONES: VELVET
+ VEHICLES, DRONES & RIGGING DEPLOYMENTS: VELVET
 ============================================================================
-  Abbreviations: HAN (Handling), ACC (Acceleration), SPD (Speed), BOD
- (Body), ARM (Armor), PLT (Pilot), SEN (Sensor)
-----------------------------------------------------------------------------
-  No registered vehicles or drones.
+ No vehicles or drones listed in dossier.
+============================================================================

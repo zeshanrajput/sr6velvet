@@ -31,8 +31,8 @@ This master theme unfolds across **three interconnected narrative threads**:
 ### Thread 2: The Sanctuary of the Un-Sculpted Space
 
 * **Thematic Grounding:** Velvet’s physical existence is a constant, agonizing biological shift between Lee Ji-yoo and Tanaka Ryo, with bone cartilage resetting and localized DNA strands re-keying. The corporate machine insists that Jin-Young no longer exists.
-* **The Character Arc:** The quiet, bruised space *between* transformations—when active spells fade, Charisma dampens, and the true, un-sculpted self breathes—is where genuine connection happens.
-* **The Shadowrun Twist:** As Velvet interacts with figures like Ni Ni Xiaolu (trapped behind her syndicate "Shark" persona), Trudy (ambition masking raw panic), or street doc Whiskey, Velvet's presence acts like a gentle mirror. By creating an atmosphere where these hardened figures can drop their corporate or street facades for just ten minutes, Velvet slowly discovers his own missing humanity.
+* **The Existential Horror of the Engineered Aura:** When someone is in the room with an engineered asset whose voice, bone symmetry, and aura are designed to warp emotions, it is impossible for them to know whether their feelings (pity, trust, attraction) are genuine or the product of an invisible biological manipulation. Hardened street contacts feel an instinctive, suffocating paranoia around Velvet because they cannot trust their own minds.
+* **The Character Arc & Sanctuary:** The quiet, bruised space *between* transformations—when active spells fade, Charisma is deliberately suppressed, and the true, un-sculpted self breathes—is where genuine connection becomes possible. By consciously refusing to manipulate people and stepping down from the engineered gravity, Velvet creates rare sanctuaries where figures like Ni Ni Xiaolu, Pavel, or Whiskey can finally drop their defenses without fear of being exploited. In doing so, Velvet slowly discovers his own missing humanity.
 
 ---
 

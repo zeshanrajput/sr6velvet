@@ -1,12 +1,6 @@
 ============================================================================
- POWERS, COMPLEX FORMS & SUBMERSION ECHOES: VELVET
+ POWERS, COMPLEX FORMS, ABILITIES & CYBERWARE: VELVET
 ============================================================================
-  Abbreviations: FV (Fading Value), Dur (Duration: P=Permanent, S=Sustained,
- I=Instant)
-----------------------------------------------------------------------------
- SUBMERSION ECHOES / METAMAGIC:
-  - Channeling                       | Finding Your Way
-----------------------------------------------------------------------------
  SPELLS & SORCERY:
   - Increase Attribute         | Drain: 3
   - Increase Reflexes          | Drain: 4

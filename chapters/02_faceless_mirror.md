@@ -2,58 +2,42 @@
 
 <audio controls src="audio/02_faceless_mirror.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
-The cauterizer in Whiskey's basement clinic had a bad coil. Every time she pressed the foot pedal, it emitted a high, thin whine that smelled of singed hair and burning flesh, a clinical stink that hung in the corners of the concrete room despite the intake fan rattling in the high window.
+The cauterizer in Whiskey's Touristville basement clinic had a worn heating coil that emitted a high, thin whine every time her boot tapped the foot pedal. The sound competed with the heavy iron intake fan in the street-level window, which rattled against its security mesh whenever an automated freight hauler passed on the avenue above. Tanaka Ryo sat on the edge of the stainless steel examination table with his coarse linen shirt bunched in his lap, teeth set against the dry heat as Whiskey pressed the glowing copper tip against a flechette graze across his left shoulder blade. The wound had come from a territorial skirmish with Halloweeners near the Redmond border two nights earlier, a close call in the dark that had left his leather riding jacket shredded. He took the burn without local anesthetic, saving every certified nuyen to route through encrypted proxy accounts to Hana in Neo-Seoul.
 
-Ryo sat on the edge of the steel table, his shirt draped over his shoulders. Whiskey was clean-searing a minor shrapnel crease in his shoulder—a stray flechette from a Redmond alley run. She didn't use a local anesthetic spell. The nuyen was better spent on the security shielding Hana.
+"Hold your breath," Whiskey muttered, her forehead beaded with sweat beneath the harsh glare of the overhead surgical lamp. She kept her eyes locked strictly on the three-inch line of torn muscle, working with the rapid, unblinking economy of a field medic under fire. She had not glanced at his face once since he climbed onto the table, her breath hissing through clenched teeth as the copper iron sizzled against living collagen, sealing the wound in dense, charred layers while Ryo sat unmoving beneath the light.
 
-"Hold still," Whiskey muttered. "I'm no plastic surgeon, and I know this body is worth more nuyen than I'll ever imagine."
+The singed heat against his shoulder skin brought back the antiseptic chill of the Mitsuhama post-op ward in Tokyo fifteen years before.
 
-He did not move. He kept his eyes on the grey ceiling tiles, breathing in the burnt mist of the cauterizer. The smell always brought back Tokyo.
+In the Tokyo facility, his entire head had been wrapped in damp smart-gauze that pulsed with automated saline flushes every twenty seconds. He was ten years old, lying on a narrow recovery cot in the dark, listening through the acoustic partition as the lead biometrics team reviewed his morning telemetry with the flat detachment of mechanics testing tolerances on an engine block. They spoke of cheekbone elevation, lash curvature, and the precise angle of the upper lip in fractions of a millimeter. A bound hermetic spirit drifted in the astral space near the ceiling, its presence casting an icy draft across the boy's exposed shoulders as it anchored the shaping spells directly into his growing facial cartilage. Jin-Young stared into the woven black fibers of the bandages, his facial muscles twitching against fresh dissolvable sutures as the nerve pathways were chemically re-mapped to trigger a stranger's smile.
 
-The recovery ward smelled of sterilized linen and the faint, chemical tang of fluorocarbon coolant cycling through the neural arrays. He was ten years old, his eyes bandaged with smart-gauze that pulsed in sync with his heartbeat. Through the thin partition, the Mitsuhama research team spoke in the flat, rhythmic cadences of accountants reviewing a quarterly audit.
+For three weeks after the initial bone shaving, the smart-gauze remained sealed over his face, soaking in binding washes that carried the sharp scent of acetic acid and synthetic collagen. When the chief surgeon finally stepped into the ward to discharge him, her diagnostic specs projected thin emerald grids across his chest and throat. She signaled the orderlies with a flick of her stylus.
 
-They were discussing the micro-geometry of his left eyelid. A specialized AI cluster had been running a loop for forty-eight hours, calculating slight variations of follicular density and lash curvature, searching for the exact mathematical threshold where human neurology shifts from attraction to evolutionary surrender. Beside the technicians sat a consultant from an outside contractor, a bound spirit of the lower spheres with its corporate compliance collar humming softly to suppress its ash-scented aura. The entity didn't speak in prophecy or curses; it adjusted a digital stylus on a tablet, refining the sterile symmetry of the child's jawline to align with consumer compliance targets. They were building a masterpiece of mass compliance, one cellular edit at a time. And on the bed, the boy simply stared into the black cloth, his new facial muscles twitching against the stitches as they memorized a stranger's smile.
+"Sutures dissolved," she said, her voice flat against the hum of the air scrubbers. "The secondary cartilage binding took without tissue rejection. Remove the dressing."
 
-For three weeks after the initial bone-shearing, his head had been wrapped in those layers of damp, chemically treated gauze. When the time came, the lead surgeon, a woman whose name Jin-Young never knew, stepped into the ward. Her eyes were shielded behind Wuxing-brand diagnostic specs that threw green lines across the room.
+The assistants peeled the wraps with brisk, practiced motions, each layer coming away with the dry rasp of peeling parchment as the cool hospital air struck raw, newly formed skin with an icy burn. When the final layer dropped away, his skin pulled tight across cheekbones broad, heavy, and foreign.
 
-"The sutures are dissolved," she said. "The spells have settled into the cartilage. Let's take the gauze down."
+"Check the baseline alignment," the surgeon instructed. An assistant held up a rectangular mirror of polished, brushed steel before the cot.
 
-The assistants worked in silence. Their hands were small, gloved in enchanted latex that squeaked as they pulled the dressings. Each layer peeled away like dry parchment, the air striking the raw, spell-bound flesh with a cold, chemical sting.
+Jin-Young looked into the metal.
 
-When the last layer fell, his skin pulled taut as a drumhead. The surrounding air pressed suffocatingly close.
+The child who had played in the Manila monsoon was gone, replaced by a smooth, mathematically balanced face that belonged to no native bloodline. On the diagnostic monitor behind the cot, two digital profiles glowed side by side: the delicate, narrow jawline of Lee Ji-yoo and the broader, commanding symmetry of Tanaka Ryo. Both personas shared the same shaved foundation, a neutral biological canvas designed to pivot in either direction under the focus of cosmetic spells. Jin-Young raised a trembling hand, his fingertips touching skin smooth as polished stone, and tried to form the wide, gap-toothed grin his mother used to laugh at in the Tondo shanty. His facial muscles refused to cooperate. The nerves had been rerouted through corporate templates; when he forced the expression, his lips parted into a stiff, perfectly measured curve, the rehearsed idol smile now stamped into his living tissue.
 
-"Hold," the surgeon said, adjusting her loupes. "Align the light. Let's see the symmetry."
+"Baseline within designated parameters," the surgeon noted, tapping her pad. "Archive the original facial scans. Prepare the asset for vocal modulation training."
 
-An assistant held up a mirror of polished, non-glare steel.
+"Done," Whiskey said in the Touristville clinic, her voice rough as she lifted the copper tip from his shoulder and dropped the cauterizer onto the metal tray with a sharp, echoing clatter. "Clean seal. Don't stretch the deltoid for forty-eight hours, or you'll rip the scab."
 
-Jin-Young looked.
+She peeled the yellow latex gloves from her hands with two sharp snaps, throwing them into the biohazard bin beneath the counter, and unbuttoned her blood-speckled canvas smock. The moment the smock caught on the wall peg, the clinical rhythm of the room died, leaving only the hiss of the intake fan and the sudden, heavy silence between them.
 
-The face in the steel was flawless, but it was only one half of the design. The surgeon tapped the diagnostic screen beside his head, bringing up two high-definition rendering profiles.
+She stepped over to the deep industrial sink, turned the cold brass tap, and thrust her bare forearms into the running water. When she lifted her hands, her fingers were visibly shaking. She clamped both palms hard against the stainless steel rim of the basin, locking her elbows and throwing her entire body weight onto the metal until her knuckles turned bloodless white against the steel. She stayed there, leaning over the drain with cold water splashing across her wrists, her breath coming in shallow, ragged hitches.
 
-"The twin configurations," the surgeon said, her tone as dry as paper. "MCT-Asset-Ji-yoo and MCT-Asset-Ryo. The bone structure has been planed to a neutral, overlapping baseline. The embedded geomantic gene sequence augmentations will allow clean transition between both profiles."
+Behind her, Ryo pulled his coarse linen shirt over his head, the fabric catching slightly on the fresh scab as he walked to the grease-spotted mirror above the counter. The reflection staring back from the cracked glass was Tanaka Ryo: dark hair brushed back, jawline level, eyes clear and steady under the buzzing fluorescent tube. He leaned closer to the glass, looking where the outer rim of his pupils thinned in the downlight, revealing the faint, persistent ring of deep obsidian—the un-sculpted Dalakitnon baseline waiting beneath the masks. He reached into his pocket and set two certified credsticks on the instrument tray beside the cooling iron.
 
-Jin-Young stared at the two faces on the screen. The first, Lee Ji-yoo, was calibrated to a quiet, silver-chimed femininity designed to command absolute devotion. The second, Tanaka Ryo, was a symmetrical, effeminate masculinity optimized for cross-border markets. They were beautiful, unearthly, and entirely corporate. His body had been split down the middle to accommodate them both.
+Whiskey did not look at the money. She kept her knuckles welded to the sink rim, staring down into the dark opening of the drain pipe as the cold water splashed over her wrists.
 
-They were two distinct strangers, and he was the negative space between them.
+"You're wearing the man today," she said, her voice tight and strained against the heavy quiet in the basement. "It's different. It's too heavy in here."
 
-He reached up, his fingers meeting the smooth, unbroken surface of his cheek, a hard plastic shell where his features used to live. He tried to mimic the wide, gap-toothed grin his mother used to laugh at in the Manila rain.
+Ryo paused with his hand resting near the iron door latch. "Would it make it easier if I came in as Ji-yoo?"
 
-His muscles did not respond. The nerve endings had been re-routed, mapped to parallel astral aspects. The cartilage in his cheeks, bound by permanent corporate spells, refused to crease. When he forced the expression, his mouth only turned up into a stiff, polite curve, the rehearsed stage-smile that was now written into his cells.
+"No," she murmured, a low, raspy breath filtering through her teeth as she looked away from his reflection in the glass. "That might be worse. One of these days, you're going to burn yourself down to the wire, and there won't be enough skin left to sew back together."
 
-"The baseline symmetry is within ninety-nine percent of the target blueprint," the surgeon said, writing a line on her datapad. "MCT Property ID 440-Alpha. Archive the original images. The asset is ready for second stage sculpting."
-
-"All done," Whiskey said, tapping his shoulder with a cold hand. She set the cauterizer down. "Clean sear. Try not to stretch the skin for forty-eight hours."
-
-Ryo pulled his shirt over his head, the clean linen rubbing against the fresh burn. He stood up and stepped to the sink, looking into Whiskey's cracked, grease-spotted mirror.
-
-The face staring back at him was still a stranger’s. Even without the expensive Mitsuhama blockers, the algorithmically calculated symmetry remained, a beautiful, permanent cage of flesh and spell-cartilage. He leaned close to the glass. If he squinted, he could see the faint, dark lines around the corners of his eyes where the spell was beginning to erode, the obsidian of his true heritage waiting to split the corporate seams.
-
-He reached into his pocket, counted out Whiskey’s nuyen in certified sticks, and left them on the tray.
-
-"Did you have to come in here in your masc form?" she said. Her voice had lost its clinical detachment, dropping into a tight, strained register, trying to compensate for the unworldly gravity pressing down on the small room. "I have trouble breathing when you do."
-
-Ryo paused with his hand on the iron door. "Would it really help if I came in here in fem?"
-
-"No," she said, a low, raspy exhale filtering through her teeth. She looked away from his face, her fingers gripping the edge of the tool tray to anchor herself against the pull of his posture. "That might just make it worse."
-
-Ryo pushed the heavy iron door open, stepping out into the alley dark. The Seattle rain hit his face: cold, sharp, and entirely unable to find a single human crease to follow.
+Ryo pushed open the heavy iron fire door and stepped out into the Touristville alley, letting the cold Seattle drizzle wash over smooth, unbroken skin without finding a single native crease to follow.
