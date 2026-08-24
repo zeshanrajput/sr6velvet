@@ -53,10 +53,17 @@ In Arc 1, Velvet learned what empathy was by building un-monetized sanctuaries. 
 
 ---
 
+### Thread 5: The Living Mosaic & The Accretion of Lived Wisdom (Artificial Reincarnation)
+
+* **Thematic Grounding:** In Arc 1, wearing multiple personas was a traumatic corporate tax (*Sinbyeong*). In Arc 2, Velvet experiences the "Echo" phenomenon—past covers, deep-cover street aliases, and corporate identities leave behind permanent neuro-somatic residues: Tanaka Ryo's institutional discipline, Lee Ji-yoo's acoustic poise and micro-expression appraisal, and underworld covers' grit.
+* **The Spiritual Realization:** Velvet begins to recognize that each assumed life was a genuine human experience with its own lessons, virtues, and grief (*Han*). Instead of treating masks as disposable deceit, Velvet starts intentionally weaving them into a composite mosaic—stepping onto the path of the *Mansin* (hosting ten thousand spirits) and utilizing identities as skillful means (*Upāya*) to protect others. (See [reference/philosophical_framework.md](file:///c:/GitHub/sr6velvet/reference/philosophical_framework.md)).
+
+---
+
 ## Summary of Narrative Arc 2 Progression
 
 | Phase | Story Focus | Emotional Benchmark |
 | :--- | :--- | :--- |
 | **Phase I: Emergence in the Depths** | Subterranean relocation; establishing safehouses in the Ork Underground and deep corridors; evading initial corporate tracker teams. | Shock and anger channeled into ice-cold focus. Shedding corporate conditioning; reclaiming the true sovereign self. |
-| **Phase II: Accumulation & Initiation** | Veteran shadowruns; advancing Initiation Grades (*Channeling*, *Invocation*); forging syndicate blood-oaths with Ni Ni Xiaolu and the Conclave. | Confidence rooted in authentic power rather than corporate performance; building a fortress of shadow allies. |
-| **Phase III: The Fortress of Deterrence** | Reaching shadow parity; turning the Seattle underground into an impenetrable barrier against Mitsuhama and Wuxing recovery ops; laying the foundation for the Neo-Seoul campaign. | The realization that they are no longer running—they are building an empire capable of striking back. |
+| **Phase II: Accumulation & Initiation** | Veteran shadowruns; advancing Initiation Grades (*Channeling*, *Invocation*); forging syndicate blood-oaths with Ni Ni Xiaolu and the Conclave; the **Living Mosaic** begins to braid multiple lived identities into emergent capability. | Confidence rooted in authentic power and accumulated human insight rather than corporate performance; building a fortress of shadow allies. |
+| **Phase III: The Fortress of Deterrence** | Reaching shadow parity; turning the Seattle underground into an impenetrable barrier against Mitsuhama and Wuxing recovery ops; laying the foundation for the Neo-Seoul campaign; stepping into sovereign *Mansin* emanation. | The realization that they are no longer running—they are building an empire capable of striking back, grounded in the unshakeable wisdom of a thousand lived truths. |

@@ -7,6 +7,8 @@ In the Sixth World, where every emotion, face, and sensation is engineered, pack
 Velvet’s unique perspective provides the ideal infrastructure for this contrast: engineered by Mitsuhama to be a Charisma 12 miracle of mass-market desire, Velvet understands the exact chemistry and fraud behind synthetic happiness.
 
 > **Foundational Character Development Note:** Velvet is **not originally empathic**. Engineered by Mitsuhama as a cold, clinical commodity, Jin-Young was trained to simulate emotion as an algorithmic performance. Story Arc 1 documents his gradual, hesitant **discovery of empathy**—moving from a hollow asset who calculates social transactions to a practitioner who stumbles into creating genuine, un-monetized human sanctuaries.
+> 
+> *Philosophical Phase: Phase 1 — The Broken Vessel (*Sinbyeong*).* Jin-Young experiences the multiple masks as traumatic bodily and psychic fragmentation. Beneath the forced corporate skins, he fears he is an empty void. (See [reference/philosophical_framework.md](file:///c:/GitHub/sr6velvet/reference/philosophical_framework.md)).
 
 ---
 

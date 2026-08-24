@@ -34,13 +34,13 @@ Velvet maintains a secure, low-profile safehouse in West Seattle leased through 
 >
 > What does your character believe in, what are their convictions, and why do they hold them?
 
-Velvet practices a syncretic **Shinto-Musok** tradition, honoring kami and ancestral spirit ribbons. Having been manufactured and bought as a disposable commodity, his deepest moral conviction is the **creation of un-monetized sanctuaries**—quiet spaces of genuine empathy, mutual respect, and protection for broken people who have been discarded or exploited by corporate machine logic.
+Velvet practices a syncretic **Shinto-Musok** tradition, honoring kami and ancestral spirit ribbons, deepened by Buddhist insights into *Anattā* (Non-Self) and *Upāya* (Skillful Means). Having been manufactured and bought as a disposable commodity, his deepest moral conviction is the **creation of un-monetized sanctuaries**—quiet spaces of genuine empathy, mutual respect, and protection for broken people who have been discarded or exploited by corporate machine logic. Rather than viewing his fluid identities as deceit, he views them as an artificial reincarnation cycle: becoming a *Mansin* (master of ten thousand spirits) whose empty vessel (*bin geureut*) honors the lived experience and grief (*Han*) of every human role he inhabits.
 
 ### Q7: Flaws & Friction
 >
 > What flaws does your character have that sets others on edge? What do you dislike most about your character’s personality?
 
-Years of algorithmic training and Charisma 10/12 social engineering mean Velvet's default reaction to stress is weaponized charm, acoustic modulation, and micro-expression manipulation. Teammates sometimes find it difficult to tell when Velvet is being genuine versus when an algorithmic performance mask is active. Furthermore, physical transformations via Cosmetic Control R2 induce acute somatic migraines and chronic cartilage aches that Velvet conceals behind a placid smile.
+Years of algorithmic conditioning and extreme Charisma (10 baseline, 14 buffed) create an uncanny, suffocating psychological gravity. Contacts and allies instinctively distrust their own feelings around Velvet, fearing their empathy or compliance is biologically manufactured. In turn, Velvet suffers from deep existential isolation, unable to know if affection is genuine or a product of his engineered aura. Furthermore, physical transformations via Cosmetic Control R2 induce acute somatic migraines, cartilage fatigue, and identity friction that Velvet conceals behind a placid smile.
 
 ### Q8: Megacorporate Relations
 >
@@ -65,9 +65,10 @@ Years of algorithmic training and Charisma 10/12 social engineering mean Velvet'
 >
 > What does your character look like, and how do they present themselves?
 
-In his unmasked state, Jin-Young is a lean, 165 cm elf with porcelain-smooth skin, stark white hair, and deep obsidian irises that hint at his birth heritage. Through **Cosmetic Control (Rating 2)** and high-fashion tailoring (Ares SecureTech Skinshield), he shifts into two primary public personas:
+In his unmasked state, Jin-Young is a lean, 165 cm elf with porcelain-smooth skin, stark white hair, and deep obsidian irises that hint at his birth heritage. Through **Cosmetic Control (Rating 2)** and high-fashion tailoring (Ares SecureTech Skinshield), he shifts into distinct public personas (*Nirmāṇakāya* / transformation bodies):
 - **Lee Ji-yoo (She/Her):** Soft, elegant, razor-sharp corporate consultant and negotiator.
 - **Tanaka Ryo (He/Him):** Clean, authoritative, masculine executive liaison.
+- **Mei Jing & Underworld Aliases:** Street-level and Triad personas carrying distinct somatic grit and Cantonese/Japanese vernacular.
 
 ### Q11: Combat Doctrine & Style
 >
@@ -97,7 +98,7 @@ Nuyen is purely fuel for autonomy and security. Velvet maintains a strict Hooder
 >
 > How does your character perceive and cast magic?
 
-Under the Shinto-Musok tradition, magic is not mathematical code or high-fantasy fireballs; it is experienced as shifting emotional hues in auras, whispering ancestral presence, and folded talismanic paper ribbons. Drain manifests as physical exhaustion, dry vocal cords, and somatic bone aches.
+Under the Shinto-Musok tradition, magic is not mathematical code or high-fantasy fireballs; it is experienced as shifting emotional hues in auras, whispering ancestral presence, folded talismanic paper ribbons, and the sacred mirror (*Kagami*) of awareness. In deep meditation and channeling, the lived memories of past personas form an internal choir supporting ritual focus. Drain manifests as physical exhaustion, dry vocal cords, and somatic bone aches.
 
 ### Q16: Relationship with Technology
 >

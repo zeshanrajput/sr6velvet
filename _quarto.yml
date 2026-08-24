@@ -36,10 +36,11 @@ book:
         - chapters/06_seattle_web.md
         - chapters/07_bliss.md
         - chapters/08_Tea_in_Tacoma.md
-
+        - chapters/09_Heat.md
 
     - part: "Reference & Specifications"
       chapters:
+        - reference/philosophical_framework.md
         - reference/voice_spec.md
         - reference/story_arc1.md
         - reference/story_arc2.md

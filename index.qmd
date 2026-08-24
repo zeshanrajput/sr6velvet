@@ -91,6 +91,7 @@ Use the sidebar or the indexes below to traverse this portfolio:
 * **[06. The Seattle Web](chapters/06_seattle_web.md)**: The corporate joint-venture trap and running offensive in the shadows (Age 19-20).
 * **[07. Bliss](chapters/07_bliss.md)**: Un-manufactured solace over real pork-bone broth in West Seattle (Age 20).
 * **[08. Tea in Tacoma](chapters/08_Tea_in_Tacoma.md)**: Dropping corporate gravity with Ni Ni Xiaolu over un-taxed Tieguanyin tea (Age 20).
+* **[09. Heat](chapters/09_Heat.md)**: Surviving the North Sea cold in Europort and anchoring Lawrence Duval (Age 20).
 
 ### 3. Reference & Specifications
 * **[Voice Specification & Sensory Schema](reference/voice_spec.md)**: Character voice rules, somatic shift discipline, and TTS fluency constraints.
