@@ -3,16 +3,16 @@
 ============================================================================
  WEAPONS & TACTICAL ARRAYS:
   * BERETTA 101T (x2)
-    DV: 2P   | Modes: SA     | Ammo: 21(c)  | AR: 9 / 8 / 6
+    DV: N/A  | Modes: SS/SA  | Ammo: N/A    | AR: -
 ----------------------------------------------------------------------------
   * SAP (x2)
-    DV: 2S   | Modes: SS     | Ammo: —      | AR: 6
+    DV: N/A  | Modes: SS/SA  | Ammo: N/A    | AR: -
 ----------------------------------------------------------------------------
   * YAMAHA RAIDEN
-    DV: 4P   | Modes: SA/BF/FA | Ammo: 60(c)  | AR: 4 / 11 / 10 / 7 / 2
+    DV: N/A  | Modes: SS/SA  | Ammo: N/A    | AR: -
 ----------------------------------------------------------------------------
   * STUN BATON
-    DV: 5S(e) | Modes: SS     | Ammo: —      | AR: 6
+    DV: N/A  | Modes: SS/SA  | Ammo: N/A    | AR: -
 ----------------------------------------------------------------------------
  BALLISTIC ARMOR & DEFENSIVE PROTECTION:
   * SECURETECH SKINSHIELD (Defense Rating Bonus: +1)
