@@ -16,41 +16,41 @@
       <attributes id="RESONANCE" value="0" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="a8cb00e5-0b23-492a-9234-6f0b4578266c">
-         <decision choice="55881092-3e92-485d-998d-12a48bfd1c7c" value="Charisma" />
+      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="bf770d61-7fbf-4f26-90a5-c6f1235bd628">
+         <decision choice="ffe81168-7a4d-4b95-83f7-e82c5d6bc5f9" value="Charisma" />
       </quality>
-      <quality lang="en" ref="exceptional_attribute" uuid="ec5fb01a-1988-4cb9-abe6-83c9607c65fd">
-         <decision choice="a565d912-991c-4894-ba9a-2e75c67a9814" value="Charisma" />
+      <quality lang="en" ref="exceptional_attribute" uuid="ea0577fe-d1f9-4aee-ba11-c41d7d5a48ca">
+         <decision choice="0c1d822d-5926-406a-9ec6-8cc798d714da" value="Charisma" />
       </quality>
-      <quality lang="en" ref="inspire_competence" uuid="989e2146-7214-4b73-9f54-0a71e9ad7714" />
-      <quality lang="en" ref="low-light_vision" uuid="4b7c129f-108b-4a68-a032-c24b8ca0ff25" />
-      <quality lang="en" ref="focused_concentration" uuid="0dbe084c-e48f-48b8-a45b-983bbd86847e" value="3" />
-      <quality lang="en" ref="chronic_pain" uuid="11770ee8-1f05-4604-8dea-35f8f7a59de2" />
-      <quality lang="en" ref="hooder" uuid="8a5d4abb-3f19-46ec-9e3d-8fa22cee5eaa" value="3" />
-      <quality lang="en" ref="allergy" uuid="0a017daa-e277-4ecc-a4f8-934dd134725f">
-         <decision choice="081e775c-4458-4782-92b8-8113517f56ab" value="Spices" />
+      <quality lang="en" ref="inspire_competence" uuid="613cc24f-36ce-4240-ada5-0fb0398aee07" />
+      <quality lang="en" ref="low-light_vision" uuid="1f9721cb-e78d-4c47-90fd-56e480936b5c" />
+      <quality lang="en" ref="focused_concentration" uuid="849ed099-11a6-476f-8934-433618b3428c" value="3" />
+      <quality lang="en" ref="chronic_pain" uuid="002109c7-9d41-414d-bb81-62c6c10a98fb" />
+      <quality lang="en" ref="hooder" uuid="87397a15-ebd8-4a35-9150-3ba44c6b9365" value="3" />
+      <quality lang="en" ref="allergy" uuid="0fa9c297-a5a3-426b-8a50-fc9fc0f6eea8">
+         <decision choice="4ccf5ed3-f387-4be9-bddc-36adcd7aac61" value="Spices" />
       </quality>
    </qualities>
    <skills>
-      <skill lang="en" ref="sorcery" uuid="57d76dcb-fb8c-446e-bf56-dddc977186ca" value="5">
+      <skill lang="en" ref="sorcery" uuid="5fa8c326-bbb7-4b56-8457-d153099e59b9" value="5">
          <skillspec lang="en" ref="spellcasting" />
       </skill>
-      <skill lang="en" ref="conjuring" uuid="924d0d5b-5c90-4bb1-ac05-782251455b3f" value="6" />
-      <skill lang="en" ref="influence" uuid="dbe27859-7793-45e6-a15f-a56cea49bb4a" value="5" />
-      <skill lang="en" ref="con" uuid="975ba7b4-3780-434e-acee-53fbab189879" value="4" />
-      <skill lang="en" ref="language" uuid="1b39646d-5176-42ff-887c-a140ee91d58f" value="4">
+      <skill lang="en" ref="conjuring" uuid="f27e768b-a88e-406e-b7a4-5e0591b859fb" value="6" />
+      <skill lang="en" ref="influence" uuid="a8c83589-03e7-4c19-91c4-d10caf4400b1" value="5" />
+      <skill lang="en" ref="con" uuid="a381f268-d814-4531-b6a6-bafedefe4440" value="4" />
+      <skill lang="en" ref="language" uuid="cd489b14-ceb7-4c43-9ccc-d7d0f09505ef" value="4">
          <decision choice="a7103ee4-31fa-435d-ac42-08f7d4d1e80c" value="Native Language" />
       </skill>
-      <skill lang="en" ref="knowledge" uuid="17f8fd18-2b5d-4b8f-80ab-fc4531aa5680" value="1">
+      <skill lang="en" ref="knowledge" uuid="92a8a8ff-6cd9-4b68-9aa2-72dbc97d29db" value="1">
          <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="Small Unit Tactics" />
       </skill>
-      <skill lang="en" ref="knowledge" uuid="0daad86e-b3d4-46d5-9ee9-ac7bbc141c4b" value="1">
+      <skill lang="en" ref="knowledge" uuid="647d6690-fc64-428a-90ab-874488b96b5e" value="1">
          <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="MCT" />
       </skill>
-      <skill lang="en" ref="knowledge" uuid="8ecf9030-892e-4a18-b3e8-dc39befaaf96" value="1">
+      <skill lang="en" ref="knowledge" uuid="ffa78793-3932-4560-a583-087616858500" value="1">
          <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="Wuxing" />
       </skill>
-      <skill lang="en" ref="knowledge" uuid="8c5cd8ed-3a4b-4d57-97a9-e901548c0def" value="1">
+      <skill lang="en" ref="knowledge" uuid="3210a475-acb9-4060-b3c2-28a76c64da56" value="1">
          <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="East Asian Media" />
       </skill>
    </skills>
@@ -66,40 +66,40 @@
       <metaEcho lang="en" ref="empathy" />
    </metaEchoes>
    <items>
-      <item lang="en" mode="CARRIED" ref="beretta_101T" uuid="6c8e04f9-f66b-4b95-902c-52203211ac62" count="2" />
-      <item lang="en" mode="CARRIED" ref="sap" uuid="52a67dac-2a9c-47e4-bc01-2caa3e6d51d0" count="2" />
-      <item lang="en" mode="CARRIED" ref="yamaha_raiden" uuid="9019bcfa-87ab-494e-b1ef-60895f415e79" />
-      <item lang="en" mode="CARRIED" ref="stun_baton" uuid="00c15375-4475-41ce-818a-2a86a9afbad2" />
-      <item lang="en" mode="CARRIED" ref="securetech_skinshield" uuid="93dfc29e-521f-4936-81da-0a9ddafe3563">
+      <item lang="en" mode="CARRIED" ref="beretta_101T" uuid="30c30a11-f12c-4e49-a51a-01a46c10ed4a" count="2" />
+      <item lang="en" mode="CARRIED" ref="sap" uuid="1672a7c2-7dfb-4ce6-8170-a8e609dbd682" count="2" />
+      <item lang="en" mode="CARRIED" ref="yamaha_raiden" uuid="232c42d4-19b1-4c79-82be-0fe3d7a393ca" />
+      <item lang="en" mode="CARRIED" ref="stun_baton" uuid="959b18a8-6320-42af-bf08-ce848e6cd869" />
+      <item lang="en" mode="CARRIED" ref="securetech_skinshield" uuid="8d364b1f-f3ad-4a1b-b414-059b1026cf33">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="ballistic_hood" uuid="53ad7a53-e496-4848-a7eb-b20d14abaab6" />
+            <item lang="en" mode="EMBEDDED" ref="ballistic_hood" uuid="dc912ebd-8963-404d-96c0-a9a659730925" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="erika_elite" uuid="2f219134-0bd2-4e93-ae67-826f0c803be5">
+      <item lang="en" mode="CARRIED" ref="erika_elite" uuid="6d675170-6002-49a4-8b71-80f2f63717ae">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="comhack_securelink_upgrade" uuid="905252e5-4b77-4e22-8c13-1245156a164f" />
-            <item lang="en" mode="EMBEDDED" ref="p-ice_nope" uuid="14c7c961-fbc3-48f4-b69a-5c0fcda27403" />
+            <item lang="en" mode="EMBEDDED" ref="comhack_securelink_upgrade" uuid="7a6ce339-3bfa-4c40-b23c-de1f455d827e" />
+            <item lang="en" mode="EMBEDDED" ref="p-ice_nope" uuid="bb8bcf3f-d998-40a1-93f5-a2631da1afef" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="renraku_sensei" uuid="18867b0a-428e-4993-9181-c467a03be806" count="2" />
-      <item lang="en" mode="CARRIED" ref="nanocosmetics_kit" uuid="202902a9-36fa-4a54-83d4-8cc87723f922" />
-      <item lang="en" mode="CARRIED" ref="nanocosmetics_refill" uuid="a00ed36e-74ab-44f5-96eb-3cbce8d098d2" />
-      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_kit" uuid="4e5f4dff-0d0f-4626-91e1-ea276184c009" />
-      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_refill" uuid="b52639da-4cfc-4c32-9bcb-d4376541f3a5" />
-      <item lang="en" mode="CARRIED" ref="savior_medkit" uuid="a21672cd-d39d-42c5-bda5-8a6896a54eb3" />
-      <item lang="en" mode="CARRIED" ref="savior_medkit_refill" uuid="ea7040bc-1225-4786-af08-2f90322e0cf5" />
-      <item lang="en" mode="CARRIED" ref="contacts" uuid="8813008b-bc22-4ccd-a60c-d23e25c2a36f">
+      <item lang="en" mode="CARRIED" ref="renraku_sensei" uuid="3238dedf-55b4-406a-95bf-7e78ef5c4953" count="2" />
+      <item lang="en" mode="CARRIED" ref="nanocosmetics_kit" uuid="9be85a20-1bb5-4e0a-aaf0-12f63d2a1d86" />
+      <item lang="en" mode="CARRIED" ref="nanocosmetics_refill" uuid="350255da-7186-446d-b282-7d17357ef096" />
+      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_kit" uuid="5fd96e1c-eefc-40cb-b60c-19e0bb09b612" />
+      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_refill" uuid="e840030a-f0d3-4231-a3e2-03bacbf08e04" />
+      <item lang="en" mode="CARRIED" ref="savior_medkit" uuid="c159eb91-0854-43e9-a560-1279325cb48d" />
+      <item lang="en" mode="CARRIED" ref="savior_medkit_refill" uuid="471fb2be-1466-4732-b79b-dd6deb2e6fa0" />
+      <item lang="en" mode="CARRIED" ref="contacts" uuid="11d658ee-65d5-4f10-908d-6b6dbe27942d">
          <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3" />
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="flare_compensation" uuid="f34050d7-5ef3-4c9a-bea7-7fe51f04d5e4" />
-            <item lang="en" mode="EMBEDDED" ref="image_link" uuid="0133ff43-0f5f-4d33-afc9-82ec0e0e04d0" />
-            <item lang="en" mode="EMBEDDED" ref="thermographic_vision" uuid="479d783e-233f-48ba-b8cd-394baa7dc60b" />
+            <item lang="en" mode="EMBEDDED" ref="flare_compensation" uuid="21149b00-26f7-4544-a35f-1c061a3d1527" />
+            <item lang="en" mode="EMBEDDED" ref="image_link" uuid="6babfbb0-4d77-4f01-8b44-c55fa662b205" />
+            <item lang="en" mode="EMBEDDED" ref="thermographic_vision" uuid="5c74809f-dc79-4a6b-9d11-4b444084abb4" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="earbuds" uuid="8586e146-d822-4628-811a-4f8bc6becb60">
+      <item lang="en" mode="CARRIED" ref="earbuds" uuid="ab3cc7af-7e0e-49db-83c1-d50da829b72a">
          <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3" />
       </item>
-      <item lang="en" mode="CARRIED" ref="subvocal_microphone" uuid="e38a75dc-2479-4cc4-a48c-41c44bcc2c95" />
+      <item lang="en" mode="CARRIED" ref="subvocal_microphone" uuid="7feedaca-e8e7-4c3d-974f-f8fd422534fa" />
    </items>
    <contacts>
       <contact name="Brynne Taggart" rat="4" type="STREET" typename="Fixer" loy="2" favors="0">
