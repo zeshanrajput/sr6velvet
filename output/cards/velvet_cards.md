@@ -1,12 +1,12 @@
 # [CARD] Reference Card Deck: Velvet
-*Total Cards in Deck: 15*
+*Total Cards in Deck: 19*
 
 ---
 ### [CARD] VELVET - BASE ATTRIBUTES & POOLS (Core)
-> **ATT (STR)**: 10 | **SLZ (REA)**: 5 | **DP (AGI)**: 4 | **FW (BOD)**: 8 | **WIL**: 5 | **LOG**: 3 | **INT**: 3 | **CHA**: 10 | **EDG**: 2 | **RES / MAG**: 0/6 | **ESS**: 6.0 | **Submersion**: Grade 0 | **Nuyen & Karma**: 27,275¥ | 2 Karma | **Composure**: 15 | **Judge Intentions**: 8 | **Memory**: 8 | **Lift & Carry**: 18 | **Matrix Initiative**: 7 + 3D6 (AR) / 7 + 3D6 (Hot-Sim VR) | **Condition Boxes**: Phys [12] | Stun [11] | **ASDF Ratings**: A:10 S:5 D:4 F:8 | **Full Matrix Def**: 13d6 (3 Hits)
+> **ATT (STR)**: 10 | **SLZ (REA)**: 5 | **DP (AGI)**: 4 | **FW (BOD)**: 8 | **WIL**: 5 | **LOG**: 3 | **INT**: 3 | **CHA**: 10 | **EDG**: 2 | **RES / MAG**: 0/6 | **ESS**: 6.0 | **Submersion**: Grade 0 | **Nuyen & Karma**: 25,055¥ | 5 Karma | **Composure**: 15 | **Judge Intentions**: 8 | **Memory**: 8 | **Lift & Carry**: 18 | **Matrix Initiative**: 7 + 3D6 (AR) / 7 + 3D6 (Hot-Sim VR) | **Condition Boxes**: Phys [12] | Stun [11] | **ASDF Ratings**: A:10 S:5 D:4 F:8 | **Full Matrix Def**: 13d6 (3 Hits)
 
 Runner: Velvet (Elf) | Stream: N/A
-Submersion Grade 0 | Available Funds: 27,275¥ | Active Karma: 2 Pool
+Submersion Grade 0 | Available Funds: 25,055¥ | Active Karma: 5 Pool
 Derived Pools: Composure [15], Judge Intentions [8], Memory [8], Lift/Carry [18].
 Full Matrix Defense: 13d6 [WIL 5 + FW 8 = 13d6].
 
@@ -15,12 +15,13 @@ Full Matrix Defense: 13d6 [WIL 5 + FW 8 = 13d6].
 ---
 
 ### [CARD] VELVET - ACTIVE SKILLS & DICE POOLS (Skills)
-> **Sorcery**: 12d6 | **Conjuring**: 7d6 | **Influence**: 15d6 | **Native Language**: 7d6 | **Small Unit Tactics**: 4d6 | **MCT**: 4d6 | **Wuxing**: 4d6 | **East Asian Media**: 4d6
+> **Sorcery**: 11d6 | **Conjuring**: 12d6 | **Influence**: 15d6 | **Con**: 14d6 | **Native Language**: 7d6 | **Small Unit Tactics**: 4d6 | **MCT**: 4d6 | **Wuxing**: 4d6 | **East Asian Media**: 4d6
 
 Active Skills & Table-Relevant Effective Dice Pools:
-- **Sorcery**: **12d6** [MAG 6 + 6 Rtg]
-- **Conjuring**: **7d6** [MAG 6 + 1 Rtg]
+- **Sorcery (+2 Spellcasting)**: **11d6** [MAG 6 + 5 Rtg]
+- **Conjuring**: **12d6** [MAG 6 + 6 Rtg]
 - **Influence**: **15d6** [CHA 10 + 5 Rtg]
+- **Con**: **14d6** [CHA 10 + 4 Rtg]
 - **Native Language**: **7d6** [LOG 3 + 4 Rtg]
 - **Small Unit Tactics**: **4d6** [LOG 3 + 1 Rtg]
 - **MCT**: **4d6** [LOG 3 + 1 Rtg]
@@ -197,13 +198,60 @@ Ah, channeling. This metamagic has gotten me out of some serious clusterfrags ov
 
 ---
 
-### [CARD] Finding Your Way (Meta Echo)
+### [CARD] Empathy (Meta Echo)
+> **Karma**: 4 | **Quality Type**: positive | **Max Rating**: 2 | **Source**: double_clutch
 
-## Finding Your Way
+## Empathy
 
-When an adept initiates, they may choose this Metamagic to gain an adept way (see p. 76) at no Karma cost. This may be an adept gaining their initial way, or this manner of introspection may represent a paradigm shift as they leave an existing way and transition to a new one (in which case they lose all the benefits of their original choice while gaining all the benefits of their new way).
+This power gives the character an affinity for all beings, be they sentient or non. The character gets +1 Edge for all Social tests, and their Social Rating is increased by their Magic.
 
-*Source: [Street Wyrd, Page 1]*
+*Source: [Smooth Operations, Page 1]*
+
+---
+
+### [CARD] Beretta 101T (Weapon)
+> **Category**: Firearms | **Ap**: 0 | **Cost**: 0 | **Avail**: 2L | **Source**: core | **Qty**: 2
+
+## Beretta T-series
+
+The preferred sidearm of many security forces around the world, the T-series is classified as a light pistol, even though the 201 design offers automatic fire capability, making it popular in nations that limit heavy and machine pistols. Since the frame is the same, it’s easier to disguise as a 101. The 201 also comes with a detachable shoulder stock, though it is often lost before the gun reaches the street market.
+
+*Source: [Berlin Edition, Page 12]*
+
+---
+
+### [CARD] Sap (Weapon)
+> **Category**: Melee | **Ap**: 0 | **Cost**: 0 | **Avail**: 1 | **Source**: core | **Qty**: 2
+
+## Sap
+
+Also known as a blackjack, this is a short, flexible club or a leather-wrapped iron, lead, or sand filled sack for thumping heads. It’s designed to be concealable, often fitting in the palm of the hand (Concealability threshold 4).
+
+*Source: [Berlin Edition, Page 12]*
+
+---
+
+### [CARD] Yamaha Raiden (Weapon)
+> **Category**: Firearms | **Ap**: 0 | **Cost**: 0 | **Avail**: 5L | **Source**: core | **Qty**: 1
+
+## Yamaha Raiden
+
+While Ares made the Alpha, the Japanacorps, through Yamaha, developed the Raiden. Electronic firing and exceptional accuracy are integral to the design. Japanacorp security forces and the Japanese Imperial Marines now swear by the Raiden. It features an integral silencer, smartgun system, and underbarrel shotgun/grenade launcher.
+
+*Source: [Berlin Edition, Page 12]*
+
+---
+
+### [CARD] Stun Baton (Weapon)
+> **Category**: Melee | **Ap**: 0 | **Cost**: 0 | **Avail**: 2 | **Source**: core | **Qty**: 1
+
+## Stun baton
+
+A riot-control staple and viewed as a symbol of corporate-government oppression, this handy electrical prod is still useful for everyone in the shadows. The stun baton holds ten charges and regains one charge per ten seconds when plugged in.
+
+**Wireless bonus:** The stun baton recharges without being plugged in, regaining one charge per half hour of wireless-enabled time.
+
+*Source: [Berlin Edition, Page 12]*
 
 ---
 

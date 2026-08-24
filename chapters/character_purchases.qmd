@@ -27,6 +27,7 @@ This ledger itemizes character creation gear, matrix devices, identities, softwa
   * Comhack Securelink Upgrade: `{python} inc('Nuyen', -1000)`
   * P-ICE Nope!: `{python} inc('Nuyen', -350)`
   * Personal Assistant (Rating 6): `{python} inc('Nuyen', -500)`
+* **Renraku Sensei (Device Rating 3) x2:** *(Loot: CMP 2083-01 Nonplushed)*
 * **Commlink Applications & Utilities:**
   * Virtual Machine: `{python} inc('Nuyen', -100)`
   * Nanomask: `{python} inc('Nuyen', -100)`
@@ -62,4 +63,25 @@ This ledger itemizes character creation gear, matrix devices, identities, softwa
 * **Increase Attribute (Health Spell):** *Character Creation*
 * **Channeling (Metamagic):** *Initiation Grade 1 (SRM 2081-09 Eviction Notice)*
 * **Increase Reflexes (Health Spell):** `{python} inc('Karma', -5)` *(SRM 2081-01 Downtime)*
-* **Finding Your Way (Magician's Way Metamagic):** *Initiation Grade 2 (SRM 2081-01 Death of a Fixer)*
+* **Empathy (Metamagic):** *Initiation Grade 2 (SRM 2081-01 Death of a Fixer)*
+
+---
+
+### Foci & Magical Assets
+
+* **Qi Focus (Rating 4) — Sharp Tongue:** `{python} inc('Nuyen', -12000)` `{python} inc('Karma', -8)` *(Post-chargen Qi Focus, Smooth Operations p. 1)*
+
+---
+
+### Skills & Specializations
+
+* **Sorcery Specialization (Spellcasting):** *5 Karma (CMP 2083-01 Downtime)*
+
+---
+
+### Weaponry & Field Armaments
+
+* **Beretta 101T Light Pistol x2:** *(Loot: CMP 2083-01 Nonplushed)*
+* **Sap x2:** *(Loot: CMP 2083-01 Nonplushed)*
+* **Yamaha Raiden Assault Rifle x1:** *(Loot: CMP 2083-01 Nonplushed)*
+* **Stun Baton x1:** *(Loot: CMP 2083-01 Nonplushed)*

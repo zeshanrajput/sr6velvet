@@ -42,6 +42,7 @@ This dashboard displays Velvet's live career totals, regional faction reputation
 * **Current Heat:** `{python} Heat`
 * **Total Reputation:** `{python} sum(Reputation.values())`
   * **Seattle (SEA):** +`{python} Reputation.get('Seattle', Reputation.get('SEA', 2))`
+  * **United Netherlands (UNL):** `{python} Reputation.get('UNL', Reputation.get('AMS', 0))`
 
 ---
 

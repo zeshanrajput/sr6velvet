@@ -5,6 +5,7 @@ project:
     - chapters/audio/
     - output/pdf/
     - output/vtt/
+    - output/text/
   pre-render:
     - uv run sr6 sync-all
 
@@ -55,4 +56,3 @@ format:
 
 execute:
   engine: jupyter
-  python: .venv/Scripts/python.exe

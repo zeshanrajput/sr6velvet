@@ -1,6 +1,6 @@
 # Shadowrun 6e Portfolio — Velvet
 
-This repository contains the interactive character dossier, career ledger, rules cheat sheets, 20 questions questionnaire, and narrative anthology for **Velvet** (Kim Jin-Young), a Dalakitnon Shinto/Musok Mystic Adept built for Shadowrun 6th Edition (Sixth World) and active in **Shadowrun Missions** organized play.
+This repository contains the interactive character dossier, career ledger, rules cheat sheets, 20 questions questionnaire, and narrative anthology for **Velvet** (Kim Jin-Young), an Elf Shinto/Musok Mystic Adept built for Shadowrun 6th Edition (Sixth World) and active in **Shadowrun Missions** organized play.
 
 The project is compiled into a responsive, high-performance book using **Quarto** and powered by [`sr6-core`](https://github.com/zeshanrajput/sr6-core).
 

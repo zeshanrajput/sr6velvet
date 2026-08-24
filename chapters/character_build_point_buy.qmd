@@ -20,6 +20,7 @@ Edge = 0
 Influence = 0
 Conjuring = 0
 Sorcery = 0
+Con = 0
 
 Karma = 0
 Nuyen = 0
@@ -60,9 +61,8 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 * Awakened: `{python} inc('Character_Points', -10)`
 * Mystic Adepts start with `{python} inc('Magic', 1)`.
   * This unlocks the ability to purchase adept power points (8 CP each for mystic adepts). 
-    * 4 Adept Power Points: `{python} inc('Character_Points', -32)`
+    * 2 Adept Power Points: `{python} inc('Character_Points', -16)`
       * Cosmetic Control (R2): 2 pp
-      * Improved Ability (Sorcery, R2): 2 pp
   * Mystic adepts may purchase a number of spells equal to final Magic x2 - PP. Each spell costs 2 CP or 5 Karma each.
 
 ## Purchase Special / Metatype Adjustment Points with CP
@@ -100,9 +100,11 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 
 * All characters start with 12 skill points.
   * `{python} inc('Influence', 5)`
-  * `{python} inc('Sorcery', 6)` 
-  * `{python} inc('Conjuring', 1)`
+  * `{python} inc('Sorcery', 5)` 
+  * `{python} inc('Conjuring', 2)`
 * You may purchase up to 20 additional skill points for 2 CP each.
+  * `{python} inc('Conjuring', 4)` : `{python} inc('Character_Points', -8)`
+  * `{python} inc('Con', 4)` : `{python} inc('Character_Points', -8)`
   
 ## Purchase Resources with CP
 
@@ -128,6 +130,7 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 | Influence  | `{python} Influence` |
 | Conjuring  | `{python} Conjuring` |
 | Sorcery    | `{python} Sorcery` |
+| Con        | `{python} Con` |
 
 ## Qualities
 

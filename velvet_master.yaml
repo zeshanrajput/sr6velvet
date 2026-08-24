@@ -23,7 +23,7 @@ attributes:
   edge: 2
   magic: 6
   resonance: 0
-  power_points: 3
+  power_points: 2
 qualities:
   positive:
   - name: Metagenetic Attribute Improvement (Charisma)
@@ -56,16 +56,20 @@ skills:
 - name: Sorcery
   id: sorcery
   attribute: Magic
-  rating: 6
-  adept_bonus: 2
+  rating: 5
+  specialization: Spellcasting
 - name: Conjuring
   id: conjuring
   attribute: Magic
-  rating: 1
+  rating: 6
 - name: Influence
   id: influence
   attribute: Charisma
   rating: 5
+- name: Con
+  id: con
+  attribute: Charisma
+  rating: 4
 - name: Native Language
   id: language
   attribute: Logic
@@ -100,18 +104,31 @@ spells:
   drain: 4
   category: Health
 adept_powers:
-- name: Improved Ability (Sorcery)
-  ref: improved_ability_combat
-  rating: 3
-  choice: Sorcery
 - name: Cosmetic Control
   ref: cosmetic_control
   rating: 2
+- name: Sharp Tongue
+  ref: sharp_tongue
+  rating: 1
+  source: Qi Focus (Rating 4)
 meta_echoes:
 - name: Channeling
   ref: channeling
-- name: Finding Your Way
-  ref: finding_your_way
+- name: Empathy
+  ref: empathy
+weapons:
+- name: Beretta 101T
+  ref: beretta_101T
+  qty: 2
+- name: Sap
+  ref: sap
+  qty: 2
+- name: Yamaha Raiden
+  ref: yamaha_raiden
+  qty: 1
+- name: Stun Baton
+  ref: stun_baton
+  qty: 1
 armors:
 - name: SecureTech Skinshield
   ref: securetech_skinshield
@@ -128,6 +145,10 @@ matrix_devices:
   accessories:
   - Comhack Securelink Upgrade
   - P-Ice Nope
+- name: Renraku Sensei
+  ref: renraku_sensei
+  device_rating: 3
+  qty: 2
 software:
 - name: Personal Assistant
   ref: personal_assistant
@@ -173,6 +194,20 @@ items:
   rating: 3
 - name: Subvocal Microphone
   ref: subvocal_microphone
+- name: Qi Focus (Rating 4)
+  ref: qi_focus
+  rating: 4
+  bonded: true
+  power: Sharp Tongue
+  karma_cost: 8
+  nuyen_cost: 12000
+synergies:
+  foci:
+  - name: Qi Focus (Sharp Tongue)
+    ref: qi_focus
+    rating: 4
+    bonded: true
+    power: Sharp Tongue
 sins:
 - name: Lee Ji-Yoo
   quality: SECOND_LIFE
@@ -212,11 +247,11 @@ contacts:
 - name: Whiskey
   connection: 2
   loyalty: 3
-  favors: 0
+  favors: 1
   type: Street Doc
   archetype: Street Doc
   region: SEA
-  description: Chargen Contact
+  description: Chargen Contact | SRM 2081-02 Urgent Care
 - name: Claudette Laurier
   connection: 5
   loyalty: 4
@@ -273,3 +308,36 @@ contacts:
   archetype: Cutters Lieutenant
   region: SEA
   description: SRM 2081-07 Bootleg Bliss
+- name: Eddie Wei
+  connection: 4
+  loyalty: 1
+  favors: 0
+  type: Triad Johnson
+  archetype: Triad Johnson
+  region: SEA
+  description: "Uses: Business and economics, getting jobs, triads (Shadowrun Missions Seattle) | Types: Criminal, Matrix (Not available after 2081-24) | SRM 2081-02 Urgent Care"
+- name: Kingston
+  connection: 2
+  loyalty: 2
+  favors: 0
+  type: Shadowrunner/Street Samurai
+  archetype: Shadowrunner/Street Samurai
+  region: SEA
+  description: "Uses: Shadowrunners, street rumors (Shadowrun Missions Seattle) | Types: Criminal, Street | SRM 2081-02 Urgent Care"
+- name: Ms. Margaret
+  connection: 1
+  loyalty: 1
+  favors: 0
+  type: Hospital Volunteer
+  archetype: Hospital Volunteer
+  region: SEA
+  description: "SRM 2081-02 Urgent Care (Elderly Human Hospital Volunteer who needs her roof fixed)"
+- name: Simon Andrews
+  connection: 5
+  loyalty: 1
+  favors: 0
+  type: S-K Johnson
+  archetype: S-K Johnson
+  region: AMS
+  description: "CMP 2083-01 Nonplushed (S-K Johnson)"
+

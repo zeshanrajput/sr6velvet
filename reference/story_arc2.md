@@ -29,8 +29,8 @@ In Arc 1, Velvet learned what empathy was by building un-monetized sanctuaries. 
 * **Thematic Grounding:** Charisma 12 and weaponized charm are formidable, but corporate strike teams pack high-threat bio-magic, null-zones, and heavy armor. Velvet needs overwhelming personal and magical force.
 * **Magical Evolution:** Velvet accelerates his Shinto-Musok initiation path:
   * Mastering *Channeling* to house ancestral spirits directly within his physical frame.
-  * Embracing *The Magician's Way* (*Finding Your Way*) to deepen metamagical finesse, spell repertoire (*Increase Reflexes*, *Increase Attribute*), and sustainment foci.
-  * Unlocking deeper Dalakitnon spiritual resonance to anchor local leylines without corporate ritual hardware.
+  * Embracing *Invocation* to summon and bind formidable Great Form spirits, deepening ritual authority and esoteric deterrence.
+  * Unlocking deeper spiritual resonance to anchor local leylines without corporate ritual hardware.
 * **Financial & Gear Scaling:** Pushing for veteran and prime-tier shadowruns to build massive capital reserves, acquiring military-grade commlinks, qi foci, and specialized talismans.
 
 ---
@@ -58,5 +58,5 @@ In Arc 1, Velvet learned what empathy was by building un-monetized sanctuaries. 
 | Phase | Story Focus | Emotional Benchmark |
 | :--- | :--- | :--- |
 | **Phase I: Emergence in the Depths** | Subterranean relocation; establishing safehouses in the Ork Underground and deep corridors; evading initial corporate tracker teams. | Shock and anger channeled into ice-cold focus. Shedding corporate conditioning; reclaiming the true sovereign self. |
-| **Phase II: Accumulation & Initiation** | Veteran shadowruns; advancing Initiation Grades (*Channeling*, *Finding Your Way*); forging syndicate blood-oaths with Ni Ni Xiaolu and the Conclave. | Confidence rooted in authentic power rather than corporate performance; building a fortress of shadow allies. |
+| **Phase II: Accumulation & Initiation** | Veteran shadowruns; advancing Initiation Grades (*Channeling*, *Invocation*); forging syndicate blood-oaths with Ni Ni Xiaolu and the Conclave. | Confidence rooted in authentic power rather than corporate performance; building a fortress of shadow allies. |
 | **Phase III: The Fortress of Deterrence** | Reaching shadow parity; turning the Seattle underground into an impenetrable barrier against Mitsuhama and Wuxing recovery ops; laying the foundation for the Neo-Seoul campaign. | The realization that they are no longer running—they are building an empire capable of striking back. |

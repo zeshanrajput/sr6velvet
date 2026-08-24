@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char gender="DIVERSE" meta="elf" karmaF="2" karmaI="20" nuyen="27275">
+<sr6char gender="DIVERSE" meta="elf" karmaF="5" karmaI="33" nuyen="25055">
    <name>Velvet</name>
    <realName>Kim Jin-Young</realName>
    <attributes>
@@ -16,32 +16,91 @@
       <attributes id="RESONANCE" value="0" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="35fd4086-748f-45d2-ae64-695365a7c862">
-         <decision choice="c1ed665f-7a4e-48fa-9780-4e1414f9999c" value="Charisma" />
+      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="f7427a17-dd17-4042-942f-74c3d1bf213d">
+         <decision choice="558dfb96-47c2-46e7-ad65-b5eb435e5c9a" value="Charisma" />
       </quality>
-      <quality lang="en" ref="exceptional_attribute" uuid="e7c0820a-adf4-453f-9293-4c0eb5ea5821">
-         <decision choice="eebfed14-ece9-4809-abf4-dae737d08261" value="Charisma" />
+      <quality lang="en" ref="exceptional_attribute" uuid="f5d88a07-ba1a-44f1-8658-994aeea3c0d6">
+         <decision choice="12ff3da1-0e1b-4c26-98d9-1be15b14bcfb" value="Charisma" />
       </quality>
-      <quality lang="en" ref="inspire_competence" uuid="7f4b8e6f-935d-4144-b09a-48a34c220031" />
-      <quality lang="en" ref="low-light_vision" uuid="aac1cdf0-9b45-42f3-8cfe-ed18ba621fbb" />
-      <quality lang="en" ref="focused_concentration" uuid="fd8d31b2-6b7d-4021-9c11-80ff355aa4e3" value="3" />
-      <quality lang="en" ref="chronic_pain" uuid="e7beb65a-9e43-426b-8231-3f9b190ca792" />
-      <quality lang="en" ref="hooder" uuid="7f1ce8ce-d2fa-4511-af76-22a022597dd4" value="3" />
-      <quality lang="en" ref="allergy" uuid="e5f74c32-0840-4548-b257-956f3b11669a">
-         <decision choice="d12d71e0-b68e-4037-aaab-dddc68e06637" value="Spices" />
+      <quality lang="en" ref="inspire_competence" uuid="ecadaf39-fdf2-4bd8-9791-e5056df115b2" />
+      <quality lang="en" ref="low-light_vision" uuid="0a406f0e-f77f-440c-a22c-5785f657d065" />
+      <quality lang="en" ref="focused_concentration" uuid="5991efc5-5e28-4ae6-82be-2d961e866a34" value="3" />
+      <quality lang="en" ref="chronic_pain" uuid="5de7cfda-2e3b-4376-ae7b-078024955fb8" />
+      <quality lang="en" ref="hooder" uuid="158dd6cb-fe99-4855-bbef-8eeff1c9392d" value="3" />
+      <quality lang="en" ref="allergy" uuid="318db360-ac2c-4365-9f42-138c34ea2c11">
+         <decision choice="91b7e7b8-77d6-42ba-b698-62892d0738d0" value="Spices" />
       </quality>
    </qualities>
    <skills>
-      <skill lang="en" ref="sorcery" uuid="59a31c67-8a52-4eae-a42e-1f172dcadbad" value="6" />
-      <skill lang="en" ref="conjuring" uuid="b4061f1e-7993-4cd7-8fd7-9e949469b79e" value="1" />
-      <skill lang="en" ref="influence" uuid="7684d6f9-855c-4676-902a-e4e9bf84cf44" value="5" />
-      <skill lang="en" ref="language" uuid="b9e1d899-77b5-400b-a430-0fa92c58b934" value="4" />
-      <skill lang="en" ref="small_unit_tactics" uuid="1300c2f5-b1b4-41a1-a4bc-0fb2c5b35e4f" value="1" />
-      <skill lang="en" ref="mct" uuid="6fe7ca39-9d64-46d7-a961-3ef240ab609d" value="1" />
-      <skill lang="en" ref="wuxing" uuid="0bca90a7-a42f-43b7-85bd-e99db07b5e01" value="1" />
-      <skill lang="en" ref="east_asian_media" uuid="1cc9d832-2a93-4bf2-bbc8-7efe8720eee9" value="1" />
+      <skill lang="en" ref="sorcery" uuid="83adba4d-e2c3-4f83-9c1f-5bccebf73a12" value="5">
+         <skillspec lang="en" ref="spellcasting" />
+      </skill>
+      <skill lang="en" ref="conjuring" uuid="abd23688-c33a-4fa9-9617-1b7773becda9" value="6" />
+      <skill lang="en" ref="influence" uuid="f4e3afc5-5c31-4a97-9cd9-dfe342f9c600" value="5" />
+      <skill lang="en" ref="con" uuid="50476ba1-2b5c-4a3f-a93b-5ee997be3070" value="4" />
+      <skill lang="en" ref="language" uuid="19dee025-a594-498d-bc89-8e9bde239191" value="4">
+         <decision choice="a7103ee4-31fa-435d-ac42-08f7d4d1e80c" value="Native Language" />
+      </skill>
+      <skill lang="en" ref="knowledge" uuid="4fceead4-ca5d-4408-8660-40beb7780c86" value="1">
+         <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="Small Unit Tactics" />
+      </skill>
+      <skill lang="en" ref="knowledge" uuid="257e330e-071f-46ba-967c-7a7d5d9508ec" value="1">
+         <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="MCT" />
+      </skill>
+      <skill lang="en" ref="knowledge" uuid="454c7c2c-a17b-4a24-b033-243f64fe720f" value="1">
+         <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="Wuxing" />
+      </skill>
+      <skill lang="en" ref="knowledge" uuid="138a2f04-b061-413d-933e-2ee38fbbd4fa" value="1">
+         <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="East Asian Media" />
+      </skill>
    </skills>
-   <items />
+   <spells>
+      <spell lang="en" ref="increase_attribute" />
+      <spell lang="en" ref="increase_reflexes" />
+   </spells>
+   <adeptPowers>
+      <adeptpower lang="en" ref="cosmetic_control" value="2" />
+   </adeptPowers>
+   <metaEchoes>
+      <metaEcho lang="en" ref="channeling" />
+      <metaEcho lang="en" ref="empathy" />
+   </metaEchoes>
+   <items>
+      <item lang="en" mode="CARRIED" ref="beretta_101T" uuid="47a1d309-135c-4f59-897a-8644e6637569" count="2" />
+      <item lang="en" mode="CARRIED" ref="sap" uuid="e4017382-4a7b-4a80-9a87-59d75241ce7a" count="2" />
+      <item lang="en" mode="CARRIED" ref="yamaha_raiden" uuid="d1bb9aeb-55f9-4a90-adfd-d65a7bfb9e1c" />
+      <item lang="en" mode="CARRIED" ref="stun_baton" uuid="a7184fda-2421-400c-9333-7345fd5ab076" />
+      <item lang="en" mode="CARRIED" ref="securetech_skinshield" uuid="5150d280-1802-4e44-b205-162964bdc1cd">
+         <accessories>
+            <item lang="en" mode="EMBEDDED" ref="ballistic_hood" uuid="f42f1400-90b6-47a0-9365-ad64a5a16c3f" />
+         </accessories>
+      </item>
+      <item lang="en" mode="CARRIED" ref="erika_elite" uuid="bef8c067-4f7a-4aee-8611-433278ec0fa6">
+         <accessories>
+            <item lang="en" mode="EMBEDDED" ref="comhack_securelink_upgrade" uuid="5c28e28a-2664-44db-acce-ae3ed4eb85ab" />
+            <item lang="en" mode="EMBEDDED" ref="p-ice_nope" uuid="c5be87ab-2e4d-4a8e-9c8f-ad19c292250b" />
+         </accessories>
+      </item>
+      <item lang="en" mode="CARRIED" ref="renraku_sensei" uuid="e119612e-5709-470b-a4eb-d2ece8f2f087" count="2" />
+      <item lang="en" mode="CARRIED" ref="nanocosmetics_kit" uuid="e9d92601-659f-4119-8108-3ed86186a413" />
+      <item lang="en" mode="CARRIED" ref="nanocosmetics_refill" uuid="cfaec96b-effc-4e96-9bd7-d3430276689c" />
+      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_kit" uuid="777ab860-e16b-40b8-b8b5-c88393ae1bd4" />
+      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_refill" uuid="3a92502e-4957-4e14-9d86-69aa206b8bb8" />
+      <item lang="en" mode="CARRIED" ref="savior_medkit" uuid="c99f5ecf-37a5-46fa-8456-c86ef1c88a18" />
+      <item lang="en" mode="CARRIED" ref="savior_medkit_refill" uuid="fe8ae05d-30ab-4dc5-8c3b-6a1187177d77" />
+      <item lang="en" mode="CARRIED" ref="contacts" uuid="5740a921-793f-48fe-9349-794ecb18c724">
+         <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3" />
+         <accessories>
+            <item lang="en" mode="EMBEDDED" ref="flare_compensation" uuid="02f64a39-d7b0-49c1-acdc-3ef7e81e2cd8" />
+            <item lang="en" mode="EMBEDDED" ref="image_link" uuid="ae164bee-2463-4d2e-ae18-dba00c1e0d32" />
+            <item lang="en" mode="EMBEDDED" ref="thermographic_vision" uuid="a302ca06-e2f1-4434-be14-185ef03eff49" />
+         </accessories>
+      </item>
+      <item lang="en" mode="CARRIED" ref="earbuds" uuid="4230d15f-f5ad-4c45-8277-398e1a5697b8">
+         <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3" />
+      </item>
+      <item lang="en" mode="CARRIED" ref="subvocal_microphone" uuid="343938b3-da00-437c-9984-fe8a0432d17b" />
+   </items>
    <contacts>
       <contact name="Brynne Taggart" rat="4" type="STREET" typename="Fixer" loy="2" favors="0">
          <description>Uses: Getting jobs, fencing gear, gangs (Shadowrun Missions Seattle) | Types: Criminal, Street</description>
@@ -52,7 +111,7 @@
       <contact name="Ni Ni Xiaolu" rat="3" type="CRIMINAL" typename="Triad Johnson" loy="2" favors="2">
          <description>Uses: Getting jobs, drugs, street rumors, triads (Shadowrun Missions Seattle) | Types: Criminal</description>
       </contact>
-      <contact name="Whiskey" rat="2" type="MEDICAL" typename="Street Doc" loy="3" favors="0">
+      <contact name="Whiskey" rat="2" type="MEDICAL" typename="Street Doc" loy="3" favors="1">
          <description>Uses: Medicine, street docs (Shadowrun Missions Seattle) | Types: Medical</description>
       </contact>
       <contact name="Claudette Laurier" rat="5" type="MATRIX" typename="Golden Dawn Librarian" loy="4" favors="0">
@@ -76,6 +135,43 @@
       <contact name="Trudy" rat="2" type="STREET" typename="Cutters Lieutenant" loy="1" favors="0">
          <description>SRM 2081-07 Bootleg Bliss</description>
       </contact>
+      <contact name="Eddie Wei" rat="4" type="MATRIX" typename="Triad Johnson" loy="1" favors="0">
+         <description>Uses: Business and economics, getting jobs, triads (Shadowrun Missions Seattle) | Types: Criminal, Matrix (Not available after 2081-24)</description>
+      </contact>
+      <contact name="Kingston" rat="2" type="STREET" typename="Shadowrunner / Street Samurai" loy="2" favors="0">
+         <description>Uses: Shadowrunners, street rumors (Shadowrun Missions Seattle) | Types: Criminal, Street</description>
+      </contact>
+      <contact name="Ms. Margaret" rat="1" type="MEDICAL" typename="Hospital Volunteer" loy="1" favors="0">
+         <description>SRM 2081-02 Urgent Care (Elderly Human Hospital Volunteer who needs her roof fixed)</description>
+      </contact>
+      <contact name="Simon Andrews" rat="5" type="CORPORATE" typename="S-K Johnson" loy="1" favors="0">
+         <description>CMP 2083-01 Nonplushed (S-K Johnson)</description>
+      </contact>
    </contacts>
-   <rewards />
+   <rewards>
+      <reward date="2026-07-01T00:00:00.000Z" exp="1" money="1000">
+         <title>Build-A-Runner (GM Credit)</title>
+         <gamemaster>WarDoctor CDT 1077</gamemaster>
+      </reward>
+      <reward date="2026-07-17T00:00:00.000Z" exp="7" money="11000">
+         <title>SRM 2081-09 | Eviction Notice</title>
+         <gamemaster>WarDoctor CDT 1077</gamemaster>
+      </reward>
+      <reward date="2026-07-26T00:00:00.000Z" exp="7" money="10000">
+         <title>SRM 2081-07 | Bootleg Bliss</title>
+         <gamemaster>CDT Agent Kira Capalu (#TBD)</gamemaster>
+      </reward>
+      <reward date="2026-08-07T00:00:00.000Z" exp="6" money="8300">
+         <title>SRM 2081-01 | Death of a Fixer</title>
+         <gamemaster>WarDoctor</gamemaster>
+      </reward>
+      <reward date="2026-08-22T00:00:00.000Z" exp="7" money="7000">
+         <title>SRM 2081-02 | Urgent Care</title>
+         <gamemaster>WarDoctor CDT 1077</gamemaster>
+      </reward>
+      <reward date="2026-08-22T00:00:00.000Z" exp="7" money="10500">
+         <title>CMP 2083-01 | Nonplushed</title>
+         <gamemaster>CDT Agent Kira Capalu (#TBD)</gamemaster>
+      </reward>
+   </rewards>
 </sr6char>

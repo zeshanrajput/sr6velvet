@@ -3,7 +3,7 @@
 ============================================================================
  Real Name : Kim Jin-Young      | Metatype : Elf (Shinto / Musok)
  Initiation: Grade 0            | Gender   : DIVERSE (Age: 20)
- Available Nuyen : 27,275¥ | Karma: 2 Pool (22 Lifetime)
+ Available Nuyen : 25,055¥ | Karma: 5 Pool (38 Lifetime)
 ----------------------------------------------------------------------------
  ATTRIBUTES & DERIVED RATINGS:
   BOD: 2        | AGI: 3        | REA: 2       | STR: 2 
@@ -15,12 +15,13 @@
  MAGICAL TRADITION & PROTOCOLS:
   Tradition           : Shinto / Musok
   Drain Resistance    : 15d6 (3 Hits) [WIL 5 + CHA 10 = 15d6]
-  Adept Power Points  : 3 PP
+  Adept Power Points  : 2 PP
 ----------------------------------------------------------------------------
  ACTIVE SKILLS & TABLE-RELEVANT DICE POOLS:
-  - Sorcery             : 12d6  [MAG 6 + 6 Rtg]
-  - Conjuring           : 7d6  [MAG 6 + 1 Rtg]
+  - Sorcery             : 11d6  [MAG 6 + 5 Rtg]
+  - Conjuring           : 12d6  [MAG 6 + 6 Rtg]
   - Influence           : 15d6  [CHA 10 + 5 Rtg]
+  - Con                 : 14d6  [CHA 10 + 4 Rtg]
   - Native Language     : 7d6  [LOG 3 + 4 Rtg]
   - Small Unit Tactics  : 4d6  [LOG 3 + 1 Rtg]
   - MCT                 : 4d6  [LOG 3 + 1 Rtg]

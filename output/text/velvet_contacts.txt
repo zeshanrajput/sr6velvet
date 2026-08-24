@@ -18,8 +18,8 @@
       (looking forward to date)
 ----------------------------------------------------------------------------
  [04] WHISKEY (Street Doc) [SEA]
-      Connection: 2 (Fixed) | Loyalty: 3 | Active Favors: 0
-      History / Changes: Chargen Contact
+      Connection: 2 (Fixed) | Loyalty: 3 | Active Favors: 1
+      History / Changes: Chargen Contact | SRM 2081-02 Urgent Care
 ----------------------------------------------------------------------------
  [05] CLAUDETTE LAURIER (Order of the Golden Dawn Librarian) [NOLA]
       Connection: 5 (Fixed) | Loyalty: 4 | Active Favors: 0
@@ -48,4 +48,24 @@
  [11] TRUDY (Cutters Lieutenant) [SEA]
       Connection: 2 (Fixed) | Loyalty: 1 | Active Favors: 0
       History / Changes: SRM 2081-07 Bootleg Bliss
+----------------------------------------------------------------------------
+ [12] EDDIE WEI (Triad Johnson) [SEA]
+      Connection: 4 (Fixed) | Loyalty: 1 | Active Favors: 0
+      History / Changes: Uses: Business and economics, getting jobs, triads
+      (Shadowrun Missions Seattle) | Types: Criminal, Matrix (Not available
+      after 2081-24) | SRM 2081-02 Urgent Care
+----------------------------------------------------------------------------
+ [13] KINGSTON (Shadowrunner/Street Samurai) [SEA]
+      Connection: 2 (Fixed) | Loyalty: 2 | Active Favors: 0
+      History / Changes: Uses: Shadowrunners, street rumors (Shadowrun
+      Missions Seattle) | Types: Criminal, Street | SRM 2081-02 Urgent Care
+----------------------------------------------------------------------------
+ [14] MS. MARGARET (Hospital Volunteer) [SEA]
+      Connection: 1 (Fixed) | Loyalty: 1 | Active Favors: 0
+      History / Changes: SRM 2081-02 Urgent Care (Elderly Human Hospital
+      Volunteer who needs her roof fixed)
+----------------------------------------------------------------------------
+ [15] SIMON ANDREWS (S-K Johnson) [AMS]
+      Connection: 5 (Fixed) | Loyalty: 1 | Active Favors: 0
+      History / Changes: CMP 2083-01 Nonplushed (S-K Johnson)
 ----------------------------------------------------------------------------

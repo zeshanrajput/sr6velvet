@@ -17,7 +17,7 @@ log_totals = get_log_totals(["chapters/character_log.qmd", "chapters/character_p
 
 * **Designation:** Kim Jin-Young
 * **VTT Alias:** Velvet
-* **Metatype:** Dalakitnon (Elf Variant)
+* **Metatype:** Elf
 * **Tradition:** Shinto / Musok
 * **System Status:** ONLINE // AWAKENED
 :::
@@ -40,6 +40,7 @@ log_totals = get_log_totals(["chapters/character_log.qmd", "chapters/character_p
 Born a Dalakitnon to a destitute family in the Manila slums, Jin-Young's rare genetic and spiritual architecture and extreme charisma made him a corporate asset for Mitsuhama. Reconstructed into a pan-Asian idol commodity and deployed as the center Face of TXM (*The Death Messengers*), his voice and movement were used to channel immense collective geomantic rituals across metroplexes. Sabotaging a lethal mega-ritual in Singapore to save Hana and shatter the ritual matrix, he vanished into the Seattle shadows to build a sovereign sanctuary for Awakened refugees.
 
 This anthology explores the rich, visceral spaces between game mechanics:
+
 * **The Visceral Somatic Cost of Identity:** Resetting bone cartilage, localized DNA re-keying, and wearing algorithmic masks (Lee Ji-yoo, Tanaka Ryo) while protecting the un-sculpted obsidian baseline.
 * **The Discovery of Genuine Empathy:** Evolving from a manufactured corporate weapon to crafting un-monetized sanctuaries of quiet respect, roasted Tieguanyin tea, and genuine connection.
 :::
@@ -51,7 +52,7 @@ This anthology explores the rich, visceral spaces between game mechanics:
 
 1. *Sanctuary & Sovereign Autonomy:* Build an unassailable shadow network and magical sanctuary in Seattle to protect Awakened refugees from corporate IP reclamation.
 2. *Liberation & Solidarity:* Sever Mitsuhama's ownership claims and liberate Hana from Wuxing's gilded cage.
-3. *Spiritual Mastery:* Advance Shinto-Musok initiation (Channeling, Finding Your Way) to channel ancestral spirit ribbons without succumbing to biological drain.
+3. *Spiritual Mastery:* Advance Shinto-Musok initiation (Channeling, Invocation) to channel ancestral spirit ribbons and great forms without succumbing to biological drain.
 
 #### Secrets
 

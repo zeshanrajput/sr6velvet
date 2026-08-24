@@ -2,7 +2,7 @@
 
 **Extends**: `sr6-core/reference/default_voice_spec.md`  
 **Character**: Velvet (Kim Jin-Young / Tanaka Ryo / Lee Ji-yoo / Mei Jing)  
-**Archetype**: Elf Mystic Adept / Face (Shinto / Musok Tradition, Dalakitnon Heritage)  
+**Archetype**: Elf Mystic Adept / Face (Shinto / Musok Tradition, Dalakitnon Birth Heritage)  
 **Repository Target**: `sr6velvet/reference/voice_spec.md`
 
 ---
@@ -38,7 +38,7 @@ arc_chronology:
     expressivity: "Fluid, deliberate persona deployment backed by raw, unmasked sovereignty; shedding performative compliance in favor of formidable street and shadow authority."
     cognitive_bias: "Ruthless strategic pragmatism fused with protective empathy; no longer playing the victim of corporate IP; treating the shadows as an arena to build sovereign leverage."
     visual_palette: "Underground neon, geothermal steam, spirit ribbons in deep twilight hues, blood-oaths, Seattle underworld shadows, un-synthesized street broth."
-    mechanical_state: "Advanced initiation (Finding Your Way, Adept Metamagics, expanded spell suite); deep syndicate alliances (Octagon Triad, Cutters, Ancients, Conclave)."
+    mechanical_state: "Advanced initiation (Channeling, Invocation, Adept Metamagics, expanded spell suite); deep syndicate alliances (Octagon Triad, Cutters, Ancients, Conclave)."
 ```
 
 ---

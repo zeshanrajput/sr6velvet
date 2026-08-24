@@ -4,7 +4,7 @@
 
 ## **1\. The Tragic Origin (The Commodity)**
 
-* **The Slums of Manila:** Born a Daleketnon (Elf) to a destitute family in the Philippines, his early signs of extreme Charisma and magical potential weren't a blessing—they were a survival ticket.  
+* **The Slums of Manila:** Born a Dalakitnon (Elf variant) to a destitute family in the Philippines, his early signs of extreme Charisma and magical potential weren't a blessing—they were a survival ticket.  
 * **Sold to the Corp:** His starving parents sold him at a young age to a Mitsuhama entertainment subsidiary. He was placed into grueling, military-discipline idol trainee dorms for over a decade, stripped of his cultural identity.  
 * **The Universal Face:** The corporation invested fortunes in extensive, bio-sculpting cosmetic surgeries and permanent physical alteration spells to completely erase his Filipino features, reconstructing him into an optimized, "pan-Asian" aesthetic optimized for international marketability.
 

@@ -34,7 +34,7 @@ Pronouns and demeanor are strictly locked to Velvet's active biological persona:
 ### B. Somatic Reality of Cosmetic Control (R2)
 
 - Shifting between personas carries a heavy visceral tax: bone cartilage resetting with wet clicks, dull metallic heat behind the jaw, shortened or broadened ribcages, and localized DNA re-keying.
-- Beneath every sculpted mask lies the un-sculpted obsidian iris baseline of his Dalakitnon heritage.
+- Beneath every sculpted mask lies the un-sculpted obsidian iris baseline of his birth heritage.
 - Never portray physical transformation as instantaneous, painless, or effortless shape-shifting.
 
 ### C. Charisma 10 (14) Horror & Engineered Gravity

@@ -6,6 +6,6 @@
   - Increase Reflexes          | Drain: 4
 ----------------------------------------------------------------------------
  ADEPT POWERS:
-  - Improved Ability (Sorcery) | Cost: 0 PP
   - Cosmetic Control           | Cost: 0 PP
+  - Sharp Tongue               | Cost: 0 PP
 ----------------------------------------------------------------------------
