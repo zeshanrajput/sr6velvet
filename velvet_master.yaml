@@ -350,4 +350,21 @@ contacts:
   archetype: S-K Johnson
   region: AMS
   description: "CMP 2083-01 Nonplushed (S-K Johnson)"
+- name: Mr. Fa
+  connection: 4
+  loyalty: 1
+  favors: 1
+  type: HKB Corporate Middle Manager
+  archetype: HKB Corporate Middle Manager
+  region: HK
+  description: "CMP 2083-05 Precious Cargo (Liao Fa Deng, Male Human Corporate Middle Manager)"
+- name: Liao Fa Ren
+  connection: 3
+  loyalty: 2
+  favors: 1
+  type: HK Rookie Journalist
+  archetype: HK Rookie Journalist
+  region: HK
+  description: "CMP 2083-05 Precious Cargo (Female Human Rookie Journalist, top marks on port raid story)"
+
 

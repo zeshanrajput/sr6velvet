@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char gender="DIVERSE" meta="elf" karmaF="5" karmaI="33" nuyen="25055">
+<sr6char gender="DIVERSE" meta="elf" karmaF="14" karmaI="33" nuyen="30735">
    <type>METAHUMAN</type>
    <mortype>mysticadept</mortype>
    <tradition>shinto</tradition>
@@ -25,41 +25,41 @@
       <attributes id="RESONANCE" value="0" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="fcf0a7a4-fdad-4d40-9f15-15d8c8be6608">
-         <decision choice="d81a4968-3712-432e-bc1b-e961bc6edde9" value="Charisma" />
+      <quality lang="en" ref="metagenetic_attribute_improvement" uuid="2580f4ea-792c-4d9a-9eda-76066eeebffb">
+         <decision choice="1d98fa2c-39cb-47b4-8c65-c2ecf828b795" value="Charisma" />
       </quality>
-      <quality lang="en" ref="exceptional_attribute" uuid="6c7d8f17-4af7-4957-896c-6e0025d0d0be">
-         <decision choice="5a7d6c88-a205-41f4-a1ef-06cf4ebb7f29" value="Charisma" />
+      <quality lang="en" ref="exceptional_attribute" uuid="a726adaa-0064-4b62-ba6f-872dcc1a54ee">
+         <decision choice="2007a994-00e9-4aca-b0bf-07a265542ff4" value="Charisma" />
       </quality>
-      <quality lang="en" ref="inspire_competence" uuid="d994e055-e41b-47c3-b7f5-ca594694ee34" />
-      <quality lang="en" ref="low-light_vision" uuid="7951731b-f1da-4508-8c72-fc184ce11b64" />
-      <quality lang="en" ref="focused_concentration" uuid="a606ed1e-5335-437e-aaa7-4d0f9cb5e25b" value="3" />
-      <quality lang="en" ref="chronic_pain" uuid="87143477-8511-40a2-bfee-93407033d575" />
-      <quality lang="en" ref="hooder" uuid="4d61aa66-6a89-4d04-879f-adbb9a4caa9f" value="3" />
-      <quality lang="en" ref="allergy" uuid="c82c3561-6c5b-4e5e-942f-3c73961fbaec">
-         <decision choice="14093b7d-e592-4def-98e9-518f2598421a" value="Spices" />
+      <quality lang="en" ref="inspire_competence" uuid="35e23917-d418-4d10-a97f-b0540176f1f4" />
+      <quality lang="en" ref="low-light_vision" uuid="86c6772c-c658-41f4-ab33-583e1e5c16ee" />
+      <quality lang="en" ref="focused_concentration" uuid="b8e69a01-9696-4d45-8c23-1e007a6652b7" value="3" />
+      <quality lang="en" ref="chronic_pain" uuid="18cc7afd-1a38-4eae-943b-5b730629330e" />
+      <quality lang="en" ref="hooder" uuid="ab9b997d-9c7e-4f43-b431-e3a1fa331d93" value="3" />
+      <quality lang="en" ref="allergy" uuid="f433e6a0-a8bf-465d-a7a1-c7fdad0d28ea">
+         <decision choice="8e36988e-0abb-43b2-9c51-35042ead8ebe" value="Spices" />
       </quality>
    </qualities>
    <skills>
-      <skill lang="en" ref="sorcery" uuid="21c77eb2-c1c3-4a10-989d-ff6abfe51f2c" value="5">
+      <skill lang="en" ref="sorcery" uuid="b2024aa6-2136-422d-b374-fad843aeb345" value="5">
          <skillspec lang="en" ref="spellcasting" />
       </skill>
-      <skill lang="en" ref="conjuring" uuid="7e67f62b-4452-48de-a954-9eec6e0f5e24" value="6" />
-      <skill lang="en" ref="influence" uuid="5cc30b37-72be-44a0-9e68-1b954ae3ad6f" value="5" />
-      <skill lang="en" ref="con" uuid="cafd4dcd-277e-41a0-a25b-dd67f352b432" value="4" />
-      <skill lang="en" ref="language" uuid="5ce8ea69-873d-4953-8693-8f5ea8bc571e" value="4">
+      <skill lang="en" ref="conjuring" uuid="df8e072d-bd26-48e1-9ca4-72e2f7464533" value="6" />
+      <skill lang="en" ref="influence" uuid="d1e7313e-2757-4fe7-be80-603022fc15f7" value="5" />
+      <skill lang="en" ref="con" uuid="b2d51276-2bbc-4364-b4b9-dae0a9ff3783" value="4" />
+      <skill lang="en" ref="language" uuid="59f22fbf-90f2-4b1f-a6e5-4ebc8022bc6c" value="4">
          <decision choice="a7103ee4-31fa-435d-ac42-08f7d4d1e80c" value="Native Language" />
       </skill>
-      <skill lang="en" ref="knowledge" uuid="64d994bd-9860-419b-85fb-912df2fd1a85" value="1">
+      <skill lang="en" ref="knowledge" uuid="471a07f2-2888-4a1b-a7ae-48b2693e93eb" value="1">
          <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="Small Unit Tactics" />
       </skill>
-      <skill lang="en" ref="knowledge" uuid="af89c17c-298a-4560-af25-d9422ad7347b" value="1">
+      <skill lang="en" ref="knowledge" uuid="57c47e88-20db-489d-94ca-d40de49bd18e" value="1">
          <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="MCT" />
       </skill>
-      <skill lang="en" ref="knowledge" uuid="0e37b5de-9353-4863-81d7-9473ae9ffe85" value="1">
+      <skill lang="en" ref="knowledge" uuid="caf585fd-9ba1-463b-8225-aa7de075dcde" value="1">
          <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="Wuxing" />
       </skill>
-      <skill lang="en" ref="knowledge" uuid="14869866-12f9-4559-96bd-07c81cd27437" value="1">
+      <skill lang="en" ref="knowledge" uuid="0cb219b5-27d2-4cbb-902d-b972ccdc56c0" value="1">
          <decision choice="89ebc659-ba06-4732-b347-6b832842a55b" value="East Asian Media" />
       </skill>
    </skills>
@@ -78,11 +78,11 @@
       <metaEcho lang="en" value="1" ref="power_points" />
    </metaEchoes>
    <sins>
-      <sin name="Lee Ji-Yoo" quality="SECOND_LIFE" uniqueid="313b5856-0ae0-4221-934c-d7d3d3280d3c" />
-      <sin name="Tanaka Ryo" quality="SECOND_LIFE" uniqueid="1e3e10e3-3e73-45b2-bd95-7a1182f02c4e" />
+      <sin name="Lee Ji-Yoo" quality="SECOND_LIFE" uniqueid="ff67dae7-06e5-40f3-854f-e238a7170e2f" />
+      <sin name="Tanaka Ryo" quality="SECOND_LIFE" uniqueid="261b5de9-dfff-4590-a645-36a35d2a0dd5" />
    </sins>
    <licenses>
-      <licenses name="Magician" rating="SECOND_LIFE" sin="313b5856-0ae0-4221-934c-d7d3d3280d3c" uniqueid="b4e0cca3-5cc9-4561-8d33-0696bb3fdbed" />
+      <licenses name="Magician" rating="SECOND_LIFE" sin="ff67dae7-06e5-40f3-854f-e238a7170e2f" uniqueid="ec675b6b-8efe-4b73-b085-8a7e4bf35b6f" />
    </licenses>
    <foci>
       <focus lang="en" ref="qi_focus" value="4">
@@ -91,40 +91,40 @@
       </focus>
    </foci>
    <items>
-      <item lang="en" mode="CARRIED" ref="beretta_101T" uuid="8c0611ff-68d6-4822-97bd-8d85c61ebb13" count="2" />
-      <item lang="en" mode="CARRIED" ref="sap" uuid="923c1394-96ac-41ea-9f86-b1eb47dd064a" count="2" />
-      <item lang="en" mode="CARRIED" ref="yamaha_raiden" uuid="2e7be373-a115-4f9a-96a1-9779ec6fb6a8" />
-      <item lang="en" mode="CARRIED" ref="stun_baton" uuid="2ae19f31-4a40-40d2-be65-b185accfb090" />
-      <item lang="en" mode="CARRIED" ref="securetech_skinshield" uuid="7267e4e7-349f-4c45-8be7-ae725acb5b98">
+      <item lang="en" mode="CARRIED" ref="beretta_101T" uuid="3d67f4b2-a213-4dbd-b48f-c9286e952c39" count="2" />
+      <item lang="en" mode="CARRIED" ref="sap" uuid="56001586-6712-44c0-a622-e6352126a3cb" count="2" />
+      <item lang="en" mode="CARRIED" ref="yamaha_raiden" uuid="dbef571b-9ea6-40f6-9167-4e673e33dc71" />
+      <item lang="en" mode="CARRIED" ref="stun_baton" uuid="3523cca2-2b18-400d-bce1-082fa7bc0970" />
+      <item lang="en" mode="CARRIED" ref="securetech_skinshield" uuid="be88890c-5d4e-46ce-9232-9b7c13668cdc">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="ballistic_hood" uuid="a9ca7a5e-132a-4284-a10b-0e28150bb41a" />
+            <item lang="en" mode="EMBEDDED" ref="ballistic_hood" uuid="58218574-c642-4d3b-8564-f64b84789f53" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="erika_elite" uuid="d6002f8e-0cac-4ccf-ae62-356a9d26c940">
+      <item lang="en" mode="CARRIED" ref="erika_elite" uuid="395cc3b3-416f-4961-b10e-5a376655c640">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="comhack_securelink_upgrade" uuid="c71b9227-5d76-4bd8-9d65-79d48bcd8b0b" />
-            <item lang="en" mode="EMBEDDED" ref="p-ice_nope" uuid="c413214c-fa88-4979-a60b-80ee11b33749" />
+            <item lang="en" mode="EMBEDDED" ref="comhack_securelink_upgrade" uuid="7fdc4cc2-cd6a-4c42-8e42-f4559fc26bd9" />
+            <item lang="en" mode="EMBEDDED" ref="p-ice_nope" uuid="cf6bd066-76e7-4b88-bd2f-83e089ae5862" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="renraku_sensei" uuid="6d22a0f1-65fd-47d6-adb4-9c682c85d6f2" count="2" />
-      <item lang="en" mode="CARRIED" ref="nanocosmetics_kit" uuid="939f8a37-d65d-433a-b37b-666cb28539ad" />
-      <item lang="en" mode="CARRIED" ref="nanocosmetics_refill" uuid="1d411115-ca8e-4fef-813e-688ff43df53b" />
-      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_kit" uuid="97d291b4-f90b-418e-bb22-72f1e0b6c929" />
-      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_refill" uuid="9a61cb2b-24b5-438f-bf2c-321e80c7f4ab" />
-      <item lang="en" mode="CARRIED" ref="savior_medkit" uuid="f797b539-9941-498d-9707-ba4aacc8584c" />
-      <item lang="en" mode="CARRIED" ref="savior_medkit_refill" uuid="b3156d2f-18f2-4274-855c-17d774689422" />
-      <item lang="en" mode="CARRIED" ref="contacts" uuid="676def98-c821-46bf-8c82-9d8e59c2a7cf">
+      <item lang="en" mode="CARRIED" ref="renraku_sensei" uuid="cbf825ec-d3ae-49bb-83ea-633f409f2e53" count="2" />
+      <item lang="en" mode="CARRIED" ref="nanocosmetics_kit" uuid="5f4e1816-fdc5-445c-a911-2fbc76c4063e" />
+      <item lang="en" mode="CARRIED" ref="nanocosmetics_refill" uuid="593dc545-74ba-4c46-817e-fbc59988d1b6" />
+      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_kit" uuid="c024ab42-8ed9-4e18-aa60-ef4ecf7fcd26" />
+      <item lang="en" mode="CARRIED" ref="nanopaste_disguise_refill" uuid="e5357821-6dc4-429d-9e92-9dc61b5a1d4a" />
+      <item lang="en" mode="CARRIED" ref="savior_medkit" uuid="a216b8c0-5d9e-4f2c-94c6-410b3e667ea8" />
+      <item lang="en" mode="CARRIED" ref="savior_medkit_refill" uuid="a127a91c-f160-4792-a7a1-603dc0b52fb0" />
+      <item lang="en" mode="CARRIED" ref="contacts" uuid="920c917a-a12b-440f-9b6e-50ccf0e5596e">
          <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3" />
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="flare_compensation" uuid="78d1209d-8b5e-43a3-8f00-979e85a0ddfb" />
-            <item lang="en" mode="EMBEDDED" ref="image_link" uuid="5d6f2e7a-bb57-4849-857d-b50ce5ce1c1a" />
-            <item lang="en" mode="EMBEDDED" ref="thermographic_vision" uuid="8e1b88fb-90a6-4cdb-9fb3-cc6fb4897e20" />
+            <item lang="en" mode="EMBEDDED" ref="flare_compensation" uuid="05b63003-5adc-4d65-b28e-e2b98c25d967" />
+            <item lang="en" mode="EMBEDDED" ref="image_link" uuid="bd2030e3-f833-44bd-8a37-3ed96051c1d9" />
+            <item lang="en" mode="EMBEDDED" ref="thermographic_vision" uuid="d37881f8-58f7-4856-9978-41223a078e54" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="earbuds" uuid="82cc5abf-e63b-48b3-ba58-15e08213c573">
+      <item lang="en" mode="CARRIED" ref="earbuds" uuid="f2e1c0db-2766-4e76-b45f-872d01fb5a4b">
          <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3" />
       </item>
-      <item lang="en" mode="CARRIED" ref="subvocal_microphone" uuid="8db4e9dd-840c-4832-84d3-b427775fcb6c" />
+      <item lang="en" mode="CARRIED" ref="subvocal_microphone" uuid="d78a7bc9-c5c0-4a28-9e9e-762e7fbafd03" />
    </items>
    <contacts>
       <contact name="Brynne Taggart" rat="4" type="STREET" typename="Fixer" loy="2" favors="0">
@@ -172,6 +172,12 @@
       <contact name="Simon Andrews" rat="5" type="CORPORATE" typename="S-K Johnson" loy="1" favors="0">
          <description>CMP 2083-01 Nonplushed (S-K Johnson)</description>
       </contact>
+      <contact name="Mr. Fa" rat="4" type="CORPORATE" typename="HKB Corporate Middle Manager" loy="1" favors="1">
+         <description>CMP 2083-05 Precious Cargo (Liao Fa Deng, Male Human)</description>
+      </contact>
+      <contact name="Liao Fa Ren" rat="3" type="MEDIA" typename="HK Rookie Journalist" loy="2" favors="1">
+         <description>CMP 2083-05 Precious Cargo (Female Human, top marks on port raid)</description>
+      </contact>
    </contacts>
    <rewards>
       <reward date="2026-07-01T00:00:00.000Z" exp="1" money="1000">
@@ -197,6 +203,10 @@
       <reward date="2026-08-22T00:00:00.000Z" exp="7" money="10500">
          <title>CMP 2083-01 | Nonplushed</title>
          <gamemaster>CDT Agent Kira Capalu (#TBD)</gamemaster>
+      </reward>
+      <reward date="2026-08-25T00:00:00.000Z" exp="8" money="7000">
+         <title>CMP 2083-05 | Precious Cargo</title>
+         <gamemaster>JaGator</gamemaster>
       </reward>
    </rewards>
 </sr6char>

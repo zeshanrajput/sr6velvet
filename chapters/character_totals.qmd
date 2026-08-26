@@ -46,6 +46,8 @@ This dashboard displays Velvet's live career totals, regional faction reputation
 * **Total Reputation:** `{python} sum(Reputation.values())`
   * **Seattle (SEA):** +`{python} Reputation.get('Seattle', Reputation.get('SEA', 2))`
   * **United Netherlands (UNL):** `{python} Reputation.get('UNL', Reputation.get('AMS', 0))`
+  * **Southeast Asia (HK):** +`{python} Reputation.get('Southeast Asia', Reputation.get('HK', 0))`
+
 
 ---
 

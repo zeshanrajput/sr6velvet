@@ -169,6 +169,32 @@ GM Reward correction: `{python} inc('Nuyen', 1000)`
 
 ---
 
+## **CMP 2083-05 | Precious Cargo** `{python} start_mission('CMP 2083-05')`
+
+* **Date:** 2026-Aug-25
+* **GM:** JaGator
+* **Player:** Velvet (WarDoctor)
+* **Team:** Mithral, Bast, Ninja (ArrogantNinja), Velvet (WarDoctor), Silicon Mage
+* **Difficulty:** Veteran
+* **Summary:** BREAKING NEWS: HK Police raided an abandoned Red Dragon Triad operation at Kwai Chung Container Port. Multiple reports indicate a human trafficking operation was broken up by a small team of Seattle-based Shadowrunners including a magical cat before the Port Authority arrived. A number of Red Dragon associates were also found inside the Jade Crane storage facility. Liao Fa Ren, journalism student, aided in the report and earned top marks on her paper, which was published in the school paper and picked up by local news outlets. After her boyfriend's betrayal of her, she seemed a bit less broken up about his demise.
+* **Rewards:** `{python} inc('Nuyen', 7000)`, `{python} inc('Karma', 8)` *(7,000¥ Mission Pay; 8 Veteran Karma)*
+* **Heat Payoff / Bribe:** `{python} inc('Nuyen', -1000)` *(NO HEAT: 1,000¥ contribution by Velvet, Mithral, Bast, Ninja)*
+* **Reputation:** `{python} add_rep('Southeast Asia', 2)`
+* **Heat:** ±0 *(No Heat)*
+* **Contacts & Favor Points:**
+  * `{python} contact("Mr. Fa", connection=4, fp=2, type_name="HKB Corporate Middle Manager", region="HK", notes="CMP 2083-05 Precious Cargo (Liao Fa Deng, Male Human)")`
+  * `{python} contact("Liao Fa Ren", connection=3, fp=4, type_name="HK Rookie Journalist", region="HK", notes="CMP 2083-05 Precious Cargo (Female Human, top marks on port raid)")`
+
+### Downtime & Character Advancement (CMP 2 Minor Actions)
+
+* **Minor Downtime Action 1 (Community Service):** *Working for the People* — `{python} inc('Karma', 1)` (+1 Karma banked towards Power Focus Rating 3).
+* **Minor Downtime Action 2 (Binding Spirits):** Re-bound standard 8-level spirit package (Force 5 Spirit of Fire [2 tasks/missions] & Force 3 Spirit of Kin [4 tasks/missions]) per downtime protocol to replenish exhausted fire ancestor: `{python} inc('Nuyen', -320)` (16 drams of reagents).
+  * `{python} add_spirit("Spirit of Fire", force=5, spirit_type="Fire", tasks=2, details="2 Bound Tasks / 2 SRM Missions, Combat & Channeling")`
+  * `{python} add_spirit("Spirit of Kin", force=3, spirit_type="Kin", tasks=4, details="4 Bound Tasks / 4 SRM Missions, Infiltration & Sustaining")`
+* **Advancement & Capital Savings:** Saving Karma and Nuyen towards **Power Focus (Rating 3)** (Goal: 18 Karma / ¥54,000; currently at **14 Karma** and **¥30,735**).
+
+---
+
 ## **Active Contacts Summary**
 
 ```{python}

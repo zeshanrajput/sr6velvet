@@ -37,6 +37,7 @@ book:
         - chapters/07_bliss.md
         - chapters/08_Tea_in_Tacoma.md
         - chapters/09_Heat.md
+        - chapters/10_Burns.md
 
     - part: "Reference & Specifications"
       chapters:

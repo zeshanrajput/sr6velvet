@@ -67,6 +67,8 @@ chapter_tiers:
       - "05 First Negotiation (Establishing Seattle Footprint & NeoNet Johnson)"
       - "07 Bliss (Noodle Cart & Solace with Pavel)"
       - "08 Tea in Tacoma (Tea Ceremony with Ni Ni Xiaolu)"
+      - "09 Heat (Europort Tradecraft & Wool Merchant Infiltration)"
+      - "10 Burns (Sham Shui Po Triage, Daesul & The Emergence of Kang Anning)"
 
   tier_3_atmospheric_bridges:
     passing_threshold: "8.0 / 10"
@@ -171,7 +173,7 @@ domain_vocabulary_rules:
       - "glowing magic missile / generic mana blast"
 
   linguistic_identity_and_pronoun_rule:
-    rule: "Pronouns and demeanor strictly locked to active biological form: Lee Ji-yoo = she/her (soft, algorithmic elegance); Tanaka Ryo = he/him (masculine, clean corporate authority); Mei Jing = she/her; Zhang Wei = he/him (calm senior freight authority); Leung Hoi-ching = she/her (working-class Tanka dockside); un-sculpted Jin-Young = he/they/raw self."
+    rule: "Pronouns and demeanor strictly locked to active biological form: Lee Ji-yoo = she/her (soft, algorithmic elegance); Tanaka Ryo = he/him (masculine, clean corporate authority); Mei Jing = she/her; Zhang Wei = he/him (calm senior freight authority); Leung Hoi-ching = she/her (working-class Tanka dockside); Kang Anning = she/her (quiet, low-register Cantonese, unadorned and restorative human herbalist/triage persona); un-sculpted Jin-Young = he/they/raw self."
 
 ```
 

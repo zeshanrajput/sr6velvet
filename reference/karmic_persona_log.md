@@ -24,7 +24,7 @@ graph TD
 
     %% Mission Emanations (Scalable per SRM Run)
     subgraph MISSIONS ["Mission Emanations (1+ Per Run)"]
-        M_HK["<b>Hong Kong (CMP 2083-05):</b><br/>Zhang Wei &rarr; Leung Hoi-ching"]
+        M_HK["<b>Hong Kong (CMP 2083-05 & Ch 10):</b><br/>Zhang Wei &rarr; Leung Hoi-ching &rarr; Kang Anning"]
         M_PUY["<b>Puyallup (Ch 07 Bliss):</b><br/>Grid Saboteur (Industrial Mechanic)"]
         M_TAC["<b>Tacoma Docks (Ch 08):</b><br/>Dockside Tea Courier"]
         M_MED["<b>Seattle Slums (SRM 2081-02):</b><br/>Clinic Triage Assistant"]
@@ -300,6 +300,45 @@ neuro_somatic_echoes:
 
 ---
 
+### Persona 04c: Kang Anning (康安寧 / "Sister Anning" / The Yaksa Healer)
+
+| Parameter | Specification |
+| :--- | :--- |
+| **Origin & Design** | Sham Shui Po / Kowloon apothecaries, Hong Kong (Pearl River medical underground). |
+| **Active Biological Pronouns** | `she/her` |
+| **Apparent Age & Metatype** | Mid-20s human (unadorned, completely vanilla human frame with ordinary rounded features). |
+| **Registered Role & Underworld Alignment** | Underground Apothecary Triage Assistant & Herbal Caregiver • Free Clinic Healer. |
+| **Somatic & Physical Profile** | Ordinary, soft-featured young human woman; dark hair loosening in damp waves against the nape; warm, unglazed earthenware skin tone; soft rounded human earlobes (elven points fully drawn inward); gentle tea-brown irises stripped of Daleketnon mana-glare; radiating the quiet, vanilla-steeped restorative warmth of fresh chai. |
+| **Vocal Cadence & Tone** | Quiet, low-register Cantonese; soothing conversational rhythm; unhurried everyday cadence that lowers listener heart rates. |
+| **Lived Epoch & Deployment Event** | **CMP 2083-05 (*Precious Cargo*) Aftermath • Ch 10 (*Burns*)** (Emergency Shamanic assumption and field triage in Sham Shui Po basement). |
+| **Task Spirit Attunement** | **`Biotech`** *(Spec: First Aid / Burn Triage)* + **Knowledge:** *Talismanic Herbalism & Burn Treatment* (debrides high-voltage electrical wounds, cleanses molten slag burns, and sets dislocated joints). |
+| **Operational Cover & Logistics** | Provides emergency un-monetized medical stabilization for shadowrunners, street urchins, and trafficking survivors without corporate telemetry or insurance ledgers. |
+| **Active Lifestyle & Atmospheric Anchors** | Low / Street Clinic; scent profile of boiled white vinegar, crushed camphor leaves, unbleached cotton gauze, and sulfur salves. |
+| **Associated Equipment & Props** | Plain dark windbreaker, roll-sleeve linen utility shirt; **Ares Securetech SkinShield** (DR 3) concealed beneath; dull brass shears; basin of cold herbal tea and boiled saline; thick camphor salves. |
+
+```yaml
+somatic_mechanics:
+  transition_time: "1 Major Action (Cosmetic Control R2 / Shamanic Somatic Assumption)"
+  baseline_shift: "Emanates from un-sculpted baseline via spiritual invitation; ribcage narrows, shoulders curve softly into an unassuming human feminine frame"
+  jaw_and_osteology: "Soft rounded jawline, gentle zygomatics, ear cartilage drawn inward into plain human lobes"
+  vocal_tract_tuning: "Quiet, low-register Cantonese with rhythmic, sedative acoustic modulation"
+  iris_and_pigmentation: "Warm, unglazed earthenware skin tone; plain tea-brown irises completely washing out Daleketnon obsidian glare"
+  biological_tax: "Laryngeal tension drop, muscular soreness following ancestral assumption"
+
+neuro_somatic_echoes:
+  psychological_reflex: "Absolute compassionate composure under trauma; intuitive somatic diagnosis and field sedation through everyday human warmth"
+  innate_capabilities:
+    - "Ssikkim-gut knot-tying and trauma unbinding (distinct looping braid bandage technique)"
+    - "Sedative aura modulation (turning Charisma 10/14 inward into a chai-warm, vanilla-soothing pool)"
+    - "Unhurried burn debridement, joint reduction traction, and non-invasive triage"
+    - "Daesul (absorbing operational deficits and pain to resolve Han)"
+  grief_signature_han: "The acute grief of helpless children caught in megacorporate crossfire and industrial trafficking pens."
+```
+
+* **Ludonarrative Function (*Upāya*):** The Yaksa (약사) healer and compassionate sanctuary. Emerged in the immediate aftermath of **CMP 2083-05 (*Precious Cargo*)** as the somatic embodiment of Musok triage. Her entire form is as human and vanilla as can be—possessing the deep, restorative grounding of a cup of chai in which a vanilla bean pod is steeping. Deployed when Velvet must step down all aggressive metahuman social gravity and corporate performative masks to offer un-monetized human comfort, soothe traumatic shock, and unbind spiritual knots (*Ssikkim-gut*) for vulnerable victims.
+
+---
+
 ### Persona 05: The Mudang Conduit (The Bell-Bearer & Sacred Mirror)
 
 | Parameter | Specification |
@@ -342,7 +381,7 @@ As Velvet moves through Shadowrun Missions (SRM), campaigns, and narrative arcs,
 ### A. Chronological Mission Persona Ledger
 
 | # | Mission / Chapter | Sprawl / Location | Persona Alias & Demographics | Pillar Vector | Somatics & Disguise (Cosmetic Control R2) | Retained Echo / Ludonarrative Function | Status |
-| :-: | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :-: |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | **01** | *Flashback / 01 Transaction* | Manila (Tondo) | **Kim Jin-Young** *(Child / Elf)* | Core Baseline | Un-sculpted obsidian baseline; raw Daleketnon magnetism. | Primal empathy for the discarded; the *Bin Geureut* vessel. | **Permanent** |
 | **02** | *Fashion / 02 Faceless Mirror* | Tokyo / Neo-Seoul | **Lee Ji-yoo** *(19 / Elf)* | Fashion Model | V-line jaw; porcelain skin; breathy acoustic cadence; slender runway frame. | Editorial aesthetic appraisal; high-fashion social armor; calculated vulnerability. | **Active (SIN R6)** |
 | **03** | *Pop Megastar / 04 Sabotage* | Neo-Tokyo / Singapore | **Tanaka Ryo** *(20 / Elf)* | Pop Megastar / Corp | Broad jaw; deep baritone; athletic idol build; charcoal irises; stage posture. | Megastar crowd command; contract literacy; *Command Presence* stadium authority. | **Active (SIN R6)** |
@@ -353,6 +392,7 @@ As Velvet moves through Shadowrun Missions (SRM), campaigns, and narrative arcs,
 | **08** | *Ch 09 Heat* | Europort (Rotterdam) | **Wool Merchant** *(40s / Elf)* | Maritime Trade | Heavy Belgian wool coat; stiff North Sea gait; Flemish English. | Cold-weather somatic endurance; customs evasion protocols. | **Standby** |
 | **09a** | *CMP 2083-05 (Precious Cargo)* | Victoria Harbour / Kowloon | **Zhang Wei (張偉 / Uncle Zhang)** *(50s / Elf)* | Maritime / Syndicate | Salt-and-pepper hair; greying temples; athletic 50s build; Pu-erh tumbler. | Statistical database invisibility; calm senior logistics authority. Burned in HK; karmic echo preserved for trans-sprawl reuse. | **Burned Cover / Retained Echo** |
 | **09b** | *CMP 2083-05 (Precious Cargo)* | Aberdeen Typhoon Shelter / HK | **Leung Hoi-ching (梁海晴 / Sister Ching)** *(20s / Elf)* | Maritime / Syndicate | Compact 5'4" frame; blunt jaw; sea serpent tattoo; fuel burns; grease-stained harbor vest. | Yellow Lotus smuggling logistics; phantom cargo logging; Wuxing patrol evasion. Emergency mid-run shift. | **Active (Harbor ID / 49er)** |
+| **09c** | *CMP 2083-05 Aftermath / Ch 10 Burns* | Sham Shui Po / Kowloon | **Kang Anning (康安寧 / Sister Anning)** *(20s / Human)* | Shamanic / Yaksa Vessel | Rounded human lobes; tea-brown eyes; earthenware skin; soft low Cantonese; vanilla-chai solace. | Ssikkim-gut knot-tying; unhurried burn debridement; vanilla-soothing aura modulation; Daesul triage. | **Active / Standby** |
 | **...** | *[Next Mission Deployment]* | *[Target Sprawl]* | *[Auto-generated per run]* | *[Target Pillar]* | *[Somatic configuration]* | *[Echo retained]* | *[Active]* |
 
 ---

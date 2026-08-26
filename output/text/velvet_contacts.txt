@@ -69,3 +69,13 @@
       Connection: 5 (Fixed) | Loyalty: 1 | Active Favors: 0
       History / Changes: CMP 2083-01 Nonplushed (S-K Johnson)
 ----------------------------------------------------------------------------
+ [16] MR. FA (HKB Corporate Middle Manager) [HK]
+      Connection: 4 (Fixed) | Loyalty: 1 | Active Favors: 1
+      History / Changes: CMP 2083-05 Precious Cargo (Liao Fa Deng, Male
+      Human Corporate Middle Manager)
+----------------------------------------------------------------------------
+ [17] LIAO FA REN (HK Rookie Journalist) [HK]
+      Connection: 3 (Fixed) | Loyalty: 2 | Active Favors: 1
+      History / Changes: CMP 2083-05 Precious Cargo (Female Human Rookie
+      Journalist, top marks on port raid story)
+----------------------------------------------------------------------------
