@@ -2597,14 +2597,18 @@ dependencies = [
     { name = "google-genai" },
     { name = "ipykernel" },
     { name = "jupyter" },
-    { name = "kokoro" },
-    { name = "lameenc" },
     { name = "mutagen" },
-    { name = "numpy" },
     { name = "python-dotenv" },
     { name = "pyyaml" },
-    { name = "soundfile" },
     { name = "sr6-core" },
+]
+
+[package.optional-dependencies]
+narration = [
+    { name = "kokoro" },
+    { name = "lameenc" },
+    { name = "numpy" },
+    { name = "soundfile" },
     { name = "torch" },
     { name = "torchaudio" },
 ]
@@ -2614,17 +2618,18 @@ requires-dist = [
     { name = "google-genai" },
     { name = "ipykernel", specifier = ">=7.3.0" },
     { name = "jupyter", specifier = ">=1.1.1" },
-    { name = "kokoro" },
-    { name = "lameenc" },
+    { name = "kokoro", marker = "extra == 'narration'" },
+    { name = "lameenc", marker = "extra == 'narration'" },
     { name = "mutagen", specifier = ">=1.47.0" },
-    { name = "numpy", specifier = "<2.5" },
+    { name = "numpy", marker = "extra == 'narration'", specifier = "<2.5" },
     { name = "python-dotenv" },
     { name = "pyyaml", specifier = ">=6.0.3" },
-    { name = "soundfile" },
+    { name = "soundfile", marker = "extra == 'narration'" },
     { name = "sr6-core", editable = "../sr6-core" },
-    { name = "torch", index = "https://download.pytorch.org/whl/cu124" },
-    { name = "torchaudio", index = "https://download.pytorch.org/whl/cu124" },
+    { name = "torch", marker = "extra == 'narration'", index = "https://download.pytorch.org/whl/cu124" },
+    { name = "torchaudio", marker = "extra == 'narration'", index = "https://download.pytorch.org/whl/cu124" },
 ]
+provides-extras = ["narration"]
 
 [[package]]
 name = "srsly"
