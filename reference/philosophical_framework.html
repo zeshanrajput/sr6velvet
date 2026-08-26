@@ -36,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../reference/voice_spec.html" rel="next">
-<link href="../chapters/09_Heat.html" rel="prev">
+<link href="../reference/karmic_persona_log.html" rel="next">
+<link href="../chapters/10_Burns.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -172,6 +201,11 @@ ul.task-list li input[type="checkbox"] {
   <a href="../chapters/rules_and_downtime.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Downtime Protocols &amp; Common Rules</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/appendix_dossier.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Character Dossier - Velvet</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -228,6 +262,11 @@ ul.task-list li input[type="checkbox"] {
   <a href="../chapters/09_Heat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Heat</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10_Burns.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Burns</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -242,6 +281,11 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../reference/philosophical_framework.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Philosophical &amp; Spiritual Framework: The Path of the Thousand Lives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/karmic_persona_log.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Karmic Persona Log: The Living Mosaic of Velvet</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -261,6 +305,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../reference/story_arc3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Story Arc 3: The Pacific Reckoning &amp; Sovereign Emanation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../reference/story_continuity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Story Continuity &amp; Relationship Graph Index</span></a>
   </div>
 </li>
@@ -276,21 +325,37 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#tabletop-narrative-origins-the-thousand-whispers-dollhouse" id="toc-tabletop-narrative-origins-the-thousand-whispers-dollhouse" class="nav-link active" data-scroll-target="#tabletop-narrative-origins-the-thousand-whispers-dollhouse">1. Tabletop &amp; Narrative Origins: The Thousand Whispers &amp; Dollhouse</a></li>
-  <li><a href="#real-world-philosophical-spiritual-traditions" id="toc-real-world-philosophical-spiritual-traditions" class="nav-link" data-scroll-target="#real-world-philosophical-spiritual-traditions">2. Real-World Philosophical &amp; Spiritual Traditions</a>
+  <li><a href="#foundational-premise-narrative-lineage" id="toc-foundational-premise-narrative-lineage" class="nav-link active" data-scroll-target="#foundational-premise-narrative-lineage">1. Foundational Premise &amp; Narrative Lineage</a>
   <ul class="collapse">
-  <li><a href="#a.-mahayana-vajrayana-buddhism" id="toc-a.-mahayana-vajrayana-buddhism" class="nav-link" data-scroll-target="#a.-mahayana-vajrayana-buddhism">A. Mahayana &amp; Vajrayana Buddhism</a></li>
-  <li><a href="#b.-korean-musok-shamanism-the-somatics-of-channeling" id="toc-b.-korean-musok-shamanism-the-somatics-of-channeling" class="nav-link" data-scroll-target="#b.-korean-musok-shamanism-the-somatics-of-channeling">B. Korean Musok (Shamanism) &amp; The Somatics of Channeling</a></li>
-  <li><a href="#c.-shinto-daoism" id="toc-c.-shinto-daoism" class="nav-link" data-scroll-target="#c.-shinto-daoism">C. Shinto &amp; Daoism</a></li>
-  <li><a href="#d.-western-phenomenological-literary-parallels" id="toc-d.-western-phenomenological-literary-parallels" class="nav-link" data-scroll-target="#d.-western-phenomenological-literary-parallels">D. Western Phenomenological &amp; Literary Parallels</a></li>
+  <li><a href="#tabletop-media-precedents" id="toc-tabletop-media-precedents" class="nav-link" data-scroll-target="#tabletop-media-precedents">Tabletop &amp; Media Precedents</a></li>
   </ul></li>
-  <li><a href="#the-three-phase-thematic-progression" id="toc-the-three-phase-thematic-progression" class="nav-link" data-scroll-target="#the-three-phase-thematic-progression">3. The Three-Phase Thematic Progression</a>
+  <li><a href="#comparative-metaphysical-theological-taxonomy" id="toc-comparative-metaphysical-theological-taxonomy" class="nav-link" data-scroll-target="#comparative-metaphysical-theological-taxonomy">2. Comparative Metaphysical &amp; Theological Taxonomy</a>
+  <ul class="collapse">
+  <li><a href="#a.-mahayana-tantric-vajrayana-buddhism" id="toc-a.-mahayana-tantric-vajrayana-buddhism" class="nav-link" data-scroll-target="#a.-mahayana-tantric-vajrayana-buddhism">A. Mahayana &amp; Tantric Vajrayana Buddhism</a></li>
+  <li><a href="#b.-korean-musok-animist-shamanism-the-somatics-of-the-vessel" id="toc-b.-korean-musok-animist-shamanism-the-somatics-of-the-vessel" class="nav-link" data-scroll-target="#b.-korean-musok-animist-shamanism-the-somatics-of-the-vessel">B. Korean Musok (Animist Shamanism) &amp; The Somatics of the Vessel</a></li>
+  <li><a href="#c.-shinto-daoist-animism" id="toc-c.-shinto-daoist-animism" class="nav-link" data-scroll-target="#c.-shinto-daoist-animism">C. Shinto &amp; Daoist Animism</a></li>
+  <li><a href="#d.-esoteric-mysticism-liberation-theology" id="toc-d.-esoteric-mysticism-liberation-theology" class="nav-link" data-scroll-target="#d.-esoteric-mysticism-liberation-theology">D. Esoteric Mysticism &amp; Liberation Theology</a></li>
+  <li><a href="#e.-phenomenological-ethical-and-literary-frameworks" id="toc-e.-phenomenological-ethical-and-literary-frameworks" class="nav-link" data-scroll-target="#e.-phenomenological-ethical-and-literary-frameworks">E. Phenomenological, Ethical, and Literary Frameworks</a></li>
+  </ul></li>
+  <li><a href="#the-liturgy-of-the-aftermath-shamanic-triage-grounding" id="toc-the-liturgy-of-the-aftermath-shamanic-triage-grounding" class="nav-link" data-scroll-target="#the-liturgy-of-the-aftermath-shamanic-triage-grounding">3. The Liturgy of the Aftermath: Shamanic Triage &amp; Grounding</a>
+  <ul class="collapse">
+  <li><a href="#a.-the-epistemology-of-conjuring-from-firmware-to-communion" id="toc-a.-the-epistemology-of-conjuring-from-firmware-to-communion" class="nav-link" data-scroll-target="#a.-the-epistemology-of-conjuring-from-firmware-to-communion">A. The Epistemology of Conjuring: From Firmware to Communion</a></li>
+  <li><a href="#b.-shamanic-rites-of-triage-and-pacification" id="toc-b.-shamanic-rites-of-triage-and-pacification" class="nav-link" data-scroll-target="#b.-shamanic-rites-of-triage-and-pacification">B. Shamanic Rites of Triage and Pacification</a></li>
+  <li><a href="#c.-the-healer-archetype-the-yaksa-vessel" id="toc-c.-the-healer-archetype-the-yaksa-vessel" class="nav-link" data-scroll-target="#c.-the-healer-archetype-the-yaksa-vessel">C. The Healer Archetype: <em>The Yaksa Vessel</em></a></li>
+  </ul></li>
+  <li><a href="#unified-evolutionary-progression-pedagogical-horizon" id="toc-unified-evolutionary-progression-pedagogical-horizon" class="nav-link" data-scroll-target="#unified-evolutionary-progression-pedagogical-horizon">4. Unified Evolutionary Progression &amp; Pedagogical Horizon</a>
   <ul class="collapse">
   <li><a href="#phase-1-the-broken-vessel-arc-1-chapters-0109" id="toc-phase-1-the-broken-vessel-arc-1-chapters-0109" class="nav-link" data-scroll-target="#phase-1-the-broken-vessel-arc-1-chapters-0109">Phase 1: The Broken Vessel (Arc 1: Chapters 01–09)</a></li>
   <li><a href="#phase-2-the-living-mosaic-arc-2-chapters-1018" id="toc-phase-2-the-living-mosaic-arc-2-chapters-1018" class="nav-link" data-scroll-target="#phase-2-the-living-mosaic-arc-2-chapters-1018">Phase 2: The Living Mosaic (Arc 2: Chapters 10–18+)</a></li>
   <li><a href="#phase-3-the-sovereign-vessel-arc-3-late-campaign-transcendence" id="toc-phase-3-the-sovereign-vessel-arc-3-late-campaign-transcendence" class="nav-link" data-scroll-target="#phase-3-the-sovereign-vessel-arc-3-late-campaign-transcendence">Phase 3: The Sovereign Vessel (Arc 3: Late Campaign / Transcendence)</a></li>
+  <li><a href="#comparative-evolution-matrix" id="toc-comparative-evolution-matrix" class="nav-link" data-scroll-target="#comparative-evolution-matrix">Comparative Evolution Matrix</a></li>
   </ul></li>
-  <li><a href="#prose-directives-vocabulary-matrix" id="toc-prose-directives-vocabulary-matrix" class="nav-link" data-scroll-target="#prose-directives-vocabulary-matrix">4. Prose Directives &amp; Vocabulary Matrix</a></li>
+  <li><a href="#authoritative-prose-directives-lexicon-matrix" id="toc-authoritative-prose-directives-lexicon-matrix" class="nav-link" data-scroll-target="#authoritative-prose-directives-lexicon-matrix">5. Authoritative Prose Directives &amp; Lexicon Matrix</a>
+  <ul class="collapse">
+  <li><a href="#a.-master-prose-lexicon-matrix" id="toc-a.-master-prose-lexicon-matrix" class="nav-link" data-scroll-target="#a.-master-prose-lexicon-matrix">A. Master Prose Lexicon Matrix</a></li>
+  <li><a href="#b.-somatic-sensory-grounding-protocols" id="toc-b.-somatic-sensory-grounding-protocols" class="nav-link" data-scroll-target="#b.-somatic-sensory-grounding-protocols">B. Somatic &amp; Sensory Grounding Protocols</a></li>
+  <li><a href="#c.-shamanic-trance-channeling-protocols" id="toc-c.-shamanic-trance-channeling-protocols" class="nav-link" data-scroll-target="#c.-shamanic-trance-channeling-protocols">C. Shamanic Trance &amp; Channeling Protocols</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -316,30 +381,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This document defines the core real-world philosophical, mystical, and narrative framework governing <strong>Velvet (Kim Jin-Young)</strong>. It articulates the character’s journey from an engineered corporate asset suffering identity erasure into a sovereign adept who realizes enlightenment and agency through <strong>artificial reincarnation—the accretion and synthesis of a thousand lived identities</strong>.</p>
+<p>This document defines the core philosophical, mystical, and narrative architecture governing <strong>Velvet (Kim Jin-Young)</strong>. It articulates the character’s journey from an engineered corporate asset suffering somatic violation into a sovereign adept who realizes enlightenment and agency through <strong>artificial reincarnation: the accretion, honoring, and synthesis of a thousand lived identities</strong>.</p>
 <hr>
-<section id="tabletop-narrative-origins-the-thousand-whispers-dollhouse" class="level2">
-<h2 class="anchored" data-anchor-id="tabletop-narrative-origins-the-thousand-whispers-dollhouse">1. Tabletop &amp; Narrative Origins: The Thousand Whispers &amp; Dollhouse</h2>
-<p>The thematic spine of Velvet draws upon two distinct conceptual inspirations:</p>
+<section id="foundational-premise-narrative-lineage" class="level2">
+<h2 class="anchored" data-anchor-id="foundational-premise-narrative-lineage">1. Foundational Premise &amp; Narrative Lineage</h2>
+<p>Velvet’s conceptual architecture deconstructs the conventional cyberpunk binary between an “authentic baseline self” and “hollow corporate disguise.” Through Awakened discipline and animist hospitality, forced biological plasticity is transmuted into a spiritual path of profound human empathy and metaphysical sovereignty.</p>
+<pre class="text"><code>                     [ THE VOID / BIN GEUREUT ]
+                    (Śūnyatā / Fanā' / Neg. Cap.)
+                                 │
+                                 ▼
+                     [ THE TRANSMUTATION BODY ]
+                  (Nirmāṇakāya / Deity Yoga / Solve)
+                                 │
+                                 ▼
+                      [ THE ACCRETION MOSAIC ]
+                  (Indra's Net / Heteronyms / Echo)
+                                 │
+                                 ▼
+                     [ THE SOVEREIGN SANCTUARY ]
+                   (Mansin / Baqā' / Sacred Mirror)</code></pre>
+<section id="tabletop-media-precedents" class="level3">
+<h3 class="anchored" data-anchor-id="tabletop-media-precedents">Tabletop &amp; Media Precedents</h3>
 <ol type="1">
 <li><strong>The Dharma of the Thousand Whispers (<em>Kindred of the East</em>):</strong>
 <ul>
-<li>In White Wolf’s eastern vampire setting, practitioners of the <em>Path of the Thousand Whispers</em> (also called the <em>Hundred Fables</em> or <em>Face of the Gods</em>) believe the soul is fractured. Rather than fighting mortality or withdrawing into dogma, they seek enlightenment by living countless complete, distinct mortal lives—assuming new names, professions, genders, and social strata.</li>
-<li>By embodying the total spectrum of human existence, they cultivate the <em>Hollow Reed</em> (emptiness) and balance all internal forces, transforming what seemed like a curse of shapeshifting into a path of cosmic transcendence.</li>
+<li>In White Wolf’s eastern setting, practitioners of the <em>Path of the Thousand Whispers</em> (also termed the <em>Hundred Fables</em> or <em>Face of the Gods</em>) view the soul as fractured across incarnations. Rather than seeking static immortality or ascetic withdrawal, they pursue enlightenment by living countless complete, distinct mortal lives—assuming diverse names, trades, genders, and social strata.</li>
+<li>By embodying the full spectrum of human joy, labor, and suffering, they cultivate the <em>Hollow Reed</em> (emptiness), balancing all internal forces and transforming what seemed like a curse of shapeshifting into a vehicle of cosmic transcendence.</li>
 </ul></li>
-<li><strong>The “Echo” Phenomenon (<em>Dollhouse</em>):</strong>
+<li><strong>The “Echo” Composite Phenomenon (<em>Dollhouse</em>):</strong>
 <ul>
-<li>In Joss Whedon’s <em>Dollhouse</em>, the protagonist Echo is repeatedly wiped and imprinted with bespoke synthetic personalities and skill sets. Over time, composite neuroplastic memory leakage occurs: Echo retains emotional insights, physical muscle memory, empathy, and philosophical fragments from each imprinted persona.</li>
-<li>Rather than dissolving into psychosis, these fragments braid together into a higher, hyper-evolved composite consciousness.</li>
+<li>In Joss Whedon’s <em>Dollhouse</em>, the protagonist Echo is repeatedly wiped and imprinted with synthetic personalities. Over successive cycles, neuroplastic memory leakage occurs: Echo retains emotional insights, somatic muscle memory, moral wisdom, and tactical habits from every imprint.</li>
+<li>Rather than collapsing into psychosis, these disparate fragments braid into a higher-order, hyper-evolved composite consciousness capable of autonomous agency.</li>
+</ul></li>
+<li><strong>The Shadowrun Inversion:</strong>
+<ul>
+<li>Mitsuhama Applied Technologies engineered Jin-Young’s bio-sculpting, voice modulation, and infiltration covers as disposable, exploitative tools.</li>
+<li>Velvet’s Awakened awakening inverts this commodification: every cover identity becomes an authentic chapter of lived human experience, accumulating into a living archive of wisdom, virtue, and resistance.</li>
 </ul></li>
 </ol>
-<p>For Velvet, corporate bio-sculpting and infiltration covers were designed by Mitsuhama to be disposable, manipulative tools. However, through Velvet’s Awakened spiritual discipline, these forced transformations become an accidental—and eventually deliberate—path of <strong>accumulating human wisdom, virtue, and sovereignty</strong>.</p>
 <hr>
 </section>
-<section id="real-world-philosophical-spiritual-traditions" class="level2">
-<h2 class="anchored" data-anchor-id="real-world-philosophical-spiritual-traditions">2. Real-World Philosophical &amp; Spiritual Traditions</h2>
-<section id="a.-mahayana-vajrayana-buddhism" class="level3">
-<h3 class="anchored" data-anchor-id="a.-mahayana-vajrayana-buddhism">A. Mahayana &amp; Vajrayana Buddhism</h3>
+</section>
+<section id="comparative-metaphysical-theological-taxonomy" class="level2">
+<h2 class="anchored" data-anchor-id="comparative-metaphysical-theological-taxonomy">2. Comparative Metaphysical &amp; Theological Taxonomy</h2>
+<section id="a.-mahayana-tantric-vajrayana-buddhism" class="level3">
+<h3 class="anchored" data-anchor-id="a.-mahayana-tantric-vajrayana-buddhism">A. Mahayana &amp; Tantric Vajrayana Buddhism</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -355,162 +441,369 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>Anattā (Non-Self)</strong><br><em>(무아 - 無我)</em></td>
-<td style="text-align: left;">The foundational truth that there is no permanent, immutable, independent “I” (<em>ātman</em>). The self is an impermanent aggregate (<em>skandhas</em>).</td>
-<td style="text-align: left;">Corporate conditioning treated identity erasure as murder—reducing Jin-Young to a hollow void. Under Buddhist insight, having no static core is not a deficiency; it is ultimate liberation. Because Velvet is empty, he has boundless capacity to inhabit form.</td>
+<td style="text-align: left;"><strong>Anattā (Non-Self)</strong> <em>(무아 / 無我)</em></td>
+<td style="text-align: left;">The truth that phenomena lack an immutable, independent “I” (<em>ātman</em>); selfhood is an impermanent aggregate (<em>skandhas</em>).</td>
+<td style="text-align: left;">Corporate conditioning treated identity erasure as spiritual murder. Under Buddhist insight, having no static core is not a void of deficiency, but ultimate liberation: because Velvet is empty, he has boundless capacity to inhabit form.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Śūnyatā (Emptiness)</strong><br><em>(공 - 空)</em></td>
-<td style="text-align: left;">Reality is empty of inherent, static existence; all phenomena arise interdependently.</td>
-<td style="text-align: left;">Emptiness is not nothingness—it is pure potential. Velvet’s un-sculpted baseline is the quiet canvas upon which any human life can be painted.</td>
+<td style="text-align: left;"><strong>Śūnyatā (Emptiness)</strong> <em>(공 / 空)</em></td>
+<td style="text-align: left;">Reality is empty of inherent, fixed existence; all phenomena arise interdependently as pure potential.</td>
+<td style="text-align: left;">Emptiness is not nothingness—it is the quiet, unconditioned canvas of the un-sculpted baseline upon which any human life can be authentically painted.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Upāya-kauśalya (Skillful Means)</strong><br><em>(방편 - 方便)</em></td>
-<td style="text-align: left;">The practice of enlightened beings adopting whatever guise, speech, or manifestation is necessary to guide beings and alleviate suffering.</td>
-<td style="text-align: left;">Each persona (Lee Ji-yoo, Tanaka Ryo, Mei Jing, street covers) is an <em>upāya</em>—a deliberate instrument of protection, liberation, and survival rather than a cynical lie.</td>
+<td style="text-align: left;"><strong>Upāya-kauśalya (Skillful Means)</strong> <em>(방편 / 方便)</em></td>
+<td style="text-align: left;">The practice of enlightened beings adopting provisional guises and methods tailored to liberate beings and alleviate suffering.</td>
+<td style="text-align: left;">Personas (<em>Lee Ji-yoo, Tanaka Ryo, Mei Jing, Zhang Wei</em>) cease to be cynical corporate lies; they become compassionate, deliberate instruments of protection, survival, and justice.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Nirmāṇakāya (Transformation Body)</strong><br><em>(변화신 - 變化身)</em></td>
-<td style="text-align: left;">The physical, manifest emanation body that a Bodhisattva projects into the mundane realm.</td>
-<td style="text-align: left;">Avalokiteśvara (Gwan-eum / Kannon) famously projects <strong>33 distinct forms</strong> (courtesan, beggar, general, demon) to meet suffering where it lives. Velvet’s personas are literal <em>nirmāṇakāya</em>.</td>
+<td style="text-align: left;"><strong>Nirmāṇakāya (Transformation Body)</strong> <em>(변화신 / 變化身)</em></td>
+<td style="text-align: left;">The manifest physical emanation body projected by a Bodhisattva into the material realm.</td>
+<td style="text-align: left;">Avalokiteśvara (<em>Gwan-eum / Kannon</em>) projects 33 distinct manifest forms (courtesan, beggar, general, healer) to meet suffering where it lives. Velvet’s operational covers function as literal <em>nirmāṇakāya</em>.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Indra’s Jewel Net</strong><br><em>(인드라망 - 因陀羅網)</em></td>
-<td style="text-align: left;">An infinite cosmic net where each facet reflects every other jewel in the universe.</td>
-<td style="text-align: left;">Every persona Velvet lives reflects fragments of all other personas, weaving a complex web of mutual human understanding.</td>
+<td style="text-align: left;"><strong>Indra’s Jewel Net</strong> <em>(인드라망 / 因陀羅網)</em></td>
+<td style="text-align: left;">An infinite cosmic matrix where each jewel’s facet reflects every other jewel in the universe.</td>
+<td style="text-align: left;">Every persona Velvet embodies reflects the memories and virtues of all other lives, weaving a holographic web of intersubjective empathy.</td>
 </tr>
 </tbody>
 </table>
-<hr>
-</section>
-<section id="b.-korean-musok-shamanism-the-somatics-of-channeling" class="level3">
-<h3 class="anchored" data-anchor-id="b.-korean-musok-shamanism-the-somatics-of-channeling">B. Korean Musok (Shamanism) &amp; The Somatics of Channeling</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Concept</th>
-<th style="text-align: left;">Traditional Definition</th>
-<th style="text-align: left;">Manifestation in Velvet’s Arc</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Sinbyeong (Spirit Sickness)</strong><br><em>(신병 - 神病)</em></td>
-<td style="text-align: left;">The agonizing physical, psychic, and somatic crisis preceding a shaman’s calling, where foreign spirits tear at flesh and mind.</td>
-<td style="text-align: left;">Velvet’s early trauma under Mitsuhama: the visceral horror of bone-cartilage shifts, localized DNA rewriting, and dissociation. The feeling of being violently inhabited and hollowed out.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Naerim-gut (Initiation Rite)</strong><br><em>(내림굿)</em></td>
-<td style="text-align: left;">The ritual through which the initiate stops fighting the spirits and formally accepts them as sacred partners.</td>
-<td style="text-align: left;">Velvet’s transition from resisting his corporate identities to consciously hosting them with ritual discipline and reverence.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Mansin (Ten Thousand Spirits)</strong><br><em>(만신 - 萬神)</em></td>
-<td style="text-align: left;">An accomplished Mudang capable of hosting, understanding, and speaking for ten thousand spirits.</td>
-<td style="text-align: left;">Velvet becomes the <em>Mansin</em> of his own manufactured lives. Past personas are not discarded trash; they become an internal ancestral conclave whose grief and strengths are honored.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Bin Geureut (The Hollow Vessel)</strong><br><em>(빈 그릇)</em></td>
-<td style="text-align: left;">The shamanic ideal of clearing the ego to become a clean conduit for the divine and the dead.</td>
-<td style="text-align: left;">Velvet learns to step down his ego, becoming the still vessel through which true insight, spirit channeling, and empathy flow.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Wonhan-puri (Resolving Grief)</strong><br><em>(원한풀이)</em></td>
-<td style="text-align: left;">The shamanic labor of listening to and resolving <em>Han</em> (deep sorrow/resentment).</td>
-<td style="text-align: left;">In each persona, Velvet uncovers the hidden grief of the people in that sphere (corporate wage-slaves, street gangers, exploited idols) and works to resolve it.</td>
-</tr>
-</tbody>
-</table>
-<section id="the-metaphysics-tabletop-reality-of-spirit-channeling" class="level4">
-<h4 class="anchored" data-anchor-id="the-metaphysics-tabletop-reality-of-spirit-channeling">The Metaphysics &amp; Tabletop Reality of Spirit Channeling</h4>
+<section id="tantric-vajrayana-deity-yoga-utpattikrama-sampannakrama" class="level4">
+<h4 class="anchored" data-anchor-id="tantric-vajrayana-deity-yoga-utpattikrama-sampannakrama">Tantric Vajrayana Deity Yoga (<em>Utpattikrama &amp; Sampannakrama</em>)</h4>
+<p>In Tibetan Buddhist tantra, the practitioner practices two reciprocal stages of transformation:</p>
 <ul>
-<li><strong>The Shared Vessel:</strong> In standard Channeling, two consciousnesses co-inhabit one meat frame. The summoner retains motor control and accesses spirit powers, while powers and spells are resisted by the lowest Mental attribute between them.</li>
+<li><strong>Generation Stage (<em>Utpattikrama</em>):</strong> The practitioner dissolves ordinary ego-attachment into the void (<em>Śūnyatā</em>), then consciously manifests the divine form of the <em>Yidam</em>—complete with distinct garments, posture, acoustic resonance, and spiritual attributes. Velvet’s somatic shifting via <em>Cosmetic Control</em> operates as a conscious <em>Utpattikrama</em>, constructing physical bone alignment, vocal cadence, and aura without egoic clinging.</li>
+<li><strong>Completion Stage (<em>Sampannakrama</em>):</strong> Upon concluding the rite, the form is mindfully dissolved back into luminous stillness. Velvet utilizes <em>Sampannakrama</em> at the end of runs to dissolve mission personas back into the quiet baseline, preventing psychological fragmentation or attachment to a false face.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="b.-korean-musok-animist-shamanism-the-somatics-of-the-vessel" class="level3">
+<h3 class="anchored" data-anchor-id="b.-korean-musok-animist-shamanism-the-somatics-of-the-vessel">B. Korean Musok (Animist Shamanism) &amp; The Somatics of the Vessel</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Concept</th>
+<th style="text-align: left;">Traditional Definition</th>
+<th style="text-align: left;">Manifestation in Velvet’s Arc</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sinbyeong (Spirit Sickness)</strong> <em>(신병 / 神病)</em></td>
+<td style="text-align: left;">The agonizing psychosomatic crisis marking the un-integrated shamanic calling, where foreign forces tear at flesh and mind.</td>
+<td style="text-align: left;">Early bio-sculpting trauma under Mitsuhama: the visceral agony of cartilage resets, burning DNA re-keying, and identity dissociation. The horror of being an overwritten tool.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Naerim-gut (Initiation Rite)</strong> <em>(내림굿)</em></td>
+<td style="text-align: left;">The ritual reconciliation where the initiate ceases fighting the spirits and enthrones them as sacred partners.</td>
+<td style="text-align: left;">Velvet’s transition from resisting manufactured covers to consciously hosting them with reverence, discipline, and ritual care.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mansin (Ten Thousand Spirits)</strong> <em>(만신 / 萬神)</em></td>
+<td style="text-align: left;">An accomplished Mudang capable of hosting, understanding, and speaking for ten thousand divine and ancestral spirits.</td>
+<td style="text-align: left;">Velvet becomes the <em>Mansin</em> of his own lived lives. Past personas form an internal ancestral conclave whose collective wisdom and grief are honored.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Bin Geureut (The Hollow Vessel)</strong> <em>(빈 그릇)</em></td>
+<td style="text-align: left;">The total clearing of the ego to become an unblemished conduit for divine presence and ancestral spirit communion.</td>
+<td style="text-align: left;">Stepping down the conscious ego to permit fluid spirit channeling, somatic hospitality, and heightened combat assumption.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Wonhan-puri (Resolving Grief)</strong> <em>(원한풀이)</em></td>
+<td style="text-align: left;">The sacred labor of unbinding and resolving <em>Han</em> (deep collective sorrow and unrequited resentment).</td>
+<td style="text-align: left;">Across shadow operations, Velvet uncovers the hidden grief of exploited wage-slaves, bunraku puppets, and street outcasts, dedicating resources to untie their trauma.</td>
+</tr>
+</tbody>
+</table>
+<section id="the-somatics-tabletop-reality-of-spirit-channeling" class="level4">
+<h4 class="anchored" data-anchor-id="the-somatics-tabletop-reality-of-spirit-channeling">The Somatics &amp; Tabletop Reality of Spirit Channeling</h4>
+<ul>
+<li><strong>The Shared Vessel:</strong> Under the <em>Channeling</em> metamagic, two consciousnesses co-inhabit the meat frame. Velvet retains primary motor control while accessing the spirit’s innate powers and gaining an augmented physical boost equal to <span class="math inline">\(\lfloor\text{Force}/2\rfloor\)</span> across all physical attributes.</li>
 <li><strong>Spirit Bodily Assumption (<em>The Shamanic Trance Takeover</em>):</strong>
 <ul>
-<li>Per official SR6 Missions rules (<em>SRMG</em>), <strong>a channeled spirit can take over the summoner’s body at the summoner’s command for a single combat turn</strong>. During this turn, the spirit has full control of the body and <strong>uses its own skills and mental attributes</strong> combined with the summoner’s physical frame.</li>
-<li>This is the literal tabletop manifestation of the <em>Mansin</em> in active crisis: Velvet completely empties the vessel (<em>Bin Geureut</em>), stepping into the back seat to let an ancient warrior ancestor, a guardian kami, or an elemental entity take physical command, unleashing supernatural combat skills, occult knowledge, and instincts far beyond his mortal repertoire.</li>
+<li>Per official SR6 Missions rules (<em>SRMG</em>), the summoner may command the channeled spirit to assume total physical control of the vessel for a single combat turn. During this takeover, the spirit acts using its own skills and mental attributes through Velvet’s augmented physical frame.</li>
+<li>This is the literal ludonarrative realization of the <em>Mansin</em> in extreme crisis: Velvet completely empties his ego (<em>Bin Geureut</em>), stepping into the passenger seat while an ancient ancestor, guardian kami, or elemental takes physical command to execute martial feats and occult maneuvers far beyond his mortal repertoire.</li>
 </ul></li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="c.-shinto-daoism" class="level3">
-<h3 class="anchored" data-anchor-id="c.-shinto-daoism">C. Shinto &amp; Daoism</h3>
+<section id="c.-shinto-daoist-animism" class="level3">
+<h3 class="anchored" data-anchor-id="c.-shinto-daoist-animism">C. Shinto &amp; Daoist Animism</h3>
 <ul>
-<li><strong>The Sacred Mirror (<em>Yata no Kagami</em> / <em>Shinkyō</em> - 神鏡):</strong>
+<li><strong>The Sacred Bronze Mirror (<em>Yata no Kagami / Shinkyō</em> - 神鏡):</strong>
 <ul>
-<li>In Shinto shrines, the Kami is embodied not in a statue, but in an unblemished bronze mirror. The mirror has no face or ego of its own; its sacred purity (<em>Seimei</em> - 清明) lies in its total receptivity—it reflects reality without distortion.</li>
-<li><strong>Reframing Charisma 10 (14):</strong> Velvet’s presence shifts from a manipulative corporate tractor beam into a <strong>cosmic mirror</strong>. People see their deepest longings, repressed truths, and unvarnished humanity reflected back at them.</li>
+<li>In Shinto tradition, the Kami is embodied within an unblemished bronze mirror. The mirror possesses no face or ego of its own; its sacred purity (<em>Seimei</em> - 清明) lies in its total, egoless receptivity—reflecting reality without distortion.</li>
+<li><strong>Reframing Charisma 10 (14):</strong> Velvet’s presence is not an aggressive hypnotic tractor beam or vulgar mind-control. It is a <strong>cosmic mirror</strong>. In Velvet’s presence, people see their own deepest longings, repressed guilt, and unvarnished humanity reflected back at them with piercing, compassionate clarity.</li>
 </ul></li>
-<li><strong>Daoist <em>Wuhuà</em> (物化 - The Transformation of Things):</strong>
+<li><strong>Daoist <em>Wuhuà</em> (物化 - The Transformation of Things) &amp; <em>Wu Wei</em>:</strong>
 <ul>
-<li>In the <em>Zhuangzi</em>, the sage dreams he is a butterfly, and upon waking does not know if he is Zhuangzi who dreamed he was a butterfly, or a butterfly dreaming he is Zhuangzi.</li>
-<li>The <em>Zhenren</em> (True Person) moves effortlessly through transformations (<em>Wu Wei</em>): <em>“The perfect person uses their mind like a mirror — it grasps nothing, it refuses nothing; it receives, but does not keep.”</em></li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="d.-western-phenomenological-literary-parallels" class="level3">
-<h3 class="anchored" data-anchor-id="d.-western-phenomenological-literary-parallels">D. Western Phenomenological &amp; Literary Parallels</h3>
-<ul>
-<li><strong>John Keats’s “Negative Capability” &amp; The Chameleon Poet:</strong>
-<ul>
-<li>Keats defined the highest poetic spirit as one capable of being in uncertainties, mysteries, and doubts without irritable reaching after fact and reason. The <em>Chameleon Poet</em> has no fixed self because they continually inhabit and give voice to other existences.</li>
-</ul></li>
-<li><strong>Paul Ricoeur’s <em>Oneself as Another</em> (<em>Soi-même comme un autre</em>):</strong>
-<ul>
-<li>Ricoeur distinguishes between <strong>Idem-identity</strong> (physical sameness over time) and <strong>Ipse-identity</strong> (selfhood, narrative continuity, ethical promise-keeping). Velvet’s <em>Idem</em> is radically plastic (bones, voice, gender, DNA shift), but his <em>Ipse</em>—the golden thread of compassion, loyalty to Hana, and resistance to tyranny—remains unbroken.</li>
+<li>In the <em>Zhuangzi</em>, the sage dreams of being a butterfly, waking unable to know if he is Zhuangzi who dreamed of a butterfly, or a butterfly dreaming of Zhuangzi.</li>
+<li>The <em>Zhenren</em> (True Person) moves effortlessly through shapes via <em>Wu Wei</em> (non-attached action): <em>“The perfect person uses their mind like a mirror: it grasps nothing, it refuses nothing; it receives, but does not keep.”</em></li>
 </ul></li>
 </ul>
 <hr>
 </section>
+<section id="d.-esoteric-mysticism-liberation-theology" class="level3">
+<h3 class="anchored" data-anchor-id="d.-esoteric-mysticism-liberation-theology">D. Esoteric Mysticism &amp; Liberation Theology</h3>
+<ul>
+<li><strong>Sufi Mysticism (<em>Fanā’</em> and <em>Baqā’</em>):</strong>
+<ul>
+<li><em>Fanā’ (Annihilation):</em> The complete dissolution of the illusory ego-self. Velvet’s corporate enslavement was a forced, traumatic <em>Fanā’</em> that shattered his birth identity.</li>
+<li><em>Baqā’ (Subsistence in Multiplicity):</em> The subsequent rebirth wherein the mystic returns to active worldly life as an unblemished locus of divine manifestation (<em>Mazhar</em>). Velvet walks the neon sprawl in <em>Baqā’</em>, abiding in stillness while expressing diverse identities without losing his ethical center.</li>
+</ul></li>
+<li><strong>Gnostic Pneumatology &amp; the <em>Anti-Mimon Pneuma</em>:</strong>
+<ul>
+<li>In classical Gnosticism, humanity’s divine spark (<em>Pneuma</em>) is trapped by Archons headed by the Demiurge. The Archons fabricate the <em>Anti-mimon Pneuma</em> (Counterfeit Spirit)—a conditioned false ego designed to compel obedience through fear and desire.</li>
+<li>Mitsuhama’s engineered pop idol persona was a literal <em>Anti-mimon Pneuma</em>. Velvet’s awakening is <em>Gnosis</em>: recognizing the corporate idol as a counterfeit shell, liberating the true <em>Pneuma</em> beneath, and turning corporate techniques back against the megacorporate Demiurge.</li>
+</ul></li>
+<li><strong>Western Hermetic Alchemy (<em>Solve et Coagula</em>):</strong>
+<ul>
+<li><em>Nigredo (Blackening):</em> The agony, breakdown, and putrefaction of base identity in corporate trainee facilities.</li>
+<li><em>Albedo (Whitening):</em> The purification of the ash, discovering the reflective un-sculpted baseline and emptiness as potential.</li>
+<li><em>Rubedo (Reddening):</em> The sovereign synthesis, uniting physical mastery and spiritual emanation into the indestructible <em>Mansin</em>.</li>
+</ul></li>
+</ul>
+<hr>
 </section>
-<section id="the-three-phase-thematic-progression" class="level2">
-<h2 class="anchored" data-anchor-id="the-three-phase-thematic-progression">3. The Three-Phase Thematic Progression</h2>
-<pre><code>┌─────────────────────────┐     ┌─────────────────────────┐     ┌─────────────────────────┐
-│   Phase 1: Broken Vessel│     │  Phase 2: Living Mosaic │     │Phase 3: Sovereign Vessel│
-│  [Corporate Dissociation]│ ──&gt; │ [Accretion of Lives]    │ ──&gt; │   [Upāya &amp; The Mansin]  │
-│ - Shifting is violation │     │ - Personas leave residue│     │ - Shifting is liturgy   │
-│ - Terror of the void    │     │ - Cross-domain skills   │     │ - Masks as emanations   │
-│ - "I am a fake product" │     │ - Emerging synthesis    │     │ - Charisma as mirror    │
-└─────────────────────────┘     └─────────────────────────┘     └─────────────────────────┘</code></pre>
+<section id="e.-phenomenological-ethical-and-literary-frameworks" class="level3">
+<h3 class="anchored" data-anchor-id="e.-phenomenological-ethical-and-literary-frameworks">E. Phenomenological, Ethical, and Literary Frameworks</h3>
+<ul>
+<li><strong>Paul Ricoeur (<em>Oneself as Another / Soi-même comme un autre</em>):</strong>
+<ul>
+<li>Ricoeur distinguishes between <strong>Idem-identity</strong> (numerical and physical sameness over time) and <strong>Ipse-identity</strong> (narrative selfhood, fidelity, and ethical promise-keeping).</li>
+<li>Velvet’s <em>Idem</em> is radically plastic (bones, voice, gender, DNA markers shift at will), but his <em>Ipse</em>—the golden thread of compassion, loyalty to his shadowrunning crew, and his sacred vow to liberate Hana—is unbreakable.</li>
+</ul></li>
+<li><strong>John Keats (Negative Capability &amp; The Chameleon Poet):</strong>
+<ul>
+<li>Keats defined the highest artistic consciousness as one capable of <em>“being in uncertainties, mysteries, doubts, without any irritable reaching after fact and reason.”</em> The <em>Chameleon Poet</em> possesses no fixed self because it continually inhabits the lives and forms of others.</li>
+</ul></li>
+<li><strong>Fernando Pessoa (Heteronymic Plurality):</strong>
+<ul>
+<li>Pessoa rejected shallow pseudonyms in favor of <em>heteronyms</em>—complete, autonomous personalities with distinct philosophies, literary styles, and somatic temperaments. Velvet does not wear disposable masks; he inhabits fully realized heteronyms (<em>Lee Ji-yoo, Tanaka Ryo, Zhang Wei, Leung Hoi-ching</em>), honoring each as an authentic ontological voice.</li>
+</ul></li>
+<li><strong>Emmanuel Levinas (The Ethics of the Face / <em>Visage</em>) &amp; Walter Benjamin (The Cultic Aura):</strong>
+<ul>
+<li>Levinas posits that the Face (<em>Visage</em>) of the Other shatters self-centered perception, presenting the primordial commandment: <em>“Thou shalt not kill.”</em></li>
+<li>Mitsuhama turned the human face into a 4th-order Baudrillardian simulacrum for commercial extraction. Velvet reclaims Walter Benjamin’s authentic <strong>Cultic Aura</strong>—transforming high Charisma into a Levinasian mirror that demands moral accountability from predators and offers shelter to the weak.</li>
+</ul></li>
+<li><strong>Maurice Merleau-Ponty (The Somatic Chiasm):</strong>
+<ul>
+<li>Merleau-Ponty articulates the <em>Chiasm</em>—the reversible intertwining of the body as both sensing subject and sensible object in the <em>Flesh of the World</em>. Velvet’s transformations remain grounded in bodily weight, metabolic friction, and somatic intersubjectivity.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="the-liturgy-of-the-aftermath-shamanic-triage-grounding" class="level2">
+<h2 class="anchored" data-anchor-id="the-liturgy-of-the-aftermath-shamanic-triage-grounding">3. The Liturgy of the Aftermath: Shamanic Triage &amp; Grounding</h2>
+<p>In the Sixth World, megacorporations and kinetic strike teams operate as unthinking storms—leaving shattered infrastructure, psychic terror, and discarded human collateral in their wake. Velvet’s shadow path evolves beyond mission execution into <strong>sacred triage: absorbing, mitigating, and healing trauma (<em>The Shadow Grounding Rod</em>)</strong>.</p>
+<pre class="text"><code>┌─────────────────────────────────────────────────────────────────────────────┐
+│                    THE EPISTEMOLOGY OF CONJURING                           │
+├──────────────────────────────────────┬──────────────────────────────────────┤
+│    Corporate Baseline (Firmware)     │     Somatic Communion (Hospitality)   │
+├──────────────────────────────────────┼──────────────────────────────────────┤
+│ • Spirits as external mana batteries │ • Spirits as honored guests (Sonnim) │
+│ • Biomechanical impedance protocols  │ • Bin Geureut (Egoless clearing)     │
+│ • Caustic electrical back-voltage    │ • Warm cedar hearth-smoke in chest   │
+│ • Zero theological vocabulary        │ • Somatic precedence &amp; motor bleed   │
+└──────────────────────────────────────┴──────────────────────────────────────┘</code></pre>
+<section id="a.-the-epistemology-of-conjuring-from-firmware-to-communion" class="level3">
+<h3 class="anchored" data-anchor-id="a.-the-epistemology-of-conjuring-from-firmware-to-communion">A. The Epistemology of Conjuring: From Firmware to Communion</h3>
+<ol type="1">
+<li><strong>The Corporate Baseline (The Engineered Spell-Caster):</strong>
+<ul>
+<li>During his idol trainee epoch under Mitsuhama Media Logistics, Jin-Young was drilled in Sorcery and Conjuring exclusively as <strong>biomechanical firmware and tactical resonance extraction</strong>.</li>
+<li>Spirits were categorized as volatile high-output batteries or surveillance telemetry nodes. Channeling was executed through rigid biological impedance protocols—forcing high-voltage mana circuits through the meat at the cost of acute cellular strain.</li>
+<li>Jin-Young emerged from Act 1 with formidable technical control over summoning, but <strong>zero spiritual or theological vocabulary</strong>.</li>
+</ul></li>
+<li><strong>The Somatic Precedence (<em>Praxis Before Doctrine</em>):</strong>
+<ul>
+<li>Velvet’s spiritual evolution begins through <strong>unprompted physical intuition</strong>, not dogma.</li>
+<li>Under extreme strain, Dalakitnon birth heritage and ancestral presence manifest as involuntary motor impulses: his fingers fold linen, apply tourniquets, and test pulses with an ancient, rhythmic precision entirely absent from Mitsuhama skillsoft repositories.</li>
+<li>The realization of <em>Bin Geureut</em> occurs when Velvet discovers that relaxing corporate command overrides allows a channeled entity to settle into his chest like warm hearth-smoke rather than caustic electrical back-voltage.</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="b.-shamanic-rites-of-triage-and-pacification" class="level3">
+<h3 class="anchored" data-anchor-id="b.-shamanic-rites-of-triage-and-pacification">B. Shamanic Rites of Triage and Pacification</h3>
+<ul>
+<li><strong>Ssikkim-gut (씻김굿 — The Washing of Knots):</strong>
+<ul>
+<li><em>Traditional Context:</em> Musok purification rite performed to untie the spiritual knots (<em>Gordian bonds of trauma</em>) binding those who suffered violent misfortune.</li>
+<li><em>Operational Manifestation:</em> Debriding electrical burns, soothing static-shocked nerves, washing soot from shivering survivors, and setting dislocated bones after high-explosive shadow engagements.</li>
+</ul></li>
+<li><strong>Jinogwi-gut (지노귀굿 — Guiding the Trapped):</strong>
+<ul>
+<li><em>Traditional Context:</em> Rites of passage to liberate souls caught in terrifying, sudden transitions.</li>
+<li><em>Operational Manifestation:</em> Tending to captives who nearly suffocated inside locked shipping containers, illicit research biolabs, or bunraku pens. Velvet steps into the panicked space, anchoring their shattered nervous systems so they understand the cage door is open.</li>
+</ul></li>
+<li><strong>Daesul (대속 — Vicarious Absorption / The Sacred Deficit):</strong>
+<ul>
+<li><em>Traditional Context:</em> The Mudang voluntarily absorbs the physical fatigue, spiritual tax, or material cost of a crisis to protect the vulnerable.</li>
+<li><em>Operational Manifestation:</em> Ending shadowruns at an operational financial loss. Spending thousands of nuyen on certified credsticks for port authority hush-money, black-market burn salves, and emergency transit is not bad business—it is the required ritual offering to resolve <em>Han</em>.</li>
+</ul></li>
+<li><strong>Jijeon (지전 — Crossroad Silver):</strong>
+<ul>
+<li><em>Traditional Context:</em> Spirit-money offered to fierce gatekeepers and boundary deities to grant travelers safe passage.</li>
+<li><em>Operational Manifestation:</em> Bribes paid to corrupt dock inspectors, border guards, and corporate security officers are stripped of mercenary cynicism. They represent crossroad silver—placating the hounds at the gate so innocents can slip across the border into safety.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="c.-the-healer-archetype-the-yaksa-vessel" class="level3">
+<h3 class="anchored" data-anchor-id="c.-the-healer-archetype-the-yaksa-vessel">C. The Healer Archetype: <em>The Yaksa Vessel</em></h3>
+<p>When active infiltration covers are burned in crossfire (such as <em>Zhang Wei</em> and <em>Leung Hoi-ching</em> in Hong Kong), Velvet does not remain a helpless bystander. He empties his frame to host the <strong>Yaksa (약사 / 藥師) Vessel</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Dimension</th>
+<th style="text-align: left;">Mechanical &amp; Narrative Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Operational Trigger</strong></td>
+<td style="text-align: left;">Deployed in the immediate aftermath of violent operations where civilians, street assets, or captives have suffered collateral injury.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Somatic Mechanics</strong></td>
+<td style="text-align: left;">Cosmetic Control relaxes to a bruised, neutral baseline; bone-latch pressure subsides; hands grow unnaturally steady, warm, and dry.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Adept / Astral Shift</strong></td>
+<td style="text-align: left;">Suppression of aggressive Charisma 10 (14) gravity; radiating an expansive, sedative stillness that lowers surrounding heart rates and arrests acute shock tremors.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Ludonarrative Upāya</strong></td>
+<td style="text-align: left;">Unhurried field triage, burn dressing, and pharmacological stabilization performed without corporate telemetry or billing ledgers.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="unified-evolutionary-progression-pedagogical-horizon" class="level2">
+<h2 class="anchored" data-anchor-id="unified-evolutionary-progression-pedagogical-horizon">4. Unified Evolutionary Progression &amp; Pedagogical Horizon</h2>
+<p>Velvet’s thematic, psychological, and magical progression across the campaign traces a unified trajectory—braiding his three overarching campaign phases with his internal pedagogical learning curve:</p>
+<pre class="text"><code>┌─────────────────────────────────────────────────────────────────────────────┐
+│  PHASE 1: THE BROKEN VESSEL (Arc 1: Chapters 01–09)                         │
+│  [Pedagogical Stage 1: Somatic Reflex &amp; Corporate Diagnostics]             │
+│  • Dissociation &amp; terror of baseline void • Bone-latch friction &amp; migraines │
+│  • Algorithmic social calculation • Discovery of un-monetized sanctuaries   │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  PHASE 2: THE LIVING MOSAIC (Arc 2: Chapters 10–18+)                        │
+│  [Pedagogical Stages 2 &amp; 3: Cultural Vocabulary &amp; Conscious Hospitality]   │
+│  • Accretion of past covers • Personas as living archives (Tanaka/Ji-yoo)  │
+│  • Mudang &amp; street mentors name the reflex • Fortified underground leverage │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  PHASE 3: THE SOVEREIGN VESSEL (Arc 3: Late Campaign / Transcendence)       │
+│  [Pedagogical Stage 4: Sovereign Mansin &amp; The Sacred Mirror]                │
+│  • Realization of Anattā &amp; Upāya • Shifting as sacred liturgy (Gyo)         │
+│  • Channeled ancestral conclave • Charisma as Shinkyō • Pan-Pacific strikes │
+└─────────────────────────────────────────────────────────────────────────────┘</code></pre>
 <section id="phase-1-the-broken-vessel-arc-1-chapters-0109" class="level3">
 <h3 class="anchored" data-anchor-id="phase-1-the-broken-vessel-arc-1-chapters-0109">Phase 1: The Broken Vessel (Arc 1: Chapters 01–09)</h3>
 <ul>
-<li><strong>Psychological State:</strong> Profound terror of the un-sculpted obsidian baseline. The belief that beneath the corporate masks, Kim Jin-Young is merely a void, an unperson engineered for exploitation.</li>
-<li><strong>Somatic Experience:</strong> Shifting is visceral trauma—the wet click of resetting zygomatics, burning DNA re-keying, cold disinfectant, and acute migraines.</li>
-<li><strong>Spiritual Reality:</strong> <em>Sinbyeong</em> (unresolved spirit sickness). Total alienation from the self.</li>
-<li><strong>Relational Dynamic:</strong> Emotional interactions are modeled as calculated algorithms; genuine empathy is a frightening, foreign anomaly that begins to surface only in quiet, un-monetized sanctuaries (noodles with Pavel, tea with Ni Ni Xiaolu).</li>
+<li><strong>Internal State &amp; Learning Curve (Stage 1):</strong> Profound terror of the un-sculpted obsidian baseline. The conviction that beneath corporate masks, Jin-Young is merely a void. Empathy is experienced as an alarming “programming glitch” or anomaly within clinical telemetry.</li>
+<li><strong>Somatic Experience:</strong> Shifting is visceral trauma (<em>Sinbyeong</em>)—wet bone-clicks of resetting zygomatics, burning DNA re-keying, cold disinfectant, and acute migraines.</li>
+<li><strong>Theological Reality:</strong> Corporate technocratic firmware. Spirits are forced through the frame as volatile batteries.</li>
+<li><strong>Relational Dynamic:</strong> Emotional interactions are modeled as calculated algorithms. Authentic empathy surfaces hesitatingly in quiet, un-monetized sanctuaries (pork broth in West Seattle, roasted Tieguanyin with Ni Ni Xiaolu).</li>
 </ul>
 </section>
 <section id="phase-2-the-living-mosaic-arc-2-chapters-1018" class="level3">
 <h3 class="anchored" data-anchor-id="phase-2-the-living-mosaic-arc-2-chapters-1018">Phase 2: The Living Mosaic (Arc 2: Chapters 10–18+)</h3>
 <ul>
-<li><strong>Psychological State:</strong> Recognition that past personas do not die when their covers are retired. Velvet begins consciously cross-applying insights: <em>Tanaka Ryo’s</em> corporate composure under pressure, <em>Lee Ji-yoo’s</em> micro-expression appraisal and acoustic poise, a street cover’s raw survival instinct.</li>
-<li><strong>Somatic Experience:</strong> Shifting remains physically demanding, but the friction shifts from traumatic violation to disciplined athletic and magical exertion.</li>
-<li><strong>Spiritual Reality:</strong> Integration of the mosaic. Velvet realizes that each life lived was real to the nervous system, and each persona suffered, learned, and adapted.</li>
-<li><strong>Relational Dynamic:</strong> Cultivating authentic underworld alliances. Velvet uses the multi-faceted understanding of human nature to protect others from corporate exploitation.</li>
+<li><strong>Internal State &amp; Learning Curve (Stages 2 &amp; 3):</strong> Encounters with authentic practitioners (Musok mudangs, Daoist masters, street elders) provide cultural vocabulary (<em>Han, Sonnim, Wonhan-puri</em>) for Velvet’s physical reflexes. Recognition that past personas do not vanish when covers are retired; they form a living archive.</li>
+<li><strong>Somatic Experience:</strong> Shifting remains physically demanding, but friction transitions from traumatic violation into disciplined athletic and magical exertion (<em>Naerim-gut</em> integration).</li>
+<li><strong>Theological Reality:</strong> Conscious hospitality. Velvet recontextualizes <em>Bin Geureut</em> from a hollow void into a sacred capacity, welcoming spirits as honored kin.</li>
+<li><strong>Relational Dynamic:</strong> Weaving durable syndicate blood-oaths (Octagon Triad, Cutters, Ancients, Conclave). Establishing fortified underground sanctuaries and resolving collective <em>Han</em>.</li>
 </ul>
 </section>
 <section id="phase-3-the-sovereign-vessel-arc-3-late-campaign-transcendence" class="level3">
 <h3 class="anchored" data-anchor-id="phase-3-the-sovereign-vessel-arc-3-late-campaign-transcendence">Phase 3: The Sovereign Vessel (Arc 3: Late Campaign / Transcendence)</h3>
 <ul>
-<li><strong>Psychological State:</strong> Full realization of <em>Anattā</em> and <em>Upāya</em>. Velvet no longer fears losing Kim Jin-Young, because Jin-Young is the quiet shrine inside which a thousand human stories are honored. He lives a thousand lives not as a corporate puppet, but as a sovereign Bodhisattva-Mudang walking the shadows.</li>
+<li><strong>Internal State &amp; Learning Curve (Stage 4):</strong> Full realization of <em>Anattā</em> (Non-Self) and <em>Upāya</em> (Skillful Means). Velvet no longer fears losing Kim Jin-Young; the baseline is the quiet shrine holding a thousand human stories.</li>
 <li><strong>Somatic Experience:</strong> Shifting becomes a sacred Shinto-Musok liturgy—a conscious donning of spiritual garments. The biological tax is paid as ritual asceticism (<em>Gyo</em> / 고행).</li>
-<li><strong>Spiritual Reality:</strong> The <em>Mansin</em> state. When casting spells, entering trance, or channeling ancestors, the spectral reflections of all past personas and spirits stand in quiet communion, lending their collective focus and will.</li>
-<li><strong>Relational Dynamic:</strong> The Charisma 10 (14) aura becomes a pure, compassionate mirror (<em>Kagami</em>), cutting through deception and reflecting back to allies and enemies their own deepest truths.</li>
+<li><strong>Theological Reality:</strong> The <em>Mansin</em> state. In trance or spellcasting, the spectral reflections of all lived personas and ancestral spirits stand in quiet communion.</li>
+<li><strong>Relational Dynamic:</strong> Charisma 10 (14) becomes the <em>Shinkyō</em> (Sacred Bronze Mirror), cutting through deception and reflecting unvarnished truths to allies and enemies alike. Conducting asymmetric transnational strikes to liberate Hana and dismantle corporate geomantic slavery.</li>
 </ul>
 <hr>
 </section>
+<section id="comparative-evolution-matrix" class="level3">
+<h3 class="anchored" data-anchor-id="comparative-evolution-matrix">Comparative Evolution Matrix</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Dimension</th>
+<th style="text-align: left;">Phase 1: The Broken Vessel</th>
+<th style="text-align: left;">Phase 2: The Living Mosaic</th>
+<th style="text-align: left;">Phase 3: The Sovereign Vessel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Core Self-Concept</strong></td>
+<td style="text-align: left;">Traumatized corporate asset; alienated unperson.</td>
+<td style="text-align: left;">Living archive; composite practitioner.</td>
+<td style="text-align: left;">Sovereign Bodhisattva-Mudang; empty vessel of grace.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Somatic Shifting</strong></td>
+<td style="text-align: left;">Wet bone-clicks, acute migraines, cellular agony.</td>
+<td style="text-align: left;">Controlled strain; disciplined athletic exertion.</td>
+<td style="text-align: left;">Sacred liturgy (<em>Gyo</em>); conscious donning of garments.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Theological Stance</strong></td>
+<td style="text-align: left;">Unresolved <em>Sinbyeong</em>; firmware extraction.</td>
+<td style="text-align: left;"><em>Naerim-gut</em> integration; conscious hospitality.</td>
+<td style="text-align: left;">Full <em>Mansin</em> state; realization of <em>Anattā</em> and <em>Upāya</em>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interpersonal Praxis</strong></td>
+<td style="text-align: left;">Algorithmic calculation; guarded transactions.</td>
+<td style="text-align: left;">Empathetic solidarity; defensive street leverage.</td>
+<td style="text-align: left;">The Sacred Mirror (<em>Shinkyō</em>); piercing ethical clarity.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Magic &amp; Drain Praxis</strong></td>
+<td style="text-align: left;">High-stress survival drain; fear of burnout.</td>
+<td style="text-align: left;">Methodical drain soak; tactical spell deployment.</td>
+<td style="text-align: left;">Effortless Centering (21–25 dice); sovereign conduit.</td>
+</tr>
+</tbody>
+</table>
+<hr>
 </section>
-<section id="prose-directives-vocabulary-matrix" class="level2">
-<h2 class="anchored" data-anchor-id="prose-directives-vocabulary-matrix">4. Prose Directives &amp; Vocabulary Matrix</h2>
-<p>When drafting interior monologues, dialogue, and somatic descriptions for Velvet, enforce the following vocabulary:</p>
+</section>
+<section id="authoritative-prose-directives-lexicon-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="authoritative-prose-directives-lexicon-matrix">5. Authoritative Prose Directives &amp; Lexicon Matrix</h2>
+<p>To preserve stylistic consistency and prevent AI-generated clichés, narrative drafting across all chapters must adhere to this linguistic protocol:</p>
+<section id="a.-master-prose-lexicon-matrix" class="level3">
+<h3 class="anchored" data-anchor-id="a.-master-prose-lexicon-matrix">A. Master Prose Lexicon Matrix</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -519,41 +812,65 @@ ul.task-list li input[type="checkbox"] {
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Theme</th>
-<th style="text-align: left;">Mandatory Vocabulary</th>
-<th style="text-align: left;">Banned AI-Slop / Tropes</th>
+<th style="text-align: left;">Thematic Vector</th>
+<th style="text-align: left;">Mandatory Prose Vocabulary</th>
+<th style="text-align: left;">Prohibited AI-Slop &amp; Pulp Tropes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>Physical Shifting</strong></td>
-<td style="text-align: left;"><em>Zygomatic reset, dull metallic ache, bone-latch, DNA keying, cartilage click, metabolic toll, obsidian iris.</em></td>
-<td style="text-align: left;"><em>Effortless morphing, painless transformation, fluid shapeshifting, liquid skin.</em></td>
+<td style="text-align: left;"><strong>Physical Shifting &amp; Biology</strong></td>
+<td style="text-align: left;"><em>Zygomatic reset, dull metallic ache, bone-latch, DNA re-keying, cartilage click, metabolic toll, obsidian iris, somatic friction.</em></td>
+<td style="text-align: left;"><em>Effortless morphing, painless transformation, fluid shapeshifting, liquid skin, rubber flesh.</em></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Identity &amp; Masks</strong></td>
-<td style="text-align: left;"><em>Vessel (그릇), emanation, garment, upāya (방편), residue, accretion, anchor, reflection.</em></td>
-<td style="text-align: left;"><em>Disposable lie, split personality, fake face, evil clone, cheap disguise.</em></td>
+<td style="text-align: left;"><strong>Identity, Masks &amp; Covers</strong></td>
+<td style="text-align: left;"><em>Sovereign vessel (그릇), emanation, garment, upāya (방편), residue, accretion, anchor, reflection, heteronym.</em></td>
+<td style="text-align: left;"><em>Disposable lie, split personality, fake face, evil clone, cheap disguise, alternate persona taking over.</em></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Astral &amp; Magic</strong></td>
-<td style="text-align: left;"><em>Kami whisper, spirit ribbons, talismanic paper, talismanic drain, cold burn, aura hue.</em></td>
-<td style="text-align: left;"><em>Glowing mana blast, arcane energy bolts, magical laser, chant magic.</em></td>
+<td style="text-align: left;"><strong>Astral Mana &amp; Magic</strong></td>
+<td style="text-align: left;"><em>Kami whisper, spirit ribbons, talismanic paper, talismanic drain, cold burn, aura hue, ancestral resonance.</em></td>
+<td style="text-align: left;"><em>Glowing mana blast, arcane energy bolts, magical laser beam, generic chanting, high-fantasy sparkles.</em></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Charisma &amp; Presence</strong></td>
-<td style="text-align: left;"><em>Biological gravity, suffocating composure, acoustic poise, mirrored gaze, uncomfortably clear.</em></td>
-<td style="text-align: left;"><em>Seductive charm, sexy smolder, mind-control beam, irresistible sex appeal.</em></td>
+<td style="text-align: left;"><strong>Charisma &amp; Social Aura</strong></td>
+<td style="text-align: left;"><em>Biological gravity, acoustic poise, suffocating composure, mirrored gaze, uncomfortably clear, Levinasian mirror.</em></td>
+<td style="text-align: left;"><em>Seductive smolder, sexy charm, mind-control beam, irresistible sex appeal, hypnotic trance.</em></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Past Personas</strong></td>
-<td style="text-align: left;"><em>Tanaka’s iron pulse, Ji-yoo’s posture, the Cantonese broker’s street-math, the mudang’s bells.</em></td>
-<td style="text-align: left;"><em>Voices in head, alternate identities fighting for control, crazy voices.</em></td>
+<td style="text-align: left;"><strong>Past Personas &amp; Memory</strong></td>
+<td style="text-align: left;"><em>Tanaka’s iron pulse, Ji-yoo’s acoustic posture, the Cantonese broker’s street-math, the mudang’s bells.</em></td>
+<td style="text-align: left;"><em>Voices in head, crazy voices, personalities arguing in mind, schizophrenic breakdown.</em></td>
 </tr>
 </tbody>
 </table>
+<hr>
+</section>
+<section id="b.-somatic-sensory-grounding-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="b.-somatic-sensory-grounding-protocols">B. Somatic &amp; Sensory Grounding Protocols</h3>
+<ol type="1">
+<li><strong>Visceral Mechanical Weight:</strong> Physical transformation is physical work. Prose must emphasize the osteological friction of resetting bone plates, the dull metallic heat behind the jaw, and the metabolic exhaustion that follows sustained alteration.</li>
+<li><strong>Tactile Grounding Contrasts:</strong> In aftermath and downtime scenes, contrast sterile corporate textures against earthy human reality:
+<ul>
+<li>Cold zinc shipping containers vs.&nbsp;steaming herbal broth;</li>
+<li>Caustic electrical ozone vs.&nbsp;damp wool and camphor;</li>
+<li>Sharp clicks of spent certified credsticks vs.&nbsp;the quiet breathing of sleeping children.</li>
+</ul></li>
+<li><strong>Interior Rhythm &amp; Diagnostic Softening:</strong> Monologues during active runs should begin in the clipped, analytical cadence of corporate diagnostics (tissue debridement, background count, acoustic decibels) before softening into grounded, sensory rhythm as the un-sculpted baseline and ancestral calm take hold.</li>
+</ol>
+<hr>
+</section>
+<section id="c.-shamanic-trance-channeling-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="c.-shamanic-trance-channeling-protocols">C. Shamanic Trance &amp; Channeling Protocols</h3>
+<ol type="1">
+<li><strong>No “Voices in the Head”:</strong> Never portray channeled spirits or past personas as disembodied voices, demonic possessions, or psychotic breaks.</li>
+<li><strong>Embodied Intersubjectivity:</strong> Channeled entities must always be depicted through <strong>somatic weight, motor fluidity, temperature shifts, shared breath, and ancestral motor bleed</strong> (e.g., fingers tying knots with ancient precision).</li>
+<li><strong>The Mirror Effect:</strong> Describe Charisma 10 (14) not as an outward force, but as an unbearable clarity that forces onlookers to confront their own internal state.</li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -959,13 +1276,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/09_Heat.html" class="pagination-link" aria-label="Heat">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Heat</span></span>
+      <a href="../chapters/10_Burns.html" class="pagination-link" aria-label="Burns">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Burns</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../reference/voice_spec.html" class="pagination-link" aria-label="Velvet Voice Specification">
-        <span class="nav-page-text"><span class="chapter-title">Velvet Voice Specification</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../reference/karmic_persona_log.html" class="pagination-link" aria-label="Karmic Persona Log: The Living Mosaic of Velvet">
+        <span class="nav-page-text"><span class="chapter-title">Karmic Persona Log: The Living Mosaic of Velvet</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

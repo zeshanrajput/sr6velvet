@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bliss – VELVET // Jin-Young Character Dossier</title>
+<title>Story Arc 3: The Pacific Reckoning &amp; Sovereign Emanation – VELVET // Jin-Young Character Dossier</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/08_Tea_in_Tacoma.html" rel="next">
-<link href="../chapters/06_seattle_web.html" rel="prev">
+<link href="../reference/story_continuity.html" rel="next">
+<link href="../reference/story_arc2.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -88,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01_transaction.html">Narrative Log</a></li><li class="breadcrumb-item"><a href="../chapters/07_bliss.html"><span class="chapter-title">Bliss</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/philosophical_framework.html">Reference &amp; Specifications</a></li><li class="breadcrumb-item"><a href="../reference/story_arc3.html"><span class="chapter-title">Story Arc 3: The Pacific Reckoning &amp; Sovereign Emanation</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -220,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/07_bliss.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Bliss</span></a>
+  <a href="../chapters/07_bliss.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bliss</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -276,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/story_arc3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Story Arc 3: The Pacific Reckoning &amp; Sovereign Emanation</span></a>
+  <a href="../reference/story_arc3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Story Arc 3: The Pacific Reckoning &amp; Sovereign Emanation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -291,15 +320,30 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-tripartite-master-architecture" id="toc-the-tripartite-master-architecture" class="nav-link active" data-scroll-target="#the-tripartite-master-architecture">The Tripartite Master Architecture</a></li>
+  <li><a href="#master-theme-the-sacred-mirror-the-shattered-panopticon" id="toc-master-theme-the-sacred-mirror-the-shattered-panopticon" class="nav-link" data-scroll-target="#master-theme-the-sacred-mirror-the-shattered-panopticon">Master Theme: <em>The Sacred Mirror &amp; The Shattered Panopticon</em></a></li>
+  <li><a href="#key-narrative-pillars-campaign-threads" id="toc-key-narrative-pillars-campaign-threads" class="nav-link" data-scroll-target="#key-narrative-pillars-campaign-threads">Key Narrative Pillars &amp; Campaign Threads</a>
+  <ul class="collapse">
+  <li><a href="#thread-1-transnational-infiltration-the-hong-kong-neo-seoul-axis" id="toc-thread-1-transnational-infiltration-the-hong-kong-neo-seoul-axis" class="nav-link" data-scroll-target="#thread-1-transnational-infiltration-the-hong-kong-neo-seoul-axis">Thread 1: Transnational Infiltration &amp; The Hong Kong / Neo-Seoul Axis</a></li>
+  <li><a href="#thread-2-invocation-great-form-ancestral-authority" id="toc-thread-2-invocation-great-form-ancestral-authority" class="nav-link" data-scroll-target="#thread-2-invocation-great-form-ancestral-authority">Thread 2: Invocation &amp; Great Form Ancestral Authority</a></li>
+  <li><a href="#thread-3-the-decadal-strike-for-hanas-liberation" id="toc-thread-3-the-decadal-strike-for-hanas-liberation" class="nav-link" data-scroll-target="#thread-3-the-decadal-strike-for-hanas-liberation">Thread 3: The Decadal Strike for Hana’s Liberation</a></li>
+  <li><a href="#thread-4-the-sovereign-mansin-the-sacred-mirror-kagami" id="toc-thread-4-the-sovereign-mansin-the-sacred-mirror-kagami" class="nav-link" data-scroll-target="#thread-4-the-sovereign-mansin-the-sacred-mirror-kagami">Thread 4: The Sovereign Mansin &amp; The Sacred Mirror (<em>Kagami</em>)</a></li>
+  </ul></li>
+  <li><a href="#summary-of-narrative-arc-3-progression" id="toc-summary-of-narrative-arc-3-progression" class="nav-link" data-scroll-target="#summary-of-narrative-arc-3-progression">Summary of Narrative Arc 3 Progression</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01_transaction.html">Narrative Log</a></li><li class="breadcrumb-item"><a href="../chapters/07_bliss.html"><span class="chapter-title">Bliss</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/philosophical_framework.html">Reference &amp; Specifications</a></li><li class="breadcrumb-item"><a href="../reference/story_arc3.html"><span class="chapter-title">Story Arc 3: The Pacific Reckoning &amp; Sovereign Emanation</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Bliss</span></h1>
+<h1 class="title"><span class="chapter-title">Story Arc 3: The Pacific Reckoning &amp; Sovereign Emanation</span></h1>
 </div>
 
 
@@ -316,19 +360,128 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<audio controls="" src="audio/07_bliss.mp3" style="width: 100%; margin-bottom: 20px;">
-</audio>
-<p>Beneath the West Seattle elevated freight overpass, automated Ares Macrotechnology cargo haulers rumbled across steel expansion joints every sixty seconds, sending a deep shudder through the rusted framework of the roadside noodle cart. Cold rain dripped from the torn vinyl awning into the curb drain, hissing against the cast-iron burner where forty gallons of rich pork-bone broth simmered in a heavy aluminum cauldron. In the wet air, holographic AR banners from Shiawase Logistics and Yakashima Food Services flickered and glitched across the concrete pillars, casting jagged amber reflections in oil-slicked puddles. Velvet sat on the corner wooden stool, wrapped in a dark oilskin slicker, wearing the street persona of Mei Jing. Faded blue syndicate ink traced the tendons of her right wrist and rose along the left side of her jaw beneath the upturned canvas collar, anchoring her physical presence in the dockside working class.</p>
-<p>On the cedar counter next to her steaming bowl sat the credstick basket from the Octagon Triad courier, holding in the corner of its weave a single unopened Bliss capsule wrapped in silver yin-yang foil—fifteen nuyen of synthetic chemical numbness meant as a gratuity for the courier’s run. She picked up the small cylinder, turning the plastic between her bare fingers before setting it back beside the broth while across the counter. The elderly cook lowered fresh wheat noodles into boiling water with a wire basket, the rising steam creating a warm, clouded pocket of air that held the sulfur rain at bay.</p>
-<p>Water splashed in the gutter as heavy boots dragged along the broken asphalt, and a man stumbled into the shelter of the awning wearing a waterlogged Ares work jacket where the Russian Vory insignia on the left shoulder had been violently hacked off with a combat blade, leaving frayed grey threads hanging over torn ballistic weave.</p>
-<p>He slumped onto the stool two seats away, raw, bruised hands trembling against the wooden counter as he fought to steady his respiration. “Broth,” the man rasped, his vocal cords raw from the aftereffects of inhaled aerosol sedatives. “Hot.” The cook slid a heavy ceramic bowl across the cedar wood without asking for creds up front, but when the man reached for bamboo chopsticks from the stoneware jar, his twitching fingers lost their grip, sending the sticks clattering across the wet laminate. He stared down at his swollen knuckles, his forearms still suffering involuntary tremors from the Narcoject autoinjector Velvet had driven into his cervical cluster thirty-six hours earlier. When he turned his head slowly, bloodshot eyes fixed on the woman sitting two stools away, his breath caught in his throat as he recognized the faded triad ink along her jawline and the unnerving, motionless calm in her dark eyes. His right hand jerked instinctively toward an empty armpit holster, his eyes wide with terror.</p>
-<p>The man was Pavel, the young Vory combat mage who had broken under fire as the perimeter wards collapsed around the illicit narcotics refinery. “You,” Pavel whispered, his voice trembling as he pressed his spine hard against the cart’s iron support pole.</p>
-<p>Velvet kept her hands open beside her ceramic bowl, meeting his panic with quiet, grounded stillness. “Drink the broth,” she said, her voice low, steady, and carrying the soothing, resonant cadence of Lee Ji-yoo. “The chili oil clears the chemical residue from the bronchial lining.”</p>
-<p>Pavel swallowed hard, his chest heaving under the damp canvas jacket as he looked between her open hands and the steaming soup. “I know the containment formulas,” he blurted out, the words spilling past his lips in a rush of shame and exhausted panic. “I bound a hearth-spirit when I was fourteen in Vladivostok. I had the chalk circle drawn on the concrete. But the mana tore away the second I spoke the binding mantra. The spirit wouldn’t take form. Before your strike team breached the iron doors, my magic was already dead in my hands. If the Vory elders think I choked on a basic third-circle summon, they’ll weigh my boots with scrap iron and dump me in the Duwamish river before sunrise.”</p>
-<p>Velvet looked at the young mage, his skin grey and hollow under the single yellow work bulb hanging from the cart awning. She picked up her bowl, letting the ceramic heat soak into her palms. “The geothermal plant was built directly over the Puyallup ash beds,” Velvet said quietly, her tone matter-of-fact and calm. “Surrounded by subterranean coal fires, heavy industrial slag, and un-filtered chemical runoff from the old Renraku smelters, the ground water beneath the floor was saturated with industrial mercury. The local background count was screaming toxic pollution. Your chalk circle was structurally intact and your vocal gesture was clean, but the mana broke because the earth beneath your boots was poisoned. No hermetic mage in Seattle summons a clean spirit out of industrial sewage. You took a sedative dart during the initial breach and lost consciousness while holding the northern access corridor. Tell that story, and keep your head down.”</p>
-<p>Pavel sat completely motionless on the stool as the white-knuckled grip on his knees relaxed, letting out a long, ragged breath that mixed with the rising steam from the aluminum cauldron. He looked down at his hands, finding them steady for the first time in two days, then picked up a fresh pair of chopsticks from the jar, dipped them into the dark broth, and pulled noodles to his mouth. They sat together beneath the rattling awning as the rain poured over the West Seattle overpass, eating hot noodles in the quiet shelter away from the sprawl, leaving the silver Bliss capsule untouched in the credstick basket.</p>
+<p>Story Arc 3 marks the culmination of Velvet’s long campaign—the transition from underground shadow deterrence into an <strong>asymmetric, transnational counter-offensive across the Pacific Rim</strong> to dismantle the corporate geomantic panopticon and secure permanent, sovereign sanctuary for Hana and Awakened refugees.</p>
+<hr>
+<section id="the-tripartite-master-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="the-tripartite-master-architecture">The Tripartite Master Architecture</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Dimension</th>
+<th style="text-align: left;">Trajectory &amp; Foundation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>World Basis</strong></td>
+<td style="text-align: left;"><strong>The Pacific Reckoning &amp; Sovereign Sanctuary:</strong> Staging deep-cover operations across Hong Kong, Neo-Tokyo, and Neo-Seoul; neutralizing Mitsuhama Asset Recovery strike assets; exploiting Wuxing/MCT rivalries; severing Hana’s corporate bonds and establishing unassailable transnational sanctuaries.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Internal Basis</strong></td>
+<td style="text-align: left;"><strong><em>Upāya</em> (방편 - Skillful Means) &amp; The Sovereign <em>Mansin</em> (만신):</strong> Full realization of <em>Anattā</em> (Non-Self). Velvet no longer fears identity erasure. The empty vessel (<em>Bin Geureut</em>) becomes a sacred mirror (<em>Kagami</em>)—personas are donned as intentional Bodhisattva-Mudang emanations (<em>Nirmāṇakāya</em>) of wisdom and protection.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mechanical Basis</strong></td>
+<td style="text-align: left;"><strong>200+ Total Karma Earned (TKE) Milestone:</strong> Magic 8, Initiation Grades 6–8 (<em>Invocation</em>, <em>Flexible Signature</em>, <em>Masking</em>, <em>Quickening</em>), Great Form spirit summoning, full bonded focus suite (Rating 4+ Power Focus, Weapon Focus, Qi Foci), prime-tier dice pools (<span class="math inline">\(20+\)</span>).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="master-theme-the-sacred-mirror-the-shattered-panopticon" class="level2">
+<h2 class="anchored" data-anchor-id="master-theme-the-sacred-mirror-the-shattered-panopticon">Master Theme: <em>The Sacred Mirror &amp; The Shattered Panopticon</em></h2>
+<blockquote class="blockquote">
+<p><strong>Core Concept:</strong> Corporate dominance thrives by commodifying identity, desire, and spirit. When an engineered asset realizes that identity is an impermanent aggregate (<em>Anattā</em>), the corporation loses its leverage. By utilizing fluid masks as deliberate, compassionate skillful means (<em>Upāya</em>), Velvet transforms from a fugitive asset into an un-ownable spiritual sovereign capable of shattering the corporate idol grid.</p>
+</blockquote>
+<p>In Arc 1, Velvet discovered authentic empathy in quiet Sprawl corners. In Arc 2, Velvet built a fortress of underground deterrence to survive. In Arc 3, Velvet <strong>turns the mirror outward</strong>—striking at the root of the corporate machine that manufactured him, turning the massive geomantic currents of the Pacific Rim against the architects of metahuman exploitation.</p>
+<hr>
+</section>
+<section id="key-narrative-pillars-campaign-threads" class="level2">
+<h2 class="anchored" data-anchor-id="key-narrative-pillars-campaign-threads">Key Narrative Pillars &amp; Campaign Threads</h2>
+<section id="thread-1-transnational-infiltration-the-hong-kong-neo-seoul-axis" class="level3">
+<h3 class="anchored" data-anchor-id="thread-1-transnational-infiltration-the-hong-kong-neo-seoul-axis">Thread 1: Transnational Infiltration &amp; The Hong Kong / Neo-Seoul Axis</h3>
+<ul>
+<li><strong>Thematic Grounding:</strong> The battleground moves from Seattle’s subterranean corridors to the dense neon canyons of Hong Kong and the hyper-monitored corporate enclaves of Neo-Seoul.</li>
+<li><strong>The Operation:</strong> Utilizing high-rating forged identities (Lee Ji-yoo, Tanaka Ryo, Mei Jing) and newly acquired multilingual fluency (Linguistics), Velvet moves effortlessly through corporate boardrooms, Triad tearooms, and idol media circuits to plant sleeper assets and map geomantic vulnerabilities.</li>
+<li><strong>The Atmosphere:</strong> Searing monsoons, high-altitude corporate penthouses, neon-drenched harbor docks, and deep leyline nodes where traditional Feng Shui and Musok rituals collide with corporate security protocols.</li>
+</ul>
+<hr>
+</section>
+<section id="thread-2-invocation-great-form-ancestral-authority" class="level3">
+<h3 class="anchored" data-anchor-id="thread-2-invocation-great-form-ancestral-authority">Thread 2: Invocation &amp; Great Form Ancestral Authority</h3>
+<ul>
+<li><strong>Thematic Grounding:</strong> As Initiation reaches Grades 6–8, Velvet’s Shinto-Musok mastery reaches its esoteric apex:
+<ul>
+<li><strong>Invocation of Great Form Spirits:</strong> Summoning formidable, ancient kami and ancestral guardians endowed with Great Form powers, providing massive tactical deterrence and domain control.</li>
+<li><strong>Flexible Signature &amp; Masking:</strong> Moving through the Astral plane completely untraceable, confounding dual-megacorp astral tracking arrays and mana-scanners.</li>
+<li><strong>Quickened Leyline Anchors:</strong> Anchoring sacred, un-monetized shrine spaces directly into the earth’s natural mana flow without corporate hardware.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="thread-3-the-decadal-strike-for-hanas-liberation" class="level3">
+<h3 class="anchored" data-anchor-id="thread-3-the-decadal-strike-for-hanas-liberation">Thread 3: The Decadal Strike for Hana’s Liberation</h3>
+<ul>
+<li><strong>Thematic Grounding:</strong> Hana is held in a gilded Wuxing media tower in Neo-Seoul, protected by biometric wards and corporate geomantic lattices.</li>
+<li><strong>The Climax Operation:</strong> Rather than a crude kinetic assault, Velvet executes a multi-vector asymmetric strike:
+<ol type="1">
+<li><em>Acoustic &amp; Geomantic Sabotage:</em> Overloading the broadcast nodes that feed the idol ritual matrix during a live pan-Pacific media gala.</li>
+<li><em>Triad &amp; Conclave Extraction:</em> Coordinating Octagon Triad sea routes and Guild of Freelance Assets ritual support to extract Hana through an encrypted corridor.</li>
+<li><em>Corporate Paralyzation:</em> Leaking damning Mitsuhama-Wuxing joint asset recovery collusion logs, igniting a catastrophic PR and legal conflict between the two mega-giants.</li>
+</ol></li>
+</ul>
+<hr>
+</section>
+<section id="thread-4-the-sovereign-mansin-the-sacred-mirror-kagami" class="level3">
+<h3 class="anchored" data-anchor-id="thread-4-the-sovereign-mansin-the-sacred-mirror-kagami">Thread 4: The Sovereign Mansin &amp; The Sacred Mirror (<em>Kagami</em>)</h3>
+<ul>
+<li><strong>The Spiritual Pinnacle:</strong> Velvet operates in complete harmony as the <em>Mansin</em>—hosting the accumulated wisdom, grief (<em>Han</em>), and strengths of ten thousand lived experiences.</li>
+<li><strong>The Transformed Aura:</strong> Charisma 10 (14) is no longer an engineered trap of suffocating gravity; it has become an unblemished bronze mirror (<em>Kagami</em>). In Velvet’s presence, corporate executives see the hollow emptiness of their balance sheets, wage-slaves remember their forgotten dreams, and allies find unshakable courage.</li>
+<li><strong>The Sovereign Sanctuary:</strong> Velvet’s ultimate victory is not corporate conquest, but the establishment of enduring, self-sustaining sanctuaries across the Pacific—quiet, un-taxed havens where the discarded, the bio-sculpted, and the Awakened can live in sovereign dignity.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="summary-of-narrative-arc-3-progression" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-narrative-arc-3-progression">Summary of Narrative Arc 3 Progression</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Phase</th>
+<th style="text-align: left;">Story Focus</th>
+<th style="text-align: left;">Emotional &amp; Metaphysical Benchmark</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Phase I: The Pacific Deployment</strong> (Ch 19–23)</td>
+<td style="text-align: left;">Moving operations to Hong Kong and the Pacific Rim; establishing transnational Triad/conclave safehouses; deploying multi-persona intelligence networks.</td>
+<td style="text-align: left;">Quiet, unshakeable serenity. The terror of the void is gone; personas are worn with purposeful mastery (<em>Upāya</em>).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Phase II: The Esoteric Siege</strong> (Ch 24–28)</td>
+<td style="text-align: left;">High-stakes corporate infiltration; <em>Invocation</em> of Great Form Kami; mapping the geomantic nexus points of the Wuxing/MCT ritual grid; severing corporate tracker chains.</td>
+<td style="text-align: left;">Supreme tactical and spiritual focus; acting as the <em>Mansin</em>, backed by an internal conclave of lived human strength.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Phase III: The Shattered Mirror &amp; Liberation</strong> (Ch 29+)</td>
+<td style="text-align: left;">The Neo-Seoul extraction gala; breaking the idol ritual panopticon; freeing Hana; establishing permanent sovereign sanctuaries in Seattle and East Asia.</td>
+<td style="text-align: left;">Transcendence and liberation. The broken commodity has become the sacred mirror, creating un-monetized freedom for generations of Awakened outcasts.</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -733,13 +886,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/06_seattle_web.html" class="pagination-link" aria-label="Seattle Web">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Seattle Web</span></span>
+      <a href="../reference/story_arc2.html" class="pagination-link" aria-label="Story Arc 2: The Sovereign Underground &amp; The Push for Power">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Story Arc 2: The Sovereign Underground &amp; The Push for Power</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/08_Tea_in_Tacoma.html" class="pagination-link" aria-label="Tea in Tacoma">
-        <span class="nav-page-text"><span class="chapter-title">Tea in Tacoma</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../reference/story_continuity.html" class="pagination-link" aria-label="Story Continuity &amp; Relationship Graph Index">
+        <span class="nav-page-text"><span class="chapter-title">Story Continuity &amp; Relationship Graph Index</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
