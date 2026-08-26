@@ -114,7 +114,7 @@ voice_schema:
       - "Physical scarring or permanent cyberware forcing essence loss"
     defense_mechanisms:
       - "Disarming humor, double entendre, and conversational rhythm"
-      - "Deploying Adept powers (Kinesics, Authoritative Tone) or dropping presence to vanish"
+      - "Deploying Adept powers (Kinesics, Command Presence) or dropping presence to vanish"
   syntax_cadence:
     sentence_length: "Rhythmic, fluid, stylish sentences punctuated by sharp punchlines"
     paragraph_flow: "Observation of leverage -> charm/spell deployment -> ruthless execution"
@@ -171,7 +171,7 @@ domain_vocabulary_rules:
       - "glowing magic missile / generic mana blast"
 
   linguistic_identity_and_pronoun_rule:
-    rule: "Pronouns and demeanor strictly locked to active biological form: Lee Ji-yoo = she/her (soft, algorithmic elegance); Tanaka Ryo = he/him (masculine, clean corporate authority); Mei Jing = she/her; un-sculpted Jin-Young = he/they/raw self."
+    rule: "Pronouns and demeanor strictly locked to active biological form: Lee Ji-yoo = she/her (soft, algorithmic elegance); Tanaka Ryo = he/him (masculine, clean corporate authority); Mei Jing = she/her; Zhang Wei = he/him (calm senior freight authority); Leung Hoi-ching = she/her (working-class Tanka dockside); un-sculpted Jin-Young = he/they/raw self."
 
 ```
 

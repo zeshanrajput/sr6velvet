@@ -63,7 +63,7 @@ This ledger itemizes character creation gear, matrix devices, identities, softwa
 * **Increase Attribute (Health Spell):** *Character Creation*
 * **Channeling (Metamagic):** *Initiation Grade 1 (SRM 2081-09 Eviction Notice)*
 * **Increase Reflexes (Health Spell):** `{python} inc('Karma', -5)` *(SRM 2081-01 Downtime)*
-* **Empathy (Metamagic):** *Initiation Grade 2 (SRM 2081-01 Death of a Fixer)*
+* **Power Point (Metamagic):** *Initiation Grade 2 (SRM 2081-01 Death of a Fixer)* — Unlocks *Linguistics (0.25 PP)*, *Command Presence (0.5 PP)*, and *Cloak R1 (0.25 PP)*
 
 ---
 

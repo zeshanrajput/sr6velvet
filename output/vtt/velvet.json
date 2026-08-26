@@ -1,567 +1,919 @@
 {
-  "schema_version": "1.0",
-  "system": "Shadowrun 6th Edition (SR6)",
-  "character": {
-    "name": "Velvet",
-    "real_name": "Kim Jin-Young",
-    "metatype": "Elf",
-    "tradition": "Shinto / Musok",
-    "mortype": "Mystic Adept",
-    "stream": "",
-    "gender": "DIVERSE",
-    "age": 20,
-    "financials": {
-      "nuyen": 25055,
-      "karma_available": 5,
-      "karma_lifetime": 38,
-      "heat": 0,
-      "reputation": {
-        "SEA": 4,
-        "UNL": -1
-      }
+  "system": "SHADOWRUN6",
+  "version": "3.2.0",
+  "name": "Kim Jin-Young",
+  "streetName": "Velvet",
+  "metaType": "Elf",
+  "size": 165,
+  "weight": 78,
+  "age": "20",
+  "gender": "DIVERSE",
+  "heat": 0,
+  "reputation": 0,
+  "karma": 38,
+  "freeKarma": 5,
+  "nuyen": 25055,
+  "initiation": 2,
+  "submersion": 0,
+  "attributes": [
+    {
+      "name": "Body",
+      "id": "BODY",
+      "points": 2,
+      "modifiedValue": 2
     },
-    "attributes": {
-      "body": 2,
-      "agility": 3,
-      "reaction": 2,
-      "strength": 2,
-      "willpower": 5,
-      "logic": 3,
-      "intuition": 3,
-      "charisma": 10,
-      "edge": 2,
-      "magic": 6,
-      "resonance": 0,
-      "power_points": 2
+    {
+      "name": "Agility",
+      "id": "AGILITY",
+      "points": 3,
+      "modifiedValue": 3
     },
-    "living_persona": {},
-    "skills": [
-      {
-        "name": "Sorcery",
-        "id": "sorcery",
-        "attribute": "Magic",
-        "rating": 5,
-        "specialization": "Spellcasting"
-      },
-      {
-        "name": "Conjuring",
-        "id": "conjuring",
-        "attribute": "Magic",
-        "rating": 6
-      },
-      {
-        "name": "Influence",
-        "id": "influence",
-        "attribute": "Charisma",
-        "rating": 5
-      },
-      {
-        "name": "Con",
-        "id": "con",
-        "attribute": "Charisma",
-        "rating": 4
-      },
-      {
-        "name": "Native Language",
-        "id": "language",
-        "attribute": "Logic",
-        "rating": 4
-      },
-      {
-        "name": "Small Unit Tactics",
-        "id": "small_unit_tactics",
-        "attribute": "Logic",
-        "rating": 1,
-        "is_knowledge": true
-      },
-      {
-        "name": "MCT",
-        "id": "mct",
-        "attribute": "Logic",
-        "rating": 1,
-        "is_knowledge": true
-      },
-      {
-        "name": "Wuxing",
-        "id": "wuxing",
-        "attribute": "Logic",
-        "rating": 1,
-        "is_knowledge": true
-      },
-      {
-        "name": "East Asian Media",
-        "id": "east_asian_media",
-        "attribute": "Logic",
-        "rating": 1,
-        "is_knowledge": true
-      }
-    ],
-    "qualities": {
-      "positive": [
+    {
+      "name": "Reaction",
+      "id": "REACTION",
+      "points": 2,
+      "modifiedValue": 2
+    },
+    {
+      "name": "Strength",
+      "id": "STRENGTH",
+      "points": 2,
+      "modifiedValue": 2
+    },
+    {
+      "name": "Willpower",
+      "id": "WILLPOWER",
+      "points": 5,
+      "modifiedValue": 5
+    },
+    {
+      "name": "Logic",
+      "id": "LOGIC",
+      "points": 3,
+      "modifiedValue": 3
+    },
+    {
+      "name": "Intuition",
+      "id": "INTUITION",
+      "points": 3,
+      "modifiedValue": 3
+    },
+    {
+      "name": "Charisma",
+      "id": "CHARISMA",
+      "points": 10,
+      "modifiedValue": 10
+    },
+    {
+      "name": "Edge",
+      "id": "EDGE",
+      "points": 2,
+      "modifiedValue": 2
+    },
+    {
+      "name": "Magic",
+      "id": "MAGIC",
+      "points": 6,
+      "modifiedValue": 6
+    },
+    {
+      "name": "Resonance",
+      "id": "RESONANCE",
+      "points": 0,
+      "modifiedValue": 0
+    },
+    {
+      "name": "Power Points",
+      "id": "POWER_POINTS",
+      "points": 4,
+      "modifiedValue": 5
+    },
+    {
+      "name": "Defense Pool",
+      "id": "DEFENSE_POOL_PHYSICAL",
+      "points": 0,
+      "modifiedValue": 5
+    },
+    {
+      "name": "Composure",
+      "id": "COMPOSURE",
+      "points": 0,
+      "modifiedValue": 15
+    },
+    {
+      "name": "Judge Intentions",
+      "id": "JUDGE_INTENTIONS",
+      "points": 0,
+      "modifiedValue": 8
+    },
+    {
+      "name": "Memory",
+      "id": "MEMORY",
+      "points": 0,
+      "modifiedValue": 6
+    },
+    {
+      "name": "Lift / Carry",
+      "id": "LIFT_CARRY",
+      "points": 0,
+      "modifiedValue": 7
+    }
+  ],
+  "initiatives": [
+    {
+      "name": "Initiative (Astral)",
+      "id": "INITIATIVE_ASTRAL",
+      "value": 6,
+      "dice": "+2D6"
+    },
+    {
+      "name": "Initiative",
+      "id": "INITIATIVE_PHYSICAL",
+      "value": 5,
+      "dice": "+1D6"
+    },
+    {
+      "name": "Initiative (Matrix AR)",
+      "id": "INITIATIVE_MATRIX",
+      "value": 5,
+      "dice": "+1D6"
+    },
+    {
+      "name": "Initiative (Matrix VR)",
+      "id": "INITIATIVE_MATRIX_VR_COLD",
+      "value": 5,
+      "dice": "+2D6"
+    },
+    {
+      "name": "Initiative (Matrix Hot)",
+      "id": "INITIATIVE_MATRIX_VR_HOT",
+      "value": 5,
+      "dice": "+3D6"
+    }
+  ],
+  "qualities": [
+    {
+      "name": "Metagenic <Attribute> Improvement",
+      "id": "metagenetic_attribute_improvement",
+      "choice": "Charisma",
+      "positive": true,
+      "rating": 0,
+      "page": "Sixth World Companion 120",
+      "description": ""
+    },
+    {
+      "name": "Exceptional Attribute",
+      "id": "exceptional_attribute",
+      "choice": "Charisma",
+      "positive": true,
+      "rating": 0,
+      "page": "Core Rulebook 71",
+      "description": ""
+    },
+    {
+      "name": "Inspire Competence",
+      "id": "inspire_competence",
+      "choice": "",
+      "positive": true,
+      "rating": 0,
+      "page": "Sixth World Companion 133",
+      "description": ""
+    },
+    {
+      "name": "Hooder",
+      "id": "hooder",
+      "choice": "",
+      "positive": false,
+      "rating": 3,
+      "page": "Sixth World Companion 137",
+      "description": ""
+    },
+    {
+      "name": "Chronic Pain",
+      "id": "chronic_pain",
+      "choice": "",
+      "positive": false,
+      "rating": 0,
+      "page": "Sixth World Companion 136",
+      "description": ""
+    },
+    {
+      "name": "Focused Concentration",
+      "id": "focused_concentration",
+      "choice": "",
+      "positive": true,
+      "rating": 3,
+      "page": "Core Rulebook 71",
+      "description": ""
+    },
+    {
+      "name": "Low-Light Vision",
+      "id": "low-light_vision",
+      "choice": "",
+      "positive": true,
+      "rating": 0,
+      "page": "Core Rulebook 72",
+      "description": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Native Language",
+      "id": "language",
+      "attribute": "Logic",
+      "rating": 4,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "Sorcery",
+      "id": "sorcery",
+      "attribute": "Magic",
+      "rating": 5,
+      "pool": 0,
+      "specializations": [
         {
-          "name": "Metagenetic Attribute Improvement (Charisma)",
-          "ref": "metagenetic_attribute_improvement",
-          "choice": "Charisma",
-          "karma": 0
-        },
-        {
-          "name": "Exceptional Attribute (Charisma)",
-          "ref": "exceptional_attribute",
-          "choice": "Charisma"
-        },
-        {
-          "name": "Inspire Competence",
-          "ref": "inspire_competence"
-        },
-        {
-          "name": "Low-Light Vision",
-          "ref": "low-light_vision",
-          "karma": 0
-        },
-        {
-          "name": "Focused Concentration",
-          "ref": "focused_concentration",
-          "rating": 3
+          "name": "Spellcasting",
+          "id": "spellcasting",
+          "expertise": false,
+          "attribute": "Magic",
+          "pool": 0,
+          "description": ""
         }
       ],
-      "negative": [
-        {
-          "name": "Chronic Pain",
-          "ref": "chronic_pain"
-        },
-        {
-          "name": "Hooder",
-          "ref": "hooder",
-          "rating": 3
-        },
-        {
-          "name": "Allergy (Spices, Common Moderate)",
-          "ref": "allergy",
-          "choice": "Spices"
-        }
-      ]
+      "influencedBy": [],
+      "description": ""
     },
-    "spells": [
-      {
-        "name": "Increase Attribute",
-        "ref": "increase_attribute",
-        "drain": 3,
-        "category": "Health"
-      },
-      {
-        "name": "Increase Reflexes",
-        "ref": "increase_reflexes",
-        "drain": 4,
-        "category": "Health"
-      }
-    ],
-    "adept_powers": [
-      {
-        "name": "Cosmetic Control",
-        "ref": "cosmetic_control",
-        "rating": 2
-      },
-      {
-        "name": "Sharp Tongue",
-        "ref": "sharp_tongue",
-        "rating": 1,
-        "source": "Qi Focus (Rating 4)"
-      }
-    ],
-    "meta_echoes": [
-      {
-        "name": "Channeling",
-        "ref": "channeling"
-      },
-      {
-        "name": "Empathy",
-        "ref": "empathy"
-      }
-    ],
-    "weapons": [
-      {
-        "name": "Beretta 101T",
-        "ref": "beretta_101T",
-        "qty": 2
-      },
-      {
-        "name": "Sap",
-        "ref": "sap",
-        "qty": 2
-      },
-      {
-        "name": "Yamaha Raiden",
-        "ref": "yamaha_raiden",
-        "qty": 1
-      },
-      {
-        "name": "Stun Baton",
-        "ref": "stun_baton",
-        "qty": 1
-      }
-    ],
-    "armors": [
-      {
-        "name": "SecureTech Skinshield",
-        "ref": "securetech_skinshield",
-        "defense_rating": 1,
-        "accessories": [
-          "Ballistic Hood",
-          {
-            "Fashion Accessory": "Tr\u00e8s Chic x2"
-          }
-        ]
-      }
-    ],
-    "matrix_devices": [
-      {
-        "name": "Erika Elite",
-        "ref": "erika_elite",
-        "device_rating": 4,
-        "data_processing": 2,
-        "firewall": 2,
-        "accessories": [
-          "Comhack Securelink Upgrade",
-          "P-Ice Nope"
-        ]
-      },
-      {
-        "name": "Renraku Sensei",
-        "ref": "renraku_sensei",
-        "device_rating": 3,
-        "qty": 2
-      }
-    ],
-    "software": [
-      {
-        "name": "Personal Assistant",
-        "ref": "personal_assistant",
-        "rating": 6,
-        "cat": "Commlink Apps"
-      },
-      {
-        "name": "Virtual Machine",
-        "ref": "virtual_machine",
-        "cat": "Basic programs"
-      },
-      {
-        "name": "Thermal Mood Reading",
-        "ref": "thermal_mood_reading",
-        "cat": "Commlink Apps"
-      },
-      {
-        "name": "Nanomask",
-        "ref": "nanomask",
-        "cat": "Basic programs"
-      },
-      {
-        "name": "MeFeed",
-        "ref": "mefeed",
-        "cat": "Commlink Apps"
-      },
-      {
-        "name": "Facial Scanner",
-        "ref": "facial_scanner",
-        "cat": "Commlink Apps"
-      }
-    ],
-    "items": [
-      {
-        "name": "Nanocosmetics Kit",
-        "ref": "nanocosmetics_kit"
-      },
-      {
-        "name": "Nanocosmetics Refill",
-        "ref": "nanocosmetics_refill"
-      },
-      {
-        "name": "Nanopaste Disguise Kit",
-        "ref": "nanopaste_disguise_kit"
-      },
-      {
-        "name": "Nanopaste Disguise Refill",
-        "ref": "nanopaste_disguise_refill"
-      },
-      {
-        "name": "Savior Medkit",
-        "ref": "savior_medkit"
-      },
-      {
-        "name": "Savior Medkit Refill",
-        "ref": "savior_medkit_refill"
-      },
-      {
-        "name": "Contacts",
-        "ref": "contacts",
-        "rating": 3,
-        "accessories": [
-          "Flare Compensation",
-          "Image Link",
-          "Thermographic Vision"
-        ]
-      },
-      {
-        "name": "Earbuds",
-        "ref": "earbuds",
-        "rating": 3
-      },
-      {
-        "name": "Subvocal Microphone",
-        "ref": "subvocal_microphone"
-      },
-      {
-        "name": "Qi Focus (Rating 4)",
-        "ref": "qi_focus",
-        "rating": 4,
-        "bonded": true,
-        "power": "Sharp Tongue",
-        "karma_cost": 8,
-        "nuyen_cost": 12000
-      }
-    ],
-    "gear": [],
-    "drones": [],
-    "complex_forms": [],
-    "contacts": {
-      "Brynne Taggart": {
-        "name": "Brynne Taggart",
-        "canonical_name": "Brynne Taggart",
-        "is_canonical": true,
-        "connection": 4,
-        "loyalty": 2,
-        "favors": 0,
-        "type": "Fixer",
-        "region": "SEA",
-        "description": "Uses: Getting jobs, fencing gear, gangs (Shadowrun Missions Seattle) | Types: Criminal, Street",
-        "notes": "Uses: Getting jobs, fencing gear, gangs (Shadowrun Missions Seattle) | Types: Criminal, Street",
-        "history": [
-          "Chargen Contact (Met: C4 L1)",
-          "SRM 2081-01 Death of a Fixer (+2 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)"
-        ]
-      },
-      "Vincent Grisome": {
-        "name": "Vincent Grisome",
-        "canonical_name": "Vincent Grisome",
-        "is_canonical": false,
-        "connection": 5,
-        "loyalty": 3,
-        "favors": 0,
-        "type": "Magic Prof.",
-        "region": "SEA",
-        "description": "Chargen Contact",
-        "notes": "Chargen Contact",
-        "history": [
-          "Chargen Contact (Met: C5 L3)"
-        ]
-      },
-      "Ni Ni Xiaolu": {
-        "name": "Ni Ni Xiaolu",
-        "canonical_name": "Ni Ni Xiaolu",
-        "is_canonical": true,
-        "connection": 3,
-        "loyalty": 2,
-        "favors": 2,
-        "type": "Triad Johnson",
-        "region": "SEA",
-        "description": "Uses: Getting jobs, drugs, street rumors, triads (Shadowrun Missions Seattle) | Types: Criminal",
-        "notes": "Uses: Getting jobs, drugs, street rumors, triads (Shadowrun Missions Seattle) | Types: Criminal",
-        "history": [
-          "Chargen Contact (Met: C3 L1)",
-          "Chargen Contact | +2 FP SRM 2081-07 Bootleg Bliss (looking forward to date) (+2 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)",
-          "Chargen Contact | +2 FP SRM 2081-07 Bootleg Bliss | SRM 2081-01  (+2 FP)"
-        ]
-      },
-      "Whiskey": {
-        "name": "Whiskey",
-        "canonical_name": "Whiskey",
-        "is_canonical": true,
-        "connection": 2,
-        "loyalty": 3,
-        "favors": 1,
-        "type": "Street Doc",
-        "region": "SEA",
-        "description": "Uses: Medicine, street docs (Shadowrun Missions Seattle) | Types: Medical",
-        "notes": "Uses: Medicine, street docs (Shadowrun Missions Seattle) | Types: Medical",
-        "history": [
-          "Chargen Contact (Met: C2 L3)",
-          "SRM 2081-02 Urgent Care (+1 FP)"
-        ]
-      },
-      "Claudette Laurier": {
-        "name": "Claudette Laurier",
-        "canonical_name": "Claudette Laurier",
-        "is_canonical": true,
-        "connection": 5,
-        "loyalty": 4,
-        "favors": 0,
-        "type": "Order of the Golden Dawn Librarian",
-        "region": "NOLA",
-        "description": "Uses: Getting jobs, magical traditions | Types: Criminal, Matrix",
-        "notes": "Uses: Getting jobs, magical traditions | Types: Criminal, Matrix",
-        "history": [
-          "Chargen Contact (Met: C5 L4)"
-        ]
-      },
-      "Le Tigre": {
-        "name": "Le Tigre",
-        "canonical_name": "Le Tigre",
-        "is_canonical": true,
-        "connection": 5,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Epoch Model",
-        "region": "NOLA",
-        "description": "Uses: Getting jobs, parties, modeling | Types: Corporate, Magic",
-        "notes": "Uses: Getting jobs, parties, modeling | Types: Corporate, Magic",
-        "history": [
-          "Chargen Contact (Met: C5 L1)"
-        ]
-      },
-      "Hana": {
-        "name": "Hana",
-        "canonical_name": "Hana",
-        "is_canonical": false,
-        "connection": 6,
-        "loyalty": 6,
-        "favors": 0,
-        "type": "Wuxing Talismonger / Pop Idol",
-        "region": "SEA",
-        "description": "Chargen Contact",
-        "notes": "Chargen Contact",
-        "history": [
-          "Chargen Contact (Met: C6 L6)"
-        ]
-      },
-      "Guild of Freelance Assets": {
-        "name": "Guild of Freelance Assets",
-        "canonical_name": "Guild of Freelance Assets",
-        "is_canonical": false,
-        "connection": 7,
-        "loyalty": 8,
-        "favors": 0,
-        "type": "Conclave",
-        "region": "GEN",
-        "description": "Chargen Contact (Conclave C7 L8)",
-        "notes": "Chargen Contact (Conclave C7 L8)",
-        "history": [
-          "Chargen Contact (Conclave C7 L8) (Met: C7 L8)"
-        ]
-      },
-      "Ms. Snow": {
-        "name": "Ms. Snow",
-        "canonical_name": "Ms. Snow",
-        "is_canonical": true,
-        "connection": 5,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "Shadow Chapters Johnson",
-        "region": "SEA",
-        "description": "Uses: Corporate rumors, getting jobs, military (Shadowrun Missions Seattle) | Types: Corporate, Government",
-        "notes": "Uses: Corporate rumors, getting jobs, military (Shadowrun Missions Seattle) | Types: Corporate, Government",
-        "history": [
-          "SRM 2081-09 Eviction Notice (Elven female) (Met: C5 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Bookie": {
-        "name": "Bookie",
-        "canonical_name": "Bookie",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Ancients Bookie",
-        "region": "SEA",
-        "description": "SRM 2081-07 Bootleg Bliss",
-        "notes": "SRM 2081-07 Bootleg Bliss",
-        "history": [
-          "SRM 2081-07 Bootleg Bliss (Met: C3 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Trudy": {
-        "name": "Trudy",
-        "canonical_name": "Trudy",
-        "is_canonical": false,
-        "connection": 2,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Cutters Lieutenant",
-        "region": "SEA",
-        "description": "SRM 2081-07 Bootleg Bliss",
-        "notes": "SRM 2081-07 Bootleg Bliss",
-        "history": [
-          "SRM 2081-07 Bootleg Bliss (Met: C2 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Eddie Wei": {
-        "name": "Eddie Wei",
-        "canonical_name": "Eddie Wei",
-        "is_canonical": true,
-        "connection": 4,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Triad Johnson",
-        "region": "SEA",
-        "description": "Uses: Business and economics, getting jobs, triads (Shadowrun Missions Seattle) | Types: Criminal, Matrix (Not available after 2081-24)",
-        "notes": "Uses: Business and economics, getting jobs, triads (Shadowrun Missions Seattle) | Types: Criminal, Matrix (Not available after 2081-24)",
-        "history": [
-          "SRM 2081-02 Urgent Care (Met: C4 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Kingston": {
-        "name": "Kingston",
-        "canonical_name": "Kingston",
-        "is_canonical": true,
-        "connection": 2,
-        "loyalty": 2,
-        "favors": 0,
-        "type": "Shadowrunner/Street Samurai",
-        "region": "SEA",
-        "description": "Uses: Shadowrunners, street rumors (Shadowrun Missions Seattle) | Types: Criminal, Street",
-        "notes": "Uses: Shadowrunners, street rumors (Shadowrun Missions Seattle) | Types: Criminal, Street",
-        "history": [
-          "SRM 2081-02 Urgent Care (Met: C2 L0, +3 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)"
-        ]
-      },
-      "Ms. Margaret": {
-        "name": "Ms. Margaret",
-        "canonical_name": "Ms. Margaret",
-        "is_canonical": false,
-        "connection": 1,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Hospital Volunteer",
-        "region": "SEA",
-        "description": "SRM 2081-02 Urgent Care (Elderly Human Hospital Volunteer who needs her roof fixed)",
-        "notes": "SRM 2081-02 Urgent Care (Elderly Human Hospital Volunteer who needs her roof fixed)",
-        "history": [
-          "SRM 2081-02 Urgent Care (Elderly Human Hospital Volunteer who needs her roof fixed) (Met: C1 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Simon Andrews": {
-        "name": "Simon Andrews",
-        "canonical_name": "Simon Andrews",
-        "is_canonical": false,
-        "connection": 5,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "S-K Johnson",
-        "region": "AMS",
-        "description": "CMP 2083-01 Nonplushed (S-K Johnson)",
-        "notes": "CMP 2083-01 Nonplushed (S-K Johnson)",
-        "history": [
-          "CMP 2083-01 Nonplushed (S-K Johnson) (Met: C5 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      }
+    {
+      "name": "Influence",
+      "id": "influence",
+      "attribute": "Charisma",
+      "rating": 5,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [
+        "Cosmetic Control"
+      ],
+      "description": ""
+    },
+    {
+      "name": "Conjuring",
+      "id": "conjuring",
+      "attribute": "Magic",
+      "rating": 6,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "MCT",
+      "id": "knowledge",
+      "attribute": "Logic",
+      "rating": 1,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "Wuxing",
+      "id": "knowledge",
+      "attribute": "Logic",
+      "rating": 1,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "Small Unit Tactics",
+      "id": "knowledge",
+      "attribute": "Logic",
+      "rating": 1,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "East Asian Media",
+      "id": "knowledge",
+      "attribute": "Logic",
+      "rating": 1,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "Con",
+      "id": "con",
+      "attribute": "Charisma",
+      "rating": 4,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [
+        "Cosmetic Control"
+      ],
+      "description": ""
     }
-  }
+  ],
+  "spells": [
+    {
+      "name": "Increase Attribute",
+      "id": "increase_attribute",
+      "category": "Heal spells",
+      "type": "Physical",
+      "duration": "Sustained",
+      "range": "Touch",
+      "drain": 3,
+      "features": [],
+      "isAlchemistic": false,
+      "influencedBy": [],
+      "page": "Core Rulebook 137",
+      "description": ""
+    },
+    {
+      "name": "Increase Reflexes",
+      "id": "increase_reflexes",
+      "category": "Heal spells",
+      "type": "Physical",
+      "duration": "Sustained",
+      "range": "Touch",
+      "drain": 5,
+      "features": [],
+      "isAlchemistic": false,
+      "influencedBy": [],
+      "page": "Core Rulebook 137",
+      "description": ""
+    }
+  ],
+  "rituals": [],
+  "metamagic": [
+    {
+      "name": "Channeling",
+      "page": "Street Wyrd 121",
+      "description": ""
+    },
+    {
+      "name": "Power Points",
+      "page": "Core Rulebook 168",
+      "description": ""
+    }
+  ],
+  "echoes": null,
+  "complexForms": [],
+  "adeptPowers": [
+    {
+      "name": "Sharp Tongue",
+      "activation": "MAJOR_ACTION",
+      "level": 0,
+      "cost": 1.0,
+      "page": "Smooth Operations 111",
+      "description": ""
+    },
+    {
+      "name": "Cosmetic Control",
+      "activation": "MAJOR_ACTION",
+      "level": 0,
+      "cost": 2.0,
+      "page": "Street Wyrd 78",
+      "description": ""
+    },
+    {
+      "name": "Linguistics",
+      "activation": "PASSIVE",
+      "level": 0,
+      "cost": 0.25,
+      "page": "Street Wyrd 81",
+      "description": ""
+    },
+    {
+      "name": "Authoritative Tone",
+      "activation": "MAJOR_ACTION",
+      "level": 0,
+      "cost": 0.5,
+      "page": "Smooth Operations 111",
+      "description": ""
+    },
+    {
+      "name": "Cloak",
+      "activation": "PASSIVE",
+      "level": 0,
+      "cost": 0.25,
+      "page": "Street Wyrd 78",
+      "description": ""
+    }
+  ],
+  "longRangeWeapons": [
+    {
+      "name": "Beretta 101T",
+      "type": "Firearms",
+      "subtype": "Light Pistols",
+      "skill": null,
+      "pool": 2,
+      "damage": "2P",
+      "attackRating": "9/8/6/-/-",
+      "mode": "SA",
+      "ammunition": "21(c)",
+      "wifi": [
+        "Digital ammunition counter and an ARO that tells you the ammo type loaded. ",
+        "If equipped with DNI, you gain a bonus Minor Action any turn when you eject a clip (for weapons that have them) or change fire modes."
+      ],
+      "accessories": [],
+      "page": "Core Rulebook 252",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Yamaha Raiden",
+      "type": "Firearms",
+      "subtype": "Assault Rifles",
+      "skill": null,
+      "pool": 2,
+      "damage": "4P",
+      "attackRating": "4/11/10/7/2",
+      "mode": "SA,BF,FA",
+      "ammunition": "60(c)",
+      "wifi": [
+        "Digital ammunition counter and an ARO that tells you the ammo type loaded. ",
+        "If equipped with DNI, you gain a bonus Minor Action any turn when you eject a clip (for weapons that have them) or change fire modes."
+      ],
+      "accessories": [],
+      "page": "Core Rulebook 256",
+      "description": "",
+      "primary": false
+    }
+  ],
+  "closeCombatWeapons": [
+    {
+      "name": "Sap",
+      "type": "Close Combat Weapons",
+      "subtype": "Clubs",
+      "skill": null,
+      "pool": 2,
+      "damage": "2S",
+      "attackRating": "6/-/-/-/-",
+      "wifi": [],
+      "accessories": [],
+      "page": "Core Rulebook 248",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Stun baton",
+      "type": "Close Combat Weapons",
+      "subtype": "Clubs",
+      "skill": null,
+      "pool": 2,
+      "damage": "5S(e)",
+      "attackRating": "6/-/-/-/-",
+      "wifi": [
+        "The stun baton recharges without being plugged in, regaining one charge per half hour of wireless-enabled time."
+      ],
+      "accessories": [],
+      "page": "Core Rulebook 249",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Unarmed",
+      "type": "Close Combat Weapons",
+      "subtype": "Unarmed",
+      "skill": null,
+      "pool": 2,
+      "damage": "2S",
+      "attackRating": "4/-/-/-/-",
+      "wifi": [],
+      "accessories": [],
+      "page": "Core Rulebook 67",
+      "description": "",
+      "primary": false
+    }
+  ],
+  "armors": [
+    {
+      "name": "Ares Securetech SkinShield",
+      "rating": 2,
+      "socialrating": 0,
+      "accessories": [
+        {
+          "name": "Ballistic Hood",
+          "type": "Accessories",
+          "subType": "Armor",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Fashion Accessory (Tr\u00e8s Chic)",
+          "type": "Accessories",
+          "subType": "Armor",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Fashion Accessory (Tr\u00e8s Chic)",
+          "type": "Accessories",
+          "subType": "Armor",
+          "rating": 0,
+          "description": ""
+        }
+      ],
+      "isIgnored": false,
+      "page": "Firing Squad 49",
+      "description": "",
+      "primary": true
+    },
+    {
+      "name": "Ballistic Hood",
+      "rating": 1,
+      "socialrating": 0,
+      "accessories": [],
+      "isIgnored": false,
+      "page": "Core Rulebook, Seattle City Edition 335",
+      "description": "",
+      "primary": false
+    }
+  ],
+  "items": [
+    {
+      "name": "Nanopaste Disguise",
+      "count": 1,
+      "rating": 0,
+      "type": "Nanoware",
+      "subType": "Nanotech Kits",
+      "page": "Body Shop 88",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Nanopaste Disguise Refill",
+      "count": 1,
+      "rating": 0,
+      "type": "Nanoware",
+      "subType": "Nanotech Kits",
+      "page": "Body Shop 89",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Nanocosmetics",
+      "count": 1,
+      "rating": 0,
+      "type": "Nanoware",
+      "subType": "Nanotech Kits",
+      "page": "Body Shop 88",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Nanocosmetics Refill",
+      "count": 1,
+      "rating": 0,
+      "type": "Nanoware",
+      "subType": "Nanotech Kits",
+      "page": "Body Shop 89",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Savior Medkit",
+      "count": 1,
+      "rating": 0,
+      "type": "Nanoware",
+      "subType": "Nanotech Kits",
+      "page": "Body Shop 88",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Savior Medkit Refill",
+      "count": 1,
+      "rating": 0,
+      "type": "Nanoware",
+      "subType": "Nanotech Kits",
+      "page": "Body Shop 89",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Contacts",
+      "count": 1,
+      "rating": 0,
+      "type": "Electronic",
+      "subType": "Imaging",
+      "page": "Core Rulebook 274",
+      "accessories": [
+        {
+          "name": "Image link",
+          "type": "Accessories",
+          "subType": "Vision Enhancement",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Thermographic vision",
+          "type": "Accessories",
+          "subType": "Vision Enhancement",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Flare compensation",
+          "type": "Accessories",
+          "subType": "Vision Enhancement",
+          "rating": 0,
+          "description": ""
+        }
+      ],
+      "description": ""
+    },
+    {
+      "name": "Earbuds",
+      "count": 1,
+      "rating": 0,
+      "type": "Electronic",
+      "subType": "Audiotory Devices",
+      "page": "Core Rulebook 275",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Subvocal microphone",
+      "count": 1,
+      "rating": 0,
+      "type": "Electronic",
+      "subType": "Electronic Accessories",
+      "page": "Core Rulebook 268",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Software Library",
+      "count": 1,
+      "rating": 0,
+      "type": "Electronic",
+      "subType": "Tools",
+      "page": "Core Rulebook 271",
+      "accessories": [],
+      "description": ""
+    }
+  ],
+  "augmentations": [
+    {
+      "name": "Nanopaste Disguise",
+      "level": null,
+      "essence": 0.0,
+      "page": "Body Shop 88",
+      "quality": null,
+      "description": "",
+      "accessories": []
+    },
+    {
+      "name": "Nanopaste Disguise Refill",
+      "level": null,
+      "essence": 0.0,
+      "page": "Body Shop 89",
+      "quality": null,
+      "description": "",
+      "accessories": []
+    },
+    {
+      "name": "Nanocosmetics",
+      "level": null,
+      "essence": 0.0,
+      "page": "Body Shop 88",
+      "quality": null,
+      "description": "",
+      "accessories": []
+    },
+    {
+      "name": "Nanocosmetics Refill",
+      "level": null,
+      "essence": 0.0,
+      "page": "Body Shop 89",
+      "quality": null,
+      "description": "",
+      "accessories": []
+    },
+    {
+      "name": "Savior Medkit",
+      "level": null,
+      "essence": 0.0,
+      "page": "Body Shop 88",
+      "quality": null,
+      "description": "",
+      "accessories": []
+    },
+    {
+      "name": "Savior Medkit Refill",
+      "level": null,
+      "essence": 0.0,
+      "page": "Body Shop 89",
+      "quality": null,
+      "description": "",
+      "accessories": []
+    }
+  ],
+  "vehicles": [],
+  "drones": [],
+  "lifestyles": [
+    {
+      "customName": "Low",
+      "name": "Low",
+      "cost": 0,
+      "paidMonths": 1,
+      "sin": null,
+      "options": null,
+      "description": null
+    }
+  ],
+  "sins": [
+    {
+      "name": "Lee Ji-Yoo",
+      "description": null,
+      "quality": 6
+    },
+    {
+      "name": "Tanaka Ryo",
+      "description": null,
+      "quality": 6
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Brynne Taggart",
+      "type": "Fixer",
+      "loyalty": 2,
+      "influence": 4,
+      "description": "Uses: Getting jobs, fencing gear, gangs (Shadowrun Missions Seattle) | Types: Criminal, Street",
+      "favors": 0
+    },
+    {
+      "name": "Vincent Grisome",
+      "type": "Seattle University Professor",
+      "loyalty": 3,
+      "influence": 5,
+      "description": "Chargen Contact",
+      "favors": 0
+    },
+    {
+      "name": "Whiskey",
+      "type": "Street Doc",
+      "loyalty": 3,
+      "influence": 2,
+      "description": "Uses: Medicine, street docs (Shadowrun Missions Seattle) | Types: Medical",
+      "favors": 1
+    },
+    {
+      "name": "Claudette Laurier",
+      "type": "Golden Dawn Librarian",
+      "loyalty": 4,
+      "influence": 5,
+      "description": "Uses: Getting jobs, magical traditions | Types: Criminal, Matrix",
+      "favors": 0
+    },
+    {
+      "name": "Le Tigre",
+      "type": "Epoch Model",
+      "loyalty": 1,
+      "influence": 5,
+      "description": "Uses: Getting jobs, parties, modeling | Types: Corporate, Magic",
+      "favors": 0
+    },
+    {
+      "name": "Hana",
+      "type": "Wuxing Talismonger / Pop Idol",
+      "loyalty": 6,
+      "influence": 6,
+      "description": "Chargen Contact",
+      "favors": 0
+    },
+    {
+      "name": "Guild of Freelance Assets",
+      "type": "Conclave",
+      "loyalty": 8,
+      "influence": 7,
+      "description": "Chargen Contact (Conclave C7 L8)",
+      "favors": 0
+    },
+    {
+      "name": "Ni Ni Xiaolu",
+      "type": "Triad Johnson",
+      "loyalty": 2,
+      "influence": 3,
+      "description": "Uses: Getting jobs, drugs, street rumors, triads (Shadowrun Missions Seattle) | Types: Criminal",
+      "favors": 2
+    },
+    {
+      "name": "Ms. Snow",
+      "type": "Shadow Chapters Johnson",
+      "loyalty": 1,
+      "influence": 5,
+      "description": "Uses: Corporate rumors, getting jobs, military (Shadowrun Missions Seattle) | Types: Corporate, Government",
+      "favors": 1
+    },
+    {
+      "name": "Bookie",
+      "type": "Ancients Bookie",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "SRM 2081-07 Bootleg Bliss",
+      "favors": 0
+    },
+    {
+      "name": "Trudy",
+      "type": "Cutters Lieutenant",
+      "loyalty": 1,
+      "influence": 2,
+      "description": "SRM 2081-07 Bootleg Bliss",
+      "favors": 0
+    },
+    {
+      "name": "Eddie Wei",
+      "type": "Triad Johnson",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "Uses: Business and economics, getting jobs, triads (Shadowrun Missions Seattle) | Types: Criminal, Matrix (Not available after 2081-24)",
+      "favors": 0
+    },
+    {
+      "name": "Kingston",
+      "type": "Shadowrunner / Street Samurai",
+      "loyalty": 2,
+      "influence": 2,
+      "description": "Uses: Shadowrunners, street rumors (Shadowrun Missions Seattle) | Types: Criminal, Street",
+      "favors": 0
+    },
+    {
+      "name": "Ms. Margaret",
+      "type": "Hospital Volunteer",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "SRM 2081-02 Urgent Care (Elderly Human Hospital Volunteer who needs her roof fixed)",
+      "favors": 0
+    },
+    {
+      "name": "Simon Andrews",
+      "type": "S-K Johnson",
+      "loyalty": 1,
+      "influence": 5,
+      "description": "CMP 2083-01 Nonplushed (S-K Johnson)",
+      "favors": 0
+    }
+  ],
+  "licenses": [
+    {
+      "name": "Magician",
+      "sin": "Lee Ji-Yoo",
+      "type": null,
+      "rating": "SECOND_LIFE"
+    }
+  ],
+  "matrixItems": [
+    {
+      "name": "Erika Elite",
+      "dataProcessing": 2,
+      "firewall": 1,
+      "attack": 0,
+      "sleaze": 0,
+      "deviceRating": 0,
+      "type": "Electronic",
+      "subType": "COMMLINK",
+      "page": "Core Rulebook 267",
+      "concurrentPrograms": 2,
+      "accessories": [
+        {
+          "name": "Securelink Upgrade",
+          "type": "Electronic",
+          "subType": "Electronic Accessories",
+          "rating": 0,
+          "description": ""
+        }
+      ],
+      "programs": [],
+      "description": ""
+    },
+    {
+      "name": "Renraku Sensei",
+      "dataProcessing": 2,
+      "firewall": 0,
+      "attack": 0,
+      "sleaze": 0,
+      "deviceRating": 0,
+      "type": "Electronic",
+      "subType": "COMMLINK",
+      "page": "Core Rulebook 267",
+      "concurrentPrograms": 1,
+      "accessories": [],
+      "programs": [],
+      "description": ""
+    }
+  ],
+  "martialArts": [],
+  "signatureManeuvers": [],
+  "notes": null
 }

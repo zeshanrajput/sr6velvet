@@ -11,6 +11,7 @@ from sr6core.exporters.vtt_text import (
     export_inventory_sheet,
     export_vehicles_sheet,
     export_powers_sheet,
+    export_ledger_sheet,
 )
 
 cm = CharacterManager()
@@ -18,18 +19,17 @@ char_data = cm.get_character_data("velvet") or {}
 
 base_txt = export_base_sheet(char_data, char_repo_path=".")
 combat_txt = export_combat_sheet(char_data)
-contacts_txt = export_contacts_sheet(char_data)
-inventory_txt = export_inventory_sheet(char_data)
 vehicles_txt = export_vehicles_sheet(char_data)
+inventory_txt = export_inventory_sheet(char_data)
 powers_txt = export_powers_sheet(char_data)
+contacts_txt = export_contacts_sheet(char_data)
+ledger_txt = export_ledger_sheet(char_data, char_repo_path=".")
 ```
 
 ::: {.callout-note}
-### Downloadable Character Sheets & Card Decks
-* **Printable Index Card Deck (4.25" x 5.5" / 4" x 6" Laserjet PDF)**: [velvet_cards_deck.pdf](../output/pdf/velvet_cards_deck.pdf)
-* **Printable Base Sheet (1-Page PDF)**: [velvet_base_sheet.pdf](../output/pdf/velvet_base_sheet.pdf)
+### Downloadable Character Sheets & VTT Saves
 * **VTT & CommLink6 Saves**: [velvet.xml](../output/vtt/velvet.xml) | [velvet.json](../output/vtt/velvet.json)
-* **Plain-Text Modular Exports**: [Base Sheet](../output/text/velvet_base.txt) | [Combat](../output/text/velvet_combat.txt) | [Inventory](../output/text/velvet_inventory.txt) | [Powers](../output/text/velvet_powers.txt) | [Vehicles](../output/text/velvet_vehicles.txt) | [Contacts](../output/text/velvet_contacts.txt) | [Ledger](../output/text/velvet_ledger.txt)
+* **Plain-Text Modular Exports**: [Base Sheet](../output/text/velvet_base.txt) | [Combat](../output/text/velvet_combat.txt) | [Vehicles](../output/text/velvet_vehicles.txt) | [Inventory](../output/text/velvet_inventory.txt) | [Powers](../output/text/velvet_powers.txt) | [Contacts](../output/text/velvet_contacts.txt) | [Ledger](../output/text/velvet_ledger.txt)
 :::
 
 ## 1. Base Sheet
@@ -48,7 +48,15 @@ print(f"```text\n{base_txt}\n```")
 print(f"```text\n{combat_txt}\n```")
 ```
 
-## 3. Inventory, Hardware & Software
+## 3. Vehicles & Drones
+
+```{python}
+#| echo: false
+#| output: asis
+print(f"```text\n{vehicles_txt}\n```")
+```
+
+## 4. Inventory, Hardware & Software
 
 ```{python}
 #| echo: false
@@ -56,7 +64,7 @@ print(f"```text\n{combat_txt}\n```")
 print(f"```text\n{inventory_txt}\n```")
 ```
 
-## 4. Powers, Spells & Metamagic
+## 5. Powers, Spells & Metamagic
 
 ```{python}
 #| echo: false
@@ -64,10 +72,19 @@ print(f"```text\n{inventory_txt}\n```")
 print(f"```text\n{powers_txt}\n```")
 ```
 
-## 5. Contacts Directory (SRM Canonical)
+## 6. Contacts Directory (SRM Canonical)
 
 ```{python}
 #| echo: false
 #| output: asis
 print(f"```text\n{contacts_txt}\n```")
 ```
+
+## 7. Financial & Advancement Ledger
+
+```{python}
+#| echo: false
+#| output: asis
+print(f"```text\n{ledger_txt}\n```")
+```
+

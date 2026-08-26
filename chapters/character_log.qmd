@@ -108,7 +108,7 @@ GM Reward correction: `{python} inc('Nuyen', 1000)`
 * **Contacts & Favor Points:**
   * `{python} contact("Ni Ni Xiaolu", connection=3, fp=2, type_name="Triad Johnson", region="SEA", notes="Chargen Contact | +2 FP SRM 2081-07 Bootleg Bliss | SRM 2081-01 ")`
   * `{python} contact("Brynne Taggart", connection=4, fp=2, type_name="Fixer", region="SEA", notes="SRM 2081-01 Death of a Fixer")`
-* **Major Downtime Action:** Initiation: Empathy `{python} initiate("Empathy", coven_loyalty=Coven_Loyalty)`
+* **Major Downtime Action:** Initiation: Power Point (1.0 PP: Linguistics, Command Presence, Cloak R1) `{python} initiate("Power Point", coven_loyalty=Coven_Loyalty)`
 * **Minor Downtime Action:** Learned Spell 'Increase Reflexes' `{python} inc('Karma', -5)`
 
 ---

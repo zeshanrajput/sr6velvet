@@ -3,7 +3,6 @@ project:
   output-dir: _book
   resources:
     - chapters/audio/
-    - output/pdf/
     - output/vtt/
     - output/text/
   pre-render:
@@ -26,6 +25,7 @@ book:
         - chapters/twenty_questions.qmd
         - chapters/character_build.qmd
         - chapters/rules_and_downtime.qmd
+        - chapters/appendix_dossier.qmd
     - part: "Narrative Log"
       chapters:
         - chapters/01_transaction.md
@@ -41,9 +41,11 @@ book:
     - part: "Reference & Specifications"
       chapters:
         - reference/philosophical_framework.md
+        - reference/karmic_persona_log.md
         - reference/voice_spec.md
         - reference/story_arc1.md
         - reference/story_arc2.md
+        - reference/story_arc3.md
         - reference/story_continuity.md
 
 format:

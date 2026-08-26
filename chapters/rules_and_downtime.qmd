@@ -77,6 +77,7 @@ During an expense month, Velvet receives 1 Major Downtime Action and 1 Minor Dow
 Velvet's primary source of attribute augmentations is the **Increase Attribute** Health spell. Under **Focused Concentration (Rating 3)**, Velvet can sustain up to **3 Increase Attribute spells simultaneously with 0 sustaining penalties**, reaching the maximum **+4 SRMG Augmentation Cap** across three key attributes.
 
 > **Deterministic Buffing Math (Buying Hits):**
+
 > * *Increase Attribute* grants a +1 base increase upon successful cast, plus +1 for each additional net hit (up to the +4 maximum augmented limit). 
 > * With Sorcery 5 + Magic 6 + Specialization (Spellcasting) 2 = **13 dice** $\rightarrow$ **3 bought hits**, Velvet achieves the maximum **+4 attribute boost** deterministically without rolling (1 base increase + 3 net hits = +4).
 > * With an initial Drain pool of **15 dice** (buying 3 hits) scaling up to **23 dice** (buying 5 hits), Velvet takes **0 Drain** across the entire buffing sequence.
@@ -85,8 +86,9 @@ Velvet's primary source of attribute augmentations is the **Increase Attribute**
 2. **Universal Sustained Anchor 2 — Willpower (+4)**: Boosts Willpower from 5 to **9**.
 3. **Scene-Calibrated Sustained Anchor 3**:
    - **Social & Legwork Scenes**: Boosts **Intuition (+4)** from 3 to **7** (Unlocks 16d6 Judge Intentions, 10d6 Cosmetic Control shifts, and 12d6 Memory).
-   - **Combat Scenes (Reflexes/Initiative)**: Boosts **Reaction (+4)** from 2 to **6** (Unlocks 9d6 Defense Test and 9 + 1D6 Physical Initiative).
-   - **Combat Scenes (Hardened Armor/Soak)**: Boosts **Body (+4)** from 2 to **6** (Unlocks 7d6 Soak and expands Physical Monitor to 11 boxes).
+   - **Combat Scenes**:
+     - Boosts **Reaction (+4)** from 2 to **6** (Unlocks 9d6 Defense Test and 9 + 1D6 Physical Initiative).
+     - A conjured R5 Spirit increases all other physical attributes by +2. 
 
 ### Operational Scene Strategy & Dice Pool Cheatsheet
 
@@ -137,12 +139,30 @@ print(get_social_action_table("velvet"))
 
 ## Conjuring & Spirit Protocols{#conjuring-and-spirit-protocols}
 
-This section details Velvet's conjuring thresholds, downtime spirit binding protocols, and active spirit channeling mechanics under **Channeling** and **Empathy** metamagics.
+This section details Velvet's conjuring thresholds, downtime spirit binding protocols, and active spirit channeling mechanics under **Channeling** and **Power Point** (*Linguistics, Command Presence, Cloak R1*) metamagics.
 
 * **Conjuring & Summoning Pool**: Conjuring (`{python} Conjuring`) + Magic (`{python} Magic`) = **`{python} Conjuring_Pool`d6** $\rightarrow$ **Buys `{python} Conjuring_Pool // 4` Hits** (**3 Hits**).
 * **Channeling Inhabitation Pool**: Conjuring (`{python} Conjuring`) + Magic (`{python} Magic`) + Initiate Grade (`{python} Initiation_Grade`) = **`{python} Channeling_Pool`d6** $\rightarrow$ **Buys `{python} Channeling_Pool // 4` Hits** (**3 Hits**).
 * **Enhanced Drain Resistance Pool**: Sustained Willpower (9) + Sustained Charisma (14) = **`{python} Enhanced_Drain_Resist_Pool`d6** $\rightarrow$ **Buys `{python} Enhanced_Drain_Resist_Pool // 4` Hits** *(Baseline: `{python} Drain_Resist_Pool`d6 $\rightarrow$ `{python} Drain_Resist_Pool // 4` Hits)*.
 * **Maximum Bound Spirit Capacity**: Magic (`{python} Magic`) $\times$ 3 = **`{python} Magic * 3` Total Force** across all active bound spirits `[SR6, Page 147]`.
+
+---
+
+### Metamagic Suite: Channeling & Power Point
+
+*Street Wyrd, p. 78, 81, 122*
+
+Velvet's Initiate Grade 2 metamagic foundation is optimized for deep-cover infiltration, somatic power, multilingual versatility, and squad leadership:
+
+1. **Channeling (Initiation Grade 1)**:
+   * *Street Wyrd, p. 122*
+   * Enables seamless spirit inhabitation, granting $+2$ physical attribute boosts, 5-box wound negation, dual-natured combat, and direct power projection.
+2. **Power Point (Initiation Grade 2)**:
+   * *Street Wyrd, p. 78, 81*
+   * Grants +1.0 Power Point, allocating:
+     * **Linguistics (0.25 PP):** Passively absorb any spoken language at basic proficiency after 1 hour of active listening.
+     * **Command Presence (0.50 PP):** Grants $+2$ dice and $+1$ Edge on all Influence tests.
+     * **Cloak R1 (0.25 PP):** Grants $+1$ to the threshold of opposing Assensing tests to perceive Velvet's aura or pierce covers.
 
 ---
 
@@ -207,21 +227,6 @@ Under the **Channeling** metamagic, Velvet draws a bound spirit into their physi
 * **Delayed Departure Drain**: Resisted when channeling ends ($1\text{–}2\text{ DV}$ vs 23d6 soak) $\rightarrow$ **0 Drain Damage**.
 
 ---
-
-### Metamagic Suite: Channeling & Empathy
-
-*Street Wyrd, p. 122 & Smooth Operations, p. 116*
-
-Velvet's Initiate Grade 2 metamagic foundation is optimized for deep-cover infiltration, somatic power, and subtle astral social leverage:
-
-1. **Channeling (Initiation Grade 1)**:
-   * *Street Wyrd, p. 122*
-   * Enables seamless spirit inhabitation, granting $+2$ physical attribute boosts, 5-box wound negation, dual-natured combat, and direct power projection.
-2. **Empathy (Initiation Grade 2)**:
-   * *Smooth Operations, p. 116*
-   * Allows the initiate to quickly adjust their aura to project tailored emotional states or health signatures to assist in social manipulation and selling deceptions.
-   * **Action**: Minor Action.
-   * **Test**: Con + Magic (3) threshold to match or project subtle emotional cues and harmonize with active personas (Lee Ji-yoo, Tanaka Ryo).
 
 ---
 

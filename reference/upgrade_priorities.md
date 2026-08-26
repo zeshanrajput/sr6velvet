@@ -1,6 +1,10 @@
 # Character Advancement & Upgrade Priorities: Velvet
 
-This document tracks upcoming character upgrades, mechanical evaluations, karma/nuyen targets, and downtime action logistics for **Velvet (Kim Jin-Young)**.
+This document tracks character upgrades, mechanical evaluations, karma/nuyen targets, and downtime action logistics for **Velvet (Kim Jin-Young)**, structured across the **3-Arc Mechanical Milestones**:
+
+* **Arc 1 Baseline (Chargen):** Magic 6, Grade 1 Channeling, 1 focus (Qi Focus R4 Sharp Tongue), baseline social/sorcery pools (11–15d).
+* **Arc 2 Target (First 100 TKE):** Magic 6, Initiation Grades 2–4 (*Power Points / Linguistics / Command Presence / Cloak*, *Empathy*, *Masking*), Power Focus Rating 3, core utility spells (*Charm*, *Fashion*, *Physical Barrier*), core untrained skill repairs.
+* **Arc 3 Target (200+ TKE):** Magic 8, Initiation Grades 6–8 (*Centering*, *Invocation*, *Flexible Signature*, *Quickening*), Great Form summoning, full bonded focus suite (Power Focus R4+, Qi Focus Sorcery/Conjuring, Weapon Focus), prime-tier dice pools ($20+$).
 
 *(Note: This is an internal reference document and is not published in the Quarto narrative book).*
 
@@ -10,9 +14,9 @@ This document tracks upcoming character upgrades, mechanical evaluations, karma/
 
 * **Current Available Karma:** 5 Karma (33 Spent)
 * **Current Nuyen Balance:** ¥25,055
-* **Magic:** 6 | **Power Points:** 2.0 (spent on *Cosmetic Control R2*)
+* **Magic:** 6 | **Power Points:** 3.0 (2.0 on *Cosmetic Control R2*, 1.0 on *Linguistics, Command Presence, Cloak R1*)
 * **Active Foci Bonded:** Rating 4 Qi Focus (*Sharp Tongue*, 4 Force / 18 Max Bonding Limit)
-* **Initiation Grade:** 2 (Metamagics: *Channeling*, *Empathy*)
+* **Initiation Grade:** 2 (Metamagics: *Channeling*, *Power Point*)
 * **Coven Affiliation:** Guild of Freelance Assets (Conclave Connection 7, Loyalty 8)
   * *Downtime Logistics:* SRM campaign rules require dedicating every other Major Downtime Action to coven maintenance to retain access to initiation backing and conclave resources.
 * **Post-Chargen Quality Cost Rule:** In SRM, purchasing positive qualities during play costs **double the listed Karma** (e.g., a 4K quality costs **8K**, 6K costs **12K**, 12K costs **24K**), while **Mentor Spirit** has a fixed cost of **20 Karma**.
@@ -20,7 +24,7 @@ This document tracks upcoming character upgrades, mechanical evaluations, karma/
 
 ---
 
-## 2. Master Priority Upgrade Matrix
+## 2. Master Priority Upgrade Matrix (3-Arc Mechanical Roadmap)
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -42,11 +46,9 @@ This document tracks upcoming character upgrades, mechanical evaluations, karma/
 ├────────────────────────────────┴──────────────┴──────────────┴──────────────┤
 │ OPPORTUNITY PRIORITY: METAMAGIC PROGRESSION (Session-Funded on Odd Cycles)   │
 ├────────────────────────────────┬──────────────┬──────────────┬──────────────┤
-│ Initiation Grade 3 (Power Pt)  │ Metamagic    │ 4 Karma*     │ +1.0 PP Free │
-│   ├─ Linguistics (0.25 PP)     │ Adept Power  │ (from PP)    │ Instant Lang │
-│   ├─ Authoritative Tone (0.5 PP│ Adept Power  │ (from PP)    │ +2d/+1 Edge Ldr│
-│   └─ Cloak R1 (0.25 PP)        │ Adept Power  │ (from PP)    │ Masking Armor│
-│ Initiation Grade 4 (Masking)   │ Metamagic    │ 5 Karma*     │ Aura Disguise│
+│ Initiation Grade 3 (Empathy)   │ Metamagic    │ 5 Karma*     │ +1 Edge All  │
+│                                │              │              │ Social & +6SR│
+│ Initiation Grade 4 (Masking)   │ Metamagic    │ 6 Karma*     │ Aura Disguise│
 │ Initiation Grade 5             │ Metamagic    │ 6 Karma*     │ Object Memory │
 │   (Psychometry)                │              │              │ & Legwork Clue│
 │ Initiation Grade 6 (Centering) │ Metamagic    │ 7 Karma*     │ +6 Drain Dice│
@@ -109,16 +111,15 @@ This document tracks upcoming character upgrades, mechanical evaluations, karma/
 
 ---
 
-### D. Adept Power Point Allocation (Initiation Grade 3 — 1.0 PP Bundle)
-Choosing **Power Point** at Grade 3 permanently grants 1.0 PP without consuming focus slots or bonding karma. The optimized 1.0 PP bundle:
+### D. Metamagic Progression: Grade 2 Power Point & Grade 3 Empathy
 
-* **`Linguistics` (0.25 PP, Street Wyrd):**
-  * Passively learn any spoken language at basic fluency after **1 hour of active listening**, completely bypassing language skill Karma costs and study downtime. VASTLY superior to the *Polyglot* quality.
-* **`Authoritative Tone` (0.5 PP, Smooth Operations):**
-  * Grants **+2 dice and +1 Edge** on all Influence (Leadership) tests. 
-  * Because Velvet frequently makes *Inspire Competence* tests in tactical encounters, this transforms Velvet into a reliable Edge-generating command engine for the entire squad.
-* **`Cloak R1` (0.25 PP, Street Wyrd):**
-  * Passively adds **+1 to the threshold** for anyone attempting to spot Velvet on the Astral Plane or penetrate their *Masking*.
+* **Grade 2 Power Point (1.0 PP Bundle — Active):**
+  * **`Linguistics` (0.25 PP, *Street Wyrd*):** Passively learn any spoken language at basic fluency after **1 hour of active listening**, completely bypassing language skill Karma costs and study downtime. Crucial for international deployments (Hong Kong Cantonese/Mandarin, MCT Japanese, European Dutch/Russian).
+  * **`Command Presence` (0.5 PP, *Street Wyrd*):** Grants **+2 dice and +1 Edge** on all Influence tests, turning Velvet into an immediate Edge-generating command engine for the squad.
+  * **`Cloak R1` (0.25 PP, *Street Wyrd*):** Passively adds **+1 to the threshold** for anyone attempting to spot Velvet on the Astral Plane or penetrate covers.
+* **Grade 3 Empathy (*Smooth Operations*, p. 116 — Next Target):**
+  * Grants **+1 Edge on ALL Social tests** (Con, Influence, Negotiation, Impersonation) and **increases Social Rating by Magic (+6 to +8)**.
+  * Pushes Social Rating to 20–24, virtually locking in the maximum +2 Edge on every Face encounter. Cost is only **5 Karma** ($10 + 3 - 8$).
 
 ---
 
@@ -178,7 +179,7 @@ Choosing **Power Point** at Grade 3 permanently grants 1.0 PP without consuming 
 #### 3. Peak Late-Arc Dice Pools:
 * **Sorcery (Spellcasting):** Magic 8 + Sorcery 5 + Specialization 2 + Power Focus R3 (+3) + Qi Focus R3 (+3) + Mentor Spirit (+1) = **22 Dice**!
 * **Conjuring (Summoning):** Magic 8 + Conjuring 6 + Power Focus R3 (+3) + Qi Focus R3 (+3) = **20 Dice (5 Bought Hits vs Force 8 Spirits!)**!
-* **Social (Influence / Con):** Charisma 10 (14 buffed) + Influence 5 + Charm (+4) + Authoritative Tone (+2) = **25 Dice**!
+* **Social (Influence / Con):** Charisma 10 (14 buffed) + Influence 5 + Charm (+4) + Command Presence (+2) = **25 Dice**!
 * **Sharp Tongue (Adept Attack):** Charisma 10 (14 buffed) + Magic 8 + Qi Focus R4 = **22 to 26 Dice**!
 * **Channeled Physical Frame (Force 8):** Body 6 | Agility 7 | Reaction 6 | Strength 6!
 
@@ -190,7 +191,7 @@ Choosing **Power Point** at Grade 3 permanently grants 1.0 PP without consuming 
 | :--- | :--- | :--- | :--- | :--- |
 | **01** | **Power Focus (Rating 3)** | ¥54,000 / 18 K | Procure via Conclave / Vincent | Nuyen + Banked Karma |
 | **02** | **Core Charisma Spell: `Charm`** | 5 Karma | Study | Banked Karma |
-| **03** | **Opportunity Event 1: Initiation Grade 3 (Power Pt)** | **4 Karma** | 1 Major Downtime Action | Session-funded (*Linguistics, Authoritative Tone, Cloak*) |
+| **03** | **Opportunity Event 1: Initiation Grade 3 (Empathy)** | **5 Karma** | 1 Major Downtime Action | Session-funded (+1 Edge All Social, +6 Social Rating) |
 | **04** | **Tactical Utility Spell Suite 1 (`Fashion`, `Physical Barrier`)** | 10 Karma | Study | Banked Karma |
 | **05** | **Untrained Skill Suite 1 (Astral 1, Perception 1)** | 10 Karma | None (Between runs) | Banked Karma |
 | **06** | **Early Quality: `Mentor Spirit (Wise Warrior)`** | 20 Karma | Spiritual Quests | Banked Karma (Edge discount + 1d Sorcery) |

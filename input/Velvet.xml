@@ -27,12 +27,13 @@
    </spells>
    <adeptPowers>
       <adeptpower lang="en" ref="cosmetic_control" value="2"/>
-      <adeptpower lang="en" ref="improved_ability_combat" value="2">
-         <decision choice="97fb1dcd-14e4-456c-aad7-17a7bf8cbbae" value="exotic_weapons"/>
-      </adeptpower>
+      <adeptpower lang="en" ref="linguistics"/>
+      <adeptpower lang="en" ref="command_presence" value="1"/>
+      <adeptpower lang="en" ref="cloak" value="1"/>
    </adeptPowers>
    <metaEchoes>
       <metaEcho lang="en" ref="channeling"/>
+      <metaEcho lang="en" ref="power_points"/>
    </metaEchoes>
    <sins>
       <sin name="Lee Ji-Yoo" quality="SECOND_LIFE" uniqueid="f50c7bf6-4b2e-429b-841f-a9e8e8c68443"/>

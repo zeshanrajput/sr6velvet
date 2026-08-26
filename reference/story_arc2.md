@@ -6,6 +6,16 @@ Story Arc 2 chronicles Velvet’s **emergence into the deep Seattle underground*
 
 ---
 
+## The Tripartite Master Architecture
+
+| Dimension | Trajectory & Foundation |
+| :--- | :--- |
+| **World Basis** | **The Sovereign Underground & The Push for Power (Maslow's Safety Need):** Descending from the hyper-monitored surface into the unmapped subterranean Sprawl (Ork Underground, pre-Crash geothermal conduits); constructing fortified sanctuaries; establishing mutual deterrence through syndicate blood-oaths (Ni Ni Xiaolu & Octagon Triad, Trudy & Cutters, Bookie & Ancients); expanding into Pacific Rim corridors. |
+| **Internal Basis** | ***The Living Mosaic (The Echo Phenomenon & Lived Wisdom Accretion):** Past personas are recognized not as disposable corporate lies, but as indelible layers of neuro-somatic capability, virtue, and grief (*Han*); weaving *Tanaka Ryo's* discipline, *Lee Ji-yoo's* acoustic poise, and street-level grit into an emergent composite consciousness; moving toward the *Mansin* state. |
+| **Mechanical Basis** | **First 100 Total Karma Earned (TKE) Milestone:** Magic 6, Initiation Grades 2–4 (*Power Points / Linguistics / Command Presence / Cloak*, *Empathy*, *Centering*), Power Focus Rating 3, specialized spells (*Increase Attribute*, *Increase Reflexes*), and expanding high-rating fake SIN networks. |
+
+---
+
 ## Master Theme: *Sovereign Leverage in the Deep Sprawl*
 
 > **Core Concept:** When two megacorps view you as their property and your loved ones as bait, passive survival is suicide. Survival requires plunging into the unmapped depths of the Seattle underground, forging hardened shadow alliances, and accumulating sovereign power until you become too dangerous and costly to reclaim.

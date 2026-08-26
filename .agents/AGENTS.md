@@ -12,7 +12,7 @@ When executing narrative generation, evaluation, or state tracking for Velvet, b
 | :--- | :--- | :--- |
 | **Character Dossier** | [`velvet_master.yaml`](file:///c:/GitHub/sr6velvet/velvet_master.yaml) | Authoritative tabletop play state (attributes, skills, spells, adept powers, inventory, karma, nuyen balances). |
 | **Voice Specification** | [`reference/voice_spec.md`](file:///c:/GitHub/sr6velvet/reference/voice_spec.md) | Character voice rules, somatic shift discipline, TTS fluency, domain vocabulary, and chapter tier calibrations (Extends `sr6-core/reference/default_voice_spec.md`). |
-| **Philosophical Framework** | [`reference/philosophical_framework.md`](file:///c:/GitHub/sr6velvet/reference/philosophical_framework.md) | Metaphysical grounding of the Thousand Lives (*Anatta*, *Mansin*, *Upāya*, *Kagami*, and artificial reincarnation). |
+| **Philosophical Framework** | [`reference/philosophical_framework.md`](file:///c:/GitHub/sr6velvet/reference/philosophical_framework.md)<br>[`reference/karmic_persona_log.md`](file:///c:/GitHub/sr6velvet/reference/karmic_persona_log.md) | Metaphysical grounding of the Thousand Lives (*Anatta*, *Mansin*, *Upāya*, *Kagami*) and master registry of lived personas & somatic shift mechanics. |
 | **Active Story Arcs** | [`reference/story_arc1.md`](file:///c:/GitHub/sr6velvet/reference/story_arc1.md)<br>[`reference/story_arc2.md`](file:///c:/GitHub/sr6velvet/reference/story_arc2.md) | Arc 1: *Manufactured Solace & The Honeytrap* (Ch 01–08)<br>Arc 2: *The Sovereign Underground* (Ch 09–18+) |
 | **Story Continuity** | [`reference/story_continuity.md`](file:///c:/GitHub/sr6velvet/reference/story_continuity.md) | Continuity index, contact favor points, and entity heatmaps maintained via `sr6 continuity .`. |
 | **Quarto Narrative Book** | [`chapters/`](file:///c:/GitHub/sr6velvet/chapters/) & [`_quarto.yml`](file:///c:/GitHub/sr6velvet/_quarto.yml) | Published Quarto story anthology and modular dossier chapters. |
@@ -30,6 +30,8 @@ Pronouns and demeanor are strictly locked to Velvet's active biological persona:
 - **Lee Ji-yoo**: `she/her` (soft, algorithmic elegance, high-fashion face).
 - **Tanaka Ryo**: `he/him` (clean corporate authority, sharp masculine presence).
 - **Mei Jing**: `she/her` (Cantonese triad/commercial persona).
+- **Zhang Wei**: `he/him` (calm senior Cantonese freight expediter, unhurried veteran authority).
+- **Leung Hoi-ching**: `she/her` (grounded, low-rasping Cantonese, working-class dockside persona).
 - **Kim Jin-Young (Un-sculpted)**: `he/they` or raw baseline self.
 
 ### B. Somatic Reality of Cosmetic Control (R2)

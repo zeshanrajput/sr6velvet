@@ -1,14 +1,26 @@
 # Story Arc 1: The Anatomy of Un-Manufactured Solace & The Honeytrap
 
+Story Arc 1 documents Velvet’s initial escape from Mitsuhama into the Seattle shadows, the traumatic reality of identity fragmentation, and the gradual discovery of authentic human empathy.
+
+---
+
+## The Tripartite Master Architecture
+
+| Dimension | Trajectory & Foundation |
+| :--- | :--- |
+| **World Basis** | **Manufactured Solace & The Honeytrap:** Fleeing Mitsuhama's asset recovery dragnet; navigating baseline street survival in the Seattle Sprawl; creating fleeting un-monetized sanctuaries (pork broth in West Seattle, tea in Tacoma); culminating in the devastating reveal that Hana in Neo-Seoul is a curated dual-megacorp honeytrap. |
+| **Internal Basis** | ***Sinbyeong* (신병 - Spirit Sickness / The Broken Vessel):** The agony of identity erasure and somatic violation; acute migraines, cartilage reset clicks, and localized DNA shifts; the paralyzing fear that beneath the sculpted corporate masks lies a hollow void; moving from algorithmic social calculation to the fragile discovery of genuine empathy. |
+| **Mechanical Basis** | **Character Creation & Early Street Play:** Magic 6, Initiation Grade 1 (*Channeling*), core social and magical dice pools (11–15 dice), baseline gear, Ares Skinshield, and initial coven ties (Loyalty 8). |
+
+---
+
 To capture the gentle, melancholic warmth of *Best Wishes from the Full Moon Coffee Shop* within the violent, commodified dystopia of Shadowrun, the overarching narrative needs a unifying thematic spine—a quiet, emotional current running beneath the rain, gunplay, and corporate intrigue.
 
 In the Sixth World, where every emotion, face, and sensation is engineered, packaged, and sold, **authentic comfort is the rarest luxury in existence**.
 
-Velvet’s unique perspective provides the ideal infrastructure for this contrast: engineered by Mitsuhama to be a Charisma 12 miracle of mass-market desire, Velvet understands the exact chemistry and fraud behind synthetic happiness.
+Velvet’s unique perspective provides the ideal infrastructure for this contrast: engineered by Mitsuhama to be a Charisma 10 (14) miracle of mass-market desire, Velvet understands the exact chemistry and fraud behind synthetic happiness.
 
-> **Foundational Character Development Note:** Velvet is **not originally empathic**. Engineered by Mitsuhama as a cold, clinical commodity, Jin-Young was trained to simulate emotion as an algorithmic performance. Story Arc 1 documents his gradual, hesitant **discovery of empathy**—moving from a hollow asset who calculates social transactions to a practitioner who stumbles into creating genuine, un-monetized human sanctuaries.
-> 
-> *Philosophical Phase: Phase 1 — The Broken Vessel (*Sinbyeong*).* Jin-Young experiences the multiple masks as traumatic bodily and psychic fragmentation. Beneath the forced corporate skins, he fears he is an empty void. (See [reference/philosophical_framework.md](file:///c:/GitHub/sr6velvet/reference/philosophical_framework.md)).
+> **Foundational Character Development Note:** Velvet is **not originally empathic**. Engineered by Mitsuhama as a cold, clinical commodity, Jin-Young was trained to simulate emotion as an algorithmic performance. Story Arc 1 documents his gradual, hesitant **discovery of empathy**—moving from a hollow asset who calculates social transactions to a practitioner who stumbles into creating genuine, un-monetized human sanctuaries. (See [reference/philosophical_framework.md](file:///c:/GitHub/sr6velvet/reference/philosophical_framework.md)).
 
 ---
 

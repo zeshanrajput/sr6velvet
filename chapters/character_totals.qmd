@@ -23,9 +23,12 @@ Heat = _totals.get("Heat", 0)
 Reputation = _totals.get("Reputation", {})
 Contacts = _totals.get("Contacts", {})
 Current_Mission = len(_totals.get("Missions", []))
+
+def get_active_spirits():
+    return _totals.get("Active_Spirits", [])
 ```
 
-This dashboard displays Velvet's live career totals, regional faction reputation breakdown, initiation progress, coven standing, and contact registry sync.
+This dashboard displays Velvet's live career totals, regional faction reputation breakdown, initiation progress, coven standing, active bound spirit status, and contact registry sync.
 
 ---
 
@@ -43,6 +46,31 @@ This dashboard displays Velvet's live career totals, regional faction reputation
 * **Total Reputation:** `{python} sum(Reputation.values())`
   * **Seattle (SEA):** +`{python} Reputation.get('Seattle', Reputation.get('SEA', 2))`
   * **United Netherlands (UNL):** `{python} Reputation.get('UNL', Reputation.get('AMS', 0))`
+
+---
+
+## Active Spirit Stable
+
+```{python}
+#| echo: false
+#| output: asis
+active = get_active_spirits()
+if active:
+    print("| Spirit Name | Force & Type | Bound During | Tasks / Longevity | Status |")
+    print("| ----------- | --- | --- | --- | --- |")
+    for s in active:
+        if s.get("is_ally"):
+            print(f"| {s['name']} | Force {s['force']} {s['type']} | Character Creation | Permanent | Active (Ally) |")
+        else:
+            elapsed = Current_Mission - s['bound_mission']
+            tasks = s.get("tasks", 2)
+            rem = tasks - elapsed
+            status_str = f"Active ({rem} task{'s' if rem != 1 else ''} / mission{'s' if rem != 1 else ''} remaining)"
+            m_name = s.get('bound_mission_name', f"Mission {s['bound_mission']}")
+            print(f"| {s['name']} | Force {s['force']} {s['type']} ({s['details']}) | {m_name} | {elapsed} / {tasks} used | {status_str} |")
+else:
+    print("*(No active bound spirits in stable)*")
+```
 
 ---
 

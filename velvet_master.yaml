@@ -23,7 +23,7 @@ attributes:
   edge: 2
   magic: 6
   resonance: 0
-  power_points: 2
+  power_points: 3
 qualities:
   positive:
   - name: Metagenetic Attribute Improvement (Charisma)
@@ -107,6 +107,15 @@ adept_powers:
 - name: Cosmetic Control
   ref: cosmetic_control
   rating: 2
+- name: Linguistics
+  ref: linguistics
+  rating: 1
+- name: Command Presence
+  ref: command_presence
+  rating: 1
+- name: Cloak
+  ref: cloak
+  rating: 1
 - name: Sharp Tongue
   ref: sharp_tongue
   rating: 1
@@ -114,8 +123,9 @@ adept_powers:
 meta_echoes:
 - name: Channeling
   ref: channeling
-- name: Empathy
-  ref: empathy
+- name: Power Point
+  ref: power_points
+  rating: 1
 weapons:
 - name: Beretta 101T
   ref: beretta_101T
