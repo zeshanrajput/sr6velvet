@@ -8,7 +8,7 @@
  ATTRIBUTES & DERIVED RATINGS:
   BOD: 2        | AGI: 3        | REA: 2       | STR: 2 
   WIL: 5        | LOG: 3        | INT: 3       | CHA: 10
-  EDG: 2        | RES: 0        | MAG: 6       | ESS: 6.0
+  EDG: 2        | RES: 0        | MAG: 6       | ESS: 6.0 
   Derived Pools       : Composure [15] | Judge Int [8] | Memory [8]
   Condition Monitors  : Physical [9 boxes] | Stun [11 boxes]
 ----------------------------------------------------------------------------

@@ -48,7 +48,7 @@ Velvet kept her hands steady on the gauze. She tied the final bandage, smoothed 
 
 She walked to the narrow wooden stairs leading up to the street. She pulled on a plain, dark windbreaker borrowed from the apothecary’s drying rack and zipped it to her throat. She had no active face in this sprawl, no remaining corporate identification, and barely enough nuyen to buy passage on the morning ferry.
 
-She paused at the final landing where a full-length mirror lay against the wall. Her eyes took in the form of the delicate, soft featured young woman looking back at her, her short, dark hair plastered to her forehead by sweat and steam from the boiling vats. A small shadow creased her brow as she stared at the reflection, the corners of her mouth turning downward in a barely perceptible frown. With a quiet sigh, she reached up and gently touched her cheek, her expression unreadable as she took in the changes wrought by the spirits, before turning away and ascending the stairs to the street.
+She paused at the final landing where a full-length mirror lay against the wall. Her eyes took in the form of the delicate, soft featured young woman looking back at her, her short, dark hair plastered to her forehead by sweat and steam from the boiling vats. A small shadow creased her brow as she stared at the reflection, the corners of her mouth turning downward in a barely perceptible frown. With a quiet sigh, she reached up and gently touched her cheek as she took in the changes wrought by the spirits.
 
 "What is your name?" Velvet mused at her reflection. Unexpectedly, her mouth moved on its own accord. Her lips formed the shape of syllables: Kang Anning.
 
